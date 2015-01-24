@@ -1,0 +1,22 @@
+@mixin breakpoint($point) {
+  @if $point == large {
+    @media (min-width: 1170px) { @content; }
+  }
+  @else if $point == large-and-medium {
+    @media (min-width: 992px) { @content; }
+  }
+  @else if $point == medium {
+    @media (min-width: 767px) and (max-width: 991px) { @content; }
+  }
+  @else if $point == small {
+    @media (max-width: 768px) { @content; }
+  }
+}
+
+@mixin box-shadow($value) {
+  box-shadow: #{$value};
+}
+
+@mixin border-radius($value) {
+  border-radius: $value;
+}
