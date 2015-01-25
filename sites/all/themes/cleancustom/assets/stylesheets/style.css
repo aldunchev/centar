@@ -73,8 +73,18 @@ a {
 }
 
 /* line 4, ../sass/_reset.scss */
-input[type="submit"] {
+input[type="submit"],
+input[type="text"],
+input[type="password"] {
   border: 0;
+  padding: 0;
+}
+
+/* line 11, ../sass/_reset.scss */
+header,
+footer,
+article {
+  display: block;
 }
 
 @font-face {
@@ -107,13 +117,16 @@ input[type="submit"] {
 
 /* line 25, ../sass/_font-awesome.scss */
 .fa-facebook:before {
+  font-family: 'FontAwesome';
   content: "\f09a";
   margin-right: 5px;
   color: #fff;
 }
 
 /* line 1, ../sass/_extends.scss */
-[class*="col"] {
+input[type="submit"],
+input[type="text"],
+input[type="password"], div, [class*="col"] {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -130,8 +143,32 @@ a, .main-nav a {
 }
 
 /* line 18, ../sass/_extends.scss */
-.block-user {
+.block-user, .block-user .form-item, .block-user .form-actions, .help-menu li, .block-menu li {
   float: left;
+}
+
+/* line 21, ../sass/_extends.scss */
+.motto-logo p {
+  float: right;
+}
+
+/* line 29, ../sass/_extends.scss */
+.primary-btn {
+  padding: 10px 20px;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #050800;
+  border-radius: 20px;
+  background: #fae019;
+}
+/* line 36, ../sass/_extends.scss */
+.primary-btn:hover {
+  font-size: 23px;
+}
+
+/* line 40, ../sass/_extends.scss */
+.block-user .form-actions input {
+  border-radius: 50%;
 }
 
 /* line 1, ../sass/_layout.scss */
@@ -259,22 +296,21 @@ a, .main-nav a {
 a {
   color: #0e2c4b;
 }
-/* line 23, ../sass/_common.scss */
+/* line 24, ../sass/_common.scss */
 a:hover {
-  color: #35AFBA;
+  text-decoration: underline;
 }
 
 /* line 28, ../sass/_common.scss */
-.logo {
-  margin-top: 24px;
-}
-
-/* line 31, ../sass/_common.scss */
 #main-content {
   padding-top: 72px;
 }
 
-/* line 35, ../sass/_common.scss */
+/* line 31, ../sass/_common.scss */
+body {
+  color: #050800;
+}
+/* line 33, ../sass/_common.scss */
 body #admin-menu {
   font-size: 14px;
 }
@@ -318,19 +354,127 @@ h6 {
   font-size: 12px;
 }
 
+/* line 1, ../sass/_header.scss */
+.main-header {
+  position: relative;
+  height: 250px;
+}
 /* line 4, ../sass/_header.scss */
+.main-header .content {
+  position: relative;
+  padding-top: 20px;
+  z-index: 2;
+}
+/* line 9, ../sass/_header.scss */
+.main-header .content {
+  height: 250px;
+}
+
+/* line 13, ../sass/_header.scss */
+.header-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 250px;
+  background-image: url("../images/head.png");
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+/* line 23, ../sass/_header.scss */
+.block-user {
+  margin-left: 10px;
+}
+/* line 26, ../sass/_header.scss */
+.block-user .form-item {
+  margin-right: 10px;
+}
+/* line 30, ../sass/_header.scss */
+.block-user .form-actions {
+  position: relative;
+}
+/* line 33, ../sass/_header.scss */
+.block-user .form-actions input {
+  display: block;
+  width: 20px;
+  height: 20px;
+  text-indent: -9999em;
+}
+/* line 41, ../sass/_header.scss */
+.block-user .form-item-remember-me {
+  font-size: 12px;
+}
+
+/* line 45, ../sass/_header.scss */
 .fa-facebook {
   padding: 4px 4px 4px 5px;
   font-size: 11px;
+  font-family: 'Roboto';
   color: #fff;
   background: #5b74a8;
   border: 1px solid #afb1b3;
   border-color: #2f477a #29447e #1a356e;
 }
-/* line 11, ../sass/_header.scss */
+/* line 53, ../sass/_header.scss */
 .fa-facebook:hover {
   color: #fff;
   background: #6c82b1;
+}
+
+/* line 58, ../sass/_header.scss */
+.logo {
+  margin-top: 5px;
+}
+/* line 60, ../sass/_header.scss */
+.logo img {
+  max-width: 200px;
+  height: auto;
+}
+
+/* line 66, ../sass/_header.scss */
+.help-menu li {
+  margin-right: 5px;
+  border-right: 1px solid #afb1b3;
+}
+/* line 70, ../sass/_header.scss */
+.help-menu li:last-child {
+  border-right: 0 none;
+}
+/* line 74, ../sass/_header.scss */
+.help-menu a {
+  margin-right: 5px;
+  font-size: 14px;
+  color: #95989a;
+}
+/* line 78, ../sass/_header.scss */
+.help-menu a:hover {
+  color: #6e7174;
+}
+
+/* line 83, ../sass/_header.scss */
+.add-offer-link {
+  margin-top: 5px;
+}
+
+/* line 86, ../sass/_header.scss */
+.motto {
+  margin-top: 10px;
+  padding: 7px 0;
+  background-image: url("../images/lenta.png");
+  background-position: center;
+  background-size: 100% 100%;
+}
+/* line 92, ../sass/_header.scss */
+.motto a,
+.motto p {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #050800;
+}
+/* line 98, ../sass/_header.scss */
+.motto a {
+  margin: 0 150px 0 100px;
 }
 
 /* line 5, ../sass/_main-nav.scss */
@@ -350,4 +494,86 @@ h6 {
 .main-nav a:hover {
   color: #fff;
   background: #0e2c4b;
+}
+
+/* line 1, ../sass/_main-footer.scss */
+.main-footer {
+  text-align: center;
+}
+
+/* line 4, ../sass/_main-footer.scss */
+.motto-logo,
+.block-menu {
+  display: inline-block;
+}
+
+/* line 8, ../sass/_main-footer.scss */
+.block-menu {
+  padding: 10px 20px;
+  background: #95989a;
+  border-radius: 7px;
+}
+/* line 12, ../sass/_main-footer.scss */
+.block-menu li {
+  margin-right: 10px;
+  border-right: 1px solid #fff;
+}
+/* line 16, ../sass/_main-footer.scss */
+.block-menu li:last-child {
+  margin-right: 0;
+  border-right: 0 none;
+}
+/* line 19, ../sass/_main-footer.scss */
+.block-menu li:last-child a {
+  margin-right: 0;
+}
+/* line 24, ../sass/_main-footer.scss */
+.block-menu a {
+  margin-right: 10px;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #fff;
+}
+
+/* line 31, ../sass/_main-footer.scss */
+.motto-logo {
+  min-width: 340px;
+}
+/* line 34, ../sass/_main-footer.scss */
+.motto-logo .logo img {
+  width: 60px;
+  height: auto;
+}
+/* line 39, ../sass/_main-footer.scss */
+.motto-logo p {
+  line-height: 2.4;
+  font-size: 12px;
+  color: #db2a1a;
+}
+
+/* line 1, ../sass/_forms.scss */
+span.form-required {
+  display: none;
+}
+
+/* line 4, ../sass/_forms.scss */
+.form-actions {
+  cursor: pointer;
+}
+/* line 6, ../sass/_forms.scss */
+.form-actions input {
+  background-color: #fae019;
+  cursor: pointer;
+}
+
+/* line 12, ../sass/_forms.scss */
+.form-item input[type="text"],
+.form-item input[type="password"] {
+  padding: 2px 0;
+  background: #fff;
+  border: 1px solid #afb1b3;
+}
+/* line 18, ../sass/_forms.scss */
+.form-item label {
+  line-height: 1.3;
 }

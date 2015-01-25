@@ -1,6 +1,18 @@
 a {
   text-decoration: none;
 }
-input[type="submit"] {
+input[type="submit"],
+input[type="text"],
+input[type="password"] {
   border: 0;
+  @extend %border-box;
+  padding: 0;
+}
+header,
+footer,
+article {
+  display: block;
+}
+div {
+  @extend %border-box;
 }

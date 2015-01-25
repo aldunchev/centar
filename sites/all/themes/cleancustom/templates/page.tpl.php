@@ -73,8 +73,9 @@
  */
 ?>
 <header role="banner" class="main-header">
-  <div class="container clearfix">
-    <div class="row clearfix">
+  <div class="header-bg"></div>
+  <div class="content container clearfix">
+    <div class="clearfix">
       <?php if($page['header']) : ?>
         <?php  
           print l(t('login/register'), 'user/simple-fb-connect',
@@ -98,6 +99,7 @@
           );
       ?>
     </div>
+    <div class="clearfix">
     <?php if($logo) : ?>
       <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="logo fl-left">
         <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>">
@@ -106,15 +108,18 @@
     <?php print l(t('add offer'), 'node/add/offer',
         array(
           'attributes' => array(
-            'class' => array('fl-right')
+            'class' => array('add-offer-link fl-right primary-btn')
           ),
         ) 
       ); 
     ?>
+    </div>
   </div><!-- end .container -->
   <div class="motto">
-    <?php print l(t('www.center.com'), '<front>'); ?>
-    <p><?php print t('minimum cost - maximum comfort'); ?></p>
+    <div class="container clearfix">
+      <?php print l(t('www.center.com'), '<front>', array('attributes' => array('class' => array('fl-left')))); ?>
+      <p><?php print t('minimum cost - maximum comfort'); ?></p>
+    </div>
   </div>
 </header>
 <section id="main-content" role="main">
@@ -127,10 +132,12 @@
   <footer class="main-footer clearfix">
     <div class="container">
       <?php print render($page['footer']); ?>
-      <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="logo fl-left">
-        <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>">
-      </a>
-      <p><?php print t('minimum cost - maximum comfort'); ?></p>
+      <div class="motto-logo">
+        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="logo fl-left">
+          <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>">
+        </a>
+        <p><?php print t('minimum cost - maximum comfort'); ?></p>
+      </div>
     </div>
   </footer>
 <?php endif; ?>

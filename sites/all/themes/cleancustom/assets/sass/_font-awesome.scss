@@ -23,7 +23,14 @@
   content: "\f07a";
 }
 .fa-facebook:before {
+  font-family: 'FontAwesome';
   content: "\f09a";
   margin-right: 5px;
   color: $white;
+}
+%fa-arrow-right {
+  font-family: 'FontAwesome';
+  content: "\f061";
+  color: $crimson;
+  cursor: pointer;
 }

@@ -20,19 +20,20 @@
 }
 a {
   color: $dark-blue;
-  &:hover {
-    color: $light-blue;
-  }
   @extend %transition;
-}
-.logo {
-  margin-top: 24px;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 #main-content {
   padding-top: 72px;
 }
 body {
+  color: $black;
   #admin-menu {
     font-size: $text-14;
   }
+}
+.primary-btn {
+  @extend %primary-btn-ext
 }

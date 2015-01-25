@@ -1,0 +1,21 @@
+span.form-required {
+  display: none;
+}
+.form-actions {
+  cursor: pointer;
+  input {
+    background-color: $gold;
+    cursor: pointer;
+  }
+}
+.form-item {
+  input[type="text"],
+  input[type="password"] {
+    padding: 2px 0;
+    background: $white;
+    border: 1px solid $gray;
+  }
+  label {
+    line-height: 1.3;
+  }
+}

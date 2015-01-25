@@ -21,23 +21,22 @@
 %fl-right-ext {
   float: right;
 }
-%primary-btn {
-  padding: $space-7 $space-21;
-  font-size: $text-14;
-  font-weight: 600;
-  text-align: center;
-  text-transform: uppercase;
-  color: $white;
-  background: $light-blue;
-  @include border-radius(2px);
-  cursor: pointer;
-  &:hover {
-    background: $dark-blue;
-  }
-  @extend %transition;
-}
 %clearfix-ext:after {
   content: ' ';
   display: block;
   clear: both;
+}
+%primary-btn-ext {
+  padding: 10px 20px;
+  font-size: $text-22;
+  text-transform: uppercase;
+  color: $black;
+  border-radius: 20px;
+  background: $gold;
+  &:hover {
+    font-size: 23px;
+  }
+}
+%round {
+  border-radius: 50%;
 }
