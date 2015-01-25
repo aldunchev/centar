@@ -123,10 +123,12 @@
   </div>
 </header>
 <section id="main-content" role="main">
-  <?php if($page['featured']) : ?>
-    <?php print render($page['featured']); ?>
-  <?php endif; ?>
-  <?php print render($page['content']); ?>
+  <div class="container main">
+    <?php if($page['featured']) : ?>
+      <?php print render($page['featured']); ?>
+    <?php endif; ?>
+    <?php print render($page['content']); ?>
+  </div>
 </section>
 <?php if($page['footer']) : ?>
   <footer class="main-footer clearfix">

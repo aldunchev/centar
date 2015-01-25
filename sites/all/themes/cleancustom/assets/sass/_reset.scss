@@ -1,12 +1,16 @@
 a {
   text-decoration: none;
+  outline: none;
 }
 input[type="submit"],
 input[type="text"],
-input[type="password"] {
+input[type="password"],
+textarea,
+select {
   border: 0;
   @extend %border-box;
   padding: 0;
+  outline: none;  
 }
 header,
 footer,

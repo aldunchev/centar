@@ -5,6 +5,8 @@
  * @email 'aldunchev@gmail.com'
  */
 ?>
-<div class="col-10 center-margin">
-  <?php  print drupal_render_children($form); ?>
+<div class="col-8 center-margin clearfix">
+  <?php print drupal_render_children($form); ?>
+  <?php //krumo($form); ?>
+  <?php //print render($form['title']); ?>
 </div>

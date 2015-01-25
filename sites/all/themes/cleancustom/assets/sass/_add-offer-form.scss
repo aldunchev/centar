@@ -1,0 +1,28 @@
+.node-offer-form {
+  padding-bottom: 40px;
+  label {
+    @extend  %fl-left-ext;
+    @extend %col-3-ext;
+    text-align: right;
+  }
+  input[type="text"],
+  .form-textarea-wrapper {
+    @extend %col-8-ext;
+    @extend  %fl-right-ext;
+  }
+  .field-name-body {
+    @extend %clearfix-ext;
+  }
+  input[type="text"] {
+    height: 30px;
+  }
+  select {
+    display: inline-block;
+  }
+  .field-name-field-address {
+    clear: both;
+  }
+  .form-actions {
+    clear: both;
+  }
+}

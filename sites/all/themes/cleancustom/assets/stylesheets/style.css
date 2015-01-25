@@ -70,17 +70,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 1, ../sass/_reset.scss */
 a {
   text-decoration: none;
+  outline: none;
 }
 
-/* line 4, ../sass/_reset.scss */
+/* line 5, ../sass/_reset.scss */
 input[type="submit"],
 input[type="text"],
-input[type="password"] {
+input[type="password"],
+textarea,
+select {
   border: 0;
   padding: 0;
+  outline: none;
 }
 
-/* line 11, ../sass/_reset.scss */
+/* line 15, ../sass/_reset.scss */
 header,
 footer,
 article {
@@ -126,7 +130,9 @@ article {
 /* line 1, ../sass/_extends.scss */
 input[type="submit"],
 input[type="text"],
-input[type="password"], div, [class*="col"] {
+input[type="password"],
+textarea,
+select, div, [class*="col"] {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -143,13 +149,21 @@ a, .main-nav a {
 }
 
 /* line 18, ../sass/_extends.scss */
-.block-user, .block-user .form-item, .block-user .form-actions, .help-menu li, .block-menu li {
+.block-user, .block-user .form-item, .block-user .form-actions, .help-menu li, .block-menu li, .node-offer-form label {
   float: left;
 }
 
 /* line 21, ../sass/_extends.scss */
-.motto-logo p {
+.motto-logo p, .node-offer-form input[type="text"],
+.node-offer-form .form-textarea-wrapper {
   float: right;
+}
+
+/* line 24, ../sass/_extends.scss */
+.form-item:after, .node-offer-form .field-name-body:after {
+  content: ' ';
+  display: block;
+  clear: both;
 }
 
 /* line 29, ../sass/_extends.scss */
@@ -262,6 +276,17 @@ a, .main-nav a {
   width: 8.33%;
 }
 
+/* line 59, ../sass/_layout.scss */
+.node-offer-form input[type="text"],
+.node-offer-form .form-textarea-wrapper {
+  width: 66.66%;
+}
+
+/* line 65, ../sass/_layout.scss */
+.node-offer-form label {
+  width: 25%;
+}
+
 /* line 1, ../sass/_common.scss */
 .fl-left {
   float: left;
@@ -313,6 +338,14 @@ body {
 /* line 33, ../sass/_common.scss */
 body #admin-menu {
   font-size: 14px;
+}
+
+/*#main-content {
+  background: $light-gray;
+}*/
+/* line 40, ../sass/_common.scss */
+.main {
+  background: #fff;
 }
 
 @font-face {
@@ -498,36 +531,38 @@ h6 {
 
 /* line 1, ../sass/_main-footer.scss */
 .main-footer {
+  padding-top: 20px;
   text-align: center;
+  border-top: 1px solid #fafafa;
 }
 
-/* line 4, ../sass/_main-footer.scss */
+/* line 6, ../sass/_main-footer.scss */
 .motto-logo,
 .block-menu {
   display: inline-block;
 }
 
-/* line 8, ../sass/_main-footer.scss */
+/* line 10, ../sass/_main-footer.scss */
 .block-menu {
   padding: 10px 20px;
   background: #95989a;
   border-radius: 7px;
 }
-/* line 12, ../sass/_main-footer.scss */
+/* line 14, ../sass/_main-footer.scss */
 .block-menu li {
   margin-right: 10px;
   border-right: 1px solid #fff;
 }
-/* line 16, ../sass/_main-footer.scss */
+/* line 18, ../sass/_main-footer.scss */
 .block-menu li:last-child {
   margin-right: 0;
   border-right: 0 none;
 }
-/* line 19, ../sass/_main-footer.scss */
+/* line 21, ../sass/_main-footer.scss */
 .block-menu li:last-child a {
   margin-right: 0;
 }
-/* line 24, ../sass/_main-footer.scss */
+/* line 26, ../sass/_main-footer.scss */
 .block-menu a {
   margin-right: 10px;
   text-transform: uppercase;
@@ -535,16 +570,16 @@ h6 {
   color: #fff;
 }
 
-/* line 31, ../sass/_main-footer.scss */
+/* line 33, ../sass/_main-footer.scss */
 .motto-logo {
   min-width: 340px;
 }
-/* line 34, ../sass/_main-footer.scss */
+/* line 36, ../sass/_main-footer.scss */
 .motto-logo .logo img {
   width: 60px;
   height: auto;
 }
-/* line 39, ../sass/_main-footer.scss */
+/* line 41, ../sass/_main-footer.scss */
 .motto-logo p {
   line-height: 2.4;
   font-size: 12px;
@@ -566,14 +601,64 @@ span.form-required {
   cursor: pointer;
 }
 
-/* line 12, ../sass/_forms.scss */
-.form-item input[type="text"],
-.form-item input[type="password"] {
+/* line 11, ../sass/_forms.scss */
+label {
+  line-height: 1.5;
+  color: #888b8e;
+}
+/* line 14, ../sass/_forms.scss */
+label.compact-form-label {
+  font-size: 12px;
+}
+
+/* line 18, ../sass/_forms.scss */
+input[type="text"],
+input[type="password"],
+textarea,
+select {
   padding: 2px 0;
   background: #fff;
-  border: 1px solid #afb1b3;
+  border: 2px solid #c9cbcc;
+  box-shadow: 0 0 2px #afb1b3;
 }
-/* line 18, ../sass/_forms.scss */
-.form-item label {
-  line-height: 1.3;
+
+/* line 27, ../sass/_forms.scss */
+.form-item {
+  margin-bottom: 10px;
+}
+
+/* line 31, ../sass/_forms.scss */
+select {
+  background: #fafafa;
+}
+
+/* line 34, ../sass/_forms.scss */
+textarea {
+  width: 100%;
+  resize: none;
+}
+
+/* line 1, ../sass/_add-offer-form.scss */
+.node-offer-form {
+  padding-bottom: 40px;
+}
+/* line 3, ../sass/_add-offer-form.scss */
+.node-offer-form label {
+  text-align: right;
+}
+/* line 16, ../sass/_add-offer-form.scss */
+.node-offer-form input[type="text"] {
+  height: 30px;
+}
+/* line 19, ../sass/_add-offer-form.scss */
+.node-offer-form select {
+  display: inline-block;
+}
+/* line 22, ../sass/_add-offer-form.scss */
+.node-offer-form .field-name-field-address {
+  clear: both;
+}
+/* line 25, ../sass/_add-offer-form.scss */
+.node-offer-form .form-actions {
+  clear: both;
 }
