@@ -1,0 +1,12 @@
+name = Centar Translations
+description = Feature for translations.
+core = 7.x
+package = Features
+version = 7.x-1.0
+project = centar_translations
+dependencies[] = features
+dependencies[] = locale
+features[features_api][] = api:2
+features[language][] = bg
+features[language][] = en
+project path = sites/all/modules/features
