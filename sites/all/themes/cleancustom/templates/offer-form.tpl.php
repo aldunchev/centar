@@ -5,8 +5,11 @@
  * @email 'aldunchev@gmail.com'
  */
 ?>
-<div class="col-8 center-margin clearfix">
-  <?php print drupal_render_children($form); ?>
-  <?php //krumo($form); ?>
-  <?php //print render($form['title']); ?>
-</div>
+<section>
+  <div class="heading-wrapper">
+    <h1><?php print t('Add Offer'); ?></h1>
+  </div>
+  <div class="col-6 clearfix center-margin">
+    <?php print drupal_render_children($form); ?>
+  </div>
+</section>

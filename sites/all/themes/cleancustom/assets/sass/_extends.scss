@@ -28,13 +28,16 @@
 }
 %primary-btn-ext {
   padding: 10px 20px;
-  font-size: $text-22;
+  font-size: $text-16;
   text-transform: uppercase;
   color: $black;
   border-radius: 20px;
   background: $gold;
+  @extend %transition;
   &:hover {
-    font-size: 23px;
+    color: $white;
+    background-color: $light-blue;
+    text-decoration: none;
   }
 }
 %round {

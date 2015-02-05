@@ -3,16 +3,19 @@ span.form-required {
 }
 .form-actions {
   cursor: pointer;
-  input {
-    background-color: $gold;
-    cursor: pointer;
-  }
 }
-label {
-  line-height: 1.5;
+input[type="submit"] {
+  @extend %primary-btn-ext;
+  cursor: pointer;
+}
+label,
+.fieldset-legend {
+  padding-left: 10px;
+  line-height: 2;
+  font-size: $text-14;
   color: darken($gray, 15%);
   &.compact-form-label {
-    font-size: $text-12;
+    font-size: $text-14;
   }
 }
 input[type="text"],
@@ -24,14 +27,72 @@ select {
   border: 2px solid lighten($gray, 10%);
   @include box-shadow('0 0 2px #afb1b3');
 }
+.form-wrapper,
+.compact-form-wrapper {
+  margin-bottom: 20px;
+}
 .form-item {
-  margin-bottom: 10px;
+  width: 100%;
   @extend %clearfix-ext;
+  input[type="text"] {
+    width: 100%;
+  }
+}
+.hierarchical-select-wrapper .hierarchical-select .selects {
+  float: none;
+  select {
+    margin: 0;
+    &:first-child {
+      margin-right: 2%;
+    }
+  }
 }
 select {
-  background: $light-gray;
+  width: 49%;
+  cursor: pointer;
+}
+.form-type-select {
+  label {
+    display: block;
+  }
 }
 textarea {
   width: 100%;
   resize: none;
+}
+.image-widget-data {
+  position: relative;
+}
+input[type="file"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 117px;
+  height: 36px;
+  opacity: 0;
+  cursor: pointer;
+}
+.customUploadBtn {
+  color: $white;
+  background: $light-blue;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.customUploadBtn,
+.fileName {
+  display: inline-block;
+  margin-right: 20px;
+  padding: 10px;
+  @include border-radius(20px);
+  cursor: pointer;
+}
+.fileName {
+  border: 1px solid $gray;
+}
+.field-name-field-offer-images {
+  margin: 20px 0;
+  padding: 10px 0;
+  border-top: 1px solid darken($light-gray, 5%);
+  border-bottom: 1px solid darken($light-gray, 5%);
 }

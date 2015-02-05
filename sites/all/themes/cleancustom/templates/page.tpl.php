@@ -77,14 +77,16 @@
   <div class="content container clearfix">
     <div class="clearfix">
       <?php if($page['header']) : ?>
-        <?php  
-          print l(t('login/register'), 'user/simple-fb-connect',
-            array(
-              'attributes' => array(
-                'class' => array('fa fa-facebook fl-left')
-              ),
-            ) 
-          );
+        <?php
+          if (!$logged_in) {
+            print l(t('login/register'), 'user/simple-fb-connect',
+              array(
+                'attributes' => array(
+                  'class' => array('fa fa-facebook fl-left')
+                ),
+              ) 
+            );
+          }  
         ?>
         <?php print render($page['header']); ?>
       <?php endif; ?>
@@ -122,6 +124,13 @@
     </div>
   </div>
 </header>
+
+<?php if ($messages): ?>
+  <div id="messages">
+    <?php print $messages; ?>
+  </div><!-- /#messages -->
+<?php endif; ?>
+
 <section id="main-content" role="main">
   <div class="container main">
     <?php if($page['featured']) : ?>

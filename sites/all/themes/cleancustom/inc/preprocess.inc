@@ -12,16 +12,11 @@ function cleancustom_preprocess_page(&$variables) {
 }
 
 /**
-* Implements hook_preprocess_page().
+* Implements hook_preprocess_node().
 */
 
 function cleancustom_preprocess_node(&$variables) {
-  $node_type = $variables['type'];
-  if ($node_type == 'product_display') {
-    libraries_load('flexslider');
-    //drupal_add_css(drupal_get_path('theme', 'cleancustom') . '/assets/scripts/mfp/mfp.css');
-    drupal_add_js(drupal_get_path('theme', 'cleancustom') . '/assets/scripts/ddpowerzoomer.js');
-  }
+  
 }
 
 /**
@@ -29,9 +24,7 @@ function cleancustom_preprocess_node(&$variables) {
 */
 
 function cleancustom_preprocess_region(&$variables) {
-  if ($variables['region'] == 'header') {
-      // $variables['classes_array'][] = 'col-4 fl-left';
-  }
+
 }
 
 /**

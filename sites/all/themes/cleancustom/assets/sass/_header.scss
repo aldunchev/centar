@@ -24,26 +24,51 @@
   @extend %fl-left-ext;
   margin-left: 10px;
   .form-item {
+    width: auto;
     @extend %fl-left-ext;
     margin-right: 10px;
+    input[type="text"],
+    input[type="password"] {
+      width: 190px;
+      height: 25px;      
+    }
+  }
+  .form-wrapper,
+  .compact-form-wrapper {
+    margin-bottom: 0;
+  }
+  label {
+    font-size: $text-12;
+    line-height: 1.5;
   }
   .form-actions {
     position: relative;
+    top: 2px;
     @extend %fl-left-ext;
     input {
       display: block;
       width: 20px;
       height: 20px;
+      padding: 0;
       text-indent: -9999em;
       @extend %round;
+      background-image: url('../images/arrow-small.png');
+      background-repeat: no-repeat;
+      background-size: 60% auto;
+      background-position: center;
     }
   }
   .form-item-remember-me {
     font-size: 12px;
+    line-height: 2;
+    input {
+      position: relative;
+      top: 2px;
+    }
   }
 }
 .fa-facebook {
-  padding: 4px 4px 4px 5px;
+  padding: 6px 4px 6px 5px;
   font-size: 11px;
   font-family: 'Roboto';
   color: $white;
@@ -56,13 +81,14 @@
   }
 }
 .logo {
-  margin-top: 5px;
+  margin: 10px 0;
   img {
     max-width: 200px;
     height: auto;
   }
 }
-.help-menu {
+.help-menu,
+#block-system-user-menu {
   li {
     @extend %fl-left-ext;
     margin-right: 5px;
@@ -81,7 +107,15 @@
   }
 }
 .add-offer-link {
-  margin-top: 5px;
+  margin-top: 10px;
+  padding-left: 40px;
+  background-image: url('../images/arrow-small.png');
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  font-size: 20px;
+  &:hover {
+    font-size: 22px;
+  }
 }
 .motto {
   margin-top: 10px;

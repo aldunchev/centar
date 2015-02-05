@@ -2,37 +2,38 @@
   padding-top: 20px;
   text-align: center;
   border-top: 1px solid $light-gray;
-}
-.motto-logo,
-.block-menu {
-  display: inline-block;
-}
-.block-menu {
-  padding: 10px 20px;
-  background: darken($gray, 10%);
-  border-radius: 7px;
-  li {
-    @extend %fl-left-ext;
-    margin-right: 10px;
-    border-right: 1px solid $white;
-    &:last-child {
-      margin-right: 0;
-      border-right: 0 none;
-      a {
+  .block-menu {
+    display: inline-block;
+    padding: 10px 20px;
+    background: darken($gray, 10%);
+    border-radius: 7px;
+    li {
+      @extend %fl-left-ext;
+      margin-right: 10px;
+      border-right: 1px solid $white;
+      &:last-child {
         margin-right: 0;
+        border-right: 0 none;
+        a {
+          margin-right: 0;
+        }
       }
     }
+    a {
+      margin-right: 10px;
+      text-transform: uppercase;
+      font-size: $text-14;
+      color: $white;
+    }
   }
-  a {
-    margin-right: 10px;
-    text-transform: uppercase;
-    font-size: $text-14;
-    color: $white;
-  }
+}
+.motto-logo {
+  display: inline-block;
 }
 .motto-logo {
   min-width: 340px;
   .logo {
+    margin-top: 5px;
     img {
       width: 60px;
       height: auto;

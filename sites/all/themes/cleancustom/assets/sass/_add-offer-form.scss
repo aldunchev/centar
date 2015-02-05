@@ -1,28 +1,39 @@
 .node-offer-form {
   padding-bottom: 40px;
-  label {
-    @extend  %fl-left-ext;
-    @extend %col-3-ext;
-    text-align: right;
-  }
-  input[type="text"],
-  .form-textarea-wrapper {
-    @extend %col-8-ext;
-    @extend  %fl-right-ext;
-  }
   .field-name-body {
     @extend %clearfix-ext;
   }
   input[type="text"] {
     height: 30px;
   }
-  select {
-    display: inline-block;
+  .heading-wrapper {
+    margin-bottom: 40px;
+    border-bottom: 1px solid darken($light-gray, 10%);
+    text-align: center;
+    h1 {
+      display: inline-block;
+    }
   }
   .field-name-field-address {
-    clear: both;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid darken($light-gray, 5%);
   }
-  .form-actions {
-    clear: both;
+  .field-name-field-telephone-number {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid darken($light-gray, 5%);
+    .compact-form-wrapper {
+      margin-bottom: 0;
+    }
+  }
+  .field-name-field-offer-category {
+    border-bottom: 1px solid darken($light-gray, 5%);
+    padding-bottom: 20px;
+  }
+  .tabledrag-toggle-weight-wrapper,
+  .sticky-table thead,
+  .sticky-table .image-widget-data {
+    display: none;
   }
 }

@@ -9,8 +9,9 @@ function cleancustom_form_alter(&$form, &$form_state, $form_id) {
     unset($form['links']);
   }
   if ($form_id == 'offer_node_form') {
-    unset($form['field_offer_images']['und']['#file_upload_description']);
+    $form['field_offer_images']['und']['#file_upload_description'] = '';
     unset($form['actions']['preview']);
-    //krumo($form);
+    $form['body']['und'][0]['value']['#rows'] = 10;
+    $form['field_offer_images']['und']['#file_upload_title'] = '';
   }
 }

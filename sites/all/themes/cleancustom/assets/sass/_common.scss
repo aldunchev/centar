@@ -34,12 +34,15 @@ body {
     font-size: $text-14;
   }
 }
-/*#main-content {
-  background: $light-gray;
-}*/
 .main {
   background: $white;
 }
 .primary-btn {
-  @extend %primary-btn-ext
+  @extend %primary-btn-ext;
+}
+#messages {
+  margin-top: 50px;
+}
+h1 {
+  margin-bottom: 20px;
 }
