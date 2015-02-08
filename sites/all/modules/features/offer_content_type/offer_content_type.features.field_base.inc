@@ -98,7 +98,7 @@ function offer_content_type_field_default_field_bases() {
           'depth' => '',
         ),
       ),
-      'options_list_callback' => 'content_taxonomy_allowed_values',
+      'options_list_callback' => 'i18n_taxonomy_allowed_values',
     ),
     'translatable' => 0,
     'type' => 'taxonomy_term_reference',

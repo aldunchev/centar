@@ -17,6 +17,14 @@ function centar_translations_translations_defaults() {
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['bg:default']['3684f4f667e411f1c8f94b231c14bce9'] = array(
+    'source' => '« first',
+    'context' => '',
+    'location' => '/admin/config/regional/translate/translate',
+    'translation' => '« първа',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['bg:default']['3b5aaf9cdd0b15effb9e8da5530e19f0'] = array(
     'source' => 'minimum cost - maximum comfort',
     'context' => '',
@@ -65,6 +73,14 @@ function centar_translations_translations_defaults() {
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['bg:default']['9bab2cb29e9f41ed2af0cd476eb272f6'] = array(
+    'source' => '‹ previous',
+    'context' => '',
+    'location' => '/admin/config/regional/translate/translate',
+    'translation' => '‹ предишна',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['bg:default']['c9bfdbcecd5ba2b1555dd41dc7350f69'] = array(
     'source' => 'add offer',
     'context' => '',
@@ -86,6 +102,22 @@ function centar_translations_translations_defaults() {
     'context' => '',
     'location' => '/admin/config/regional/language',
     'translation' => 'Профил',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['bg:default']['e9323001f37eb444d27cbb02717a8053'] = array(
+    'source' => 'next ›',
+    'context' => '',
+    'location' => '/admin/config/regional/translate/translate',
+    'translation' => 'следваща › ',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['bg:default']['ea84bf7e44b4033f0c35cc6bc032468d'] = array(
+    'source' => 'last »',
+    'context' => '',
+    'location' => '/admin/config/regional/translate/translate',
+    'translation' => 'последна » ',
     'plid' => 0,
     'plural' => 0,
   );

@@ -132,7 +132,7 @@
 <?php endif; ?>
 
 <section id="main-content" role="main">
-  <div class="container main">
+  <div class="container main clearfix">
     <?php if($page['featured']) : ?>
       <?php print render($page['featured']); ?>
     <?php endif; ?>

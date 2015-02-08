@@ -1,0 +1,29 @@
+.pane-views-offer-listing-block {
+ .pane-title {
+  margin-top: 20px;
+ }
+}
+
+.view-offer-listing {
+  .view-content {
+    @extend %clearfix-ext;
+  }
+  .views-row {
+    margin-bottom: 30px;
+    padding: 0 15px;
+  }
+  .views-field-field-offer-images {
+    padding-top: 3px;
+    text-align: center;
+    border: solid lighten($gray, 10%);
+    border-width: 1px 1px 0 1px;
+    img {
+      @include border-radius(3px);
+    }
+  }
+  .views-field-title {
+    padding: 5px 3px 10px;
+    border: solid lighten($gray, 10%);
+    border-width: 0 1px 1px 1px;
+  }
+}

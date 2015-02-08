@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Offer Listing Feature feature.
+ */
+
+include_once 'offer_listing_feature.features.inc';

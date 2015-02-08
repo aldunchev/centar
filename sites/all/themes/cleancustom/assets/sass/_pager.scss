@@ -1,0 +1,9 @@
+.pager {
+  text-align: center;
+  li {
+    display: inline-block;
+  }
+  .pager-current {
+    text-decoration: underline;
+  }
+}

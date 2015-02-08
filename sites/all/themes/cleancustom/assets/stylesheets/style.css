@@ -165,7 +165,7 @@ div, [class*="col"] {
 }
 
 /* line 24, ../sass/_extends.scss */
-.form-item:after, .node-offer-form .field-name-body:after {
+.form-item:after, .node-offer-form .field-name-body:after, .view-offer-listing .view-content:after {
   content: ' ';
   display: block;
   clear: both;
@@ -223,62 +223,67 @@ div, [class*="col"] {
   margin-right: -15px;
 }
 
-/* line 22, ../sass/_layout.scss */
+/* line 19, ../sass/_layout.scss */
+.sidebar-left {
+  padding-right: 15px;
+}
+
+/* line 25, ../sass/_layout.scss */
 .col-12 {
   width: 100%;
 }
 
-/* line 25, ../sass/_layout.scss */
+/* line 28, ../sass/_layout.scss */
 .col-11 {
   width: 91.66%;
 }
 
-/* line 28, ../sass/_layout.scss */
+/* line 31, ../sass/_layout.scss */
 .col-10 {
   width: 83.33%;
 }
 
-/* line 31, ../sass/_layout.scss */
+/* line 34, ../sass/_layout.scss */
 .col-9 {
   width: 75%;
 }
 
-/* line 34, ../sass/_layout.scss */
+/* line 37, ../sass/_layout.scss */
 .col-8 {
   width: 66.66%;
 }
 
-/* line 37, ../sass/_layout.scss */
+/* line 40, ../sass/_layout.scss */
 .col-7 {
   width: 58.33%;
 }
 
-/* line 40, ../sass/_layout.scss */
+/* line 43, ../sass/_layout.scss */
 .col-6 {
   width: 50%;
 }
 
-/* line 43, ../sass/_layout.scss */
+/* line 46, ../sass/_layout.scss */
 .col-5 {
   width: 41.66%;
 }
 
-/* line 46, ../sass/_layout.scss */
+/* line 49, ../sass/_layout.scss */
 .col-4 {
   width: 33.33%;
 }
 
-/* line 49, ../sass/_layout.scss */
+/* line 52, ../sass/_layout.scss */
 .col-3 {
   width: 25%;
 }
 
-/* line 52, ../sass/_layout.scss */
+/* line 55, ../sass/_layout.scss */
 .col-2 {
   width: 16.66%;
 }
 
-/* line 55, ../sass/_layout.scss */
+/* line 58, ../sass/_layout.scss */
 .col-1 {
   width: 8.33%;
 }
@@ -329,26 +334,35 @@ a:hover {
 
 /* line 31, ../sass/_common.scss */
 body {
+  font-size: 16px;
+  line-height: 1.2;
   color: #050800;
 }
-/* line 33, ../sass/_common.scss */
+/* line 35, ../sass/_common.scss */
 body #admin-menu {
   font-size: 14px;
 }
 
-/* line 37, ../sass/_common.scss */
+/* line 39, ../sass/_common.scss */
 .main {
+  margin-bottom: 60px;
   background: #fff;
 }
 
-/* line 43, ../sass/_common.scss */
+/* line 46, ../sass/_common.scss */
 #messages {
   margin-top: 50px;
 }
 
-/* line 46, ../sass/_common.scss */
+/* line 49, ../sass/_common.scss */
 h1 {
   margin-bottom: 20px;
+}
+
+/* line 52, ../sass/_common.scss */
+h2.pane-title {
+  margin-bottom: 10px;
+  padding: 5px;
 }
 
 @font-face {
@@ -578,30 +592,31 @@ h6 {
 .main-footer {
   padding-top: 20px;
   text-align: center;
-  border-top: 1px solid #fafafa;
+  border-top: 1px solid #afb1b3;
+  clear: both;
 }
-/* line 5, ../sass/_main-footer.scss */
+/* line 6, ../sass/_main-footer.scss */
 .main-footer .block-menu {
   display: inline-block;
   padding: 10px 20px;
   background: #95989a;
   border-radius: 7px;
 }
-/* line 10, ../sass/_main-footer.scss */
+/* line 11, ../sass/_main-footer.scss */
 .main-footer .block-menu li {
   margin-right: 10px;
   border-right: 1px solid #fff;
 }
-/* line 14, ../sass/_main-footer.scss */
+/* line 15, ../sass/_main-footer.scss */
 .main-footer .block-menu li:last-child {
   margin-right: 0;
   border-right: 0 none;
 }
-/* line 17, ../sass/_main-footer.scss */
+/* line 18, ../sass/_main-footer.scss */
 .main-footer .block-menu li:last-child a {
   margin-right: 0;
 }
-/* line 22, ../sass/_main-footer.scss */
+/* line 23, ../sass/_main-footer.scss */
 .main-footer .block-menu a {
   margin-right: 10px;
   text-transform: uppercase;
@@ -609,25 +624,25 @@ h6 {
   color: #fff;
 }
 
-/* line 30, ../sass/_main-footer.scss */
+/* line 31, ../sass/_main-footer.scss */
 .motto-logo {
   display: inline-block;
 }
 
-/* line 33, ../sass/_main-footer.scss */
+/* line 34, ../sass/_main-footer.scss */
 .motto-logo {
   min-width: 340px;
 }
-/* line 35, ../sass/_main-footer.scss */
+/* line 36, ../sass/_main-footer.scss */
 .motto-logo .logo {
   margin-top: 5px;
 }
-/* line 37, ../sass/_main-footer.scss */
+/* line 38, ../sass/_main-footer.scss */
 .motto-logo .logo img {
   width: 60px;
   height: auto;
 }
-/* line 42, ../sass/_main-footer.scss */
+/* line 43, ../sass/_main-footer.scss */
 .motto-logo p {
   line-height: 2.4;
   font-size: 12px;
@@ -666,65 +681,71 @@ label.compact-form-label,
 /* line 21, ../sass/_forms.scss */
 input[type="text"],
 input[type="password"],
+textarea {
+  padding-left: 12px;
+}
+
+/* line 26, ../sass/_forms.scss */
+input[type="text"],
+input[type="password"],
 textarea,
 select {
-  padding: 2px 0;
   background: #fff;
   border: 2px solid #c9cbcc;
   box-shadow: 0 0 2px #afb1b3;
 }
 
-/* line 30, ../sass/_forms.scss */
+/* line 34, ../sass/_forms.scss */
 .form-wrapper,
 .compact-form-wrapper {
   margin-bottom: 20px;
 }
 
-/* line 34, ../sass/_forms.scss */
+/* line 38, ../sass/_forms.scss */
 .form-item {
   width: 100%;
 }
-/* line 37, ../sass/_forms.scss */
+/* line 41, ../sass/_forms.scss */
 .form-item input[type="text"] {
   width: 100%;
 }
 
-/* line 41, ../sass/_forms.scss */
+/* line 45, ../sass/_forms.scss */
 .hierarchical-select-wrapper .hierarchical-select .selects {
   float: none;
 }
-/* line 43, ../sass/_forms.scss */
+/* line 47, ../sass/_forms.scss */
 .hierarchical-select-wrapper .hierarchical-select .selects select {
   margin: 0;
 }
-/* line 45, ../sass/_forms.scss */
+/* line 49, ../sass/_forms.scss */
 .hierarchical-select-wrapper .hierarchical-select .selects select:first-child {
   margin-right: 2%;
 }
 
-/* line 50, ../sass/_forms.scss */
+/* line 54, ../sass/_forms.scss */
 select {
   width: 49%;
   cursor: pointer;
 }
 
-/* line 55, ../sass/_forms.scss */
+/* line 59, ../sass/_forms.scss */
 .form-type-select label {
   display: block;
 }
 
-/* line 59, ../sass/_forms.scss */
+/* line 63, ../sass/_forms.scss */
 textarea {
   width: 100%;
   resize: none;
 }
 
-/* line 63, ../sass/_forms.scss */
+/* line 67, ../sass/_forms.scss */
 .image-widget-data {
   position: relative;
 }
 
-/* line 66, ../sass/_forms.scss */
+/* line 70, ../sass/_forms.scss */
 input[type="file"] {
   position: absolute;
   top: 0;
@@ -735,17 +756,17 @@ input[type="file"] {
   cursor: pointer;
 }
 
-/* line 75, ../sass/_forms.scss */
+/* line 79, ../sass/_forms.scss */
 .customUploadBtn {
   color: #fff;
   background: #35AFBA;
 }
-/* line 78, ../sass/_forms.scss */
+/* line 82, ../sass/_forms.scss */
 .customUploadBtn:hover {
   text-decoration: underline;
 }
 
-/* line 82, ../sass/_forms.scss */
+/* line 86, ../sass/_forms.scss */
 .customUploadBtn,
 .fileName {
   display: inline-block;
@@ -755,12 +776,12 @@ input[type="file"] {
   cursor: pointer;
 }
 
-/* line 90, ../sass/_forms.scss */
+/* line 94, ../sass/_forms.scss */
 .fileName {
   border: 1px solid #afb1b3;
 }
 
-/* line 93, ../sass/_forms.scss */
+/* line 97, ../sass/_forms.scss */
 .field-name-field-offer-images {
   margin: 20px 0;
   padding: 10px 0;
@@ -812,4 +833,78 @@ input[type="file"] {
 .node-offer-form .sticky-table thead,
 .node-offer-form .sticky-table .image-widget-data {
   display: none;
+}
+
+/* line 2, ../sass/_offer-listing.scss */
+.pane-views-offer-listing-block .pane-title {
+  margin-top: 20px;
+}
+
+/* line 11, ../sass/_offer-listing.scss */
+.view-offer-listing .views-row {
+  margin-bottom: 30px;
+  padding: 0 15px;
+}
+/* line 15, ../sass/_offer-listing.scss */
+.view-offer-listing .views-field-field-offer-images {
+  padding-top: 3px;
+  text-align: center;
+  border: solid #c9cbcc;
+  border-width: 1px 1px 0 1px;
+}
+/* line 20, ../sass/_offer-listing.scss */
+.view-offer-listing .views-field-field-offer-images img {
+  border-radius: 3px;
+}
+/* line 24, ../sass/_offer-listing.scss */
+.view-offer-listing .views-field-title {
+  padding: 5px 3px 10px;
+  border: solid #c9cbcc;
+  border-width: 0 1px 1px 1px;
+}
+
+/* line 1, ../sass/_terms_block.scss */
+.terms-block {
+  padding: 20px;
+  background: #d6d7d8;
+}
+/* line 4, ../sass/_terms_block.scss */
+.terms-block .pane-title {
+  text-align: center;
+  color: #fff;
+  background: #95989a;
+}
+/* line 9, ../sass/_terms_block.scss */
+.terms-block a {
+  color: #888b8e;
+}
+/* line 13, ../sass/_terms_block.scss */
+.terms-block .pane-content > ul > .first > a {
+  text-transform: uppercase;
+}
+/* line 16, ../sass/_terms_block.scss */
+.terms-block .pane-content > ul > li {
+  margin-bottom: 20px;
+}
+/* line 18, ../sass/_terms_block.scss */
+.terms-block .pane-content > ul > li > a {
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  font-weight: bold;
+  border-bottom: 2px solid #888b8e;
+}
+
+/* line 1, ../sass/_pager.scss */
+.pager {
+  text-align: center;
+}
+/* line 3, ../sass/_pager.scss */
+.pager li {
+  display: inline-block;
+}
+/* line 6, ../sass/_pager.scss */
+.pager .pager-current {
+  text-decoration: underline;
 }

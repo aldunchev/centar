@@ -1,0 +1,28 @@
+.terms-block {
+  padding: 20px;
+  background: lighten($gray, 15%);
+  .pane-title {
+    text-align: center;
+    color: $white;
+    background: darken($gray, 10%);
+  }
+  a {
+    color: darken($gray, 15%);
+  }
+  .pane-content > ul {
+    & > .first > a {
+      text-transform: uppercase;
+    }
+    & > li {
+      margin-bottom: 20px;
+      &  > a {
+        display: block;
+        width: 100%;
+        margin-bottom: 5px;
+        padding-bottom: 5px;
+        font-weight: bold;
+        border-bottom: 2px solid darken($gray, 15%);
+      }
+    }
+  }
+}

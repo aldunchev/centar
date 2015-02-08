@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Center Panels feature.
+ */
+
+include_once 'center_panels.features.inc';
