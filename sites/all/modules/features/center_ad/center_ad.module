@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Center Ad feature.
+ */
+
+include_once 'center_ad.features.inc';

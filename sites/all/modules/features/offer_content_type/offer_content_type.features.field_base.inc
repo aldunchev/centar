@@ -150,7 +150,12 @@ function offer_content_type_field_default_field_bases() {
     'locked' => 0,
     'module' => 'list',
     'settings' => array(
-      'allowed_values' => array(),
+      'allowed_values' => array(
+        'София' => 'София',
+        'Плевен' => 'Плевен',
+        'Варна' => 'Варна',
+        'Бургас' => 'Бургас',
+      ),
       'allowed_values_function' => '',
     ),
     'translatable' => 0,

@@ -73,7 +73,6 @@
  */
 ?>
 <header role="banner" class="main-header">
-  <div class="header-bg"></div>
   <div class="content container clearfix">
     <div class="clearfix">
       <?php if($page['header']) : ?>
@@ -117,9 +116,8 @@
     ?>
     </div>
   </div><!-- end .container -->
-  <div class="motto">
+  <div class="motto container">
     <div class="container clearfix">
-      <?php print l(t('www.center.com'), '<front>', array('attributes' => array('class' => array('fl-left')))); ?>
       <p><?php print t('minimum cost - maximum comfort'); ?></p>
     </div>
   </div>

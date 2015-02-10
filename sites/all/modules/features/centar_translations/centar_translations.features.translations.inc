@@ -57,6 +57,14 @@ function centar_translations_translations_defaults() {
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['bg:default']['878530871f0db73f004f5bd6591eeb76'] = array(
+    'source' => 'Remember me',
+    'context' => '',
+    'location' => '/',
+    'translation' => 'Запомни ме',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['bg:default']['91412465ea9169dfd901dd5e7c96dd99'] = array(
     'source' => 'Upload',
     'context' => '',

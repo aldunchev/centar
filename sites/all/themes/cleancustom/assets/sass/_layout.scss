@@ -8,16 +8,16 @@
   @include breakpoint(large) {
     width: $container-large;
   }
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin: 0 auto;
 }
 .row {
-  margin-left: -15px;
-  margin-right: -15px;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 .sidebar-left {
-  padding-right: 15px;
+  padding-right: 10px;
 }
 [class*="col"] {
   @extend %border-box;
