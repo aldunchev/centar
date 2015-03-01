@@ -162,6 +162,35 @@ function offer_content_type_field_default_field_bases() {
     'type' => 'list_text',
   );
 
+  // Exported field_base: 'field_offer_price'
+  $field_bases['field_offer_price'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_offer_price',
+    'foreign keys' => array(
+      'format' => array(
+        'columns' => array(
+          'format' => 'format',
+        ),
+        'table' => 'filter_format',
+      ),
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 255,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
+  );
+
   // Exported field_base: 'field_telephone_number'
   $field_bases['field_telephone_number'] = array(
     'active' => 1,

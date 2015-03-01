@@ -3,9 +3,6 @@
   .field-name-body {
     @extend %clearfix-ext;
   }
-  input[type="text"] {
-    height: 30px;
-  }
   .heading-wrapper {
     margin-bottom: 40px;
     border-bottom: 1px solid darken($light-gray, 10%);
@@ -13,6 +10,12 @@
     h1 {
       display: inline-block;
     }
+  }
+  .field-name-field-offer-images {
+    margin: 20px 0;
+    padding: 10px 0;
+    border-top: 1px solid darken($light-gray, 5%);
+    border-bottom: 1px solid darken($light-gray, 5%);
   }
   .field-name-field-address {
     margin-top: 20px;

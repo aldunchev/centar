@@ -38,6 +38,11 @@ select {
 .form-item {
   width: 100%;
   @extend %clearfix-ext;
+  input[type="text"],
+  select {
+    height: 30px;
+    margin-bottom: 10px;
+  }
   input[type="text"] {
     width: 100%;
   }
@@ -93,10 +98,4 @@ input[type="file"] {
 }
 .fileName {
   border: 1px solid $gray;
-}
-.field-name-field-offer-images {
-  margin: 20px 0;
-  padding: 10px 0;
-  border-top: 1px solid darken($light-gray, 5%);
-  border-bottom: 1px solid darken($light-gray, 5%);
 }

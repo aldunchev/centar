@@ -20,7 +20,7 @@ function offer_listing_feature_image_default_styles() {
   // Exported image style: offer_list.
   $styles['offer_list'] = array(
     'name' => 'offer_list',
-    'label' => 'Offer List',
+    'label' => 'Offer List 210x167',
     'effects' => array(
       1 => array(
         'label' => 'Scale and crop',

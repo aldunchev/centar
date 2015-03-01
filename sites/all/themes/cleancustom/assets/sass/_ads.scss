@@ -1,8 +1,14 @@
-.simplead-container {
+.simplead-container,
+.ad {
   img {
     max-width: 100%;
   }
 }
 .ad-medium {
   padding-left: 10px;
+}
+.col-full {
+  .ad-medium {
+    padding-right: 10px;
+  }
 }

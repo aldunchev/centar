@@ -149,13 +149,13 @@ div, [class*="col"] {
 }
 
 /* line 12, ../sass/_extends.scss */
-.primary-btn, input[type="submit"], a, .main-nav a {
+.primary-btn, input[type="submit"], .main-nav a {
   transition: all 0.4s ease;
 }
 
 /* line 18, ../sass/_extends.scss */
 .block-user, .block-user .form-item, .block-user .form-actions, .help-menu li,
-#block-system-user-menu li, .main-footer .block-menu li {
+#block-system-user-menu li, .main-footer .block-menu li, .block-search .form-item-search-block-form {
   float: left;
 }
 
@@ -288,6 +288,12 @@ div, [class*="col"] {
   width: 8.33%;
 }
 
+/* line 71, ../sass/_layout.scss */
+.col-full {
+  padding-top: 40px;
+  clear: both;
+}
+
 /* line 1, ../sass/_common.scss */
 .fl-left {
   float: left;
@@ -322,47 +328,53 @@ div, [class*="col"] {
 a {
   color: #0e2c4b;
 }
-/* line 24, ../sass/_common.scss */
+/* line 23, ../sass/_common.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 28, ../sass/_common.scss */
+/* line 27, ../sass/_common.scss */
 #main-content {
   margin-top: 40px;
 }
 
-/* line 31, ../sass/_common.scss */
+/* line 30, ../sass/_common.scss */
 body {
   font-size: 16px;
   line-height: 1.2;
   color: #050800;
 }
-/* line 35, ../sass/_common.scss */
+/* line 34, ../sass/_common.scss */
 body #admin-menu {
   font-size: 14px;
 }
 
-/* line 39, ../sass/_common.scss */
+/* line 38, ../sass/_common.scss */
 .main {
   margin-bottom: 60px;
   background: #fff;
 }
 
-/* line 46, ../sass/_common.scss */
+/* line 45, ../sass/_common.scss */
 #messages {
   margin-top: 50px;
 }
 
-/* line 49, ../sass/_common.scss */
+/* line 48, ../sass/_common.scss */
 h1 {
   margin-bottom: 20px;
 }
 
-/* line 52, ../sass/_common.scss */
+/* line 51, ../sass/_common.scss */
 h2.pane-title {
   margin-bottom: 10px;
   padding: 5px;
+}
+
+/* line 55, ../sass/_common.scss */
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 @font-face {
@@ -697,46 +709,52 @@ select {
   width: 100%;
 }
 /* line 41, ../sass/_forms.scss */
+.form-item input[type="text"],
+.form-item select {
+  height: 30px;
+  margin-bottom: 10px;
+}
+/* line 46, ../sass/_forms.scss */
 .form-item input[type="text"] {
   width: 100%;
 }
 
-/* line 45, ../sass/_forms.scss */
+/* line 50, ../sass/_forms.scss */
 .hierarchical-select-wrapper .hierarchical-select .selects {
   float: none;
 }
-/* line 47, ../sass/_forms.scss */
+/* line 52, ../sass/_forms.scss */
 .hierarchical-select-wrapper .hierarchical-select .selects select {
   margin: 0;
 }
-/* line 49, ../sass/_forms.scss */
+/* line 54, ../sass/_forms.scss */
 .hierarchical-select-wrapper .hierarchical-select .selects select:first-child {
   margin-right: 2%;
 }
 
-/* line 54, ../sass/_forms.scss */
+/* line 59, ../sass/_forms.scss */
 select {
   width: 49%;
   cursor: pointer;
 }
 
-/* line 59, ../sass/_forms.scss */
+/* line 64, ../sass/_forms.scss */
 .form-type-select label {
   display: block;
 }
 
-/* line 63, ../sass/_forms.scss */
+/* line 68, ../sass/_forms.scss */
 textarea {
   width: 100%;
   resize: none;
 }
 
-/* line 67, ../sass/_forms.scss */
+/* line 72, ../sass/_forms.scss */
 .image-widget-data {
   position: relative;
 }
 
-/* line 70, ../sass/_forms.scss */
+/* line 75, ../sass/_forms.scss */
 input[type="file"] {
   position: absolute;
   top: 0;
@@ -747,17 +765,17 @@ input[type="file"] {
   cursor: pointer;
 }
 
-/* line 79, ../sass/_forms.scss */
+/* line 84, ../sass/_forms.scss */
 .customUploadBtn {
   color: #fff;
   background: #35AFBA;
 }
-/* line 82, ../sass/_forms.scss */
+/* line 87, ../sass/_forms.scss */
 .customUploadBtn:hover {
   text-decoration: underline;
 }
 
-/* line 86, ../sass/_forms.scss */
+/* line 91, ../sass/_forms.scss */
 .customUploadBtn,
 .fileName {
   display: inline-block;
@@ -767,17 +785,9 @@ input[type="file"] {
   cursor: pointer;
 }
 
-/* line 94, ../sass/_forms.scss */
+/* line 99, ../sass/_forms.scss */
 .fileName {
   border: 1px solid #afb1b3;
-}
-
-/* line 97, ../sass/_forms.scss */
-.field-name-field-offer-images {
-  margin: 20px 0;
-  padding: 10px 0;
-  border-top: 1px solid #ededed;
-  border-bottom: 1px solid #ededed;
 }
 
 /* line 1, ../sass/_add-offer-form.scss */
@@ -785,41 +795,44 @@ input[type="file"] {
   padding-bottom: 40px;
 }
 /* line 6, ../sass/_add-offer-form.scss */
-.node-offer-form input[type="text"] {
-  height: 30px;
-}
-/* line 9, ../sass/_add-offer-form.scss */
 .node-offer-form .heading-wrapper {
   margin-bottom: 40px;
   border-bottom: 1px solid #e1e1e1;
   text-align: center;
 }
-/* line 13, ../sass/_add-offer-form.scss */
+/* line 10, ../sass/_add-offer-form.scss */
 .node-offer-form .heading-wrapper h1 {
   display: inline-block;
 }
-/* line 17, ../sass/_add-offer-form.scss */
+/* line 14, ../sass/_add-offer-form.scss */
+.node-offer-form .field-name-field-offer-images {
+  margin: 20px 0;
+  padding: 10px 0;
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+}
+/* line 20, ../sass/_add-offer-form.scss */
 .node-offer-form .field-name-field-address {
   margin-top: 20px;
   padding-top: 20px;
   border-top: 1px solid #ededed;
 }
-/* line 22, ../sass/_add-offer-form.scss */
+/* line 25, ../sass/_add-offer-form.scss */
 .node-offer-form .field-name-field-telephone-number {
   margin-bottom: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #ededed;
 }
-/* line 26, ../sass/_add-offer-form.scss */
+/* line 29, ../sass/_add-offer-form.scss */
 .node-offer-form .field-name-field-telephone-number .compact-form-wrapper {
   margin-bottom: 0;
 }
-/* line 30, ../sass/_add-offer-form.scss */
+/* line 33, ../sass/_add-offer-form.scss */
 .node-offer-form .field-name-field-offer-category {
   border-bottom: 1px solid #ededed;
   padding-bottom: 20px;
 }
-/* line 34, ../sass/_add-offer-form.scss */
+/* line 37, ../sass/_add-offer-form.scss */
 .node-offer-form .tabledrag-toggle-weight-wrapper,
 .node-offer-form .sticky-table thead,
 .node-offer-form .sticky-table .image-widget-data {
@@ -900,12 +913,33 @@ input[type="file"] {
   text-decoration: underline;
 }
 
-/* line 2, ../sass/_ads.scss */
-.simplead-container img {
+/* line 3, ../sass/_ads.scss */
+.simplead-container img,
+.ad img {
   max-width: 100%;
 }
 
-/* line 6, ../sass/_ads.scss */
+/* line 7, ../sass/_ads.scss */
 .ad-medium {
   padding-left: 10px;
+}
+
+/* line 11, ../sass/_ads.scss */
+.col-full .ad-medium {
+  padding-right: 10px;
+}
+
+/* line 2, ../sass/_search.scss */
+.block-search .form-item-search-block-form {
+  width: 50%;
+  margin-right: 10px;
+}
+/* line 6, ../sass/_search.scss */
+.block-search .form-item-search-block-form .form-text {
+  margin-top: 5px;
+}
+
+/* line 1, ../sass/_offer.scss */
+.pane-node-field-offer-images {
+  padding-right: 20px;
 }

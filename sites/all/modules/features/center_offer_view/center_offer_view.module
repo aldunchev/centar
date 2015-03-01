@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Center Offer View feature.
+ */
+
+include_once 'center_offer_view.features.inc';

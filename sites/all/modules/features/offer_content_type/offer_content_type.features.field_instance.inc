@@ -142,8 +142,10 @@ function offer_content_type_field_default_field_instances() {
         'label' => 'inline',
         'module' => 'image',
         'settings' => array(
+          'caption' => FALSE,
           'image_link' => '',
           'image_style' => '',
+          'optionset' => 'default',
         ),
         'type' => 'image',
         'weight' => 2,
@@ -219,6 +221,46 @@ function offer_content_type_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-offer-field_offer_price'
+  $field_instances['node-offer-field_offer_price'] = array(
+    'bundle' => 'offer',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 7,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_offer_price',
+    'label' => 'Offer Price',
+    'required' => 1,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 8,
+    ),
+  );
+
   // Exported field_instance: 'node-offer-field_telephone_number'
   $field_instances['node-offer-field_telephone_number'] = array(
     'bundle' => 'offer',
@@ -266,6 +308,7 @@ function offer_content_type_field_default_field_instances() {
   t('Offer Category');
   t('Offer Images');
   t('Offer Location');
+  t('Offer Price');
   t('Telephone number');
 
   return $field_instances;

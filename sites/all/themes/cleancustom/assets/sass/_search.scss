@@ -1,0 +1,10 @@
+.block-search {
+  .form-item-search-block-form {
+    width: 50%;
+    @extend %fl-left-ext;
+    margin-right: 10px;
+    .form-text {
+      margin-top: 5px;
+    }
+  }
+}
