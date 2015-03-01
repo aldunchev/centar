@@ -16,5 +16,4 @@ features[features_api][] = api:2
 features[image][] = offer_single
 features[image][] = offer_thumb_100x100
 features[page_manager_handlers][] = node_view__offer_panel_template
-features[views_view][] = nodeviewscount_statistics
 project path = sites/all/modules/features
