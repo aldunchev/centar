@@ -10,10 +10,10 @@ function cleancustom_preprocess_page(&$variables) {
     )
   );
   $args = arg();
-  if ($args[1] == 'login') {
+  if (!empty($args[1]) && $args[1] == 'login') {
     $variables['title'] = t('Вход');
   }
-  if ($args[1] == 'add' && $args[2] == 'offer') {
+  if (!empty($args[1]) && $args[1] == 'add' && $args[2] == 'offer') {
     $variables['title'] = t('Добави обява');
   }
 }
