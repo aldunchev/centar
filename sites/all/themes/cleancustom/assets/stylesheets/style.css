@@ -384,6 +384,16 @@ strong {
   color: #050800;
 }
 
+/* line 63, ../sass/_common.scss */
+.heading-wrapper {
+  margin-bottom: 40px;
+  border-bottom: 1px solid #e1e1e1;
+}
+/* line 66, ../sass/_common.scss */
+.heading-wrapper h1 {
+  display: inline-block;
+}
+
 @font-face {
   font-family: 'Roboto';
   src: url("../fonts/Roboto-Regular.ttf");
@@ -798,59 +808,54 @@ input[type="file"] {
   transform: scale(1.1);
 }
 
-/* line 1, ../sass/_add-offer-form.scss */
+/* line 2, ../sass/_add-offer-form.scss */
+.page-node-add-offer .heading-wrapper {
+  text-align: center;
+}
+
+/* line 6, ../sass/_add-offer-form.scss */
 .node-offer-form {
   padding-bottom: 40px;
 }
-/* line 3, ../sass/_add-offer-form.scss */
+/* line 8, ../sass/_add-offer-form.scss */
 .node-offer-form .form-item {
   width: 100%;
 }
-/* line 9, ../sass/_add-offer-form.scss */
-.node-offer-form .heading-wrapper {
-  margin-bottom: 40px;
-  border-bottom: 1px solid #e1e1e1;
-  text-align: center;
-}
-/* line 13, ../sass/_add-offer-form.scss */
-.node-offer-form .heading-wrapper h1 {
-  display: inline-block;
-}
-/* line 17, ../sass/_add-offer-form.scss */
+/* line 14, ../sass/_add-offer-form.scss */
 .node-offer-form .field-name-field-offer-images {
   margin: 20px 0;
   padding: 10px 0;
   border-top: 1px solid #ededed;
   border-bottom: 1px solid #ededed;
 }
-/* line 23, ../sass/_add-offer-form.scss */
+/* line 20, ../sass/_add-offer-form.scss */
 .node-offer-form .field-name-field-address {
   margin-top: 20px;
   padding-top: 20px;
   border-top: 1px solid #ededed;
 }
-/* line 28, ../sass/_add-offer-form.scss */
+/* line 25, ../sass/_add-offer-form.scss */
 .node-offer-form .field-name-field-telephone-number {
   margin-bottom: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #ededed;
 }
-/* line 32, ../sass/_add-offer-form.scss */
+/* line 29, ../sass/_add-offer-form.scss */
 .node-offer-form .field-name-field-telephone-number .compact-form-wrapper {
   margin-bottom: 0;
 }
-/* line 36, ../sass/_add-offer-form.scss */
+/* line 33, ../sass/_add-offer-form.scss */
 .node-offer-form .field-name-field-offer-category {
   border-bottom: 1px solid #ededed;
   padding-bottom: 20px;
 }
-/* line 40, ../sass/_add-offer-form.scss */
+/* line 37, ../sass/_add-offer-form.scss */
 .node-offer-form .tabledrag-toggle-weight-wrapper,
 .node-offer-form .sticky-table thead,
 .node-offer-form .sticky-table .image-widget-data {
   display: none;
 }
-/* line 45, ../sass/_add-offer-form.scss */
+/* line 42, ../sass/_add-offer-form.scss */
 .node-offer-form .field-name-field-offer-price {
   width: 50%;
 }

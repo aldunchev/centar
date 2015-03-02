@@ -9,8 +9,12 @@ function cleancustom_preprocess_page(&$variables) {
       'menu' => menu_tree_all_data(theme_get_setting('menu_element')),
     )
   );
-  if (arg(1) == 'login') {
+  $args = arg();
+  if ($args[1] == 'login') {
     $variables['title'] = t('Вход');
+  }
+  if ($args[1] == 'add' && $args[2] == 'offer') {
+    $variables['title'] = t('Добави обява');
   }
 }
 

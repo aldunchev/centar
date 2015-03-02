@@ -60,3 +60,10 @@ img {
 strong {  
   color: $black;
 }
+.heading-wrapper {
+  margin-bottom: 40px;
+  border-bottom: 1px solid darken($light-gray, 10%);
+  h1 {
+    display: inline-block;
+  }
+}

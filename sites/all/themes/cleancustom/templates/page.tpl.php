@@ -135,14 +135,17 @@
       <?php print render($page['featured']); ?>
     <?php endif; ?>
     <?php if ($title) : ?>
-      <h1 class="title"><?php print $title; ?></h1>
+      <div class="heading-wrapper">
+        <h1 class="title"><?php print $title; ?></h1>
+      </div>
     <?php endif; ?>
     <?php print render($page['content']); ?>
   </div>
 </section>
 <?php if($page['footer']) : ?>
-  <footer class="main-footer clearfix">
-    <div class="container">
+
+  <footer class="clearfix">
+    <div class="container main-footer">
       <?php print render($page['footer']); ?>
       <div class="motto-logo">
         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="logo fl-left">
