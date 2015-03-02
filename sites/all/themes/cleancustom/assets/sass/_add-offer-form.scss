@@ -1,5 +1,8 @@
 .node-offer-form {
   padding-bottom: 40px;
+  .form-item {
+    width: 100%;
+  }
   .field-name-body {
     @extend %clearfix-ext;
   }
@@ -38,5 +41,8 @@
   .sticky-table thead,
   .sticky-table .image-widget-data {
     display: none;
+  }
+  .field-name-field-offer-price {
+    width: 50%;
   }
 }

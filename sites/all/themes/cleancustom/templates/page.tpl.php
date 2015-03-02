@@ -124,7 +124,7 @@
 </header>
 
 <?php if ($messages): ?>
-  <div id="messages">
+  <div id="messages" class="container">
     <?php print $messages; ?>
   </div><!-- /#messages -->
 <?php endif; ?>
@@ -133,6 +133,9 @@
   <div class="container main clearfix">
     <?php if($page['featured']) : ?>
       <?php print render($page['featured']); ?>
+    <?php endif; ?>
+    <?php if ($title) : ?>
+      <h1 class="title"><?php print $title; ?></h1>
     <?php endif; ?>
     <?php print render($page['content']); ?>
   </div>

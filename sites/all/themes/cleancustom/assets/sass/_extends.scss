@@ -33,7 +33,8 @@
   color: $black;
   border-radius: 20px;
   background: $gold;
-  @extend %transition;
+  @include transition(all, 0.4s, ease);
+  @include box-shadow(0 2px 2px #afb1b3);
   &:hover {
     color: $white;
     background-color: $light-blue;

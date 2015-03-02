@@ -95,7 +95,6 @@ function offer_content_type_field_default_field_bases() {
         0 => array(
           'vocabulary' => 'offer_type',
           'parent' => 0,
-          'depth' => '',
         ),
       ),
       'options_list_callback' => 'i18n_taxonomy_allowed_values',
@@ -151,6 +150,7 @@ function offer_content_type_field_default_field_bases() {
     'module' => 'list',
     'settings' => array(
       'allowed_values' => array(
+        'Избери Местоположение' => 'Избери Местоположение',
         'София' => 'София',
         'Плевен' => 'Плевен',
         'Варна' => 'Варна',
@@ -169,26 +169,17 @@ function offer_content_type_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_offer_price',
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
-    'indexes' => array(
-      'format' => array(
-        0 => 'format',
-      ),
-    ),
+    'foreign keys' => array(),
+    'indexes' => array(),
     'locked' => 0,
-    'module' => 'text',
+    'module' => 'number',
     'settings' => array(
-      'max_length' => 255,
+      'decimal_separator' => '.',
+      'precision' => 10,
+      'scale' => 2,
     ),
     'translatable' => 0,
-    'type' => 'text',
+    'type' => 'number_decimal',
   );
 
   // Exported field_base: 'field_telephone_number'

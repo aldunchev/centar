@@ -268,7 +268,7 @@ function center_panels_default_page_manager_pages() {
     $pane->uuid = '3e563d90-3771-4adc-84cb-a10dd0c2b93e';
     $display->content['new-3e563d90-3771-4adc-84cb-a10dd0c2b93e'] = $pane;
     $display->panels['sidebar_second'][0] = 'new-3e563d90-3771-4adc-84cb-a10dd0c2b93e';
-  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = 'new-99aa34ee-9e1f-4dc4-a1af-037545060139';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;

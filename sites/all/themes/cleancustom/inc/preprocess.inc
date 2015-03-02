@@ -9,6 +9,9 @@ function cleancustom_preprocess_page(&$variables) {
       'menu' => menu_tree_all_data(theme_get_setting('menu_element')),
     )
   );
+  if (arg(1) == 'login') {
+    $variables['title'] = t('Вход');
+  }
 }
 
 /**

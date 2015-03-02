@@ -1,4 +1,6 @@
 .block-search {
+  margin-bottom: $space-40;
+  border-bottom: 1px solid darken($light-gray, 10%);
   .form-item-search-block-form {
     width: 50%;
     @extend %fl-left-ext;
