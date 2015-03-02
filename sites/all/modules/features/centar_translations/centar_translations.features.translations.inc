@@ -105,6 +105,14 @@ function centar_translations_translations_defaults() {
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['bg:default']['7042828cd5c73a74091f05a7c9513d0e'] = array(
+    'source' => 'March',
+    'context' => 'Long month name',
+    'location' => '/admin/structure/pages/nojs/operation/node_view/handlers/node_view__offer_panel_template/content',
+    'translation' => 'март',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['bg:default']['878530871f0db73f004f5bd6591eeb76'] = array(
     'source' => 'Remember me',
     'context' => '',
@@ -182,6 +190,14 @@ function centar_translations_translations_defaults() {
     'context' => '',
     'location' => '/',
     'translation' => 'Парола',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['bg:default']['dc9b851d2514e56e620240e8bad767e8'] = array(
+    'source' => 'February',
+    'context' => 'Long month name',
+    'location' => '/admin/structure/pages/add/page-front_page_panel/content',
+    'translation' => 'февруари',
     'plid' => 0,
     'plural' => 0,
   );

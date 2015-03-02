@@ -1,3 +1,47 @@
 .offer-left {
   padding: 0 10px;
 }
+.pane-block {
+  margin-bottom: $space-10;
+  padding: $space-10;
+  background: lighten($gray, 25%);
+  color: $text-gray;
+  .pane-title,
+  .pane-content {
+    display: inline-block;
+  }
+  .pane-content {
+    font-size: $text-14;
+  }
+}
+.pane-node-field-offer-price {
+  .field-item {
+    font-size: $text-18;
+    font-weight: bold;
+  }
+}
+.pane-other-user-offers {
+  .pane-title {
+    display: block;
+    margin-bottom: $space-10;
+  }
+  .pane-content {
+    display: block;
+  }
+  .view-other-user-offers {
+    .view-content {
+      margin-left: -5px;
+      margin-right: -5px;
+      font-size: 0;
+    }
+    .views-row {
+      display: inline-block;
+      vertical-align: top;
+      width: 33.333333%;
+      padding: 5px; 
+    }
+    .views-field-title {
+      font-size: $text-14;
+    }
+  }
+}

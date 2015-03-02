@@ -259,7 +259,7 @@ function offer_content_type_field_default_field_instances() {
       'max' => '',
       'min' => '',
       'prefix' => '',
-      'suffix' => '',
+      'suffix' => 'лв.',
       'user_register_form' => FALSE,
     ),
     'widget' => array(

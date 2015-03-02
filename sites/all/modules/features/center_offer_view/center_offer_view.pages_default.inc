@@ -57,6 +57,9 @@ function center_offer_view_default_page_manager_handlers() {
       'left' => NULL,
       'right' => NULL,
     ),
+    'right' => array(
+      'style' => 'naked',
+    ),
   );
   $display->cache = array();
   $display->title = '';
@@ -241,7 +244,7 @@ function center_offer_view_default_page_manager_handlers() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'label' => 'title',
+      'label' => 'hidden',
       'formatter' => 'number_decimal',
       'delta_limit' => 0,
       'delta_offset' => '0',
@@ -260,8 +263,12 @@ function center_offer_view_default_page_manager_handlers() {
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
+      'style' => 'default',
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'pane-block',
+    );
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
@@ -276,7 +283,7 @@ function center_offer_view_default_page_manager_handlers() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'format' => 'medium',
+      'format' => 'long',
       'context' => 'argument_entity_id:node_1',
       'override_title' => 1,
       'override_title_text' => 'Добавена:',
@@ -286,7 +293,10 @@ function center_offer_view_default_page_manager_handlers() {
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'pane-block',
+    );
     $pane->extras = array();
     $pane->position = 1;
     $pane->locks = array();
@@ -294,28 +304,31 @@ function center_offer_view_default_page_manager_handlers() {
     $display->content['new-6235c4a7-5232-4739-becf-175cb9d46e4e'] = $pane;
     $display->panels['right'][1] = 'new-6235c4a7-5232-4739-becf-175cb9d46e4e';
     $pane = new stdClass();
-    $pane->pid = 'new-49ef39aa-dc28-414f-9e88-1f60348e29f7';
+    $pane->pid = 'new-b63e4c87-c247-4e48-a5d2-682ff05652a7';
     $pane->panel = 'right';
     $pane->type = 'block';
     $pane->subtype = 'google_analytics_counter-0';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'override_title' => 0,
-      'override_title_text' => '',
-      'override_title_heading' => 'h2',
+      'override_title' => 1,
+      'override_title_text' => 'Брой показвания:',
+      'override_title_heading' => 'h6',
     );
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'pane-block',
+    );
     $pane->extras = array();
     $pane->position = 2;
     $pane->locks = array();
-    $pane->uuid = '49ef39aa-dc28-414f-9e88-1f60348e29f7';
-    $display->content['new-49ef39aa-dc28-414f-9e88-1f60348e29f7'] = $pane;
-    $display->panels['right'][2] = 'new-49ef39aa-dc28-414f-9e88-1f60348e29f7';
+    $pane->uuid = 'b63e4c87-c247-4e48-a5d2-682ff05652a7';
+    $display->content['new-b63e4c87-c247-4e48-a5d2-682ff05652a7'] = $pane;
+    $display->panels['right'][2] = 'new-b63e4c87-c247-4e48-a5d2-682ff05652a7';
     $pane = new stdClass();
     $pane->pid = 'new-8eef71e2-6ce5-4ab7-b452-2e844e0e0bc3';
     $pane->panel = 'right';
@@ -328,7 +341,7 @@ function center_offer_view_default_page_manager_handlers() {
       'picture_preset' => 'thumbnail',
       'join_date_type' => 'short',
       'context' => 'relationship_entity_from_schema:uid-node-user_1',
-      'override_title' => 0,
+      'override_title' => 1,
       'override_title_text' => '',
       'override_title_heading' => 'h2',
     );
@@ -336,7 +349,10 @@ function center_offer_view_default_page_manager_handlers() {
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'pane-block',
+    );
     $pane->extras = array();
     $pane->position = 3;
     $pane->locks = array();
@@ -359,14 +375,17 @@ function center_offer_view_default_page_manager_handlers() {
       'formatter_settings' => array(),
       'context' => 'argument_entity_id:node_1',
       'override_title' => 1,
-      'override_title_text' => 'Телефон',
+      'override_title_text' => 'Телефон:',
       'override_title_heading' => 'h6',
     );
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'pane-block',
+    );
     $pane->extras = array();
     $pane->position = 4;
     $pane->locks = array();
@@ -396,7 +415,10 @@ function center_offer_view_default_page_manager_handlers() {
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'pane-block',
+    );
     $pane->extras = array();
     $pane->position = 5;
     $pane->locks = array();
@@ -425,87 +447,26 @@ function center_offer_view_default_page_manager_handlers() {
       'display' => 'block',
       'context' => array(
         0 => '',
+        1 => '',
       ),
-      'override_title' => 0,
-      'override_title_text' => '',
-      'override_title_heading' => 'h2',
+      'override_title' => 1,
+      'override_title_text' => 'Други обяви от потребителя',
+      'override_title_heading' => 'h4',
     );
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'pane-block',
+    );
     $pane->extras = array();
     $pane->position = 6;
     $pane->locks = array();
     $pane->uuid = '93f71343-661a-418b-8006-376624af6ae0';
     $display->content['new-93f71343-661a-418b-8006-376624af6ae0'] = $pane;
     $display->panels['right'][6] = 'new-93f71343-661a-418b-8006-376624af6ae0';
-    $pane = new stdClass();
-    $pane->pid = 'new-f357559d-4db8-424e-a8f8-685900fcd4a5';
-    $pane->panel = 'right';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_offer_price';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'label' => 'title',
-      'formatter' => 'number_decimal',
-      'delta_limit' => 0,
-      'delta_offset' => '0',
-      'delta_reversed' => FALSE,
-      'formatter_settings' => array(
-        'thousand_separator' => ' ',
-        'decimal_separator' => '.',
-        'scale' => '2',
-        'prefix_suffix' => 1,
-      ),
-      'context' => 'argument_entity_id:node_1',
-      'override_title' => 0,
-      'override_title_text' => '',
-      'override_title_heading' => 'h2',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 7;
-    $pane->locks = array();
-    $pane->uuid = 'f357559d-4db8-424e-a8f8-685900fcd4a5';
-    $display->content['new-f357559d-4db8-424e-a8f8-685900fcd4a5'] = $pane;
-    $display->panels['right'][7] = 'new-f357559d-4db8-424e-a8f8-685900fcd4a5';
-    $pane = new stdClass();
-    $pane->pid = 'new-7a1efde1-acfd-4a94-b7ae-a88c2f979340';
-    $pane->panel = 'right';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_offer_negotiable';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'label' => 'title',
-      'formatter' => 'i18n_list_default',
-      'delta_limit' => 0,
-      'delta_offset' => '0',
-      'delta_reversed' => FALSE,
-      'formatter_settings' => array(),
-      'context' => 'argument_entity_id:node_1',
-      'override_title' => 0,
-      'override_title_text' => '',
-      'override_title_heading' => 'h2',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 8;
-    $pane->locks = array();
-    $pane->uuid = '7a1efde1-acfd-4a94-b7ae-a88c2f979340';
-    $display->content['new-7a1efde1-acfd-4a94-b7ae-a88c2f979340'] = $pane;
-    $display->panels['right'][8] = 'new-7a1efde1-acfd-4a94-b7ae-a88c2f979340';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;

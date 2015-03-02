@@ -19,7 +19,7 @@
   <div class="col-7 fl-left offer-left">
     <?php print $content['left']; ?>
   </div>
-  <div class="col-5 fl-left">
+  <div class="col-4 fl-right">
     <?php print $content['right']; ?>
   </div>
 </div>

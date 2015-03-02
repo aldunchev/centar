@@ -11,7 +11,7 @@ $plugin = array(
   'theme' => 'cleancustom_twocols_stacked',
   'css' => 'twocols_stacked.css',
   'regions' => array(
-    'left' => t('Left Comlumn'),
-    'right' => t('Right Comlumn'),
+    'left' => t('Left Column'),
+    'right' => t('Right Column'),
   ),
 );
