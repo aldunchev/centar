@@ -74,6 +74,18 @@ function center_panels_default_page_manager_pages() {
       'block_left_bottom' => NULL,
       'block_right_bottom' => NULL,
     ),
+    'main' => array(
+      'style' => '-1',
+    ),
+    'sidebar_second' => array(
+      'style' => '-1',
+    ),
+    'block_left_bottom' => array(
+      'style' => '-1',
+    ),
+    'sidebar_left' => array(
+      'style' => 'default',
+    ),
   );
   $display->cache = array();
   $display->title = '';
@@ -131,7 +143,10 @@ function center_panels_default_page_manager_pages() {
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => '',
+    );
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
@@ -211,8 +226,12 @@ function center_panels_default_page_manager_pages() {
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
+      'style' => 'naked',
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => '',
+    );
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();

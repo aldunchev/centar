@@ -35,6 +35,14 @@ function cleancustom_preprocess_region(&$variables) {
 }
 
 /**
+* Implements hook_preprocess_comment().
+*/
+
+function cleancustom_preprocess_comment(&$variables) {
+
+}
+
+/**
  * Implements hook_css_alter(&$css).
  */
 

@@ -25,7 +25,7 @@ function center_ad_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => 470,
+          'width' => 473,
           'height' => 250,
         ),
         'weight' => 1,
@@ -48,7 +48,7 @@ function center_ad_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => 230,
+          'width' => 226,
           'height' => 250,
         ),
         'weight' => 1,

@@ -102,7 +102,7 @@ article {
   font-style: normal;
 }
 /* line 12, ../sass/_font-awesome.scss */
-.fa {
+.fa, .node-type-offer .author-name {
   font-family: 'FontAwesome';
   line-height: 1;
 }
@@ -113,7 +113,7 @@ article {
 }
 
 /* line 19, ../sass/_font-awesome.scss */
-.fa-user:before {
+.fa-user:before, .node-type-offer .author-name:before {
   content: '\f007';
 }
 
@@ -150,12 +150,12 @@ div, [class*="col"] {
 
 /* line 18, ../sass/_extends.scss */
 .block-user, .block-user .form-item, .block-user .form-actions, .help-menu li,
-#block-system-user-menu li, .main-footer .block-menu li, .block-search .form-item-search-block-form {
+#block-system-user-menu li, .main-footer .block-menu li, .block-search .form-item-search-block-form, .comment .user-picture {
   float: left;
 }
 
 /* line 21, ../sass/_extends.scss */
-.motto-logo p {
+.motto-logo p, .comment .links {
   float: right;
 }
 
@@ -939,12 +939,13 @@ input[type="file"] {
 
 /* line 7, ../sass/_ads.scss */
 .ad-medium {
-  padding-left: 10px;
+  margin-left: 20px;
 }
 
-/* line 11, ../sass/_ads.scss */
-.col-full .ad-medium {
-  padding-right: 10px;
+/* line 10, ../sass/_ads.scss */
+.ad-bottom.ad-medium {
+  margin-left: 0;
+  margin-right: 20px;
 }
 
 /* line 1, ../sass/_search.scss */
@@ -968,52 +969,62 @@ input[type="file"] {
 }
 
 /* line 4, ../sass/_offer.scss */
-.pane-block {
-  margin-bottom: 10px;
-  padding: 10px;
-  background: #f0f1f1;
-  color: #434343;
+.pane-node-body {
+  padding: 40px 0;
+  border-bottom: 1px solid #ededed;
 }
-/* line 9, ../sass/_offer.scss */
-.pane-block .pane-title,
-.pane-block .pane-content {
-  display: inline-block;
-}
-/* line 13, ../sass/_offer.scss */
-.pane-block .pane-content {
-  font-size: 14px;
+/* line 7, ../sass/_offer.scss */
+.pane-node-body .pane-content {
+  padding: 20px 10px;
+  border: 1px solid #e1e1e1;
+  border-radius: 3px;
 }
 
-/* line 18, ../sass/_offer.scss */
+/* line 14, ../sass/_offer.scss */
 .pane-node-field-offer-price .field-item {
   font-size: 18px;
   font-weight: bold;
 }
 
-/* line 24, ../sass/_offer.scss */
-.pane-other-user-offers .pane-title {
-  display: block;
-  margin-bottom: 10px;
+/* line 21, ../sass/_offer.scss */
+.node-type-offer .pane-block .pane-title,
+.node-type-offer .pane-block .pane-content {
+  display: inline-block;
 }
-/* line 28, ../sass/_offer.scss */
-.pane-other-user-offers .pane-content {
-  display: block;
+/* line 25, ../sass/_offer.scss */
+.node-type-offer .pane-block .pane-content {
+  font-size: 14px;
 }
 /* line 32, ../sass/_offer.scss */
-.pane-other-user-offers .view-other-user-offers .view-content {
+.node-type-offer .author-name:before {
+  font-size: 18px;
+}
+/* line 37, ../sass/_offer.scss */
+.node-type-offer .pane-other-user-offers .pane-title {
+  display: block;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #e1e1e1;
+}
+/* line 43, ../sass/_offer.scss */
+.node-type-offer .pane-other-user-offers .pane-content {
+  display: block;
+}
+/* line 48, ../sass/_offer.scss */
+.node-type-offer .pane-other-user-offers .view-other-user-offers .view-content {
   margin-left: -5px;
   margin-right: -5px;
   font-size: 0;
 }
-/* line 37, ../sass/_offer.scss */
-.pane-other-user-offers .view-other-user-offers .views-row {
+/* line 53, ../sass/_offer.scss */
+.node-type-offer .pane-other-user-offers .view-other-user-offers .views-row {
   display: inline-block;
   vertical-align: top;
   width: 33.333333%;
   padding: 5px;
 }
-/* line 43, ../sass/_offer.scss */
-.pane-other-user-offers .view-other-user-offers .views-field-title {
+/* line 59, ../sass/_offer.scss */
+.node-type-offer .pane-other-user-offers .view-other-user-offers .views-field-title {
   font-size: 14px;
 }
 
@@ -1026,4 +1037,49 @@ input[type="file"] {
 /* line 2, ../sass/_bx-slider.scss */
 .bx-wrapper .bx-pager {
   bottom: -115px;
+}
+
+/* line 1, ../sass/_panels.scss */
+.pane-block {
+  margin-bottom: 10px;
+  padding: 10px;
+  background: #f0f1f1;
+  color: #434343;
+}
+
+/* line 5, ../sass/_comments.scss */
+.comment h3 {
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+/* line 10, ../sass/_comments.scss */
+.comment .submitted {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ededed;
+}
+/* line 13, ../sass/_comments.scss */
+.comment .submitted .username {
+  font-weight: bold;
+  color: #0e2c4b;
+}
+/* line 18, ../sass/_comments.scss */
+.comment .content {
+  width: 85%;
+  font-size: 12px;
+  line-height: 1.3;
+}
+/* line 22, ../sass/_comments.scss */
+.comment .content .field-name-comment-body {
+  margin-top: 10px;
+}
+/* line 26, ../sass/_comments.scss */
+.comment .links {
+  margin-top: 10px;
+  clear: both;
+}
+/* line 30, ../sass/_comments.scss */
+.comment .links li {
+  display: inline-block;
+  font-size: 12px;
 }

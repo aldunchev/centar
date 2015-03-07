@@ -5,10 +5,9 @@
   }
 }
 .ad-medium {
-  padding-left: 10px;
+  margin-left: $space-20;
 }
-.col-full {
-  .ad-medium {
-    padding-right: 10px;
-  }
+.ad-bottom.ad-medium {
+  margin-left: 0;
+  margin-right: $space-20;
 }

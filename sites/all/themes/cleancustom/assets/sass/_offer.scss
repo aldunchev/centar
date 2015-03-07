@@ -1,17 +1,13 @@
 .offer-left {
   padding: 0 10px;
 }
-.pane-block {
-  margin-bottom: $space-10;
-  padding: $space-10;
-  background: lighten($gray, 25%);
-  color: $text-gray;
-  .pane-title,
+.pane-node-body {
+  padding: $space-40 0;
+  border-bottom: 1px solid darken($light-gray, 5%);
   .pane-content {
-    display: inline-block;
-  }
-  .pane-content {
-    font-size: $text-14;
+    padding: $space-20 $space-10;
+    border: 1px solid darken($light-gray, 10%);
+    @include border-radius(3px);
   }
 }
 .pane-node-field-offer-price {
@@ -20,28 +16,49 @@
     font-weight: bold;
   }
 }
-.pane-other-user-offers {
-  .pane-title {
-    display: block;
-    margin-bottom: $space-10;
-  }
-  .pane-content {
-    display: block;
-  }
-  .view-other-user-offers {
-    .view-content {
-      margin-left: -5px;
-      margin-right: -5px;
-      font-size: 0;
-    }
-    .views-row {
+.node-type-offer {
+  .pane-block {
+    .pane-title,
+    .pane-content {
       display: inline-block;
-      vertical-align: top;
-      width: 33.333333%;
-      padding: 5px; 
     }
-    .views-field-title {
+    .pane-content {
       font-size: $text-14;
+    }
+  }
+  .author-name {
+    @extend .fa;
+    @extend .fa-user;
+    &:before {
+      font-size: $text-18;
+    }
+  }
+  .pane-other-user-offers {
+    .pane-title {
+      display: block;
+      margin-bottom: $space-10;
+      padding-bottom: 5px;
+      border-bottom: 1px solid darken($light-gray, 10%);
+    }
+    .pane-content {
+      display: block;
+    }
+  
+    .view-other-user-offers {
+      .view-content {
+        margin-left: -5px;
+        margin-right: -5px;
+        font-size: 0;
+      }
+      .views-row {
+        display: inline-block;
+        vertical-align: top;
+        width: 33.333333%;
+        padding: 5px; 
+      }
+      .views-field-title {
+        font-size: $text-14;
+      }
     }
   }
 }
