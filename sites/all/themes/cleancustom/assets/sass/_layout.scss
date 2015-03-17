@@ -1,8 +1,8 @@
 .container {
-  @include breakpoint(medium) {
-    width: $container-medium-small;
+  @include breakpoint(small) {
+    max-width: 100%;
   }
-  @include breakpoint(large-and-medium) {
+  @include breakpoint(medium) {
     width: $container-medium;
   }
   @include breakpoint(large) {
@@ -21,6 +21,7 @@
 }
 [class*="col"] {
   @extend %border-box;
+  padding: 0 10px;
 }
 .col-12 {
   width: 100%;

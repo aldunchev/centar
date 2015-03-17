@@ -199,19 +199,19 @@ div, [class*="col"] {
   padding-right: 10px;
   margin: 0 auto;
 }
-@media (min-width: 767px) and (max-width: 991px) {
+@media (max-width: 767px) {
   /* line 1, ../sass/_layout.scss */
   .container {
-    width: 760px;
+    max-width: 100%;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) and (max-width: 959px) {
   /* line 1, ../sass/_layout.scss */
   .container {
-    width: 990px;
+    width: 767px;
   }
 }
-@media (min-width: 1170px) {
+@media (min-width: 960px) {
   /* line 1, ../sass/_layout.scss */
   .container {
     width: 960px;
@@ -229,67 +229,72 @@ div, [class*="col"] {
   padding-right: 10px;
 }
 
-/* line 25, ../sass/_layout.scss */
+/* line 22, ../sass/_layout.scss */
+[class*="col"] {
+  padding: 0 10px;
+}
+
+/* line 26, ../sass/_layout.scss */
 .col-12 {
   width: 100%;
 }
 
-/* line 28, ../sass/_layout.scss */
+/* line 29, ../sass/_layout.scss */
 .col-11 {
   width: 91.66%;
 }
 
-/* line 31, ../sass/_layout.scss */
+/* line 32, ../sass/_layout.scss */
 .col-10 {
   width: 83.33%;
 }
 
-/* line 34, ../sass/_layout.scss */
+/* line 35, ../sass/_layout.scss */
 .col-9 {
   width: 75%;
 }
 
-/* line 37, ../sass/_layout.scss */
+/* line 38, ../sass/_layout.scss */
 .col-8 {
   width: 66.66%;
 }
 
-/* line 40, ../sass/_layout.scss */
+/* line 41, ../sass/_layout.scss */
 .col-7 {
   width: 58.33%;
 }
 
-/* line 43, ../sass/_layout.scss */
+/* line 44, ../sass/_layout.scss */
 .col-6 {
   width: 50%;
 }
 
-/* line 46, ../sass/_layout.scss */
+/* line 47, ../sass/_layout.scss */
 .col-5 {
   width: 41.66%;
 }
 
-/* line 49, ../sass/_layout.scss */
+/* line 50, ../sass/_layout.scss */
 .col-4 {
   width: 33.33%;
 }
 
-/* line 52, ../sass/_layout.scss */
+/* line 53, ../sass/_layout.scss */
 .col-3 {
   width: 25%;
 }
 
-/* line 55, ../sass/_layout.scss */
+/* line 56, ../sass/_layout.scss */
 .col-2 {
   width: 16.66%;
 }
 
-/* line 58, ../sass/_layout.scss */
+/* line 59, ../sass/_layout.scss */
 .col-1 {
   width: 8.33%;
 }
 
-/* line 71, ../sass/_layout.scss */
+/* line 72, ../sass/_layout.scss */
 .col-full {
   padding-top: 40px;
   clear: both;
@@ -370,28 +375,72 @@ h1 {
 /* line 52, ../sass/_common.scss */
 h2.pane-title {
   margin-bottom: 10px;
-  padding: 5px;
+  padding: 5px 0;
 }
 
 /* line 56, ../sass/_common.scss */
+h3 {
+  margin: 10px 0;
+}
+
+/* line 59, ../sass/_common.scss */
+h4 {
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+/* line 64, ../sass/_common.scss */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 60, ../sass/_common.scss */
+/* line 68, ../sass/_common.scss */
 strong {
   color: #050800;
 }
 
-/* line 63, ../sass/_common.scss */
+/* line 71, ../sass/_common.scss */
 .heading-wrapper {
   margin-bottom: 40px;
   border-bottom: 1px solid #e1e1e1;
 }
-/* line 66, ../sass/_common.scss */
+/* line 74, ../sass/_common.scss */
 .heading-wrapper h1 {
   display: inline-block;
+}
+
+/* line 79, ../sass/_common.scss */
+table {
+  width: 100%;
+}
+/* line 81, ../sass/_common.scss */
+table thead {
+  background: #c9cbcc;
+  border-bottom: 1px solid #afb1b3;
+}
+/* line 84, ../sass/_common.scss */
+table thead th {
+  padding: 10px 0;
+  font-weight: bold;
+  color: #fff;
+}
+/* line 88, ../sass/_common.scss */
+table thead th:first-child {
+  padding-left: 5px;
+}
+/* line 94, ../sass/_common.scss */
+table tbody tr {
+  border-bottom: 1px solid #ededed;
+}
+/* line 96, ../sass/_common.scss */
+table tbody tr:nth-child(even) {
+  background: #fafafa;
+}
+/* line 100, ../sass/_common.scss */
+table tbody td {
+  padding: 20px 0;
 }
 
 /* line 1, ../sass/_typography.scss */
@@ -920,13 +969,14 @@ input[type="file"] {
 
 /* line 1, ../sass/_pager.scss */
 .pager {
+  margin-top: 20px;
   text-align: center;
 }
-/* line 3, ../sass/_pager.scss */
+/* line 4, ../sass/_pager.scss */
 .pager li {
   display: inline-block;
 }
-/* line 6, ../sass/_pager.scss */
+/* line 7, ../sass/_pager.scss */
 .pager .pager-current {
   text-decoration: underline;
 }
@@ -961,6 +1011,10 @@ input[type="file"] {
 /* line 8, ../sass/_search.scss */
 .block-search .form-item-search-block-form .form-text {
   margin-top: 5px;
+}
+/* line 12, ../sass/_search.scss */
+.block-search .form-actions {
+  display: inline-block;
 }
 
 /* line 1, ../sass/_offer.scss */
@@ -999,31 +1053,38 @@ input[type="file"] {
 .node-type-offer .author-name:before {
   font-size: 18px;
 }
-/* line 37, ../sass/_offer.scss */
+/* line 36, ../sass/_offer.scss */
+.node-type-offer .author-offline,
+.node-type-offer .author-online,
+.node-type-offer .author-last-seen,
+.node-type-offer .author-joined {
+  display: none;
+}
+/* line 43, ../sass/_offer.scss */
 .node-type-offer .pane-other-user-offers .pane-title {
   display: block;
   margin-bottom: 10px;
   padding-bottom: 5px;
   border-bottom: 1px solid #e1e1e1;
 }
-/* line 43, ../sass/_offer.scss */
+/* line 49, ../sass/_offer.scss */
 .node-type-offer .pane-other-user-offers .pane-content {
   display: block;
 }
-/* line 48, ../sass/_offer.scss */
+/* line 54, ../sass/_offer.scss */
 .node-type-offer .pane-other-user-offers .view-other-user-offers .view-content {
   margin-left: -5px;
   margin-right: -5px;
   font-size: 0;
 }
-/* line 53, ../sass/_offer.scss */
+/* line 59, ../sass/_offer.scss */
 .node-type-offer .pane-other-user-offers .view-other-user-offers .views-row {
   display: inline-block;
   vertical-align: top;
   width: 33.333333%;
   padding: 5px;
 }
-/* line 59, ../sass/_offer.scss */
+/* line 65, ../sass/_offer.scss */
 .node-type-offer .pane-other-user-offers .view-other-user-offers .views-field-title {
   font-size: 14px;
 }
@@ -1047,9 +1108,25 @@ input[type="file"] {
   color: #434343;
 }
 
+/* line 8, ../sass/_panels.scss */
+.panel-pane h1 {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #e1e1e1;
+}
+/* line 12, ../sass/_panels.scss */
+.panel-pane h3 {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+/* line 17, ../sass/_panels.scss */
+.pane-node-comments {
+  margin-top: 40px;
+}
+
 /* line 5, ../sass/_comments.scss */
 .comment h3 {
-  margin-bottom: 5px;
+  margin: 0 0 5px;
   font-size: 14px;
   font-weight: bold;
 }
@@ -1083,3 +1160,5 @@ input[type="file"] {
   display: inline-block;
   font-size: 12px;
 }
+
+/* Forum Category Listing */

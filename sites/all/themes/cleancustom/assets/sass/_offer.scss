@@ -33,6 +33,12 @@
       font-size: $text-18;
     }
   }
+  .author-offline,
+  .author-online,
+  .author-last-seen,
+  .author-joined {
+    display: none;
+  }
   .pane-other-user-offers {
     .pane-title {
       display: block;

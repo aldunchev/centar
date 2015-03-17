@@ -32,7 +32,7 @@
   </div> 
 
   <div class="col-9 fl-left">
-    <div class="clearfix">
+    <div class="clearfix row">
       <div class="ad ad-large fl-left">
         <aside>
           <?php print $content['block_left']; ?>
@@ -47,15 +47,17 @@
     <section>
       <?php print $content['main']; ?>
     </section>
-    <div class="ad ad-bottom ad-medium fl-left">
-      <aside>
-        <?php print $content['block_left_bottom']; ?>
-      </aside>
-    </div>
-    <div class="ad ad-bottom ad-large fl-left">
-      <aside>
-        <?php print $content['block_right_bottom']; ?>
-      </aside>
+    <div class="clearfix row">
+      <div class="ad ad-bottom ad-medium fl-left">
+        <aside>
+          <?php print $content['block_left_bottom']; ?>
+        </aside>
+      </div>
+      <div class="ad ad-bottom ad-large fl-left">
+        <aside>
+          <?php print $content['block_right_bottom']; ?>
+        </aside>
+      </div>
     </div>
   </div>
 </div>

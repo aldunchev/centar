@@ -4,3 +4,16 @@
   background: lighten($gray, 25%);
   color: $text-gray;
 }
+.panel-pane {
+  h1 {
+    padding-bottom: 5px;
+    border-bottom: 1px solid darken($light-gray, 10%);
+  }
+  h3 {
+    padding-bottom: 5px;
+    border-bottom: 1px solid darken($light-gray, 10%);
+  }
+}
+.pane-node-comments {
+  margin-top: $space-40;
+}

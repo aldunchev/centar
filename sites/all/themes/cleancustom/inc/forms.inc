@@ -35,4 +35,7 @@ function cleancustom_form_alter(&$form, &$form_state, $form_id) {
     $form['field_offer_images']['und']['#file_upload_title'] = '';
     $form['actions']['submit']['#value']= t('Публикувай Обявата');
   }
+  if ($form_id == 'comment_node_offer_form') {
+    $form['actions']['submit']['#value']= t('Коментирай');
+  }
 }

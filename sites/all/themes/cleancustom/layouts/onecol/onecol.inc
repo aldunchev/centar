@@ -2,7 +2,7 @@
 
 // Plugin definition
 $plugin = array(
-  'title' => t('One column'),
+  'title' => t('Clean Custom'),
   'category' => t('Columns: 1'),
   'icon' => 'onecol.png',
   'theme' => 'cleancustom_onecol',
