@@ -23,7 +23,6 @@ function offer_listing_feature_views_default_views() {
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['title'] = 'Обяви';
-  $handler->display->display_options['css_class'] = 'row';
   $handler->display->display_options['use_ajax'] = TRUE;
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
@@ -39,8 +38,9 @@ function offer_listing_feature_views_default_views() {
   $handler->display->display_options['pager']['options']['tags']['previous'] = '‹ предишна';
   $handler->display->display_options['pager']['options']['tags']['next'] = 'следваща › ';
   $handler->display->display_options['pager']['options']['tags']['last'] = 'последна » ';
-  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['style_plugin'] = 'list';
   $handler->display->display_options['style_options']['row_class'] = 'col-4 fl-left';
+  $handler->display->display_options['style_options']['wrapper_class'] = 'item-list row';
   $handler->display->display_options['row_plugin'] = 'fields';
   /* Field: Content: Offer Images */
   $handler->display->display_options['fields']['field_offer_images']['id'] = 'field_offer_images';

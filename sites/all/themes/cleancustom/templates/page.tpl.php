@@ -72,56 +72,7 @@
  * @ingroup themeable
  */
 ?>
-<header role="banner" class="main-header">
-  <div class="content container clearfix">
-    <div class="clearfix">
-      <?php if($page['header']) : ?>
-        <?php
-          if (!$logged_in) {
-            print l(t('login/register'), 'user/simple-fb-connect',
-              array(
-                'attributes' => array(
-                  'class' => array('fa fa-facebook fl-left')
-                ),
-              ) 
-            );
-          }  
-        ?>
-        <?php print render($page['header']); ?>
-      <?php endif; ?>
-      <?php
-        $menu = menu_navigation_links('menu-help-menu');
-        print theme('links__menu_help_menu', 
-          array('links' => $menu, 
-            'attributes' => array(
-                'class' => array('help-menu fl-right'),
-              )
-            )
-          );
-      ?>
-    </div>
-    <div class="clearfix">
-    <?php if($logo) : ?>
-      <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="logo fl-left">
-        <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>">
-      </a>
-    <?php endif; ?>
-    <?php print l(t('add offer'), 'node/add/offer',
-        array(
-          'attributes' => array(
-            'class' => array('add-offer-link fl-right primary-btn')
-          ),
-        ) 
-      ); 
-    ?>
-    </div>
-  </div><!-- end .container -->
-  <div class="motto container">
-    <div class="container clearfix">
-      <p><?php print t('minimum cost - maximum comfort'); ?></p>
-    </div>
-  </div>
-</header>
+<?php print render($header); ?>
 
 <?php if ($messages): ?>
   <div id="messages" class="container">

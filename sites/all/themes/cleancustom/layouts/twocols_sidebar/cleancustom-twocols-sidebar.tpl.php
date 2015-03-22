@@ -21,44 +21,48 @@
  */
 ?>
 
-<div class="row">
-  <aside class="search-block">
-    <?php print $content['block_full']; ?>
-  </aside>
-  <div class="col-3 fl-left sidebar-left">
-    <aside>
-      <?php print $content['sidebar_left']; ?>
+<div class="panel-sidebar-twocols">
+    <aside class="search-block">
+      <?php print $content['block_full']; ?>
     </aside>
-  </div> 
+ 
+  <div class="row">
+    <div class="col-3 fl-left sidebar-left">
+      <aside>
+        <?php print $content['sidebar_left']; ?>
+      </aside>
+    </div> 
 
-  <div class="col-9 fl-left">
-    <div class="clearfix row">
-      <div class="ad ad-large fl-left">
-        <aside>
-          <?php print $content['block_left']; ?>
-        </aside>
+    <div class="col-9 fl-left">
+      <div class="row clearfix">
+        <div class="ad ad-large fl-left">
+          <aside>
+            <?php print $content['block_left']; ?>
+          </aside>
+        </div>
+        <div class="ad ad-medium fl-left">
+          <aside>
+            <?php print $content['block_right']; ?>
+          </aside>
+        </div>
       </div>
-      <div class="ad ad-medium fl-left">
-        <aside>
-          <?php print $content['block_right']; ?>
-        </aside>
+      
+      <div class="panel-main">
+        <?php print $content['main']; ?>
+      </div>
+    
+      <div class="row">
+        <div class="ad ad-bottom ad-medium fl-left">
+          <aside>
+            <?php print $content['block_left_bottom']; ?>
+          </aside>
+        </div>
+        <div class="ad ad-bottom ad-large fl-left">
+          <aside>
+            <?php print $content['block_right_bottom']; ?>
+          </aside>
+        </div>
       </div>
     </div>
-    <section>
-      <?php print $content['main']; ?>
-    </section>
-    <div class="clearfix row">
-      <div class="ad ad-bottom ad-medium fl-left">
-        <aside>
-          <?php print $content['block_left_bottom']; ?>
-        </aside>
-      </div>
-      <div class="ad ad-bottom ad-large fl-left">
-        <aside>
-          <?php print $content['block_right_bottom']; ?>
-        </aside>
-      </div>
-    </div>
-  </div>
 </div>
-
+</div>

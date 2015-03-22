@@ -46,6 +46,18 @@ function center_offer_view_default_page_manager_handlers() {
     'name' => 'offer_panel_template',
     'access' => array(
       'logic' => 'and',
+      'plugins' => array(
+        0 => array(
+          'name' => 'node_type',
+          'settings' => array(
+            'type' => array(
+              'offer' => 'offer',
+            ),
+          ),
+          'context' => 'argument_entity_id:node_1',
+          'not' => FALSE,
+        ),
+      ),
     ),
   );
   $display = new panels_display();
@@ -276,9 +288,9 @@ function center_offer_view_default_page_manager_handlers() {
     $pane->configuration = array(
       'anon_links' => 0,
       'context' => 'argument_entity_id:node_1',
-      'override_title' => 0,
-      'override_title_text' => '',
-      'override_title_heading' => 'h2',
+      'override_title' => 1,
+      'override_title_text' => 'Добави коментар',
+      'override_title_heading' => 'h3',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -302,9 +314,9 @@ function center_offer_view_default_page_manager_handlers() {
       'mode' => '0',
       'comments_per_page' => '10',
       'context' => 'argument_entity_id:node_1',
-      'override_title' => 0,
-      'override_title_text' => '',
-      'override_title_heading' => 'h2',
+      'override_title' => 1,
+      'override_title_text' => 'Коментари',
+      'override_title_heading' => 'h3',
     );
     $pane->cache = array();
     $pane->style = array(

@@ -9,6 +9,14 @@
  */
 function offer_content_type_translations_defaults() {
   $translations = array();
+  $translations['bg:field']['09bc056413cf37c4f3fd28fb98f98bc3'] = array(
+    'source' => 'Comment',
+    'context' => 'comment_body:comment_node_offer:label',
+    'location' => 'field:comment_body:comment_node_offer:label',
+    'translation' => 'Коментар',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['bg:field']['255340a9717142849c30cfea6d4ce387'] = array(
     'source' => 'Offer Category',
     'context' => 'field_offer_category:offer:label',

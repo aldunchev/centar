@@ -16,6 +16,35 @@ function cleancustom_preprocess_page(&$variables) {
   if (!empty($args[1]) && $args[1] == 'add' && $args[2] == 'offer') {
     $variables['title'] = t('Добави обява');
   }
+  $fb_login_btn = l(t('login/register'), 'user/simple-fb-connect',
+          array(
+            'attributes' => array(
+              'class' => array('fa fa-facebook fl-left')
+            ),
+          ) 
+        );
+  $add_offer_btn = l(t('add offer'), 'node/add/offer',
+                      array(
+                        'attributes' => array(
+                          'class' => array('add-offer-link fl-right primary-btn')
+                        ),
+                      ) 
+                    ); 
+  $help_menu_tree = menu_tree_output(menu_tree_all_data(variable_get('help_menu_links_source', 'menu-help-menu'), NULL, 1));
+  $help_menu = drupal_render($help_menu_tree);
+  $header_region = $variables['page']['header'] ? $variables['page']['header'] : '';
+  $moto_text = t('minimum cost - maximum comfort');
+  
+  $variables['header'] = theme('header', array(
+      'fb_login_btn' => $fb_login_btn,
+      'header_region' => $header_region,
+      'help_menu' => $help_menu,
+      'logo' => $variables['logo'],
+      'front_page' => $variables['front_page'],
+      'add_offer_btn' => $add_offer_btn,
+      'moto_text' => $moto_text,
+    )
+  );
 }
 
 /**
