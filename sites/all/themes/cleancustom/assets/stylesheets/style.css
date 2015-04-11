@@ -569,7 +569,7 @@ h6 {
 .fa-facebook {
   padding: 6px 4px 6px 5px;
   font-size: 11px;
-  font-family: 'Roboto';
+  font-family: 'Arial', sans-serif;
   color: #fff;
   background: #5b74a8;
   border: 1px solid #afb1b3;
@@ -991,18 +991,28 @@ input[type="file"] {
   text-decoration: underline;
 }
 
-/* line 3, ../sass/_ads.scss */
-.simplead-container img,
-.ad img {
-  max-width: 100%;
+/* line 2, ../sass/_ads.scss */
+.ad-wrapper .pane-block {
+  padding: 0;
+  background: none;
 }
 
 /* line 7, ../sass/_ads.scss */
-.ad-medium {
+.ad-small {
   margin-left: 20px;
 }
 
-/* line 10, ../sass/_ads.scss */
+/* line 11, ../sass/_ads.scss */
+.simplead-container img {
+  height: 200px;
+}
+
+/* line 15, ../sass/_ads.scss */
+.ad-medium {
+  margin-left: 10px;
+}
+
+/* line 18, ../sass/_ads.scss */
 .ad-bottom.ad-medium {
   margin-left: 0;
   margin-right: 20px;

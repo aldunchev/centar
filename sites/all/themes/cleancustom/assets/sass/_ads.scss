@@ -1,11 +1,19 @@
-.simplead-container,
-.ad {
+.ad-wrapper {
+  .pane-block {
+    padding: 0;
+    background: none;
+  }
+}
+.ad-small {
+  margin-left: $space-20;
+}
+.simplead-container {
   img {
-    max-width: 100%;
+    height: 200px;
   }
 }
 .ad-medium {
-  margin-left: $space-20;
+  margin-left: $space-10;
 }
 .ad-bottom.ad-medium {
   margin-left: 0;

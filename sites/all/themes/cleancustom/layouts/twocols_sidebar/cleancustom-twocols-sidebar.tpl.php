@@ -35,12 +35,12 @@
 
     <div class="col-9 fl-left">
       <div class="row clearfix">
-        <div class="ad ad-large fl-left">
+        <div class="ad-wrapper ad-medium fl-left">
           <aside>
             <?php print $content['block_left']; ?>
           </aside>
         </div>
-        <div class="ad ad-medium fl-left">
+        <div class="ad-wrapper ad-small fl-left">
           <aside>
             <?php print $content['block_right']; ?>
           </aside>
