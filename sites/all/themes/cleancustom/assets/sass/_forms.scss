@@ -95,3 +95,8 @@ input[type="file"] {
     @include transform(scale(1.1));
   }
 }
+.form-item-remember-me {
+  label {
+    padding-left: 0;
+  }
+}

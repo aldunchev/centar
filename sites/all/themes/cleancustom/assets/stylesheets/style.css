@@ -507,37 +507,33 @@ h6 {
   box-shadow: 0 4px 4px #ccc;
 }
 
-/* line 10, ../sass/_header.scss */
-.block-user {
-  margin-left: 10px;
-}
-/* line 13, ../sass/_header.scss */
+/* line 12, ../sass/_header.scss */
 .block-user .form-item {
   width: auto;
   margin-right: 10px;
 }
-/* line 17, ../sass/_header.scss */
+/* line 16, ../sass/_header.scss */
 .block-user .form-item input[type="text"],
 .block-user .form-item input[type="password"] {
   width: 190px;
   height: 25px;
 }
-/* line 23, ../sass/_header.scss */
+/* line 22, ../sass/_header.scss */
 .block-user .form-wrapper,
 .block-user .compact-form-wrapper {
   margin-bottom: 0;
 }
-/* line 27, ../sass/_header.scss */
+/* line 26, ../sass/_header.scss */
 .block-user label {
   font-size: 12px;
   line-height: 1.5;
 }
-/* line 31, ../sass/_header.scss */
+/* line 30, ../sass/_header.scss */
 .block-user .form-actions {
   position: relative;
   top: 2px;
 }
-/* line 35, ../sass/_header.scss */
+/* line 34, ../sass/_header.scss */
 .block-user .form-actions input {
   display: block;
   width: 20px;
@@ -549,18 +545,18 @@ h6 {
   background-size: 60% auto;
   background-position: center;
 }
-/* line 48, ../sass/_header.scss */
+/* line 47, ../sass/_header.scss */
 .block-user .form-item-remember-me {
   font-size: 12px;
   line-height: 2;
 }
-/* line 51, ../sass/_header.scss */
+/* line 50, ../sass/_header.scss */
 .block-user .form-item-remember-me input {
   position: relative;
   top: 2px;
 }
 
-/* line 57, ../sass/_header.scss */
+/* line 56, ../sass/_header.scss */
 .fa-facebook {
   margin-right: 10px;
   padding: 6px 4px 6px 5px;
@@ -571,52 +567,47 @@ h6 {
   border: 1px solid #afb1b3;
   border-color: #2f477a #29447e #1a356e;
 }
-/* line 66, ../sass/_header.scss */
+/* line 65, ../sass/_header.scss */
 .fa-facebook:hover {
   color: #fff;
   background: #6c82b1;
 }
 
-/* line 71, ../sass/_header.scss */
+/* line 70, ../sass/_header.scss */
 .logo {
   margin: 10px 0;
 }
-/* line 73, ../sass/_header.scss */
+/* line 72, ../sass/_header.scss */
 .logo img {
   max-width: 200px;
   height: auto;
 }
 
-/* line 78, ../sass/_header.scss */
-.menu,
-#block-system-user-menu {
-  margin-left: 10px;
-}
-/* line 81, ../sass/_header.scss */
+/* line 79, ../sass/_header.scss */
 .menu li,
 #block-system-user-menu li {
   margin-right: 5px;
   border-right: 1px solid #afb1b3;
 }
-/* line 85, ../sass/_header.scss */
+/* line 83, ../sass/_header.scss */
 .menu li:last-child,
 #block-system-user-menu li:last-child {
   border-right: 0 none;
 }
-/* line 89, ../sass/_header.scss */
+/* line 87, ../sass/_header.scss */
 .menu a,
 #block-system-user-menu a {
   margin-right: 5px;
   font-size: 14px;
   color: #95989a;
 }
-/* line 93, ../sass/_header.scss */
+/* line 91, ../sass/_header.scss */
 .menu a:hover,
 #block-system-user-menu a:hover {
   color: #6e7174;
 }
 
-/* line 98, ../sass/_header.scss */
+/* line 96, ../sass/_header.scss */
 .add-offer-link {
   margin-top: 10px;
   padding-left: 40px;
@@ -625,12 +616,12 @@ h6 {
   background-position: 15px center;
   font-size: 20px;
 }
-/* line 105, ../sass/_header.scss */
+/* line 103, ../sass/_header.scss */
 .add-offer-link:hover {
   font-size: 22px;
 }
 
-/* line 109, ../sass/_header.scss */
+/* line 107, ../sass/_header.scss */
 .motto {
   margin-top: 10px;
   padding: 7px 0;
@@ -639,7 +630,7 @@ h6 {
   background-position: center;
   background-size: 100% 100%;
 }
-/* line 116, ../sass/_header.scss */
+/* line 114, ../sass/_header.scss */
 .motto p {
   text-transform: uppercase;
   font-weight: bold;
@@ -839,6 +830,11 @@ input[type="file"] {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
+}
+
+/* line 99, ../sass/_forms.scss */
+.form-item-remember-me label {
+  padding-left: 0;
 }
 
 /* line 2, ../sass/_add-offer-form.scss */
