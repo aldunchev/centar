@@ -55,6 +55,7 @@
   }
 }
 .fa-facebook {
+  margin-right: $space-10;
   padding: 6px 4px 6px 5px;
   font-size: 11px;
   font-family: 'Arial', sans-serif;
@@ -76,6 +77,7 @@
 }
 .menu,
 #block-system-user-menu {
+  margin-left: $space-10;
   li {
     @extend %fl-left-ext;
     margin-right: 5px;
