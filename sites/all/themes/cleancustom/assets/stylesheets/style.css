@@ -957,13 +957,14 @@ input[type="file"] {
 /* line 1, ../sass/_pager.scss */
 .pager {
   margin-top: 20px;
+  margin-bottom: 20px;
   text-align: center;
 }
-/* line 4, ../sass/_pager.scss */
+/* line 5, ../sass/_pager.scss */
 .pager li {
   display: inline-block;
 }
-/* line 7, ../sass/_pager.scss */
+/* line 8, ../sass/_pager.scss */
 .pager .pager-current {
   text-decoration: underline;
 }
@@ -990,9 +991,9 @@ input[type="file"] {
 }
 
 /* line 18, ../sass/_ads.scss */
-.ad-bottom.ad-medium {
-  margin-left: 0;
-  margin-right: 20px;
+.ad-bottom.ad-small {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 /* line 1, ../sass/_search.scss */

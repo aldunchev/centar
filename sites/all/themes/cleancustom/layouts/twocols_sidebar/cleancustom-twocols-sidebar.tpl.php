@@ -52,12 +52,12 @@
       </div>
     
       <div class="row">
-        <div class="ad ad-bottom ad-medium fl-left">
+        <div class="ad ad-wrapper ad-bottom ad-small fl-left">
           <aside>
             <?php print $content['block_left_bottom']; ?>
           </aside>
         </div>
-        <div class="ad ad-bottom ad-large fl-left">
+        <div class="ad ad-wrapper ad-bottom ad-medium fl-left">
           <aside>
             <?php print $content['block_right_bottom']; ?>
           </aside>
