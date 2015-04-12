@@ -41,14 +41,6 @@ function offer_content_type_translations_defaults() {
     'plid' => 0,
     'plural' => 0,
   );
-  $translations['bg:field']['a11c5783a0cc064caa328c9f468196df'] = array(
-    'source' => 'Offer Price',
-    'context' => 'field_offer_price:offer:label',
-    'location' => 'field:field_offer_price:offer:label',
-    'translation' => 'Цена',
-    'plid' => 0,
-    'plural' => 0,
-  );
   $translations['bg:field']['b25199f80e9f3590e080c3173f9da716'] = array(
     'source' => 'Offer Images',
     'context' => 'field_offer_images:offer:label',

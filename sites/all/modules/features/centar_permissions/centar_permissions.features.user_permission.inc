@@ -15,8 +15,6 @@ function centar_permissions_user_default_permissions() {
     'name' => 'access ad node',
     'roles' => array(
       'administrator' => 'administrator',
-      'anonymous user' => 'anonymous user',
-      'authenticated user' => 'authenticated user',
     ),
     'module' => 'simpleads',
   );

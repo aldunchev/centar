@@ -225,52 +225,6 @@ function offer_content_type_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-offer-field_offer_price'
-  $field_instances['node-offer-field_offer_price'] = array(
-    'bundle' => 'offer',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'number',
-        'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
-          'scale' => 2,
-          'thousand_separator' => ' ',
-        ),
-        'type' => 'number_decimal',
-        'weight' => 7,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_offer_price',
-    'label' => 'Offer Price',
-    'required' => 0,
-    'settings' => array(
-      'max' => '',
-      'min' => '',
-      'prefix' => '',
-      'suffix' => 'лв.',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'number',
-      'settings' => array(),
-      'type' => 'number',
-      'weight' => 8,
-    ),
-  );
-
   // Exported field_instance: 'node-offer-field_telephone_number'
   $field_instances['node-offer-field_telephone_number'] = array(
     'bundle' => 'offer',
@@ -318,7 +272,6 @@ function offer_content_type_field_default_field_instances() {
   t('Offer Category');
   t('Offer Images');
   t('Offer Location');
-  t('Offer Price');
   t('Telephone number');
 
   return $field_instances;
