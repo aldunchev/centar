@@ -7,7 +7,7 @@
 </FilesMatch>
 
 Deny from all
-Allow from 130.204.226.230 127.0.0.1 212.233.185.28 62.176.70.82 82.137.127.136
+Allow from 127.0.0.1 212.233.185.28 46.238.15.148
 
 # Don't show directory listings for URLs which map to a directory.
 Options -Indexes
