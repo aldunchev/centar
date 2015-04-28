@@ -38,4 +38,18 @@ function cleancustom_form_alter(&$form, &$form_state, $form_id) {
   if ($form_id == 'comment_node_offer_form') {
     $form['actions']['submit']['#value']= t('Коментирай');
   }
+  if ($form_id == 'user_profile_form') {
+    $form['locale']['#access'] = FALSE;
+    $form['timezone']['#access'] = FALSE;
+    $form['picture']['picture_upload']['#description'] = '';
+    $form['picture']['picture_delete']['#description'] = '';
+    $form['account']['mail']['#description'] = '';
+    $form['account']['name']['#description'] = '';
+    $form['account']['pass']['#description'] = '';
+    $form['account']['pass']['change_pass_title'] = array(
+      '#type' => 'item',
+      '#markup' => t('<h5>Смяна на парола</h5>'),
+    );
+    $form['actions']['submit']['#value']= t('Запази промените');
+  }
 }

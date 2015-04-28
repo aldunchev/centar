@@ -31,3 +31,15 @@
   -o-transition: $transition-property $transition-time $method;
   transition: $transition-property $transition-time $method;
 }
+
+@mixin menu-link() {
+  margin-right: 5px;
+  font-size: $text-14;
+  color: darken($gray, 10%);
+  &:visited {
+    color: darken($gray, 25%);
+  }
+  &:hover {
+    color: darken($gray, 25%);
+  }
+}

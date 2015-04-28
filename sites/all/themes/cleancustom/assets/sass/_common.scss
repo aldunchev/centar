@@ -20,16 +20,20 @@
 }
 a {
   color: $dark-blue;
+  &:visited {
+    color: darken($text-gray, 10%);
+  }
   &:hover {
     text-decoration: underline;
+  }
+  &:active {
+    color: $crimson;
   }
 }
 #main-content {
   margin-top: 40px;
 }
 body {
-  font-size: 16px;
-  line-height: 1.2;
   color: $black;
   #admin-menu {
     font-size: $text-14;
@@ -101,4 +105,7 @@ table {
       padding: $space-20 0;
     }
   }
+}
+em {
+  font-style: italic;
 }

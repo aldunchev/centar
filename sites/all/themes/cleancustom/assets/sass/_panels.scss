@@ -1,7 +1,8 @@
 .pane-block {
+  position: relative;
   margin-bottom: $space-10;
   padding: $space-10;
-  background: lighten($gray, 25%);
+  background: $sky-blue;
   color: $text-gray;
 }
 .panel-pane {

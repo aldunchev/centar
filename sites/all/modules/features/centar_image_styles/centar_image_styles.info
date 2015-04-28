@@ -1,0 +1,10 @@
+name = Centar Image Styles
+description = Image style used on the site.
+core = 7.x
+package = Features
+version = 7.x-1.0
+project = centar_image_styles
+dependencies[] = image
+features[features_api][] = api:2
+features[image][] = offer_list
+features[image][] = user_small

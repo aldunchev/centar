@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Centar Image Styles feature.
+ */
+
+include_once 'centar_image_styles.features.inc';

@@ -7,7 +7,7 @@
  */
 
 /**
- * Implements hook_preprocess_region().
+ * Implements hook_process_region().
  */
 
 function cleancustom_process_region(&$variables) {

@@ -163,6 +163,7 @@ function centar_permissions_user_default_permissions() {
     'name' => 'access user profiles',
     'roles' => array(
       'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'user',
   );
@@ -523,6 +524,7 @@ function centar_permissions_user_default_permissions() {
     'name' => 'change own username',
     'roles' => array(
       'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'user',
   );
@@ -645,7 +647,9 @@ function centar_permissions_user_default_permissions() {
   // Exported permission: 'delete own offer content'.
   $permissions['delete own offer content'] = array(
     'name' => 'delete own offer content',
-    'roles' => array(),
+    'roles' => array(
+      'authenticated user' => 'authenticated user',
+    ),
     'module' => 'node',
   );
 
@@ -709,9 +713,7 @@ function centar_permissions_user_default_permissions() {
   // Exported permission: 'edit any offer content'.
   $permissions['edit any offer content'] = array(
     'name' => 'edit any offer content',
-    'roles' => array(
-      'authenticated user' => 'authenticated user',
-    ),
+    'roles' => array(),
     'module' => 'node',
   );
 

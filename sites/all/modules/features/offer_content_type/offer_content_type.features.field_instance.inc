@@ -160,7 +160,7 @@ function offer_content_type_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_offer_images',
     'label' => 'Offer Images',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'alt_field' => 0,
       'default_image' => 0,
@@ -187,20 +187,16 @@ function offer_content_type_field_default_field_instances() {
   // Exported field_instance: 'node-offer-field_offer_location'
   $field_instances['node-offer-field_offer_location'] = array(
     'bundle' => 'offer',
-    'default_value' => array(
-      0 => array(
-        'value' => 'Избери Местоположение',
-      ),
-    ),
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'inline',
-        'module' => 'list',
+        'label' => 'above',
+        'module' => 'i18n_taxonomy',
         'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 3,
+        'type' => 'i18n_taxonomy_term_reference_link',
+        'weight' => 7,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -212,16 +208,16 @@ function offer_content_type_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_offer_location',
     'label' => 'Offer Location',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'options',
+      'module' => 'hs_taxonomy',
       'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 3,
+      'type' => 'taxonomy_hs',
+      'weight' => 7,
     ),
   );
 

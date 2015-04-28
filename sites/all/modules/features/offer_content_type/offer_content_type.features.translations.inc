@@ -25,14 +25,6 @@ function offer_content_type_translations_defaults() {
     'plid' => 0,
     'plural' => 0,
   );
-  $translations['bg:field']['3c0f329517a4817bc6283f98c44451cf'] = array(
-    'source' => 'Offer Location',
-    'context' => 'field_offer_location:offer:label',
-    'location' => 'field:field_offer_location:offer:label',
-    'translation' => 'Местоположение',
-    'plid' => 0,
-    'plural' => 0,
-  );
   $translations['bg:field']['534c1a34e4e74c94e7b0076a52e09484'] = array(
     'source' => 'Body',
     'context' => 'body:offer:label',

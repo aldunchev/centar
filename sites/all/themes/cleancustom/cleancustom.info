@@ -7,8 +7,8 @@ core = 7.x
 stylesheets[all][] = assets/stylesheets/style.css
 stylesheets[all][] = user.css
 
-scripts[] = assets/scripts/functions.js
 scripts[] = assets/scripts/main.js
+scripts[] = assets/scripts/bootstrap-filestyle.js
 
 regions[header] = Header
 regions[featured] = Featured

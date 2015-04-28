@@ -90,6 +90,11 @@
         <h1 class="title"><?php print $title; ?></h1>
       </div>
     <?php endif; ?>
+    <?php if ($tabs && !$is_user_page): ?>
+      <div class="tabs">
+        <?php print render($tabs); ?>
+      </div>
+    <?php endif; ?>
     <?php print render($page['content']); ?>
   </div>
 </section>

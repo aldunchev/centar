@@ -1,0 +1,11 @@
+name = Centar User Offers
+description = View listing user offers.
+core = 7.x
+package = Features
+version = 7.x-1.0
+project = centar_user_offers
+dependencies[] = views
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[views_view][] = user_offers
+features_exclude[dependencies][ctools] = ctools

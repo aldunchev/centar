@@ -10,7 +10,6 @@ input[type="submit"] {
 }
 label,
 .fieldset-legend {
-  padding-left: $space-10;
   line-height: 2;
   font-size: $text-14;
   color: darken($gray, 15%);
@@ -37,6 +36,7 @@ select {
 }
 .form-item {
   width: 50%;
+  margin-bottom: $space-10;
   @extend %clearfix-ext;
   input[type="text"],
   select,
@@ -46,6 +46,10 @@ select {
   }
   input[type="text"],
   input[type="password"] {
+    display: block;
+    max-width: 100%;
+  }
+  .form-item {
     width: 100%;
   }
 }
@@ -72,29 +76,9 @@ textarea {
   resize: none;
 }
 input[type="file"] {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 137px;
-  height: 39px;
-  opacity: 0;
-  cursor: pointer;
-  z-index: 1;
+ 
 }
-.customUploadBtn {
-  position: relative;
-  display: inline-block;
-  margin-right: $space-20;
-  padding: $space-10;
-  @include border-radius(20px);
-  color: $white;
-  background: $light-blue;
-  cursor: pointer;
-  @include transition(all, .4s, ease);
-  &:hover {
-    @include transform(scale(1.1));
-  }
-}
+
 .form-item-remember-me {
   label {
     padding-left: 0;

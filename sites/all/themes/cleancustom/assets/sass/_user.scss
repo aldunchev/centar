@@ -1,0 +1,63 @@
+.user-menu {
+  display: inline-block;
+  vertical-align: top;
+  a {
+    @include menu-link();
+  }
+}
+.user-name {
+  display: inline-block;
+  font-weight: bold;
+}
+
+.header-user-picture {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 5px;
+  img {
+    display: block;
+    max-width: 30px;
+    @include box-shadow(2px 3px 3px #afb1b3);
+  }
+}
+.user-picture {
+  img {
+    @include box-shadow(2px 3px 3px #afb1b3);
+  }
+}
+
+/* USER EDIT FORM */
+.description {
+  font-size: $text-12;
+  color: $text-gray;
+}
+.password-strength {
+  @extend %fl-right-ext;
+  width: 50%;
+  .password-indicator {
+    height: 5px;
+    background: $gray;
+  }
+  .indicator {
+    width: 0%;
+    height: 100%;
+    background: $green;
+  }
+}
+.password-strength-text,
+.password-strength-title,
+.password-confirm {
+  font-size: $text-14;
+  line-height: 2;
+}
+.password-strength-title {
+  display: inline;
+  color: $text-gray;
+
+}
+.password-strength-text {
+  @extend %fl-right-ext;
+}
+
+#user-profile-form {
+}

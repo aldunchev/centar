@@ -1,13 +1,23 @@
 .terms-block {
-  padding: 20px;
-  background: lighten($gray, 15%);
   .pane-title {
     text-align: center;
     color: $white;
-    background: darken($gray, 10%);
+    background: darken($sky-blue, 25%);
   }
   a {
     color: darken($gray, 15%);
+    &.active {
+      &:before {
+        position: absolute;
+        content: '';
+        display: inline-block;
+        left: 0;
+        border-style: solid;
+        border-width: 8px;
+        border-color: transparent;
+        border-left-color: darken($sky-blue, 25%);
+      }
+    } 
   }
   .pane-content > ul {
     & > .first > a {

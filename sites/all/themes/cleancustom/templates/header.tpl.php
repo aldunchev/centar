@@ -2,9 +2,19 @@
   <div class="content container clearfix">
     <div class="header-bg">
       <div class="header-row clearfix">
-        <?php print $fb_login_btn; ?>
+        <?php if(!$logged_in) : ?>
+          <?php print $fb_login_btn; ?>
+        <?php else :  ?>
+          <div class="header-user-picture">
+            <?php print $user_picture; ?>
+          </div>
+          <nav class="user-menu">
+            <?php print $user_name; ?>
+            <?php print $logout; ?>
+          </nav>
+        <?php endif; ?>
         <?php print render($header_region); ?>
-        <div class="help-menu fl-right clearfix"><?php print $help_menu; ?></div>
+        <nav class="help-menu fl-right clearfix"><?php print $help_menu; ?></nav>
       </div>
       <?php if($logo) : ?>
         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="logo fl-left">

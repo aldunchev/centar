@@ -9,7 +9,8 @@
   font-weight: normal;
   font-style: normal;
 }
-.fa {
+.fa:before,
+.fa:after {
   font-family: 'FontAwesome';
   line-height: 1;
 }
@@ -23,7 +24,6 @@
   content: "\f07a";
 }
 .fa-facebook:before {
-  font-family: 'FontAwesome';
   content: "\f09a";
   margin-right: 5px;
   color: $white;
@@ -33,4 +33,7 @@
   content: "\f061";
   color: $crimson;
   cursor: pointer;
+}
+.fa-sign-out:before {
+  content: "\f08b";
 }

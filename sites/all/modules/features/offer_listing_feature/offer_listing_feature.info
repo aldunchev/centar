@@ -8,7 +8,6 @@ dependencies[] = image
 dependencies[] = views
 features[ctools][] = views:views_default:3.0
 features[features_api][] = api:2
-features[image][] = offer_list
 features[views_view][] = offer_listing
 features_exclude[dependencies][ctools] = ctools
 project path = sites/all/modules/features

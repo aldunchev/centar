@@ -49,6 +49,14 @@ function centar_translations_translations_defaults() {
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['bg:default']['25a04957b989168b2dd05fd9eb7a3673'] = array(
+    'source' => 'Passwords match:',
+    'context' => '',
+    'location' => '/user/4/edit?destination=admin/people',
+    'translation' => 'Съвпадение на паролите:',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['bg:default']['2fa104cdb397e386efece8c040a2e601'] = array(
     'source' => 'User account',
     'context' => '',
@@ -62,6 +70,14 @@ function centar_translations_translations_defaults() {
     'context' => '',
     'location' => '/admin/config/regional/translate/translate',
     'translation' => '« първа',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['bg:default']['377313a88cd97bbf5da5c9dd0d8a677a'] = array(
+    'source' => 'Upload picture',
+    'context' => '',
+    'location' => '/user/4/edit?destination=admin/people',
+    'translation' => 'Качи снимка',
     'plid' => 0,
     'plural' => 0,
   );
@@ -105,11 +121,27 @@ function centar_translations_translations_defaults() {
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['bg:default']['4c231e0da3eaaa6a9752174f7f9cfb31'] = array(
+    'source' => 'Confirm password',
+    'context' => '',
+    'location' => '/user/4/edit?destination=admin/people',
+    'translation' => 'Потвърди паролата',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['bg:default']['4fbd18c9eefb5827d7e9cd792f299fbc'] = array(
     'source' => 'Submitted by !username on !datetime',
     'context' => '',
     'location' => '/node/1',
     'translation' => 'От !username на !datetime ',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['bg:default']['677c8c6f8cafa3ebdd999eea7d18beda'] = array(
+    'source' => 'Password strength:',
+    'context' => '',
+    'location' => '/user/4/edit?destination=admin/people',
+    'translation' => 'Сила на паролата',
     'plid' => 0,
     'plural' => 0,
   );
@@ -129,11 +161,35 @@ function centar_translations_translations_defaults() {
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['bg:default']['7fa3b767c460b54a2be4d49030b349c7'] = array(
+    'source' => 'no',
+    'context' => '',
+    'location' => '/user/4/edit?destination=admin/people',
+    'translation' => 'не',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['bg:default']['878530871f0db73f004f5bd6591eeb76'] = array(
     'source' => 'Remember me',
     'context' => '',
     'location' => '/',
     'translation' => 'Запомни ме',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['bg:default']['8789bb39b7610c4f1b594194d9b286ba'] = array(
+    'source' => 'Delete picture',
+    'context' => '',
+    'location' => '/user/4/edit?destination=admin/people',
+    'translation' => 'Изтрии снимката',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['bg:default']['8ae5811be1a55b9b8447ad2dbdadbf6e'] = array(
+    'source' => 'Picture',
+    'context' => '',
+    'location' => '/user/4/edit?destination=admin/people',
+    'translation' => 'Снимка',
     'plid' => 0,
     'plural' => 0,
   );
@@ -177,6 +233,14 @@ function centar_translations_translations_defaults() {
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['bg:default']['a6105c0a611b41b08f1209506350279e'] = array(
+    'source' => 'yes',
+    'context' => '',
+    'location' => '/user/4/edit?destination=admin/people',
+    'translation' => 'да',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['bg:default']['bffe9a3c9a7e00ba00a11749e022d911'] = array(
     'source' => 'Log in',
     'context' => '',
@@ -201,11 +265,27 @@ function centar_translations_translations_defaults() {
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['bg:default']['cf0cb20d90ec9b41d9a365074d49b79c'] = array(
+    'source' => 'Enter your current password to change the %mail or %pass. !request_new.',
+    'context' => '',
+    'location' => '/user/4/edit?destination=admin/people',
+    'translation' => 'Въведете паролата си, за да смените %mail или %pass. !request_new. ',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['bg:default']['d95cf4ab2cbf1dfb63f066b50558b07d'] = array(
     'source' => 'My account',
     'context' => '',
     'location' => '/admin/config/regional/language',
     'translation' => 'Профил',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['bg:default']['d9c2d86a66aa5a45326c3757f3a272cc'] = array(
+    'source' => 'Current password',
+    'context' => '',
+    'location' => '/user/32/edit',
+    'translation' => 'Настояща парола',
     'plid' => 0,
     'plural' => 0,
   );
@@ -222,6 +302,14 @@ function centar_translations_translations_defaults() {
     'context' => 'Long month name',
     'location' => '/admin/structure/pages/add/page-front_page_panel/content',
     'translation' => 'февруари',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['bg:default']['e1bd06d422598c306c013e9c334e54a3'] = array(
+    'source' => 'Request new password',
+    'context' => '',
+    'location' => '/',
+    'translation' => 'Заявете нова парола',
     'plid' => 0,
     'plural' => 0,
   );

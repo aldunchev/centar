@@ -55,27 +55,29 @@
 }
 .fa-facebook {
   margin-right: $space-10;
-  padding: 6px 4px 6px 5px;
+  padding: 5px;
   font-size: 11px;
   font-family: 'Arial', sans-serif;
   color: $white;
   background: #5b74a8;
   border: 1px solid $gray;
   border-color: #2f477a #29447e #1a356e;
+  &:visited {
+    color: $white;
+  }
   &:hover {
     color: $white;
     background: lighten(#5b74a8, 5%);
   }
 }
 .logo {
-  margin: 10px 0;
+  margin: $space-10 0;
   img {
     max-width: 200px;
     height: auto;
   }
 }
-.menu,
-#block-system-user-menu {
+.menu {
   li {
     @extend %fl-left-ext;
     margin-right: 5px;
@@ -85,27 +87,22 @@
     }
   }
   a {
-    margin-right: 5px;
-    font-size: $text-14;
-    color: darken($gray, 10%);
-    &:hover {
-      color: darken($gray, 25%);
-    }
+    @include menu-link();
   }
 }
 .add-offer-link {
-  margin-top: 10px;
-  padding-left: 40px;
+  margin-top: $space-10;
+  padding-left: $space-40;
   background-image: url('../images/arrow-small.png');
   background-repeat: no-repeat;
   background-position: 15px center;
-  font-size: 20px;
+  font-size: $text-18;
   &:hover {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 .motto {
-  margin-top: 10px;
+  margin-top: $space-10;
   padding: 7px 0;
   text-align: center;
   background-image: url('../images/lenta.png');

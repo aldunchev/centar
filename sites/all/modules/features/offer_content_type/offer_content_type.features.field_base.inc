@@ -136,30 +136,36 @@ function offer_content_type_field_default_field_bases() {
   // Exported field_base: 'field_offer_location'
   $field_bases['field_offer_location'] = array(
     'active' => 1,
-    'cardinality' => 1,
+    'cardinality' => -1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_offer_location',
-    'foreign keys' => array(),
+    'foreign keys' => array(
+      'tid' => array(
+        'columns' => array(
+          'tid' => 'tid',
+        ),
+        'table' => 'taxonomy_term_data',
+      ),
+    ),
     'indexes' => array(
-      'value' => array(
-        0 => 'value',
+      'tid' => array(
+        0 => 'tid',
       ),
     ),
     'locked' => 0,
-    'module' => 'list',
+    'module' => 'taxonomy',
     'settings' => array(
       'allowed_values' => array(
-        'Избери Местоположение' => 'Избери Местоположение',
-        'София' => 'София',
-        'Плевен' => 'Плевен',
-        'Варна' => 'Варна',
-        'Бургас' => 'Бургас',
+        0 => array(
+          'vocabulary' => 'offer_location',
+          'parent' => 0,
+        ),
       ),
-      'allowed_values_function' => '',
+      'options_list_callback' => 'i18n_taxonomy_allowed_values',
     ),
     'translatable' => 0,
-    'type' => 'list_text',
+    'type' => 'taxonomy_term_reference',
   );
 
   // Exported field_base: 'field_telephone_number'

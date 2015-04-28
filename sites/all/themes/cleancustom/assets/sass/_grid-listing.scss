@@ -1,0 +1,33 @@
+.grid-listing-container {
+  .pane-title {
+    margin-top: $space-20;
+  }
+  .view-content {
+    @extend %clearfix-ext;
+  }
+  .views-row {
+    margin-bottom: 30px;
+  }
+  .views-field-field-offer-images {
+    padding-top: 5px;
+    text-align: center;
+    border: solid lighten($gray, 10%);
+    border-width: 1px 1px 0 1px;
+    img {
+      @include border-radius(3px);
+    }
+  }
+  .views-field-title,
+  .views-field-name {
+    padding: 5px;
+    border: solid lighten($gray, 10%);
+  }
+  .views-field-title {
+    border-width: 0 1px 0 1px;
+  }
+  .views-field-name {
+    padding-top: 0;
+    border-width: 0 1px 1px 1px;
+    font-size: $text-14;
+  }
+}
