@@ -10,13 +10,30 @@
   font-style: normal;
 }
 .fa:before,
-.fa:after {
+.fa:after,
+.pane-apachesolr-form .form-actions:before {
   font-family: 'FontAwesome';
   line-height: 1;
 }
-.fa-search:before {
-  content: '\f002';
-}
+.pane-apachesolr-form {
+  .form-actions {
+    position: relative;
+    input[type="submit"] {
+      padding-left: 25px;
+      padding-right: 15px;
+    }
+    &:before {
+      content: '\f002';
+      position: absolute;
+      top: 10px;
+      left: 9px;
+      @include transition(all, 0.4s, ease);
+    }
+    &:hover:before {
+      color: $white;
+    }
+  }
+} 
 .fa-user:before {
   content: '\f007';
 }
@@ -36,4 +53,10 @@
 }
 .fa-sign-out:before {
   content: "\f08b";
+}
+%fa-chevron-right:after {
+  @extend .fa;
+  content: "\f054";
+  margin-left: 5px;
+  @include transition(all, 0.2s, ease);
 }

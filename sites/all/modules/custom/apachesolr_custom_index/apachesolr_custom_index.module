@@ -1,0 +1,28 @@
+<?php
+/**
+ * @file
+ * Custom functionality to extend apache solr search.
+ */
+
+/**
+ * Build the documents before sending them to Solr.
+ *
+ * Supports all types of
+ * hook_apachesolr_index_document_build_' . $entity_type($documents[$id], $entity, $env_id);
+ *
+ * The function is the follow-up for apachesolr_update_index but then for
+ * specific entity types
+ *
+ * @param ApacheSolrDocument $document
+ * @param object $entity
+ * @param string $env_id
+ *   The machine name of the environment.
+ */
+function apachesolr_custom_index_apachesolr_index_document_build_node(ApacheSolrDocument $document, $entity, $env_id) {
+  if (isset($entity->field_offer_images[LANGUAGE_NONE][0]['uri'])) {  
+    $document->addField('sm_field_thumb', $entity->field_offer_images[LANGUAGE_NONE][0]['uri']);
+  }
+}
+function apachesolr_custom_index_apachesolr_query_prepare(DrupalSolrQueryInterface $query) {
+  $query->addParam('fl', 'sm_field_thumb');
+}

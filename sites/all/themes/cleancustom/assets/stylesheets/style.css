@@ -94,48 +94,6 @@ article {
   display: block;
 }
 
-@font-face {
-  font-family: 'FontAwesome';
-  src: url("../font-awesome/fontawesome-webfont.eot?v=4.2.0");
-  src: url("../font-awesome/fontawesome-webfont.eot?#iefix&v=4.2.0") format("embedded-opentype"), url("../font-awesome/fontawesome-webfont.woff?v=4.2.0") format("woff"), url("../font-awesome/fontawesome-webfont.ttf?v=4.2.0") format("truetype"), url("../font-awesome/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-/* line 12, ../sass/_font-awesome.scss */
-.fa:before, .node-type-offer .author-name:before,
-.fa:after,
-.node-type-offer .author-name:after {
-  font-family: 'FontAwesome';
-  line-height: 1;
-}
-
-/* line 17, ../sass/_font-awesome.scss */
-.fa-search:before {
-  content: '\f002';
-}
-
-/* line 20, ../sass/_font-awesome.scss */
-.fa-user:before, .node-type-offer .author-name:before {
-  content: '\f007';
-}
-
-/* line 23, ../sass/_font-awesome.scss */
-.fa-shopping-cart:before {
-  content: "\f07a";
-}
-
-/* line 26, ../sass/_font-awesome.scss */
-.fa-facebook:before {
-  content: "\f09a";
-  margin-right: 5px;
-  color: #fff;
-}
-
-/* line 37, ../sass/_font-awesome.scss */
-.fa-sign-out:before {
-  content: "\f08b";
-}
-
 /* line 1, ../sass/_extends.scss */
 input[type="submit"],
 input[type="text"],
@@ -161,7 +119,7 @@ div, .col-12,
 }
 
 /* line 18, ../sass/_extends.scss */
-.block-user, .block-user .form-item, .block-user .form-actions, .menu li, .main-footer .block-menu li, .block-search .form-item-search-block-form, .comment .user-picture {
+.block-user, .block-user .form-item, .block-user .form-actions, .menu li, .main-footer .block-menu li, .form-item-apachesolr-panels-search-form, .comment .user-picture {
   float: left;
 }
 
@@ -202,6 +160,82 @@ div, .col-12,
 /* line 44, ../sass/_extends.scss */
 .block-user .form-actions input {
   border-radius: 50%;
+}
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../font-awesome/fontawesome-webfont.eot?v=4.2.0");
+  src: url("../font-awesome/fontawesome-webfont.eot?#iefix&v=4.2.0") format("embedded-opentype"), url("../font-awesome/fontawesome-webfont.woff?v=4.2.0") format("woff"), url("../font-awesome/fontawesome-webfont.ttf?v=4.2.0") format("truetype"), url("../font-awesome/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 12, ../sass/_font-awesome.scss */
+.fa:before, .node-type-offer .author-name:before,
+.fa:after,
+.more-link:after,
+.node-type-offer .author-name:after,
+.pane-apachesolr-form .form-actions:before {
+  font-family: 'FontAwesome';
+  line-height: 1;
+}
+
+/* line 19, ../sass/_font-awesome.scss */
+.pane-apachesolr-form .form-actions {
+  position: relative;
+}
+/* line 21, ../sass/_font-awesome.scss */
+.pane-apachesolr-form .form-actions input[type="submit"] {
+  padding-left: 25px;
+  padding-right: 15px;
+}
+/* line 25, ../sass/_font-awesome.scss */
+.pane-apachesolr-form .form-actions:before {
+  content: '\f002';
+  position: absolute;
+  top: 10px;
+  left: 9px;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+/* line 32, ../sass/_font-awesome.scss */
+.pane-apachesolr-form .form-actions:hover:before {
+  color: #fff;
+}
+
+/* line 37, ../sass/_font-awesome.scss */
+.fa-user:before, .node-type-offer .author-name:before {
+  content: '\f007';
+}
+
+/* line 40, ../sass/_font-awesome.scss */
+.fa-shopping-cart:before {
+  content: "\f07a";
+}
+
+/* line 43, ../sass/_font-awesome.scss */
+.fa-facebook:before {
+  content: "\f09a";
+  margin-right: 5px;
+  color: #fff;
+}
+
+/* line 54, ../sass/_font-awesome.scss */
+.fa-sign-out:before {
+  content: "\f08b";
+}
+
+/* line 57, ../sass/_font-awesome.scss */
+.more-link:after {
+  content: "\f054";
+  margin-left: 5px;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 /* line 1, ../sass/_layout.scss */
@@ -476,6 +510,22 @@ em {
   font-style: italic;
 }
 
+/* line 113, ../sass/_common.scss */
+.more-link {
+  display: inline-block;
+  width: 100%;
+  font-size: 12px;
+  text-align: right;
+}
+/* line 119, ../sass/_common.scss */
+.more-link:hover {
+  text-decoration: none;
+}
+/* line 121, ../sass/_common.scss */
+.more-link:hover:after {
+  color: #87d7dd;
+}
+
 /* line 1, ../sass/_typography.scss */
 body {
   font-size: 16px;
@@ -697,22 +747,17 @@ h6 {
 /* line 31, ../sass/_main-footer.scss */
 .motto-logo {
   display: inline-block;
-}
-
-/* line 34, ../sass/_main-footer.scss */
-.motto-logo {
   min-width: 340px;
 }
-/* line 36, ../sass/_main-footer.scss */
+/* line 34, ../sass/_main-footer.scss */
 .motto-logo .logo {
-  margin-top: 5px;
+  margin-top: 0;
 }
-/* line 38, ../sass/_main-footer.scss */
+/* line 36, ../sass/_main-footer.scss */
 .motto-logo .logo img {
   width: 60px;
-  height: auto;
 }
-/* line 43, ../sass/_main-footer.scss */
+/* line 40, ../sass/_main-footer.scss */
 .motto-logo p {
   line-height: 1.5;
   font-size: 12px;
@@ -881,78 +926,94 @@ textarea {
 }
 
 /* line 2, ../sass/_grid-listing.scss */
-.grid-listing-container .pane-title {
-  margin-top: 20px;
+.grid-listing-container h3 {
+  margin: 0;
 }
-/* line 8, ../sass/_grid-listing.scss */
-.grid-listing-container .views-row {
-  margin-bottom: 30px;
+/* line 5, ../sass/_grid-listing.scss */
+.grid-listing-container .pane-title {
+  margin-top: 10px;
 }
 /* line 11, ../sass/_grid-listing.scss */
-.grid-listing-container .views-field-field-offer-images {
+.grid-listing-container .views-row {
+  margin-bottom: 30px;
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+/* line 14, ../sass/_grid-listing.scss */
+.grid-listing-container .views-row:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+/* line 18, ../sass/_grid-listing.scss */
+.grid-listing-container .grid-images {
   padding-top: 5px;
   text-align: center;
   border: solid #c9cbcc;
   border-width: 1px 1px 0 1px;
 }
-/* line 16, ../sass/_grid-listing.scss */
-.grid-listing-container .views-field-field-offer-images img {
+/* line 23, ../sass/_grid-listing.scss */
+.grid-listing-container .grid-images img {
+  max-width: 208px;
   border-radius: 3px;
 }
-/* line 20, ../sass/_grid-listing.scss */
+/* line 28, ../sass/_grid-listing.scss */
 .grid-listing-container .views-field-title,
 .grid-listing-container .views-field-name {
   padding: 5px;
   border: solid #c9cbcc;
 }
-/* line 25, ../sass/_grid-listing.scss */
+/* line 33, ../sass/_grid-listing.scss */
 .grid-listing-container .views-field-title {
   border-width: 0 1px 0 1px;
 }
-/* line 28, ../sass/_grid-listing.scss */
+/* line 36, ../sass/_grid-listing.scss */
 .grid-listing-container .views-field-name {
   padding-top: 0;
   border-width: 0 1px 1px 1px;
   font-size: 14px;
 }
 
-/* line 1, ../sass/_panels.scss */
-.pane-block {
+/* line 2, ../sass/_panels.scss */
+.panel-pane h1 {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #e1e1e1;
+}
+/* line 6, ../sass/_panels.scss */
+.panel-pane h3 {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+/* line 11, ../sass/_panels.scss */
+.pane-node-comments {
+  margin-top: 40px;
+}
+
+/* line 1, ../sass/_sidebar_block.scss */
+.sidebar-block {
   position: relative;
   margin-bottom: 10px;
   padding: 10px;
   background: #eaf8f9;
   color: #434343;
 }
-
-/* line 9, ../sass/_panels.scss */
-.panel-pane h1 {
-  padding-bottom: 5px;
-  border-bottom: 1px solid #e1e1e1;
-}
-/* line 13, ../sass/_panels.scss */
-.panel-pane h3 {
-  padding-bottom: 5px;
-  border-bottom: 1px solid #e1e1e1;
-}
-
-/* line 18, ../sass/_panels.scss */
-.pane-node-comments {
-  margin-top: 40px;
-}
-
-/* line 2, ../sass/_terms_block.scss */
-.terms-block .pane-title {
+/* line 7, ../sass/_sidebar_block.scss */
+.sidebar-block .pane-title {
   text-align: center;
+  font-size: 18px;
   color: #fff;
   background: #87d7dd;
 }
-/* line 7, ../sass/_terms_block.scss */
-.terms-block a {
+/* line 13, ../sass/_sidebar_block.scss */
+.sidebar-block a {
   color: #888b8e;
 }
-/* line 10, ../sass/_terms_block.scss */
-.terms-block a.active:before {
+/* line 16, ../sass/_sidebar_block.scss */
+.sidebar-block a.active:before {
   position: absolute;
   content: '';
   display: inline-block;
@@ -962,16 +1023,20 @@ textarea {
   border-color: transparent;
   border-left-color: #87d7dd;
 }
-/* line 23, ../sass/_terms_block.scss */
-.terms-block .pane-content > ul > .first > a {
+/* line 30, ../sass/_sidebar_block.scss */
+.sidebar-block .pane-content ul li {
+  line-height: 1.2;
+}
+/* line 35, ../sass/_sidebar_block.scss */
+.sidebar-block .pane-content > ul > .first > a {
   text-transform: uppercase;
 }
-/* line 26, ../sass/_terms_block.scss */
-.terms-block .pane-content > ul > li {
+/* line 38, ../sass/_sidebar_block.scss */
+.sidebar-block .pane-content > ul > li {
   margin-bottom: 20px;
 }
-/* line 28, ../sass/_terms_block.scss */
-.terms-block .pane-content > ul > li > a {
+/* line 40, ../sass/_sidebar_block.scss */
+.sidebar-block .pane-content > ul > li > a {
   display: block;
   width: 100%;
   margin-bottom: 5px;
@@ -1023,92 +1088,89 @@ textarea {
 }
 
 /* line 1, ../sass/_search.scss */
-.block-search {
-  margin-bottom: 40px;
-  border-bottom: 1px solid #e1e1e1;
-}
-/* line 4, ../sass/_search.scss */
-.block-search .form-item-search-block-form {
-  width: 50%;
+.form-item-apachesolr-panels-search-form {
   margin-right: 10px;
 }
-/* line 8, ../sass/_search.scss */
-.block-search .form-item-search-block-form .form-text {
+/* line 4, ../sass/_search.scss */
+.form-item-apachesolr-panels-search-form .form-text {
+  width: 100%;
   margin-top: 5px;
 }
-/* line 12, ../sass/_search.scss */
-.block-search .form-actions {
+
+/* line 9, ../sass/_search.scss */
+.form-actions {
   display: inline-block;
 }
 
 /* line 1, ../sass/_offer.scss */
-.offer-left {
-  padding: 0 10px;
-}
-
-/* line 4, ../sass/_offer.scss */
 .pane-node-body {
   padding: 40px 0;
   border-bottom: 1px solid #ededed;
 }
-/* line 7, ../sass/_offer.scss */
+/* line 4, ../sass/_offer.scss */
 .pane-node-body .pane-content {
   padding: 20px 10px;
   border: 1px solid #e1e1e1;
   border-radius: 3px;
 }
 
-/* line 14, ../sass/_offer.scss */
+/* line 11, ../sass/_offer.scss */
 .pane-node-field-offer-price .field-item {
   font-size: 18px;
   font-weight: bold;
 }
 
-/* line 21, ../sass/_offer.scss */
-.node-type-offer .pane-block .pane-title,
-.node-type-offer .pane-block .pane-content {
+/* line 18, ../sass/_offer.scss */
+.node-type-offer .sidebar-block .pane-title,
+.node-type-offer .sidebar-block .pane-content {
   display: inline-block;
 }
-/* line 25, ../sass/_offer.scss */
-.node-type-offer .pane-block .pane-content {
+/* line 22, ../sass/_offer.scss */
+.node-type-offer .sidebar-block .pane-title {
+  font-size: 16px;
+  background: none;
+  color: #434343;
+}
+/* line 27, ../sass/_offer.scss */
+.node-type-offer .sidebar-block .pane-content {
   font-size: 14px;
 }
-/* line 32, ../sass/_offer.scss */
+/* line 34, ../sass/_offer.scss */
 .node-type-offer .author-name:before {
   font-size: 18px;
 }
-/* line 36, ../sass/_offer.scss */
+/* line 38, ../sass/_offer.scss */
 .node-type-offer .author-offline,
 .node-type-offer .author-online,
 .node-type-offer .author-last-seen,
 .node-type-offer .author-joined {
   display: none;
 }
-/* line 43, ../sass/_offer.scss */
+/* line 45, ../sass/_offer.scss */
 .node-type-offer .pane-other-user-offers .pane-title {
   display: block;
   margin-bottom: 10px;
   padding-bottom: 5px;
   border-bottom: 1px solid #e1e1e1;
 }
-/* line 49, ../sass/_offer.scss */
+/* line 51, ../sass/_offer.scss */
 .node-type-offer .pane-other-user-offers .pane-content {
   display: block;
 }
-/* line 54, ../sass/_offer.scss */
+/* line 56, ../sass/_offer.scss */
 .node-type-offer .pane-other-user-offers .view-other-user-offers .view-content {
   margin-left: -5px;
   margin-right: -5px;
   font-size: 0;
 }
-/* line 59, ../sass/_offer.scss */
+/* line 61, ../sass/_offer.scss */
 .node-type-offer .pane-other-user-offers .view-other-user-offers .views-row {
   display: inline-block;
   vertical-align: top;
   width: 33.333333%;
   padding: 5px;
 }
-/* line 65, ../sass/_offer.scss */
+/* line 67, ../sass/_offer.scss */
 .node-type-offer .pane-other-user-offers .view-other-user-offers .views-field-title {
   font-size: 14px;
 }
@@ -1275,4 +1337,15 @@ ul.quicktabs-tabs li a {
 /* line 19, ../sass/_quicktabs.scss */
 ul.quicktabs-tabs li a:hover {
   text-decoration: none;
+}
+
+/* line 2, ../sass/_views-filters.scss */
+.views-exposed-form .form-type-select,
+.views-exposed-form select {
+  width: 100%;
+  max-width: 150px;
+}
+/* line 8, ../sass/_views-filters.scss */
+.views-exposed-form .views-exposed-widget .form-submit {
+  margin-top: 20px;
 }

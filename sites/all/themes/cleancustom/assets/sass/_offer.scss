@@ -1,6 +1,3 @@
-.offer-left {
-  padding: 0 10px;
-}
 .pane-node-body {
   padding: $space-40 0;
   border-bottom: 1px solid darken($light-gray, 5%);
@@ -17,10 +14,15 @@
   }
 }
 .node-type-offer {
-  .pane-block {
+  .sidebar-block {
     .pane-title,
     .pane-content {
       display: inline-block;
+    }
+    .pane-title {
+      font-size: $text-16;
+      background: none;
+      color: $text-gray;  
     }
     .pane-content {
       font-size: $text-14;

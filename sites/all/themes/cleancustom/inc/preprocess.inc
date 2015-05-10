@@ -1,14 +1,13 @@
 <?php
 /**
-* Implements hook_preprocess_page().
-*/
+ * @file 
+ * Preprocess functions.
+ */
 
+/**
+ * Implements hook_preprocess_page().
+ */
 function cleancustom_preprocess_page(&$variables) {
-  $variables['mainmenu'] = theme(
-    'mega_menu', array(
-      'menu' => menu_tree_all_data(theme_get_setting('menu_element')),
-    )
-  );
   $args = arg();
   if (!empty($args[1]) && $args[1] == 'login') {
     $variables['title'] = t('Вход');
@@ -61,13 +60,13 @@ function cleancustom_preprocess_page(&$variables) {
                                     )
                                   );
     $variables['logout'] = l(t('Изход'), "user/logout", 
-                                    array(
-                                      'attributes' => array(
-                                        'title' => t('Изход'),
-                                        'class' => array('fa fa-sign-out'),
-                                      ),
-                                    )
-                                  );
+                              array(
+                                'attributes' => array(
+                                  'title' => t('Изход'),
+                                  'class' => array('fa fa-sign-out'),
+                                ),
+                              )
+                            );
   }
 
   $variables['header'] = theme('header', array(
@@ -91,37 +90,52 @@ function cleancustom_preprocess_page(&$variables) {
 }
 
 /**
-* Implements hook_preprocess_node().
-*/
-
-function cleancustom_preprocess_node(&$variables) {
+ * Implements hook_preprocess_node().
+ */
+// function cleancustom_preprocess_node(&$variables) {
   
-}
+// }
 
 /**
 * Implements hook_preprocess_region().
 */
+// function cleancustom_preprocess_region(&$variables) {
 
-function cleancustom_preprocess_region(&$variables) {
-
-}
+// }
 
 /**
-* Implements hook_preprocess_comment().
-*/
+ * Implements hook_preprocess_comment().
+ */
+// function cleancustom_preprocess_comment(&$variables) {
 
-function cleancustom_preprocess_comment(&$variables) {
-
-}
+// }
 
 /**
  * Implements hook_css_alter(&$css).
  */
-
 function cleancustom_css_alter(&$css) {
   unset($css[drupal_get_path('module', 'system'). '/system.base.css']);
   unset($css[drupal_get_path('module', 'system'). '/system.menus.css']);
   unset($css[drupal_get_path('module', 'system'). '/system.theme.css']);
-  unset($css[drupal_get_path('module', 'commerce'). '/modules/line_item/theme/commerce_line_item.theme.css']);
-  unset($css[drupal_get_path('module', 'commerce'). '/modules/cart/theme/commerce_cart.theme.css']);
+  unset($css[drupal_get_path('module', 'search'). '/search.css']);
+}
+
+/**
+ * Implements hook_preprocess_search_result().
+ */
+function cleancustom_preprocess_search_result(&$variables) {
+  $result = $variables['result'];
+  $node_image_uri = $result['fields']['sm_field_thumb'][0];
+  $node_image_html =  theme('image_style', array('style_name' => 'offer_list', 'path' => $node_image_uri));
+  $variables['node_image'] = l($node_image_html, '/', 
+                                array(
+                                  'html' => TRUE,
+                                  'attributes' => array(
+                                    'class' => array('grid-image'),
+                                  ),
+                                )
+                              );
+  $variables['author'] = $result['fields']['name'];
+  // var_dump($variables['node_image']);
+  // print_r($variables);
 }

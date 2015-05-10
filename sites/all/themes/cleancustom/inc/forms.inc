@@ -28,6 +28,9 @@ function cleancustom_form_alter(&$form, &$form_state, $form_id) {
     $form['account']['name']['#description'] = '';
     $form['account']['mail']['#description'] = '';
   }
+  if ($form_id == 'user_pass') {
+    $form['actions']['submit']['#value']= t('Заяви нова парола');
+  }
   if ($form_id == 'offer_node_form') {
     $form['field_offer_images']['und']['#file_upload_description'] = '';
     unset($form['actions']['preview']);
@@ -35,7 +38,7 @@ function cleancustom_form_alter(&$form, &$form_state, $form_id) {
     $form['field_offer_images']['und']['#file_upload_title'] = '';
     $form['actions']['submit']['#value']= t('Публикувай Обявата');
   }
-  if ($form_id == 'comment_node_offer_form') {
+  if ($form_id == 'comment_node_offer_form' || $form_id == 'comment_node_forum_form') {
     $form['actions']['submit']['#value']= t('Коментирай');
   }
   if ($form_id == 'user_profile_form') {
@@ -51,5 +54,8 @@ function cleancustom_form_alter(&$form, &$form_state, $form_id) {
       '#markup' => t('<h5>Смяна на парола</h5>'),
     );
     $form['actions']['submit']['#value']= t('Запази промените');
+  }
+  if ($form_id == 'apachesolr_panels_search_form') {
+    $form['apachesolr_panels_search_form']['#attributes']['placeholder'] = t('Търсете оферти тук...');
   }
 }

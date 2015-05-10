@@ -50,11 +50,11 @@ body {
   margin-top: 50px;
 }
 h1 {
-  margin-bottom: 20px;
+  margin-bottom: $space-20;
   color: darken($gray, 30%);
 }
 h2.pane-title {
-  margin-bottom: 10px;
+  margin-bottom: $space-10;
   padding: 5px 0;
 }
 h3 {
@@ -108,4 +108,18 @@ table {
 }
 em {
   font-style: italic;
+}
+
+.more-link {
+  @extend %fa-chevron-right;
+  display: inline-block;
+  width: 100%;
+  font-size: $text-12;
+  text-align: right;
+  &:hover {
+    text-decoration: none;
+    &:after {
+      color: darken($sky-blue, 25%);
+    }
+  }
 }

@@ -1,19 +1,27 @@
 .grid-listing-container {
+  h3 {
+    margin: 0;
+  }
   .pane-title {
-    margin-top: $space-20;
+    margin-top: $space-10;
   }
   .view-content {
     @extend %clearfix-ext;
   }
   .views-row {
     margin-bottom: 30px;
+    @include transition(all, 200ms, ease);
+    &:hover {
+      @include transform(scale(1.1));
+    }
   }
-  .views-field-field-offer-images {
+  .grid-images {
     padding-top: 5px;
     text-align: center;
     border: solid lighten($gray, 10%);
     border-width: 1px 1px 0 1px;
     img {
+      max-width: 208px;
       @include border-radius(3px);
     }
   }

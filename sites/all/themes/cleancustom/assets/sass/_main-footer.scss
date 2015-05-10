@@ -21,7 +21,7 @@
       }
     }
     a {
-      margin-right: 10px;
+      margin-right: $space-10;
       text-transform: uppercase;
       font-size: $text-14;
       color: $white;
@@ -30,14 +30,11 @@
 }
 .motto-logo {
   display: inline-block;
-}
-.motto-logo {
   min-width: 340px;
   .logo {
-    margin-top: 5px;
+    margin-top: 0;
     img {
       width: 60px;
-      height: auto;
     }
   }
   p {

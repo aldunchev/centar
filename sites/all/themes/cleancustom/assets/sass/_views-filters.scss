@@ -1,0 +1,12 @@
+.views-exposed-form {
+  .form-type-select,
+  select {
+    width: 100%;
+    max-width: 150px;
+  }
+  .views-exposed-widget {
+    .form-submit {
+      margin-top: $space-20;
+    }
+  }
+}

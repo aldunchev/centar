@@ -1,0 +1,51 @@
+.sidebar-block {
+  position: relative;
+  margin-bottom: $space-10;
+  padding: $space-10;
+  background: $sky-blue;
+  color: $text-gray;
+  .pane-title {
+    text-align: center;
+    font-size: $text-18;
+    color: $white;
+    background: darken($sky-blue, 25%);
+  }
+  a {
+    color: darken($gray, 15%);
+    &.active {
+      &:before {
+        position: absolute;
+        content: '';
+        display: inline-block;
+        left: 0;
+        border-style: solid;
+        border-width: 8px;
+        border-color: transparent;
+        border-left-color: darken($sky-blue, 25%);
+      }
+    } 
+  }
+  .pane-content {
+    ul {
+      li {
+        line-height: 1.2;
+      }
+    }
+    & > ul {
+      & > .first > a {
+        text-transform: uppercase;
+      }
+      & > li {
+        margin-bottom: $space-20;
+        &  > a {
+          display: block;
+          width: 100%;
+          margin-bottom: 5px;
+          padding-bottom: 5px;
+          font-weight: bold;
+          border-bottom: 2px solid darken($gray, 15%);
+        }
+      }
+    }
+  } 
+}

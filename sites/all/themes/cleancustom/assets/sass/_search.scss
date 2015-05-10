@@ -1,15 +1,11 @@
-.block-search {
-  margin-bottom: $space-40;
-  border-bottom: 1px solid darken($light-gray, 10%);
-  .form-item-search-block-form {
-    width: 50%;
-    @extend %fl-left-ext;
-    margin-right: 10px;
-    .form-text {
-      margin-top: 5px;
-    }
+.form-item-apachesolr-panels-search-form {
+  @extend %fl-left-ext;
+  margin-right: $space-10;
+  .form-text {
+    width: 100%;
+    margin-top: 5px;
   }
-  .form-actions {
-    display: inline-block;
-  }
+}
+.form-actions {
+  display: inline-block;
 }
