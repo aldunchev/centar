@@ -209,6 +209,14 @@ function centar_translations_translations_defaults() {
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['bg:default']['4c2a8fe7eaf24721cc7a9f0175115bd4'] = array(
+    'source' => 'Message',
+    'context' => '',
+    'location' => '/admin/structure/pages/add/page-front_page_panel/content',
+    'translation' => 'Съобщение',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['bg:default']['4fbd18c9eefb5827d7e9cd792f299fbc'] = array(
     'source' => 'Submitted by !username on !datetime',
     'context' => '',
@@ -414,6 +422,38 @@ function centar_translations_translations_defaults() {
     'context' => '',
     'location' => '/admin/people',
     'translation' => '@count дни',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['bg:default']['b21cb897aafd9d6484957ba7f4abb700'] = array(
+    'source' => 'Send yourself a copy.',
+    'context' => '',
+    'location' => '/contact',
+    'translation' => 'Изпрати ми копие.',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['bg:default']['b23ba156154d37947f632aca8fb4f032'] = array(
+    'source' => 'Add new comment',
+    'context' => '',
+    'location' => '/node/1',
+    'translation' => 'Добави коментар',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['bg:default']['bbaff12800505b22a853e8b7f4eb6a22'] = array(
+    'source' => 'Contact',
+    'context' => '',
+    'location' => '/admin/structure/menu/manage/navigation',
+    'translation' => 'Контакт',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['bg:default']['bc82c84acc0c68f760ecd5bac0dddc7d'] = array(
+    'source' => 'Your e-mail address',
+    'context' => '',
+    'location' => '/contact',
+    'translation' => 'Вашият e-mail адрес',
     'plid' => 0,
     'plural' => 0,
   );

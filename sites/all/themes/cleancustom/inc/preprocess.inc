@@ -136,6 +136,4 @@ function cleancustom_preprocess_search_result(&$variables) {
                                 )
                               );
   $variables['author'] = $result['fields']['name'];
-  // var_dump($variables['node_image']);
-  // print_r($variables);
 }

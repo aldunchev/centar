@@ -1,1 +1,21 @@
-/* Forum Category Listing */
+.node-forum {
+  .user-picture {
+    margin-right: $space-10;
+    @extend %fl-left-ext;
+  }
+  .submitted {
+    font-size: $text-14;
+  }
+  .content {
+    padding-top: $space-20;
+    clear: both;
+  }
+  .field-name-taxonomy-forums {
+    margin-bottom: $space-20;
+    font-size: $text-18;
+  }
+  .field-name-body {
+    padding-bottom: $space-10;
+    border-bottom: 1px solid darken($light-gray, 10%);;
+  }
+}

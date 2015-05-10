@@ -58,4 +58,8 @@ function cleancustom_form_alter(&$form, &$form_state, $form_id) {
   if ($form_id == 'apachesolr_panels_search_form') {
     $form['apachesolr_panels_search_form']['#attributes']['placeholder'] = t('Търсете оферти тук...');
   }
+  if ($form_id == 'contact_site_form') {
+    $form['actions']['submit']['#value']= t('Изпрати');
+  }
+  
 }
