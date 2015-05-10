@@ -9,6 +9,22 @@
  */
 function centar_translations_translations_defaults() {
   $translations = array();
+  $translations['bg:default']['099af53f601532dbd31e0ea99ffdeb64'] = array(
+    'source' => 'delete',
+    'context' => '',
+    'location' => '/admin/config/regional/translate/translate',
+    'translation' => 'изтрии',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['bg:default']['0be8406951cdfda82f00f79328cf4efc'] = array(
+    'source' => 'Comment',
+    'context' => '',
+    'location' => '/admin/config/regional/translate',
+    'translation' => 'Коментар',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['bg:default']['1063e38cb53d94d386f21227fcd84717'] = array(
     'source' => 'Remove',
     'context' => '',
@@ -17,11 +33,35 @@ function centar_translations_translations_defaults() {
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['bg:default']['1141130f0ff1284057047b05e17e63c4'] = array(
+    'source' => '@count hours',
+    'context' => '',
+    'location' => '/admin/people',
+    'translation' => '@count часа',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['bg:default']['13348442cc6a27032d2b4aa28b75a5d3'] = array(
     'source' => 'Search',
     'context' => '',
     'location' => '/user/1',
     'translation' => 'Търси',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['bg:default']['156a8ef39c5aedbd1b73f515d3e3cf7a'] = array(
+    'source' => '@count weeks',
+    'context' => '',
+    'location' => '/user/1',
+    'translation' => '@count седмици',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['bg:default']['16d2b386b2034b9488996466aaae0b57'] = array(
+    'source' => 'History',
+    'context' => '',
+    'location' => '/user/1',
+    'translation' => 'Информация',
     'plid' => 0,
     'plural' => 0,
   );
@@ -49,6 +89,14 @@ function centar_translations_translations_defaults() {
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['bg:default']['25812bf456959aa5f28dc570f341a3ba'] = array(
+    'source' => 'Topic',
+    'context' => '',
+    'location' => '/forum/41',
+    'translation' => 'Тема',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['bg:default']['25a04957b989168b2dd05fd9eb7a3673'] = array(
     'source' => 'Passwords match:',
     'context' => '',
@@ -62,6 +110,14 @@ function centar_translations_translations_defaults() {
     'context' => '',
     'location' => '/admin/config/regional/language',
     'translation' => 'Регистрация',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['bg:default']['34ac805c9077c5ca6ae3565dab6ce723'] = array(
+    'source' => 'Topics',
+    'context' => '',
+    'location' => '/forum',
+    'translation' => 'Теми',
     'plid' => 0,
     'plural' => 0,
   );
@@ -105,11 +161,35 @@ function centar_translations_translations_defaults() {
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['bg:default']['3d00bbbf613b717e7dd89b8f13a47218'] = array(
+    'source' => 'Password reset instructions will be mailed to %email. You must log out to use the password reset link in the e-mail.',
+    'context' => '',
+    'location' => '/user/password',
+    'translation' => 'Инструкции за смяна на парола ще бъдат изпратени на: %email. Трябва да излезете от системата за да използвате линка за новата парола.',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['bg:default']['438387d2814797ffa5a3f6b877ea612a'] = array(
+    'source' => 'Add comment',
+    'context' => '',
+    'location' => '/node/3',
+    'translation' => 'Добави коментар',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['bg:default']['4394c8d8e63c470de62ced3ae85de5ae'] = array(
     'source' => 'Log out',
     'context' => '',
     'location' => '/admin/config/regional/language',
     'translation' => 'Изход',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['bg:default']['492854807a274ec6d77bb1c5aff56704'] = array(
+    'source' => '@count min',
+    'context' => '',
+    'location' => '/admin/config',
+    'translation' => '@count мин',
     'plid' => 0,
     'plural' => 0,
   );
@@ -137,6 +217,30 @@ function centar_translations_translations_defaults() {
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['bg:default']['5dc52ca9ffdc26147075682c92a0a853'] = array(
+    'source' => 'Posts',
+    'context' => '',
+    'location' => '/forum',
+    'translation' => 'Мнения',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['bg:default']['5dd6278fdea1d1a53f162b209afd2ca2'] = array(
+    'source' => 'Last post',
+    'context' => '',
+    'location' => '/forum',
+    'translation' => 'Последни',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['bg:default']['5f26e28f4c098aea3d0578120b97e0bc'] = array(
+    'source' => 'By !author @time ago',
+    'context' => '',
+    'location' => '/forum/55',
+    'translation' => 'От !author, преди @time',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['bg:default']['677c8c6f8cafa3ebdd999eea7d18beda'] = array(
     'source' => 'Password strength:',
     'context' => '',
@@ -161,11 +265,43 @@ function centar_translations_translations_defaults() {
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['bg:default']['705fbbd6e1667845569c00fd7523d343'] = array(
+    'source' => '1 week',
+    'context' => '',
+    'location' => '/admin/config/system/cron',
+    'translation' => '1 седмица',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['bg:default']['70a54779aae07a17ce469c24d2a5ab73'] = array(
+    'source' => 'Member for',
+    'context' => '',
+    'location' => '/user/1',
+    'translation' => 'Регистриран от',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['bg:default']['72ab9d0304d3e84c6aa2dd15eda282f2'] = array(
+    'source' => '1 hour',
+    'context' => '',
+    'location' => '/admin/config',
+    'translation' => '1 час',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['bg:default']['7fa3b767c460b54a2be4d49030b349c7'] = array(
     'source' => 'no',
     'context' => '',
     'location' => '/user/4/edit?destination=admin/people',
     'translation' => 'не',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['bg:default']['80e0e3c5bb40b5e62149df0ce746be93'] = array(
+    'source' => 'Filter by field @field of type @type.',
+    'context' => '',
+    'location' => '/index.php',
+    'translation' => 'Филтрирай по @field of type @type.',
     'plid' => 0,
     'plural' => 0,
   );
@@ -201,11 +337,35 @@ function centar_translations_translations_defaults() {
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['bg:default']['8bd3d92710919bcd20487131e61b2f68'] = array(
+    'source' => '@count months',
+    'context' => '',
+    'location' => '/admin/structure/pages/nojs/operation/node_view/handlers/node_view__offer_panel_template/content',
+    'translation' => '@count месеца',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['bg:default']['8cc46df5ae23686a6fbb8e132f4aaf26'] = array(
+    'source' => 'Replies',
+    'context' => '',
+    'location' => '/index.php',
+    'translation' => 'Отговори',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['bg:default']['91412465ea9169dfd901dd5e7c96dd99'] = array(
     'source' => 'Upload',
     'context' => '',
     'location' => '/node/add/offer',
     'translation' => 'Добави',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['bg:default']['91de1625817dd08c1963c09c5c3371c6'] = array(
+    'source' => 'Last reply',
+    'context' => '',
+    'location' => '/forum/41',
+    'translation' => 'Последна активност',
     'plid' => 0,
     'plural' => 0,
   );
@@ -233,11 +393,27 @@ function centar_translations_translations_defaults() {
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['bg:default']['a0e7642fb04ea92afc1d861f614fe75a'] = array(
+    'source' => '- Any -',
+    'context' => '',
+    'location' => '/admin/structure/views/settings',
+    'translation' => 'Всички',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['bg:default']['a6105c0a611b41b08f1209506350279e'] = array(
     'source' => 'yes',
     'context' => '',
     'location' => '/user/4/edit?destination=admin/people',
     'translation' => 'да',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['bg:default']['a91fb167388b962082f35abd95f36193'] = array(
+    'source' => '@count days',
+    'context' => '',
+    'location' => '/admin/people',
+    'translation' => '@count дни',
     'plid' => 0,
     'plural' => 0,
   );
@@ -262,6 +438,14 @@ function centar_translations_translations_defaults() {
     'context' => '',
     'location' => '/',
     'translation' => 'Добави Обява',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['bg:default']['ca9240b03fd8c1c8efe16cdd022e7a85'] = array(
+    'source' => 'Filter by @title:',
+    'context' => '',
+    'location' => '/search/offer/%D0%B0%D0%B2%D1%82%D0%BE',
+    'translation' => 'Филтър по @title:',
     'plid' => 0,
     'plural' => 0,
   );
@@ -305,11 +489,35 @@ function centar_translations_translations_defaults() {
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['bg:default']['de95b43bceeb4b998aed4aed5cef1ae7'] = array(
+    'source' => 'edit',
+    'context' => '',
+    'location' => '/admin/config/regional/language',
+    'translation' => 'редактирай',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['bg:default']['e1bd06d422598c306c013e9c334e54a3'] = array(
     'source' => 'Request new password',
     'context' => '',
     'location' => '/',
     'translation' => 'Заявете нова парола',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['bg:default']['e3b481d5297f475abc283227bedbd9b9'] = array(
+    'source' => '1 day',
+    'context' => '',
+    'location' => '/user/1',
+    'translation' => '1 ден',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['bg:default']['e6a7f8a2f42cc35979973da8dfb10720'] = array(
+    'source' => 'Forum',
+    'context' => '',
+    'location' => '/forum',
+    'translation' => 'Форум',
     'plid' => 0,
     'plural' => 0,
   );
@@ -342,6 +550,22 @@ function centar_translations_translations_defaults() {
     'context' => '',
     'location' => '/user/login?destination=node/add/offer',
     'translation' => 'Нямате акаунт? ',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['bg:default']['eb6b06cab0dd72e04c4da68d511facf2'] = array(
+    'source' => 'Search results',
+    'context' => '',
+    'location' => '/index.php',
+    'translation' => 'Резултати',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['bg:default']['f0866d8d4567a04bb1620b51006a42af'] = array(
+    'source' => '-Any-',
+    'context' => '',
+    'location' => '/index.php',
+    'translation' => 'Всички',
     'plid' => 0,
     'plural' => 0,
   );

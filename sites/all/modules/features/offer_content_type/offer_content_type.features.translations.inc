@@ -17,6 +17,14 @@ function offer_content_type_translations_defaults() {
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['bg:field']['1a206884c12fc2eb51849b188507640f'] = array(
+    'source' => 'Comment',
+    'context' => 'comment_body:comment_node_page:label',
+    'location' => 'field:comment_body:comment_node_page:label',
+    'translation' => 'Коментар',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['bg:field']['255340a9717142849c30cfea6d4ce387'] = array(
     'source' => 'Offer Category',
     'context' => 'field_offer_category:offer:label',
@@ -30,6 +38,14 @@ function offer_content_type_translations_defaults() {
     'context' => 'body:offer:label',
     'location' => 'field:body:offer:label',
     'translation' => 'Описание',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['bg:field']['758ec00bfc2df5fba453cb88a04ab4e5'] = array(
+    'source' => 'Forums',
+    'context' => 'taxonomy_forums:forum:label',
+    'location' => 'field:taxonomy_forums:forum:label',
+    'translation' => 'Форуми',
     'plid' => 0,
     'plural' => 0,
   );
@@ -54,6 +70,14 @@ function offer_content_type_translations_defaults() {
     'context' => 'field_telephone_number:offer:label',
     'location' => 'field:field_telephone_number:offer:label',
     'translation' => 'Телефон',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['bg:field']['df013ee11e16caede360ac6af9762efb'] = array(
+    'source' => 'Comment',
+    'context' => 'comment_body:comment_node_forum:label',
+    'location' => 'field:comment_body:comment_node_forum:label',
+    'translation' => 'Коментар',
     'plid' => 0,
     'plural' => 0,
   );

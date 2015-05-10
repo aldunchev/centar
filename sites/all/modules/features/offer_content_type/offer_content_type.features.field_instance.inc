@@ -24,6 +24,13 @@ function offer_content_type_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 0,
       ),
+      'search_index' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -69,6 +76,13 @@ function offer_content_type_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 4,
       ),
+      'search_index' => array(
+        'label' => 'inline',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 4,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -79,7 +93,7 @@ function offer_content_type_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_address',
     'label' => 'Address',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'text_processing' => 0,
       'user_register_form' => FALSE,
@@ -103,6 +117,13 @@ function offer_content_type_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 6,
+      ),
+      'search_index' => array(
         'label' => 'above',
         'module' => 'taxonomy',
         'settings' => array(),
@@ -142,10 +163,18 @@ function offer_content_type_field_default_field_instances() {
         'label' => 'inline',
         'module' => 'image',
         'settings' => array(
-          'caption' => FALSE,
           'image_link' => '',
-          'image_style' => '',
-          'optionset' => 'default',
+          'image_style' => 'offer_list',
+        ),
+        'type' => 'image',
+        'weight' => 2,
+      ),
+      'search_index' => array(
+        'label' => 'inline',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => 'offer_list',
         ),
         'type' => 'image',
         'weight' => 2,
@@ -198,11 +227,12 @@ function offer_content_type_field_default_field_instances() {
         'type' => 'i18n_taxonomy_term_reference_link',
         'weight' => 7,
       ),
-      'teaser' => array(
+      'search_index' => array(
         'label' => 'above',
+        'module' => 'i18n_taxonomy',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'type' => 'i18n_taxonomy_term_reference_link',
+        'weight' => 7,
       ),
     ),
     'entity_type' => 'node',
@@ -229,6 +259,13 @@ function offer_content_type_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'inline',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 5,
+      ),
+      'search_index' => array(
         'label' => 'inline',
         'module' => 'text',
         'settings' => array(),

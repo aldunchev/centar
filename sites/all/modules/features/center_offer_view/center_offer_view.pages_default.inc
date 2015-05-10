@@ -360,7 +360,7 @@ function center_offer_view_default_page_manager_handlers() {
     );
     $pane->css = array(
       'css_id' => '',
-      'css_class' => 'pane-block',
+      'css_class' => 'sidebar-block',
     );
     $pane->extras = array();
     $pane->position = 0;
@@ -388,7 +388,7 @@ function center_offer_view_default_page_manager_handlers() {
     );
     $pane->css = array(
       'css_id' => '',
-      'css_class' => 'pane-block',
+      'css_class' => 'sidebar-block',
     );
     $pane->extras = array();
     $pane->position = 1;
@@ -414,7 +414,7 @@ function center_offer_view_default_page_manager_handlers() {
     );
     $pane->css = array(
       'css_id' => '',
-      'css_class' => '',
+      'css_class' => 'sidebar-block',
     );
     $pane->extras = array();
     $pane->position = 2;
@@ -444,7 +444,7 @@ function center_offer_view_default_page_manager_handlers() {
     );
     $pane->css = array(
       'css_id' => '',
-      'css_class' => 'pane-block',
+      'css_class' => 'sidebar-block',
     );
     $pane->extras = array();
     $pane->position = 3;
@@ -477,7 +477,7 @@ function center_offer_view_default_page_manager_handlers() {
     );
     $pane->css = array(
       'css_id' => '',
-      'css_class' => 'pane-block',
+      'css_class' => 'sidebar-block',
     );
     $pane->extras = array();
     $pane->position = 4;
@@ -500,9 +500,9 @@ function center_offer_view_default_page_manager_handlers() {
       'delta_reversed' => FALSE,
       'formatter_settings' => array(),
       'context' => 'argument_entity_id:node_1',
-      'override_title' => 0,
-      'override_title_text' => '',
-      'override_title_heading' => 'h2',
+      'override_title' => 1,
+      'override_title_text' => 'Адрес:',
+      'override_title_heading' => 'h6',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -510,7 +510,7 @@ function center_offer_view_default_page_manager_handlers() {
     );
     $pane->css = array(
       'css_id' => '',
-      'css_class' => 'pane-block',
+      'css_class' => 'sidebar-block',
     );
     $pane->extras = array();
     $pane->position = 5;
@@ -552,7 +552,7 @@ function center_offer_view_default_page_manager_handlers() {
     );
     $pane->css = array(
       'css_id' => '',
-      'css_class' => 'pane-block',
+      'css_class' => 'sidebar-block',
     );
     $pane->extras = array();
     $pane->position = 6;

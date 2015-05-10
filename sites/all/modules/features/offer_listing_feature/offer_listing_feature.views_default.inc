@@ -42,6 +42,13 @@ function offer_listing_feature_views_default_views() {
   $handler->display->display_options['style_options']['row_class'] = 'col-4 fl-left';
   $handler->display->display_options['style_options']['wrapper_class'] = 'item-list row';
   $handler->display->display_options['row_plugin'] = 'fields';
+  /* No results behavior: Global: Text area */
+  $handler->display->display_options['empty']['area']['id'] = 'area';
+  $handler->display->display_options['empty']['area']['table'] = 'views';
+  $handler->display->display_options['empty']['area']['field'] = 'area';
+  $handler->display->display_options['empty']['area']['empty'] = TRUE;
+  $handler->display->display_options['empty']['area']['content'] = '<h5>Съжаляваме, няма намерени обяви.</h5>';
+  $handler->display->display_options['empty']['area']['format'] = 'filtered_html';
   /* Relationship: Content: Author */
   $handler->display->display_options['relationships']['uid']['id'] = 'uid';
   $handler->display->display_options['relationships']['uid']['table'] = 'node';
@@ -63,6 +70,7 @@ function offer_listing_feature_views_default_views() {
   $handler->display->display_options['fields']['field_offer_images']['field'] = 'field_offer_images';
   $handler->display->display_options['fields']['field_offer_images']['label'] = '';
   $handler->display->display_options['fields']['field_offer_images']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_offer_images']['element_wrapper_class'] = 'grid-images';
   $handler->display->display_options['fields']['field_offer_images']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_offer_images']['settings'] = array(
     'image_style' => 'offer_list',
@@ -153,6 +161,43 @@ function offer_listing_feature_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'offer' => 'offer',
   );
+  /* Filter criterion: Content: Has taxonomy terms (with depth) */
+  $handler->display->display_options['filters']['term_node_tid_depth']['id'] = 'term_node_tid_depth';
+  $handler->display->display_options['filters']['term_node_tid_depth']['table'] = 'node';
+  $handler->display->display_options['filters']['term_node_tid_depth']['field'] = 'term_node_tid_depth';
+  $handler->display->display_options['filters']['term_node_tid_depth']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['term_node_tid_depth']['expose']['operator_id'] = 'term_node_tid_depth_op';
+  $handler->display->display_options['filters']['term_node_tid_depth']['expose']['label'] = 'Филтър по локация';
+  $handler->display->display_options['filters']['term_node_tid_depth']['expose']['operator'] = 'term_node_tid_depth_op';
+  $handler->display->display_options['filters']['term_node_tid_depth']['expose']['identifier'] = 'term_node_tid_depth';
+  $handler->display->display_options['filters']['term_node_tid_depth']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    3 => 0,
+  );
+  $handler->display->display_options['filters']['term_node_tid_depth']['type'] = 'select';
+  $handler->display->display_options['filters']['term_node_tid_depth']['vocabulary'] = 'offer_location';
+  $handler->display->display_options['filters']['term_node_tid_depth']['hierarchy'] = 1;
+  $handler->display->display_options['filters']['term_node_tid_depth']['depth'] = '0';
+  /* Filter criterion: Content: Has taxonomy terms (with depth) */
+  $handler->display->display_options['filters']['term_node_tid_depth_1']['id'] = 'term_node_tid_depth_1';
+  $handler->display->display_options['filters']['term_node_tid_depth_1']['table'] = 'node';
+  $handler->display->display_options['filters']['term_node_tid_depth_1']['field'] = 'term_node_tid_depth';
+  $handler->display->display_options['filters']['term_node_tid_depth_1']['value'] = '';
+  $handler->display->display_options['filters']['term_node_tid_depth_1']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['term_node_tid_depth_1']['expose']['operator_id'] = 'term_node_tid_depth_1_op';
+  $handler->display->display_options['filters']['term_node_tid_depth_1']['expose']['label'] = 'Филтър по категория';
+  $handler->display->display_options['filters']['term_node_tid_depth_1']['expose']['operator'] = 'term_node_tid_depth_1_op';
+  $handler->display->display_options['filters']['term_node_tid_depth_1']['expose']['identifier'] = 'term_node_tid_depth_1';
+  $handler->display->display_options['filters']['term_node_tid_depth_1']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    3 => 0,
+  );
+  $handler->display->display_options['filters']['term_node_tid_depth_1']['type'] = 'select';
+  $handler->display->display_options['filters']['term_node_tid_depth_1']['vocabulary'] = 'offer_type';
+  $handler->display->display_options['filters']['term_node_tid_depth_1']['hierarchy'] = 1;
+  $handler->display->display_options['filters']['term_node_tid_depth_1']['depth'] = '0';
   $export['offer_listing'] = $view;
 
   return $export;
