@@ -19,3 +19,17 @@
     border-bottom: 1px solid darken($light-gray, 10%);;
   }
 }
+
+/* Forums */
+
+#forum {
+  .submitted,
+  .posts,
+  .topics {
+    font-size: $text-14;
+  }
+  .posts,
+  .topics {
+    text-align: center;
+  }
+}

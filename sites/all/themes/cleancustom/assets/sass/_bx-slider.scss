@@ -1,5 +1,22 @@
-.bx-wrapper {
-  .bx-pager {
-    bottom: - 115px;
+.pane-node-field-offer-images {
+  .bx-wrapper {
+    .bx-pager {
+      max-width: 70px;
+      bottom: -75px;
+    }
   }
-} 
+}
+
+.view-other-user-offers {
+  .bx-wrapper {
+    .bx-viewport {
+      background: transparent;
+    }
+    .bx-prev {
+      left: -33px;
+    }
+    .bx-next {
+      right: -33px;
+    }
+  }
+}

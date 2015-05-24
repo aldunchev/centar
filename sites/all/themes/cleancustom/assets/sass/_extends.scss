@@ -27,7 +27,7 @@
   clear: both;
 }
 %primary-btn-ext {
-  padding: 10px 20px;
+  padding: $space-10 $space-20;
   font-size: $text-16;
   text-transform: uppercase;
   color: $black;
@@ -35,11 +35,17 @@
   background: $gold;
   @include transition(all, 0.4s, ease);
   @include box-shadow(0 2px 2px #afb1b3);
+  cursor: pointer;
   &:hover {
     color: $white;
     background-color: $light-blue;
     text-decoration: none;
   }
+}
+%btn-small-ext {
+  @extend %primary-btn-ext;
+  padding: $space-7 $space-10;
+  font-size: $text-14;
 }
 %round {
   border-radius: 50%;

@@ -52,7 +52,7 @@ function center_offer_view_image_default_styles() {
   // Exported image style: offer_thumb_100x100.
   $styles['offer_thumb_100x100'] = array(
     'name' => 'offer_thumb_100x100',
-    'label' => 'Offer Thumb 70x70',
+    'label' => 'Offer Thumb 100x100',
     'effects' => array(
       12 => array(
         'label' => 'Scale and crop',
@@ -64,8 +64,8 @@ function center_offer_view_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => 80,
-          'height' => 80,
+          'width' => 100,
+          'height' => 100,
         ),
         'weight' => 2,
       ),

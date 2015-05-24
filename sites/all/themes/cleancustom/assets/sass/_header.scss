@@ -97,7 +97,7 @@
   background-repeat: no-repeat;
   background-position: 15px center;
   font-size: $text-18;
-  &:hover {
+  .main-header &:hover {
     font-size: 20px;
   }
 }
@@ -108,7 +108,7 @@
   background-image: url('../images/lenta.png');
   background-position: center;
   background-size: 100% 100%;
-  p {
+  span {
     text-transform: uppercase;
     font-weight: bold;
     color: $black;

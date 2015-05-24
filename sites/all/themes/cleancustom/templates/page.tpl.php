@@ -90,7 +90,7 @@
         <h1 class="title"><?php print $title; ?></h1>
       </div>
     <?php endif; ?>
-    <?php if ($tabs && !$is_user_page): ?>
+    <?php if ($tabs && !$is_user_page && $user->uid == 1): ?>
       <div class="tabs">
         <?php print render($tabs); ?>
       </div>

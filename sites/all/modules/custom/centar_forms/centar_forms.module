@@ -1,0 +1,57 @@
+<?php
+/**
+ * @file
+ * Custom module for form alters.
+ */
+
+function centar_forms_form_alter(&$form, $form_state, $form_id) {
+  switch ($form_id){
+
+    case 'user_login_block':
+      unset($form['links']);
+      break;
+
+    case 'user_login':
+      $register_link = l(t('Register here'), 'user/register',
+                        array(
+                          'attributes' => array(
+                            'class' => array('register-link')
+                          ),
+                        ) 
+                      );
+      $form['user_register_link'] = array(
+        '#prefix' => '<div class="register-link-wrapper">',
+        '#markup' => '<strong>' . t('Not registered yet? ') . '</strong>' . $register_link,
+        '#suffix' => '</div>',
+      );
+      $form['name']['#description'] = '';
+      $form['pass']['#description'] = '';
+      break;
+
+    case 'user_register_form':
+      $form['account']['name']['#description'] = '';
+      $form['account']['mail']['#description'] = '';
+      break;
+
+    case 'search_block_form':
+      $form['search_block_form']['#attributes']['placeholder'] = t('Търсете оферти тук...');
+      break;
+
+    case 'apachesolr_panels_search_form':
+      $form['apachesolr_panels_search_form']['#attributes']['placeholder'] = t('Търсете оферти тук...');
+      break;
+
+    case 'offer_node_form':
+      $form['field_offer_images']['und']['#file_upload_description'] = '';
+      unset($form['actions']['preview']);
+      $form['body']['und'][0]['value']['#rows'] = 10;
+      $form['field_offer_images']['und']['#file_upload_title'] = '';
+      $form['actions']['submit']['#value']= t('Публикувай');
+      $form['actions']['delete']['#value']= t('Изтрий');
+      break;
+      
+    case 'contact_personal_form':
+      $form['actions']['submit']['#value']= t('Изпрати');
+      break;
+  }
+}

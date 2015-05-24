@@ -3,6 +3,9 @@ span.form-required {
 }
 .form-actions {
   cursor: pointer;
+  input {
+    margin-right: $space-10;
+  }
 }
 input[type="submit"] {
   @extend %primary-btn-ext;
@@ -21,6 +24,11 @@ input[type="text"],
 input[type="password"],
 textarea {
   padding-left: 12px;
+  @include transition(all, 0.2s, ease);
+  &:focus {
+  @include box-shadow('0 0 2px #c9cbcc');
+    
+  }
 }
 input[type="text"],
 input[type="password"],
@@ -28,7 +36,7 @@ textarea,
 select {
   background: $white;
   border: 1px solid lighten($gray, 10%);
-  @include box-shadow('0 0 2px #fafafa');
+  @include box-shadow('0 0 4px #c9cbcc inset');
 }
 .form-wrapper,
 .compact-form-wrapper {
@@ -73,10 +81,17 @@ select {
 }
 textarea {
   width: 100%;
+  padding-top: 5px;
   resize: none;
+  font-size: $text-14;
+  font-family: Arial, sans-serif;
 }
-input[type="file"] {
- 
+
+.bootstrap-filestyle {
+  margin-top: $space-20;
+  input[type="text"] {
+    display: inline-block;
+  }
 }
 
 .form-item-remember-me {

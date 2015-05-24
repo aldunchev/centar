@@ -40,7 +40,7 @@ function cleancustom_preprocess_page(&$variables) {
   $variables['logout'] = NULL;
 
   if ($variables['logged_in']) {
-    $user_name = $variables['user']->name;
+    $user_name = format_username($variables['user']);
     $variables['user_name'] = l($user_name, "user/",
                                 array(
                                   'attributes' => array(
@@ -92,9 +92,10 @@ function cleancustom_preprocess_page(&$variables) {
 /**
  * Implements hook_preprocess_node().
  */
-// function cleancustom_preprocess_node(&$variables) {
-  
-// }
+function cleancustom_preprocess_node(&$variables) {
+  // Aplly custom date format.
+    $variables['submitted'] = t('Submitted by !username on !datetime', array('!username' => $variables['name'], '!datetime' => format_date($variables['node']->created, 'centar')));
+}
 
 /**
 * Implements hook_preprocess_region().
@@ -106,18 +107,9 @@ function cleancustom_preprocess_page(&$variables) {
 /**
  * Implements hook_preprocess_comment().
  */
-// function cleancustom_preprocess_comment(&$variables) {
-
-// }
-
-/**
- * Implements hook_css_alter(&$css).
- */
-function cleancustom_css_alter(&$css) {
-  unset($css[drupal_get_path('module', 'system'). '/system.base.css']);
-  unset($css[drupal_get_path('module', 'system'). '/system.menus.css']);
-  unset($css[drupal_get_path('module', 'system'). '/system.theme.css']);
-  unset($css[drupal_get_path('module', 'search'). '/search.css']);
+function cleancustom_preprocess_comment(&$variables) {
+  // Aplly custom date format.
+  $variables['created'] = format_date($variables['comment']->created, 'centar');
 }
 
 /**
@@ -125,9 +117,11 @@ function cleancustom_css_alter(&$css) {
  */
 function cleancustom_preprocess_search_result(&$variables) {
   $result = $variables['result'];
-  $node_image_uri = $result['fields']['sm_field_thumb'][0];
+  // print_r($result);
+  $node_image_uri = $result['node']->field_offer_images['und'][0]['uri'];
   $node_image_html =  theme('image_style', array('style_name' => 'offer_list', 'path' => $node_image_uri));
-  $variables['node_image'] = l($node_image_html, '/', 
+  $nid = $result['node']->nid;
+  $variables['node_image'] = l($node_image_html, "node/$nid", 
                                 array(
                                   'html' => TRUE,
                                   'attributes' => array(
@@ -135,5 +129,5 @@ function cleancustom_preprocess_search_result(&$variables) {
                                   ),
                                 )
                               );
-  $variables['author'] = $result['fields']['name'];
+  $variables['author'] = $result['node']->name;
 }

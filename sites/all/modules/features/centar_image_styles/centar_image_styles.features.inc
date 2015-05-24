@@ -25,8 +25,8 @@ function centar_image_styles_image_default_styles() {
         'module' => 'image',
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => 208,
-          'height' => 167,
+          'width' => 416,
+          'height' => 334,
         ),
         'weight' => 1,
       ),

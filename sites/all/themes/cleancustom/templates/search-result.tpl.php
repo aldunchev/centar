@@ -66,7 +66,7 @@
 ?>
 <li class="<?php print $classes; ?> views-row col-4 fl-left"<?php print $attributes; ?>>
   <div class="grid-images">
-    <?php print $node_image; ?>
+    <?php print render($node_image); ?>
   </div>
   <h3 class="views-field-title"<?php print $title_attributes; ?>>
     <a href="<?php print $url; ?>">

@@ -1,0 +1,4 @@
+name = Centar Forms
+description = All form related code like alters.
+package = Custom
+core = 7.x

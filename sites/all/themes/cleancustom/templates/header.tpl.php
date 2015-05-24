@@ -26,7 +26,7 @@
   </div><!-- end .container -->
   <div class="container">
     <div class="motto clearfix">
-      <p><?php print $moto_text; ?></p>
+      <span><?php print $moto_text; ?></span>
     </div>
   </div>
 </header>

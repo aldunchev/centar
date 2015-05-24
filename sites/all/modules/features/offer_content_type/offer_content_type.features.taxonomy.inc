@@ -38,7 +38,7 @@ function offer_content_type_taxonomy_default_vocabularies() {
       'name' => 'Offer Type',
       'machine_name' => 'offer_type',
       'description' => '',
-      'hierarchy' => 1,
+      'hierarchy' => 0,
       'module' => 'taxonomy',
       'weight' => 0,
       'language' => 'und',

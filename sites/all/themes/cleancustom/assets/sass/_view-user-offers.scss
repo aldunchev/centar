@@ -1,0 +1,36 @@
+.view-user-offers {
+    .views-field-delete-node,
+    .views-field-edit-node {
+      text-align: center;
+    }
+  tbody {
+    .views-field-delete-node,
+    .views-field-edit-node {
+      font-size: 0;
+      a {
+        
+        &:hover {
+          text-decoration: none;
+          &:before {
+            color: lighten($crimson, 10%);
+            font-size: $text-22;
+          }
+        }
+      }
+    }
+    .views-field-delete-node {
+      a {
+        &:before {
+          @extend %fa-trash;
+          font-size: $text-18;
+        }
+      }
+    }
+    .views-field-edit-node {
+      & a:before {
+        @extend %fa-edit;
+        font-size: $text-18;
+      }
+    }
+  }
+}

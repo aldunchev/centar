@@ -376,7 +376,7 @@ function center_offer_view_default_page_manager_handlers() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'format' => 'long',
+      'format' => 'centar',
       'context' => 'argument_entity_id:node_1',
       'override_title' => 1,
       'override_title_text' => 'Добавена:',
@@ -431,7 +431,7 @@ function center_offer_view_default_page_manager_handlers() {
     $pane->access = array();
     $pane->configuration = array(
       'caller' => 'advanced_profile',
-      'picture_preset' => 'thumbnail',
+      'picture_preset' => 'user_small',
       'join_date_type' => 'short',
       'context' => 'relationship_entity_from_schema:uid-node-user_1',
       'override_title' => 1,

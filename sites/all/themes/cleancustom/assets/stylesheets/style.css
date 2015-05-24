@@ -119,7 +119,8 @@ div, .col-12,
 }
 
 /* line 18, ../sass/_extends.scss */
-.block-user, .block-user .form-item, .block-user .form-actions, .menu li, .main-footer .block-menu li, .form-item-apachesolr-panels-search-form, .node-forum .user-picture {
+.block-user, .block-user .form-item, .block-user .form-actions, .menu li, .main-footer .block-menu li, .form-item-apachesolr-panels-search-form,
+.form-item-search-block-form, .node-forum .user-picture {
   float: left;
 }
 
@@ -136,7 +137,7 @@ div, .col-12,
 }
 
 /* line 29, ../sass/_extends.scss */
-.primary-btn, input[type="submit"] {
+.btn-small, .node-offer-form .field-name-field-offer-images table input[type="submit"], .primary-btn, input[type="submit"] {
   padding: 10px 20px;
   font-size: 16px;
   text-transform: uppercase;
@@ -149,15 +150,22 @@ div, .col-12,
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
   box-shadow: 0 2px 2px #afb1b3;
+  cursor: pointer;
 }
-/* line 38, ../sass/_extends.scss */
-.primary-btn:hover, input[type="submit"]:hover {
+/* line 39, ../sass/_extends.scss */
+.btn-small:hover, .node-offer-form .field-name-field-offer-images table input[type="submit"]:hover, .primary-btn:hover, input[type="submit"]:hover {
   color: #fff;
   background-color: #35afba;
   text-decoration: none;
 }
 
-/* line 44, ../sass/_extends.scss */
+/* line 45, ../sass/_extends.scss */
+.btn-small, .node-offer-form .field-name-field-offer-images table input[type="submit"] {
+  padding: 7px 10px;
+  font-size: 14px;
+}
+
+/* line 50, ../sass/_extends.scss */
 .block-user .form-actions input {
   border-radius: 50%;
 }
@@ -170,72 +178,57 @@ div, .col-12,
   font-style: normal;
 }
 /* line 12, ../sass/_font-awesome.scss */
-.fa:before, .node-type-offer .author-name:before,
+.fa:before, .view-user-offers tbody .views-field-delete-node a:before, .view-user-offers tbody .views-field-edit-node a:before, .node-type-offer .author-name:before,
 .fa:after,
 .more-link:after,
 .node-type-offer .author-name:after,
-.pane-apachesolr-form .form-actions:before {
+.pane-apachesolr-form .form-actions:before,
+.pane-search-form .form-actions:before {
   font-family: 'FontAwesome';
   line-height: 1;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
-/* line 19, ../sass/_font-awesome.scss */
-.pane-apachesolr-form .form-actions {
-  position: relative;
-}
-/* line 21, ../sass/_font-awesome.scss */
-.pane-apachesolr-form .form-actions input[type="submit"] {
-  padding-left: 25px;
-  padding-right: 15px;
-}
-/* line 25, ../sass/_font-awesome.scss */
-.pane-apachesolr-form .form-actions:before {
-  content: '\f002';
-  position: absolute;
-  top: 10px;
-  left: 9px;
-  -webkit-transition: all 0.4s ease;
-  -moz-transition: all 0.4s ease;
-  -ms-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-}
-/* line 32, ../sass/_font-awesome.scss */
-.pane-apachesolr-form .form-actions:hover:before {
-  color: #fff;
-}
-
-/* line 37, ../sass/_font-awesome.scss */
+/* line 20, ../sass/_font-awesome.scss */
 .fa-user:before, .node-type-offer .author-name:before {
   content: '\f007';
 }
 
-/* line 40, ../sass/_font-awesome.scss */
+/* line 23, ../sass/_font-awesome.scss */
 .fa-shopping-cart:before {
   content: "\f07a";
 }
 
-/* line 43, ../sass/_font-awesome.scss */
+/* line 26, ../sass/_font-awesome.scss */
 .fa-facebook:before {
   content: "\f09a";
   margin-right: 5px;
   color: #fff;
 }
 
-/* line 54, ../sass/_font-awesome.scss */
+/* line 37, ../sass/_font-awesome.scss */
 .fa-sign-out:before {
   content: "\f08b";
 }
 
-/* line 57, ../sass/_font-awesome.scss */
+/* line 40, ../sass/_font-awesome.scss */
 .more-link:after {
   content: "\f054";
   margin-left: 5px;
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
-  -ms-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+}
+
+/* line 45, ../sass/_font-awesome.scss */
+.view-user-offers tbody .views-field-delete-node a:before {
+  content: "\f1f8";
+}
+
+/* line 49, ../sass/_font-awesome.scss */
+.view-user-offers tbody .views-field-edit-node a:before {
+  content: "\f044";
 }
 
 /* line 1, ../sass/_layout.scss */
@@ -264,7 +257,7 @@ div, .col-12,
 }
 
 /* line 15, ../sass/_layout.scss */
-.row {
+.row, ol.search-results {
   margin-left: -10px;
   margin-right: -10px;
 }
@@ -423,105 +416,111 @@ body #admin-menu {
   background: #fff;
 }
 
-/* line 49, ../sass/_common.scss */
+/* line 52, ../sass/_common.scss */
 #messages {
   margin-top: 50px;
 }
 
-/* line 52, ../sass/_common.scss */
+/* line 55, ../sass/_common.scss */
 h1 {
   margin-bottom: 20px;
   color: #626467;
 }
 
-/* line 56, ../sass/_common.scss */
+/* line 59, ../sass/_common.scss */
 h2.pane-title {
   margin-bottom: 10px;
   padding: 5px 0;
 }
 
-/* line 60, ../sass/_common.scss */
+/* line 63, ../sass/_common.scss */
 h3 {
   margin: 10px 0;
 }
 
-/* line 63, ../sass/_common.scss */
+/* line 66, ../sass/_common.scss */
 h4 {
   padding-bottom: 5px;
   margin-bottom: 20px;
   border-bottom: 1px solid #e1e1e1;
 }
 
-/* line 68, ../sass/_common.scss */
+/* line 71, ../sass/_common.scss */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 72, ../sass/_common.scss */
+/* line 75, ../sass/_common.scss */
 strong {
   color: #050800;
+  font-weight: bold;
 }
 
-/* line 75, ../sass/_common.scss */
+/* line 79, ../sass/_common.scss */
 .heading-wrapper {
   margin-bottom: 40px;
   border-bottom: 1px solid #e1e1e1;
 }
-/* line 78, ../sass/_common.scss */
+/* line 82, ../sass/_common.scss */
 .heading-wrapper h1 {
   display: inline-block;
 }
 
-/* line 83, ../sass/_common.scss */
+/* line 87, ../sass/_common.scss */
 table {
   width: 100%;
 }
-/* line 85, ../sass/_common.scss */
+/* line 89, ../sass/_common.scss */
 table thead {
   background: #c9cbcc;
   border-bottom: 1px solid #afb1b3;
 }
-/* line 88, ../sass/_common.scss */
+/* line 92, ../sass/_common.scss */
 table thead th {
   padding: 10px 0;
   font-weight: bold;
   color: #fff;
 }
-/* line 92, ../sass/_common.scss */
+/* line 96, ../sass/_common.scss */
 table thead th:first-child {
   padding-left: 5px;
 }
-/* line 98, ../sass/_common.scss */
+/* line 102, ../sass/_common.scss */
 table tbody tr {
   border-bottom: 1px solid #ededed;
 }
-/* line 100, ../sass/_common.scss */
+/* line 104, ../sass/_common.scss */
 table tbody tr:nth-child(even) {
   background: #fafafa;
 }
-/* line 104, ../sass/_common.scss */
+/* line 108, ../sass/_common.scss */
 table tbody td {
   padding: 20px 0;
 }
 
-/* line 109, ../sass/_common.scss */
+/* line 113, ../sass/_common.scss */
 em {
   font-style: italic;
 }
 
-/* line 113, ../sass/_common.scss */
+/* line 117, ../sass/_common.scss */
+p {
+  margin: 20px 0;
+}
+
+/* line 121, ../sass/_common.scss */
 .more-link {
   display: inline-block;
   width: 100%;
   font-size: 12px;
   text-align: right;
 }
-/* line 119, ../sass/_common.scss */
+/* line 127, ../sass/_common.scss */
 .more-link:hover {
   text-decoration: none;
 }
-/* line 121, ../sass/_common.scss */
+/* line 129, ../sass/_common.scss */
 .more-link:hover:after {
   color: #87d7dd;
 }
@@ -688,7 +687,7 @@ h6 {
   font-size: 18px;
 }
 /* line 100, ../sass/_header.scss */
-.add-offer-link:hover {
+.main-header .add-offer-link:hover {
   font-size: 20px;
 }
 
@@ -702,7 +701,7 @@ h6 {
   background-size: 100% 100%;
 }
 /* line 111, ../sass/_header.scss */
-.motto p {
+.motto span {
   text-transform: uppercase;
   font-weight: bold;
   color: #050800;
@@ -773,102 +772,129 @@ span.form-required {
 .form-actions {
   cursor: pointer;
 }
+/* line 6, ../sass/_forms.scss */
+.form-actions input {
+  margin-right: 10px;
+}
 
-/* line 7, ../sass/_forms.scss */
+/* line 10, ../sass/_forms.scss */
 input[type="submit"] {
   cursor: pointer;
 }
 
-/* line 11, ../sass/_forms.scss */
+/* line 14, ../sass/_forms.scss */
 label,
 .fieldset-legend {
   line-height: 2;
   font-size: 14px;
   color: #888b8e;
 }
-/* line 16, ../sass/_forms.scss */
+/* line 19, ../sass/_forms.scss */
 label.compact-form-label,
 .fieldset-legend.compact-form-label {
   font-size: 14px;
 }
 
-/* line 20, ../sass/_forms.scss */
+/* line 23, ../sass/_forms.scss */
 input[type="text"],
 input[type="password"],
 textarea {
   padding-left: 12px;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+/* line 28, ../sass/_forms.scss */
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+  box-shadow: 0 0 2px #c9cbcc;
 }
 
-/* line 25, ../sass/_forms.scss */
+/* line 33, ../sass/_forms.scss */
 input[type="text"],
 input[type="password"],
 textarea,
 select {
   background: #fff;
   border: 1px solid #c9cbcc;
-  box-shadow: 0 0 2px #fafafa;
+  box-shadow: 0 0 4px #c9cbcc inset;
 }
 
-/* line 33, ../sass/_forms.scss */
+/* line 41, ../sass/_forms.scss */
 .form-wrapper,
 .compact-form-wrapper {
   margin-bottom: 20px;
 }
 
-/* line 37, ../sass/_forms.scss */
+/* line 45, ../sass/_forms.scss */
 .form-item {
   width: 50%;
   margin-bottom: 10px;
 }
-/* line 41, ../sass/_forms.scss */
+/* line 49, ../sass/_forms.scss */
 .form-item input[type="text"],
 .form-item select,
 .form-item input[type="password"] {
   height: 30px;
   margin-bottom: 10px;
 }
-/* line 47, ../sass/_forms.scss */
+/* line 55, ../sass/_forms.scss */
 .form-item input[type="text"],
 .form-item input[type="password"] {
   display: block;
   max-width: 100%;
 }
-/* line 52, ../sass/_forms.scss */
+/* line 60, ../sass/_forms.scss */
 .form-item .form-item {
   width: 100%;
 }
 
-/* line 56, ../sass/_forms.scss */
+/* line 64, ../sass/_forms.scss */
 .hierarchical-select-wrapper .hierarchical-select .selects {
   float: none;
 }
-/* line 58, ../sass/_forms.scss */
+/* line 66, ../sass/_forms.scss */
 .hierarchical-select-wrapper .hierarchical-select .selects select {
   margin: 0;
 }
-/* line 60, ../sass/_forms.scss */
+/* line 68, ../sass/_forms.scss */
 .hierarchical-select-wrapper .hierarchical-select .selects select:first-child {
   margin-right: 2%;
 }
 
-/* line 65, ../sass/_forms.scss */
+/* line 73, ../sass/_forms.scss */
 select {
   width: 49%;
   cursor: pointer;
 }
 
-/* line 70, ../sass/_forms.scss */
+/* line 78, ../sass/_forms.scss */
 .form-type-select label {
   display: block;
 }
 
-/* line 74, ../sass/_forms.scss */
+/* line 82, ../sass/_forms.scss */
 textarea {
   width: 100%;
+  padding-top: 5px;
   resize: none;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
 }
 
-/* line 83, ../sass/_forms.scss */
+/* line 90, ../sass/_forms.scss */
+.bootstrap-filestyle {
+  margin-top: 20px;
+}
+/* line 92, ../sass/_forms.scss */
+.bootstrap-filestyle input[type="text"] {
+  display: inline-block;
+}
+
+/* line 98, ../sass/_forms.scss */
 .form-item-remember-me label {
   padding-left: 0;
 }
@@ -891,36 +917,49 @@ textarea {
   margin: 20px 0;
   padding: 10px 0;
   border-top: 1px solid #ededed;
-  border-bottom: 1px solid #ededed;
 }
-/* line 20, ../sass/_add-offer-form.scss */
+/* line 19, ../sass/_add-offer-form.scss */
+.node-offer-form .field-name-field-offer-images .image-preview img {
+  max-width: 70%;
+  height: auto;
+}
+/* line 28, ../sass/_add-offer-form.scss */
+.node-offer-form .field-name-field-offer-images table .image-widget-data {
+  max-width: 160px;
+  margin-top: 20px;
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* line 38, ../sass/_add-offer-form.scss */
 .node-offer-form .field-name-field-address {
   margin-top: 20px;
   padding-top: 20px;
   border-top: 1px solid #ededed;
 }
-/* line 25, ../sass/_add-offer-form.scss */
+/* line 43, ../sass/_add-offer-form.scss */
 .node-offer-form .field-name-field-telephone-number {
   margin-bottom: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #ededed;
 }
-/* line 29, ../sass/_add-offer-form.scss */
+/* line 47, ../sass/_add-offer-form.scss */
 .node-offer-form .field-name-field-telephone-number .compact-form-wrapper {
   margin-bottom: 0;
 }
-/* line 33, ../sass/_add-offer-form.scss */
+/* line 51, ../sass/_add-offer-form.scss */
 .node-offer-form .field-name-field-offer-category {
   border-bottom: 1px solid #ededed;
   padding-bottom: 20px;
 }
-/* line 37, ../sass/_add-offer-form.scss */
+/* line 55, ../sass/_add-offer-form.scss */
 .node-offer-form .tabledrag-toggle-weight-wrapper,
 .node-offer-form .sticky-table thead,
 .node-offer-form .sticky-table .image-widget-data {
   display: none;
 }
-/* line 42, ../sass/_add-offer-form.scss */
+/* line 60, ../sass/_add-offer-form.scss */
 .node-offer-form .field-name-field-offer-price {
   width: 50%;
 }
@@ -1088,20 +1127,50 @@ textarea {
 }
 
 /* line 1, ../sass/_search.scss */
-.form-item-apachesolr-panels-search-form {
+.form-item-apachesolr-panels-search-form,
+.form-item-search-block-form {
   margin-right: 10px;
 }
-/* line 4, ../sass/_search.scss */
-.form-item-apachesolr-panels-search-form .form-text {
+/* line 5, ../sass/_search.scss */
+.form-item-apachesolr-panels-search-form .form-text,
+.form-item-search-block-form .form-text {
   width: 100%;
   margin-top: 5px;
 }
 
-/* line 9, ../sass/_search.scss */
-.form-actions {
+/* line 12, ../sass/_search.scss */
+.pane-apachesolr-form .form-actions,
+.pane-search-form .form-actions {
+  position: relative;
   display: inline-block;
 }
+/* line 15, ../sass/_search.scss */
+.pane-apachesolr-form .form-actions input[type="submit"],
+.pane-search-form .form-actions input[type="submit"] {
+  padding-left: 25px;
+  padding-right: 15px;
+}
+/* line 19, ../sass/_search.scss */
+.pane-apachesolr-form .form-actions:before,
+.pane-search-form .form-actions:before {
+  content: '\f002';
+  position: absolute;
+  top: 10px;
+  left: 9px;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+/* line 26, ../sass/_search.scss */
+.pane-apachesolr-form .form-actions:hover:before,
+.pane-search-form .form-actions:hover:before {
+  color: #fff;
+}
 
+/* Ugly hack because the core search is used with panels
+ and ctools has hardcoded search results markup wrapper.*/
 /* line 1, ../sass/_offer.scss */
 .pane-node-body {
   padding: 40px 0;
@@ -1181,9 +1250,23 @@ textarea {
   margin: 20px 0;
 }
 
-/* line 2, ../sass/_bx-slider.scss */
-.bx-wrapper .bx-pager {
-  bottom: -115px;
+/* line 3, ../sass/_bx-slider.scss */
+.pane-node-field-offer-images .bx-wrapper .bx-pager {
+  max-width: 70px;
+  bottom: -75px;
+}
+
+/* line 12, ../sass/_bx-slider.scss */
+.view-other-user-offers .bx-wrapper .bx-viewport {
+  background: transparent;
+}
+/* line 15, ../sass/_bx-slider.scss */
+.view-other-user-offers .bx-wrapper .bx-prev {
+  left: -33px;
+}
+/* line 18, ../sass/_bx-slider.scss */
+.view-other-user-offers .bx-wrapper .bx-next {
+  right: -33px;
 }
 
 /* line 1, ../sass/_comments.scss */
@@ -1313,6 +1396,19 @@ textarea {
   border-bottom: 1px solid #e1e1e1;
 }
 
+/* Forums */
+/* line 26, ../sass/_forum.scss */
+#forum .submitted,
+#forum .posts,
+#forum .topics {
+  font-size: 14px;
+}
+/* line 31, ../sass/_forum.scss */
+#forum .posts,
+#forum .topics {
+  text-align: center;
+}
+
 /* line 1, ../sass/_user.scss */
 .user-menu {
   display: inline-block;
@@ -1437,4 +1533,34 @@ ul.quicktabs-tabs li a:hover {
 /* line 8, ../sass/_views-filters.scss */
 .views-exposed-form .views-exposed-widget .form-submit {
   margin-top: 20px;
+}
+
+/* line 2, ../sass/_view-user-offers.scss */
+.view-user-offers .views-field-delete-node,
+.view-user-offers .views-field-edit-node {
+  text-align: center;
+}
+/* line 7, ../sass/_view-user-offers.scss */
+.view-user-offers tbody .views-field-delete-node,
+.view-user-offers tbody .views-field-edit-node {
+  font-size: 0;
+}
+/* line 12, ../sass/_view-user-offers.scss */
+.view-user-offers tbody .views-field-delete-node a:hover,
+.view-user-offers tbody .views-field-edit-node a:hover {
+  text-decoration: none;
+}
+/* line 14, ../sass/_view-user-offers.scss */
+.view-user-offers tbody .views-field-delete-node a:hover:before,
+.view-user-offers tbody .views-field-edit-node a:hover:before {
+  color: #e84e40;
+  font-size: 22px;
+}
+/* line 23, ../sass/_view-user-offers.scss */
+.view-user-offers tbody .views-field-delete-node a:before {
+  font-size: 18px;
+}
+/* line 30, ../sass/_view-user-offers.scss */
+.view-user-offers tbody .views-field-edit-node a:before {
+  font-size: 18px;
 }

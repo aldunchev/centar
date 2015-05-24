@@ -15,11 +15,29 @@
     margin: 20px 0;
     padding: 10px 0;
     border-top: 1px solid darken($light-gray, 5%);
-    border-bottom: 1px solid darken($light-gray, 5%);
+    .image-preview {
+      img {
+        max-width: 70%;
+        height: auto;
+      }
+    }
+    table {
+      input[type="submit"] {
+        @extend %btn-small-ext;
+      }
+      .image-widget-data {
+        max-width: 160px;
+        margin-top: $space-20;
+        font-size: $text-12;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
   }
   .field-name-field-address {
-    margin-top: 20px;
-    padding-top: 20px;
+    margin-top: $space-20;
+    padding-top: $space-20;
     border-top: 1px solid darken($light-gray, 5%);
   }
   .field-name-field-telephone-number {

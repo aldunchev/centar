@@ -5,3 +5,5 @@
   include_once $path_to_cleancustom . '/inc/process.inc';
   include_once $path_to_cleancustom . '/inc/forms.inc';
   include_once $path_to_cleancustom . '/inc/theme.inc'; 
+  include_once $path_to_cleancustom . '/inc/alter.inc'; 
+

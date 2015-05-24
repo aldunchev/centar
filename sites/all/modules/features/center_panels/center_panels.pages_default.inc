@@ -97,7 +97,7 @@ function center_panels_default_page_manager_pages() {
     $pane->panel = 'block_full';
     $pane->type = 'apachesolr_form';
     $pane->subtype = 'apachesolr_form';
-    $pane->shown = TRUE;
+    $pane->shown = FALSE;
     $pane->access = array();
     $pane->configuration = array(
       'path_type' => 'custom',
@@ -120,6 +120,29 @@ function center_panels_default_page_manager_pages() {
     $pane->uuid = '8185d970-6a32-42ec-aed6-ef2a0701280e';
     $display->content['new-8185d970-6a32-42ec-aed6-ef2a0701280e'] = $pane;
     $display->panels['block_full'][0] = 'new-8185d970-6a32-42ec-aed6-ef2a0701280e';
+    $pane = new stdClass();
+    $pane->pid = 'new-b1171f72-d659-48db-ad55-656436668afb';
+    $pane->panel = 'block_full';
+    $pane->type = 'block';
+    $pane->subtype = 'search-form';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $pane->uuid = 'b1171f72-d659-48db-ad55-656436668afb';
+    $display->content['new-b1171f72-d659-48db-ad55-656436668afb'] = $pane;
+    $display->panels['block_full'][1] = 'new-b1171f72-d659-48db-ad55-656436668afb';
     $pane = new stdClass();
     $pane->pid = 'new-f9979d70-01c4-43c3-af11-a31e730b4123';
     $pane->panel = 'block_left';
