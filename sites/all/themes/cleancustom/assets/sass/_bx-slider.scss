@@ -1,8 +1,10 @@
 .pane-node-field-offer-images {
   .bx-wrapper {
     .bx-pager {
-      max-width: 70px;
       bottom: -75px;
+      img {
+        max-width: 50px;
+      }
     }
   }
 }

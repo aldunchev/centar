@@ -53,5 +53,10 @@ function centar_forms_form_alter(&$form, $form_state, $form_id) {
     case 'contact_personal_form':
       $form['actions']['submit']['#value']= t('Изпрати');
       break;
+      
+    case 'node_delete_confirm':
+      $form['actions']['submit']['#value']= t('Изтрий');
+      $form['actions']['cancel']['#title']= t('Отмени');
+      break;
   }
 }

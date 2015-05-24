@@ -35,6 +35,11 @@
       font-size: $text-18;
     }
   }
+  .picture {
+    img {
+      max-width: 70px;
+    }
+  }
   .author-offline,
   .author-online,
   .author-last-seen,

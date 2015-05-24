@@ -107,7 +107,7 @@
         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="logo fl-left">
           <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>">
         </a>
-        <p><?php print t('minimum cost - maximum comfort'); ?></p>
+        <span><?php print t('minimum cost - maximum comfort'); ?></span>
       </div>
     </div>
   </footer>

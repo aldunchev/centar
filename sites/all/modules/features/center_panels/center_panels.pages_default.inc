@@ -93,34 +93,6 @@ function center_panels_default_page_manager_pages() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-8185d970-6a32-42ec-aed6-ef2a0701280e';
-    $pane->panel = 'block_full';
-    $pane->type = 'apachesolr_form';
-    $pane->subtype = 'apachesolr_form';
-    $pane->shown = FALSE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'path_type' => 'custom',
-      'path' => 'search/offer',
-      'override_prompt' => 0,
-      'prompt' => '',
-      'show_keys' => 1,
-      'override_title' => 1,
-      'override_title_text' => '',
-      'override_title_heading' => 'h2',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $pane->uuid = '8185d970-6a32-42ec-aed6-ef2a0701280e';
-    $display->content['new-8185d970-6a32-42ec-aed6-ef2a0701280e'] = $pane;
-    $display->panels['block_full'][0] = 'new-8185d970-6a32-42ec-aed6-ef2a0701280e';
-    $pane = new stdClass();
     $pane->pid = 'new-b1171f72-d659-48db-ad55-656436668afb';
     $pane->panel = 'block_full';
     $pane->type = 'block';
@@ -138,11 +110,11 @@ function center_panels_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 1;
+    $pane->position = 0;
     $pane->locks = array();
     $pane->uuid = 'b1171f72-d659-48db-ad55-656436668afb';
     $display->content['new-b1171f72-d659-48db-ad55-656436668afb'] = $pane;
-    $display->panels['block_full'][1] = 'new-b1171f72-d659-48db-ad55-656436668afb';
+    $display->panels['block_full'][0] = 'new-b1171f72-d659-48db-ad55-656436668afb';
     $pane = new stdClass();
     $pane->pid = 'new-f9979d70-01c4-43c3-af11-a31e730b4123';
     $pane->panel = 'block_left';

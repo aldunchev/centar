@@ -12,30 +12,31 @@
   }
   a {
     color: darken($gray, 15%);
-    &.active {
-      &:before {
-        position: absolute;
-        content: '';
-        display: inline-block;
-        left: 0;
-        border-style: solid;
-        border-width: 8px;
-        border-color: transparent;
-        border-left-color: darken($sky-blue, 25%);
-      }
-    } 
+    
   }
   .pane-content {
     ul {
       li {
         line-height: 1.2;
+        &.active {
+          &:before {
+            position: absolute;
+            content: '';
+            display: inline-block;
+            left: 0;
+            border-style: solid;
+            border-width: 8px;
+            border-color: transparent;
+            border-left-color: darken($sky-blue, 25%);
+          }
+        } 
       }
     }
     & > ul {
-      & > .first > a {
-        text-transform: uppercase;
+      & > .first > a { /* The heading of each section. */
+        text-transform: uppercase; 
       }
-      & > li {
+      & > li { /* The items. */
         margin-bottom: $space-20;
         &  > a {
           display: block;

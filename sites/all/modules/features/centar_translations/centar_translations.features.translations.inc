@@ -185,6 +185,14 @@ function centar_translations_translations_defaults() {
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['bg:default']['36fbfc01d63e4b57d18991077535c6e0'] = array(
+    'source' => 'This action cannot be undone.',
+    'context' => '',
+    'location' => '/node/2/delete?destination=admin/content',
+    'translation' => 'Изтрито съдържание не може да се възстанови.',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['bg:default']['377313a88cd97bbf5da5c9dd0d8a677a'] = array(
     'source' => 'Upload picture',
     'context' => '',
@@ -342,6 +350,14 @@ function centar_translations_translations_defaults() {
     'context' => '',
     'location' => '/forum/55',
     'translation' => 'От !author, преди @time',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['bg:default']['5f82ad92d65a06f52fb3a753eea68d71'] = array(
+    'source' => 'The selected file %filename cannot be uploaded. Only files with the following extensions are allowed: %extensions.',
+    'context' => '',
+    'location' => 'modules/file/file.js',
+    'translation' => 'Само файлове със следните разширения са позволени: %extensions.',
     'plid' => 0,
     'plural' => 0,
   );
@@ -614,6 +630,14 @@ function centar_translations_translations_defaults() {
     'context' => '',
     'location' => '/user/4/edit?destination=admin/people',
     'translation' => 'Направете я поне 6 символа',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['bg:default']['ba8724bba331fdf22193be557f6fb0fb'] = array(
+    'source' => 'Are you sure you want to delete %title?',
+    'context' => '',
+    'location' => '/admin/modules/list/confirm',
+    'translation' => 'Наистина ли искате да изтриете %title? ',
     'plid' => 0,
     'plural' => 0,
   );

@@ -131,3 +131,9 @@ p {
     }
   }
 }
+.ajax-progress .throbber {
+  &:before {
+    @extend %fa-refresh;
+    @extend %fa-spin;
+  }
+}

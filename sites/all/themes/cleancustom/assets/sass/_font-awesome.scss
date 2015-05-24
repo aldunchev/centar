@@ -9,6 +9,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 .fa:before,
 .fa:after,
 .pane-apachesolr-form .form-actions:before,
@@ -16,6 +17,10 @@
   font-family: 'FontAwesome';
   line-height: 1;
   @include transition(all, 0.2s, ease);
+}
+%fa-spin{
+-webkit-animation: fa-spin 2s infinite linear;
+  animation: fa-spin 2s infinite linear;
 }
 .fa-user:before {
   content: '\f007';
@@ -49,4 +54,8 @@
 %fa-edit {
   @extend .fa;
   content: "\f044";
+}
+%fa-refresh {
+  @extend .fa;
+  content: "\f021";
 }

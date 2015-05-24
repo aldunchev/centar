@@ -125,7 +125,7 @@ div, .col-12,
 }
 
 /* line 21, ../sass/_extends.scss */
-.motto-logo p, .password-strength, .password-strength-text {
+.motto-logo span, .password-strength, .password-strength-text {
   float: right;
 }
 
@@ -170,6 +170,26 @@ div, .col-12,
   border-radius: 50%;
 }
 
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
 @font-face {
   font-family: 'FontAwesome';
   src: url("../font-awesome/fontawesome-webfont.eot?v=4.2.0");
@@ -177,8 +197,8 @@ div, .col-12,
   font-weight: normal;
   font-style: normal;
 }
-/* line 12, ../sass/_font-awesome.scss */
-.fa:before, .view-user-offers tbody .views-field-delete-node a:before, .view-user-offers tbody .views-field-edit-node a:before, .node-type-offer .author-name:before,
+/* line 13, ../sass/_font-awesome.scss */
+.fa:before, .view-user-offers tbody .views-field-delete-node a:before, .view-user-offers tbody .views-field-edit-node a:before, .ajax-progress .throbber:before, .node-type-offer .author-name:before,
 .fa:after,
 .more-link:after,
 .node-type-offer .author-name:after,
@@ -193,42 +213,53 @@ div, .col-12,
   transition: all 0.2s ease;
 }
 
-/* line 20, ../sass/_font-awesome.scss */
+/* line 21, ../sass/_font-awesome.scss */
+.ajax-progress .throbber:before {
+  -webkit-animation: fa-spin 2s infinite linear;
+  animation: fa-spin 2s infinite linear;
+}
+
+/* line 25, ../sass/_font-awesome.scss */
 .fa-user:before, .node-type-offer .author-name:before {
   content: '\f007';
 }
 
-/* line 23, ../sass/_font-awesome.scss */
+/* line 28, ../sass/_font-awesome.scss */
 .fa-shopping-cart:before {
   content: "\f07a";
 }
 
-/* line 26, ../sass/_font-awesome.scss */
+/* line 31, ../sass/_font-awesome.scss */
 .fa-facebook:before {
   content: "\f09a";
   margin-right: 5px;
   color: #fff;
 }
 
-/* line 37, ../sass/_font-awesome.scss */
+/* line 42, ../sass/_font-awesome.scss */
 .fa-sign-out:before {
   content: "\f08b";
 }
 
-/* line 40, ../sass/_font-awesome.scss */
+/* line 45, ../sass/_font-awesome.scss */
 .more-link:after {
   content: "\f054";
   margin-left: 5px;
 }
 
-/* line 45, ../sass/_font-awesome.scss */
+/* line 50, ../sass/_font-awesome.scss */
 .view-user-offers tbody .views-field-delete-node a:before {
   content: "\f1f8";
 }
 
-/* line 49, ../sass/_font-awesome.scss */
+/* line 54, ../sass/_font-awesome.scss */
 .view-user-offers tbody .views-field-edit-node a:before {
   content: "\f044";
+}
+
+/* line 58, ../sass/_font-awesome.scss */
+.ajax-progress .throbber:before {
+  content: "\f021";
 }
 
 /* line 1, ../sass/_layout.scss */
@@ -757,7 +788,7 @@ h6 {
   width: 60px;
 }
 /* line 40, ../sass/_main-footer.scss */
-.motto-logo p {
+.motto-logo span {
   line-height: 1.5;
   font-size: 12px;
   color: #db2a1a;
@@ -926,7 +957,7 @@ textarea {
 /* line 28, ../sass/_add-offer-form.scss */
 .node-offer-form .field-name-field-offer-images table .image-widget-data {
   max-width: 160px;
-  margin-top: 20px;
+  margin-top: 10px;
   font-size: 12px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1051,8 +1082,12 @@ textarea {
 .sidebar-block a {
   color: #888b8e;
 }
-/* line 16, ../sass/_sidebar_block.scss */
-.sidebar-block a.active:before {
+/* line 19, ../sass/_sidebar_block.scss */
+.sidebar-block .pane-content ul li {
+  line-height: 1.2;
+}
+/* line 22, ../sass/_sidebar_block.scss */
+.sidebar-block .pane-content ul li.active:before {
   position: absolute;
   content: '';
   display: inline-block;
@@ -1062,19 +1097,17 @@ textarea {
   border-color: transparent;
   border-left-color: #87d7dd;
 }
-/* line 30, ../sass/_sidebar_block.scss */
-.sidebar-block .pane-content ul li {
-  line-height: 1.2;
-}
-/* line 35, ../sass/_sidebar_block.scss */
+/* line 36, ../sass/_sidebar_block.scss */
 .sidebar-block .pane-content > ul > .first > a {
+  /* The heading of each section. */
   text-transform: uppercase;
 }
-/* line 38, ../sass/_sidebar_block.scss */
+/* line 39, ../sass/_sidebar_block.scss */
 .sidebar-block .pane-content > ul > li {
+  /* The items. */
   margin-bottom: 20px;
 }
-/* line 40, ../sass/_sidebar_block.scss */
+/* line 41, ../sass/_sidebar_block.scss */
 .sidebar-block .pane-content > ul > li > a {
   display: block;
   width: 100%;
@@ -1208,38 +1241,42 @@ textarea {
 .node-type-offer .author-name:before {
   font-size: 18px;
 }
-/* line 38, ../sass/_offer.scss */
+/* line 39, ../sass/_offer.scss */
+.node-type-offer .picture img {
+  max-width: 70px;
+}
+/* line 43, ../sass/_offer.scss */
 .node-type-offer .author-offline,
 .node-type-offer .author-online,
 .node-type-offer .author-last-seen,
 .node-type-offer .author-joined {
   display: none;
 }
-/* line 45, ../sass/_offer.scss */
+/* line 50, ../sass/_offer.scss */
 .node-type-offer .pane-other-user-offers .pane-title {
   display: block;
   margin-bottom: 10px;
   padding-bottom: 5px;
   border-bottom: 1px solid #e1e1e1;
 }
-/* line 51, ../sass/_offer.scss */
+/* line 56, ../sass/_offer.scss */
 .node-type-offer .pane-other-user-offers .pane-content {
   display: block;
 }
-/* line 56, ../sass/_offer.scss */
+/* line 61, ../sass/_offer.scss */
 .node-type-offer .pane-other-user-offers .view-other-user-offers .view-content {
   margin-left: -5px;
   margin-right: -5px;
   font-size: 0;
 }
-/* line 61, ../sass/_offer.scss */
+/* line 66, ../sass/_offer.scss */
 .node-type-offer .pane-other-user-offers .view-other-user-offers .views-row {
   display: inline-block;
   vertical-align: top;
   width: 33.333333%;
   padding: 5px;
 }
-/* line 67, ../sass/_offer.scss */
+/* line 72, ../sass/_offer.scss */
 .node-type-offer .pane-other-user-offers .view-other-user-offers .views-field-title {
   font-size: 14px;
 }
@@ -1252,19 +1289,22 @@ textarea {
 
 /* line 3, ../sass/_bx-slider.scss */
 .pane-node-field-offer-images .bx-wrapper .bx-pager {
-  max-width: 70px;
   bottom: -75px;
 }
+/* line 5, ../sass/_bx-slider.scss */
+.pane-node-field-offer-images .bx-wrapper .bx-pager img {
+  max-width: 50px;
+}
 
-/* line 12, ../sass/_bx-slider.scss */
+/* line 14, ../sass/_bx-slider.scss */
 .view-other-user-offers .bx-wrapper .bx-viewport {
   background: transparent;
 }
-/* line 15, ../sass/_bx-slider.scss */
+/* line 17, ../sass/_bx-slider.scss */
 .view-other-user-offers .bx-wrapper .bx-prev {
   left: -33px;
 }
-/* line 18, ../sass/_bx-slider.scss */
+/* line 20, ../sass/_bx-slider.scss */
 .view-other-user-offers .bx-wrapper .bx-next {
   right: -33px;
 }
@@ -1563,4 +1603,9 @@ ul.quicktabs-tabs li a:hover {
 /* line 30, ../sass/_view-user-offers.scss */
 .view-user-offers tbody .views-field-edit-node a:before {
   font-size: 18px;
+}
+
+/* line 2, ../sass/_confirmation.scss */
+.confirmation .form-actions {
+  margin-top: 20px;
 }
