@@ -297,6 +297,14 @@ function centar_translations_translations_defaults() {
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['bg:default']['4db3c8949382514dd721f0a1b89855d7'] = array(
+    'source' => 'The answer you entered for the CAPTCHA was not correct.',
+    'context' => '',
+    'location' => '/user/register',
+    'translation' => 'Грешен CAPTCHA(спам котрол) код.',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['bg:default']['4fbd18c9eefb5827d7e9cd792f299fbc'] = array(
     'source' => 'Submitted by !username on !datetime',
     'context' => '',
@@ -425,6 +433,14 @@ function centar_translations_translations_defaults() {
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['bg:default']['7ca8186a86e7844b46d4d080bbb6ef3b'] = array(
+    'source' => 'CAPTCHA session reuse attack detected.',
+    'context' => '',
+    'location' => '/user/register',
+    'translation' => 'Не може да използвате една и съща CAPTCHA.',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['bg:default']['7fa3b767c460b54a2be4d49030b349c7'] = array(
     'source' => 'no',
     'context' => '',
@@ -537,6 +553,22 @@ function centar_translations_translations_defaults() {
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['bg:default']['91ece42d37aedf2e34ab092d3c94f717'] = array(
+    'source' => 'Hello !recipient-name,',
+    'context' => '',
+    'location' => '/user/67/contact',
+    'translation' => 'Здравейте !recipient-name,',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['bg:default']['940663fd4428d2c86f9a4780b6574028'] = array(
+    'source' => 'Message:',
+    'context' => '',
+    'location' => '/user/67/contact',
+    'translation' => 'Съобщение',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['bg:default']['95bd7e8ac36751e435b69a103d48b32f'] = array(
     'source' => 'login/register',
     'context' => '',
@@ -558,6 +590,14 @@ function centar_translations_translations_defaults() {
     'context' => '',
     'location' => '/admin/config/regional/translate/translate',
     'translation' => '‹ предишна',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['bg:default']['9c04313a52e00afe896c342417a5ced8'] = array(
+    'source' => 'A welcome message with further instructions has been sent to your e-mail address.',
+    'context' => '',
+    'location' => '/user/register',
+    'translation' => 'Моля, проверете e-mail-a си за активация на акаунта Ви.',
     'plid' => 0,
     'plural' => 0,
   );
@@ -598,6 +638,14 @@ function centar_translations_translations_defaults() {
     'context' => '',
     'location' => '/quicktabs/ajax/test_user_page/2/callback/user%252F32%252Fedit',
     'translation' => 'Нямата право на достъп.',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['bg:default']['ae3505002bc20df3aa204be952951d45'] = array(
+    'source' => '!sender-name (!sender-url) has sent you a message via your contact form (!form-url) at !site-name.',
+    'context' => '',
+    'location' => '/user/67/contact',
+    'translation' => 'Потребителят !sender-name Ви изпрати съобщение от !site-name:',
     'plid' => 0,
     'plural' => 0,
   );
@@ -799,6 +847,14 @@ function centar_translations_translations_defaults() {
     'context' => '',
     'location' => '/',
     'translation' => 'Заявете нова парола',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['bg:default']['e2f1041ddbf41d78a33f4092749cb087'] = array(
+    'source' => 'The e-mail address %email is already registered. <a href="@password">Have you forgotten your password?</a>',
+    'context' => '',
+    'location' => '/user/register',
+    'translation' => 'Потребител с e-mail %email вече съществува. <a href="@password">Забравихте паролата си?</a> ',
     'plid' => 0,
     'plural' => 0,
   );
