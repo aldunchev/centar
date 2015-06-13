@@ -56,9 +56,13 @@ h1 {
   margin-bottom: $space-20;
   color: darken($gray, 30%);
 }
-h2.pane-title {
+h2.pane-title,
+h2 {
   margin-bottom: $space-10;
   padding: 5px 0;
+}
+h2 {
+  color: darken($gray, 30%);
 }
 h3 {
   margin: $space-10 0;

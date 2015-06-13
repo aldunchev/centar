@@ -22,7 +22,8 @@ function ad_info_page_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Аd info page';
+  $handler->display->display_options['title'] = 'Информация за реклама';
+  $handler->display->display_options['css_class'] = 'ad-info-page';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -43,6 +44,9 @@ function ad_info_page_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_type'] = 'h2';
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
   /* Field: Content: Ad Properties */
   $handler->display->display_options['fields']['field_ad_properties']['id'] = 'field_ad_properties';
   $handler->display->display_options['fields']['field_ad_properties']['table'] = 'field_data_field_ad_properties';
