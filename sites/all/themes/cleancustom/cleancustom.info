@@ -5,10 +5,12 @@ version = VERSION
 core = 7.x
 
 stylesheets[all][] = assets/stylesheets/style.css
+stylesheets[all][] = assets/stylesheets/magnific-popup.css
 stylesheets[all][] = user.css
 
 scripts[] = assets/scripts/main.js
 scripts[] = assets/scripts/bootstrap-filestyle.js
+scripts[] = assets/scripts/jquery.magnific-popup.js
 
 regions[header] = Header
 regions[featured] = Featured

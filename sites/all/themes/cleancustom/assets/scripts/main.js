@@ -8,5 +8,11 @@
       });
     }
   };
+
+  Drupal.behaviors.adImageInfo = {
+    attach: function (context, settings) {
+      $('.image-link').magnificPopup({type:'image'});
+    }
+  };
 })(jQuery);
 

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Ad Info Page feature.
+ */
+
+include_once 'ad_info_page.features.inc';
