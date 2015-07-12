@@ -1,23 +1,28 @@
-body {
+html {
   font-size: 16px;
+  @include breakpoint(small) {
+    font-size: 14px;
+  }
+}
+body {
   font-family: 'Arial', sans-serif;
   line-height: 1.2;
 }
 h1 {
-  font-size: 28px;
+  font-size: 1.75rem;
 }
 h2 {
-  font-size: 21px;
+  font-size: 1.3125rem;
 }
 h3 {
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 h4 {
-  font-size: 16px;
+  font-size: 1rem;
 }
 h5 {
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 h6 {
-  font-size: 12px;
+  font-size: 0.75rem;
 }

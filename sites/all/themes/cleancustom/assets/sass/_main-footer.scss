@@ -1,13 +1,22 @@
 .main-footer {
-  padding-top: 20px;
+  padding-top: $space-20;
   text-align: center;
   border-top: 1px solid $gray;
   clear: both;
+  @include breakpoint(smaller) {
+    margin-bottom: $space-10;
+  }
   .block-menu {
     display: inline-block;
-    padding: 10px 20px;
+    padding: $space-10 $space-20;
     background: darken($gray, 10%);
     border-radius: 7px;
+    @include breakpoint(smaller) {
+      display: block;
+      padding: $space-10;
+      margin-bottom: $space-10;
+      text-align: left;
+    }
     li {
       @extend %fl-left-ext;
       margin-right: 10px;
@@ -19,18 +28,29 @@
           margin-right: 0;
         }
       }
+      @include breakpoint(smaller) {
+        float: none;
+        border-right: 0 none;
+      }
     }
     a {
       margin-right: $space-10;
       text-transform: uppercase;
       font-size: $text-14;
       color: $white;
+      @include breakpoint(smaller) {
+        display: inline-block;
+        padding: 5px 0;
+      }
     }
   }
 }
 .motto-logo {
   display: inline-block;
   min-width: 340px;
+  @include breakpoint(small) {
+    min-width: initial;
+  }
   .logo {
     margin-top: 0;
     img {
@@ -42,5 +62,8 @@
     line-height: 1.5;
     font-size: $text-12;
     color: $crimson;
+    @include breakpoint(small) {
+      max-width: 70%;
+    }
   }
 }

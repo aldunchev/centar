@@ -94,6 +94,8 @@ article {
   display: block;
 }
 
+/* Base 16px */
+/* 22px*/
 /* line 1, ../sass/_extends.scss */
 input[type="submit"],
 input[type="text"],
@@ -139,7 +141,7 @@ div, .col-12,
 /* line 29, ../sass/_extends.scss */
 .btn-small, .node-offer-form .field-name-field-offer-images table input[type="submit"], .primary-btn, input[type="submit"] {
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 1rem;
   text-transform: uppercase;
   color: #050800;
   border-radius: 20px;
@@ -162,7 +164,7 @@ div, .col-12,
 /* line 45, ../sass/_extends.scss */
 .btn-small, .node-offer-form .field-name-field-offer-images table input[type="submit"] {
   padding: 7px 10px;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 /* line 50, ../sass/_extends.scss */
@@ -438,7 +440,7 @@ body {
 }
 /* line 38, ../sass/_common.scss */
 body #admin-menu {
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 /* line 42, ../sass/_common.scss */
@@ -544,59 +546,70 @@ em {
 /* line 121, ../sass/_common.scss */
 p {
   margin: 20px 0;
+  font-size: 1rem;
 }
 
-/* line 125, ../sass/_common.scss */
+/* line 126, ../sass/_common.scss */
 .more-link {
   display: inline-block;
   width: 100%;
-  font-size: 12px;
+  font-size: 0.75rem;
   text-align: right;
 }
-/* line 131, ../sass/_common.scss */
+/* line 132, ../sass/_common.scss */
 .more-link:hover {
   text-decoration: none;
 }
-/* line 133, ../sass/_common.scss */
+/* line 134, ../sass/_common.scss */
 .more-link:hover:after {
   color: #87d7dd;
 }
 
 /* line 1, ../sass/_typography.scss */
-body {
+html {
   font-size: 16px;
+}
+@media (max-width: 767px) {
+  /* line 1, ../sass/_typography.scss */
+  html {
+    font-size: 14px;
+  }
+}
+
+/* line 7, ../sass/_typography.scss */
+body {
   font-family: 'Arial', sans-serif;
   line-height: 1.2;
 }
 
-/* line 6, ../sass/_typography.scss */
+/* line 11, ../sass/_typography.scss */
 h1 {
-  font-size: 28px;
+  font-size: 1.75rem;
 }
 
-/* line 9, ../sass/_typography.scss */
+/* line 14, ../sass/_typography.scss */
 h2 {
-  font-size: 21px;
+  font-size: 1.3125rem;
 }
 
-/* line 12, ../sass/_typography.scss */
+/* line 17, ../sass/_typography.scss */
 h3 {
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
-/* line 15, ../sass/_typography.scss */
+/* line 20, ../sass/_typography.scss */
 h4 {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
-/* line 18, ../sass/_typography.scss */
+/* line 23, ../sass/_typography.scss */
 h5 {
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
-/* line 21, ../sass/_typography.scss */
+/* line 26, ../sass/_typography.scss */
 h6 {
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 /* line 1, ../sass/_header.scss */
@@ -610,33 +623,39 @@ h6 {
   box-shadow: 0 4px 4px #ccc;
 }
 
-/* line 12, ../sass/_header.scss */
+@media (max-width: 767px) {
+  /* line 10, ../sass/_header.scss */
+  .block-user {
+    float: none;
+  }
+}
+/* line 15, ../sass/_header.scss */
 .block-user .form-item {
   width: auto;
   margin-right: 10px;
 }
-/* line 16, ../sass/_header.scss */
+/* line 19, ../sass/_header.scss */
 .block-user .form-item input[type="text"],
 .block-user .form-item input[type="password"] {
   width: 190px;
   height: 25px;
 }
-/* line 22, ../sass/_header.scss */
+/* line 25, ../sass/_header.scss */
 .block-user .form-wrapper,
 .block-user .compact-form-wrapper {
   margin-bottom: 0;
 }
-/* line 26, ../sass/_header.scss */
+/* line 29, ../sass/_header.scss */
 .block-user label {
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 1.5;
 }
-/* line 30, ../sass/_header.scss */
+/* line 33, ../sass/_header.scss */
 .block-user .form-actions {
   position: relative;
   top: 2px;
 }
-/* line 34, ../sass/_header.scss */
+/* line 37, ../sass/_header.scss */
 .block-user .form-actions input {
   display: block;
   width: 20px;
@@ -648,18 +667,30 @@ h6 {
   background-size: 60% auto;
   background-position: center;
 }
-/* line 47, ../sass/_header.scss */
+/* line 50, ../sass/_header.scss */
 .block-user .form-item-remember-me {
   font-size: 12px;
   line-height: 2;
 }
-/* line 50, ../sass/_header.scss */
+@media (max-width: 1024px) {
+  /* line 50, ../sass/_header.scss */
+  .block-user .form-item-remember-me {
+    clear: left;
+  }
+}
+/* line 56, ../sass/_header.scss */
 .block-user .form-item-remember-me input {
   position: relative;
   top: 2px;
 }
+@media (max-width: 1024px) {
+  /* line 62, ../sass/_header.scss */
+  .block-user .form-type-password {
+    clear: left;
+  }
+}
 
-/* line 56, ../sass/_header.scss */
+/* line 67, ../sass/_header.scss */
 .fa-facebook {
   margin-right: 10px;
   padding: 5px;
@@ -670,65 +701,73 @@ h6 {
   border: 1px solid #afb1b3;
   border-color: #2f477a #29447e #1a356e;
 }
-/* line 65, ../sass/_header.scss */
+/* line 76, ../sass/_header.scss */
 .fa-facebook:visited {
   color: #fff;
 }
-/* line 68, ../sass/_header.scss */
+/* line 79, ../sass/_header.scss */
 .fa-facebook:hover {
   color: #fff;
   background: #6c82b1;
 }
+@media (max-width: 1024px) {
+  /* line 67, ../sass/_header.scss */
+  .fa-facebook {
+    float: none;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+}
 
-/* line 73, ../sass/_header.scss */
+/* line 89, ../sass/_header.scss */
 .logo {
   margin: 10px 0;
 }
-/* line 75, ../sass/_header.scss */
+/* line 91, ../sass/_header.scss */
 .logo img {
   max-width: 200px;
   height: auto;
 }
 
-/* line 81, ../sass/_header.scss */
+/* line 97, ../sass/_header.scss */
 .menu li {
   margin-right: 5px;
   border-right: 1px solid #afb1b3;
 }
-/* line 85, ../sass/_header.scss */
+/* line 101, ../sass/_header.scss */
 .menu li:last-child {
   border-right: 0 none;
 }
-/* line 89, ../sass/_header.scss */
+/* line 105, ../sass/_header.scss */
 .menu a {
   margin-right: 5px;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #95989a;
 }
-/* line 39, ../sass/_mixins.scss */
+/* line 45, ../sass/_mixins.scss */
 .menu a:visited {
   color: #6e7174;
 }
-/* line 42, ../sass/_mixins.scss */
+/* line 48, ../sass/_mixins.scss */
 .menu a:hover {
   color: #6e7174;
 }
 
-/* line 93, ../sass/_header.scss */
+/* line 109, ../sass/_header.scss */
 .add-offer-link {
   margin-top: 10px;
   padding-left: 40px;
   background-image: url("../images/arrow-small.png");
   background-repeat: no-repeat;
   background-position: 15px center;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
-/* line 100, ../sass/_header.scss */
+/* line 116, ../sass/_header.scss */
 .main-header .add-offer-link:hover {
   font-size: 20px;
 }
 
-/* line 104, ../sass/_header.scss */
+/* line 120, ../sass/_header.scss */
 .motto {
   margin-top: 10px;
   padding: 7px 0;
@@ -737,13 +776,64 @@ h6 {
   background-position: center;
   background-size: 100% 100%;
 }
-/* line 111, ../sass/_header.scss */
+/* line 127, ../sass/_header.scss */
 .motto span {
   text-transform: uppercase;
   font-weight: bold;
   color: #050800;
 }
 
+@media (max-width: 767px) {
+  /* line 135, ../sass/_header.scss */
+  .page-user .help-menu {
+    float: left;
+  }
+  /* line 138, ../sass/_header.scss */
+  .help-menu a {
+    color: #494b4d;
+    font-weight: bold;
+  }
+
+  /* line 144, ../sass/_header.scss */
+  .main-header .logo {
+    position: absolute;
+    top: 45px;
+    right: 20px;
+  }
+  /* line 148, ../sass/_header.scss */
+  .main-header .logo img {
+    max-width: 150px;
+  }
+
+  /* line 154, ../sass/_header.scss */
+  .page-user .add-offer-link {
+    float: left;
+  }
+  /* line 157, ../sass/_header.scss */
+  .page-user .fa-facebook {
+    float: left;
+  }
+}
+@media (max-width: 480px) {
+  /* line 163, ../sass/_header.scss */
+  .help-menu {
+    float: none;
+    clear: left;
+  }
+  /* line 166, ../sass/_header.scss */
+  .help-menu li {
+    float: none;
+    margin-bottom: 10px;
+    border-right: 0 none;
+  }
+
+  /* line 173, ../sass/_header.scss */
+  .main-header .logo {
+    top: 10px;
+    right: auto;
+    left: 95px;
+  }
+}
 /* line 1, ../sass/_main-footer.scss */
 .main-footer {
   padding-top: 20px;
@@ -751,53 +841,94 @@ h6 {
   border-top: 1px solid #afb1b3;
   clear: both;
 }
-/* line 6, ../sass/_main-footer.scss */
+@media (max-width: 480px) {
+  /* line 1, ../sass/_main-footer.scss */
+  .main-footer {
+    margin-bottom: 10px;
+  }
+}
+/* line 9, ../sass/_main-footer.scss */
 .main-footer .block-menu {
   display: inline-block;
   padding: 10px 20px;
   background: #95989a;
   border-radius: 7px;
 }
-/* line 11, ../sass/_main-footer.scss */
+@media (max-width: 480px) {
+  /* line 9, ../sass/_main-footer.scss */
+  .main-footer .block-menu {
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+}
+/* line 20, ../sass/_main-footer.scss */
 .main-footer .block-menu li {
   margin-right: 10px;
   border-right: 1px solid #fff;
 }
-/* line 15, ../sass/_main-footer.scss */
+/* line 24, ../sass/_main-footer.scss */
 .main-footer .block-menu li:last-child {
   margin-right: 0;
   border-right: 0 none;
 }
-/* line 18, ../sass/_main-footer.scss */
+/* line 27, ../sass/_main-footer.scss */
 .main-footer .block-menu li:last-child a {
   margin-right: 0;
 }
-/* line 23, ../sass/_main-footer.scss */
+@media (max-width: 480px) {
+  /* line 20, ../sass/_main-footer.scss */
+  .main-footer .block-menu li {
+    float: none;
+    border-right: 0 none;
+  }
+}
+/* line 36, ../sass/_main-footer.scss */
 .main-footer .block-menu a {
   margin-right: 10px;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #fff;
 }
+@media (max-width: 480px) {
+  /* line 36, ../sass/_main-footer.scss */
+  .main-footer .block-menu a {
+    display: inline-block;
+    padding: 5px 0;
+  }
+}
 
-/* line 31, ../sass/_main-footer.scss */
+/* line 48, ../sass/_main-footer.scss */
 .motto-logo {
   display: inline-block;
   min-width: 340px;
 }
-/* line 34, ../sass/_main-footer.scss */
+@media (max-width: 767px) {
+  /* line 48, ../sass/_main-footer.scss */
+  .motto-logo {
+    min-width: initial;
+  }
+}
+/* line 54, ../sass/_main-footer.scss */
 .motto-logo .logo {
   margin-top: 0;
 }
-/* line 36, ../sass/_main-footer.scss */
+/* line 56, ../sass/_main-footer.scss */
 .motto-logo .logo img {
   width: 60px;
 }
-/* line 40, ../sass/_main-footer.scss */
+/* line 60, ../sass/_main-footer.scss */
 .motto-logo span {
   line-height: 1.5;
-  font-size: 12px;
+  font-size: 0.75rem;
   color: #db2a1a;
+}
+@media (max-width: 767px) {
+  /* line 60, ../sass/_main-footer.scss */
+  .motto-logo span {
+    max-width: 70%;
+  }
 }
 
 /* line 1, ../sass/_forms.scss */
@@ -823,13 +954,13 @@ input[type="submit"] {
 label,
 .fieldset-legend {
   line-height: 2;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #888b8e;
 }
 /* line 19, ../sass/_forms.scss */
 label.compact-form-label,
 .fieldset-legend.compact-form-label {
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 /* line 23, ../sass/_forms.scss */
@@ -918,7 +1049,7 @@ textarea {
   width: 100%;
   padding-top: 5px;
   resize: none;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-family: Arial, sans-serif;
 }
 
@@ -964,7 +1095,7 @@ textarea {
 .node-offer-form .field-name-field-offer-images table .image-widget-data {
   max-width: 160px;
   margin-top: 10px;
-  font-size: 12px;
+  font-size: 0.75rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -1050,7 +1181,7 @@ textarea {
 .grid-listing-container .views-field-name {
   padding-top: 0;
   border-width: 0 1px 1px 1px;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 /* line 2, ../sass/_panels.scss */
@@ -1080,7 +1211,7 @@ textarea {
 /* line 7, ../sass/_sidebar_block.scss */
 .sidebar-block .pane-title {
   text-align: center;
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #fff;
   background: #87d7dd;
 }
@@ -1224,7 +1355,7 @@ textarea {
 
 /* line 11, ../sass/_offer.scss */
 .pane-node-field-offer-price .field-item {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: bold;
 }
 
@@ -1235,17 +1366,17 @@ textarea {
 }
 /* line 22, ../sass/_offer.scss */
 .node-type-offer .sidebar-block .pane-title {
-  font-size: 16px;
+  font-size: 1rem;
   background: none;
   color: #434343;
 }
 /* line 27, ../sass/_offer.scss */
 .node-type-offer .sidebar-block .pane-content {
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 /* line 34, ../sass/_offer.scss */
 .node-type-offer .author-name:before {
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 /* line 39, ../sass/_offer.scss */
 .node-type-offer .picture img {
@@ -1284,7 +1415,7 @@ textarea {
 }
 /* line 72, ../sass/_offer.scss */
 .node-type-offer .pane-other-user-offers .view-other-user-offers .views-field-title {
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 /* Login Form */
@@ -1352,21 +1483,21 @@ textarea {
 /* line 26, ../sass/_comments.scss */
 .comment .submitted p {
   margin: 4px 0;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.2;
 }
 /* line 31, ../sass/_comments.scss */
 .comment .submitted .comment-time {
-  font-size: 12px;
+  font-size: 0.75rem;
   color: #434343;
 }
 /* line 35, ../sass/_comments.scss */
 .comment .submitted .comment-permalink {
-  font-size: 10px;
+  font-size: 0.625rem;
 }
 /* line 39, ../sass/_comments.scss */
 .comment .content {
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.6;
 }
 /* line 43, ../sass/_comments.scss */
@@ -1405,7 +1536,7 @@ textarea {
 /* line 72, ../sass/_comments.scss */
 .comment ul.links {
   padding: 0 0 10px 0;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 /* line 76, ../sass/_comments.scss */
 .comment li {
@@ -1424,7 +1555,7 @@ textarea {
 }
 /* line 6, ../sass/_forum.scss */
 .node-forum .submitted {
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 /* line 9, ../sass/_forum.scss */
 .node-forum .content {
@@ -1434,7 +1565,7 @@ textarea {
 /* line 13, ../sass/_forum.scss */
 .node-forum .field-name-taxonomy-forums {
   margin-bottom: 20px;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 /* line 17, ../sass/_forum.scss */
 .node-forum .field-name-body {
@@ -1447,7 +1578,7 @@ textarea {
 #forum .submitted,
 #forum .posts,
 #forum .topics {
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 /* line 31, ../sass/_forum.scss */
 #forum .posts,
@@ -1463,14 +1594,14 @@ textarea {
 /* line 4, ../sass/_user.scss */
 .user-menu a {
   margin-right: 5px;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #95989a;
 }
-/* line 39, ../sass/_mixins.scss */
+/* line 45, ../sass/_mixins.scss */
 .user-menu a:visited {
   color: #6e7174;
 }
-/* line 42, ../sass/_mixins.scss */
+/* line 48, ../sass/_mixins.scss */
 .user-menu a:hover {
   color: #6e7174;
 }
@@ -1502,7 +1633,7 @@ textarea {
 /* USER EDIT FORM */
 /* line 30, ../sass/_user.scss */
 .description {
-  font-size: 12px;
+  font-size: 0.75rem;
   color: #434343;
 }
 
@@ -1526,7 +1657,7 @@ textarea {
 .password-strength-text,
 .password-strength-title,
 .password-confirm {
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 2;
 }
 
@@ -1600,15 +1731,15 @@ ul.quicktabs-tabs li a:hover {
 .view-user-offers tbody .views-field-delete-node a:hover:before,
 .view-user-offers tbody .views-field-edit-node a:hover:before {
   color: #e84e40;
-  font-size: 22px;
+  font-size: 1.375rem;
 }
 /* line 23, ../sass/_view-user-offers.scss */
 .view-user-offers tbody .views-field-delete-node a:before {
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 /* line 30, ../sass/_view-user-offers.scss */
 .view-user-offers tbody .views-field-edit-node a:before {
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 /* line 2, ../sass/_confirmation.scss */
@@ -1627,4 +1758,8 @@ ul.quicktabs-tabs li a:hover {
 /* line 10, ../sass/_ad-info-page.scss */
 .ad-info-page .views-row {
   margin-bottom: 40px;
+}
+/* line 13, ../sass/_ad-info-page.scss */
+.ad-info-page .image-link {
+  color: #db2a1a;
 }

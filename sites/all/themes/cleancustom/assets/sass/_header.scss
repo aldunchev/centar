@@ -9,6 +9,9 @@
 }
 .block-user {
   @extend %fl-left-ext;
+  @include breakpoint(small) {
+    float: none;
+  }
   .form-item {
     width: auto;
     @extend %fl-left-ext;
@@ -16,7 +19,7 @@
     input[type="text"],
     input[type="password"] {
       width: 190px;
-      height: 25px;      
+      height: 25px;
     }
   }
   .form-wrapper,
@@ -47,9 +50,17 @@
   .form-item-remember-me {
     font-size: 12px;
     line-height: 2;
+    @include breakpoint(medium-x) {
+      clear: left;
+    }
     input {
       position: relative;
       top: 2px;
+    }
+  }
+   @include breakpoint(medium-x) {
+    .form-type-password {
+      clear: left;
     }
   }
 }
@@ -68,6 +79,11 @@
   &:hover {
     color: $white;
     background: lighten(#5b74a8, 5%);
+  }
+  @include breakpoint(medium-x) {
+    float: none;
+    display: inline-block;
+    margin-bottom: $space-10;
   }
 }
 .logo {
@@ -112,5 +128,52 @@
     text-transform: uppercase;
     font-weight: bold;
     color: $black;
+  }
+}
+@include breakpoint(small) {
+  .help-menu {
+    .page-user & {
+      float: left;
+    }
+    a {
+      color: darken($gray, 40%);
+      font-weight: bold;
+    }
+  }
+  .main-header {
+    .logo {
+      position: absolute;
+      top: 45px;
+      right: 20px;
+      img {
+        max-width: 150px;
+      }
+    }
+  }
+  .page-user {
+    .add-offer-link {
+      float: left;
+    }
+    .fa-facebook {
+      float: left;
+    }
+  }
+}
+@include breakpoint(smaller) {
+  .help-menu {
+    float: none;
+    clear: left;
+    li {
+      float: none;
+      margin-bottom: $space-10;
+      border-right: 0 none;
+    }
+  }
+  .main-header {
+    .logo {
+      top: 10px;
+      right: auto;
+      left: 95px;
+    }
   }
 }
