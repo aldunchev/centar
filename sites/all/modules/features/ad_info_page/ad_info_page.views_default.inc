@@ -37,6 +37,12 @@ function ad_info_page_views_default_views() {
   $handler->display->display_options['pager']['options']['tags']['last'] = 'последна » ';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
+  /* Footer: Global: Text area */
+  $handler->display->display_options['footer']['area']['id'] = 'area';
+  $handler->display->display_options['footer']['area']['table'] = 'views';
+  $handler->display->display_options['footer']['area']['field'] = 'area';
+  $handler->display->display_options['footer']['area']['content'] = '<a class="more-link" href="contact">Запитване за реклама<a/>';
+  $handler->display->display_options['footer']['area']['format'] = 'filtered_html';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -54,6 +60,14 @@ function ad_info_page_views_default_views() {
   $handler->display->display_options['fields']['field_ad_properties']['label'] = '';
   $handler->display->display_options['fields']['field_ad_properties']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_ad_properties']['delta_offset'] = '0';
+  /* Field: Content: Ad Properties Note */
+  $handler->display->display_options['fields']['field_ad_properties_note']['id'] = 'field_ad_properties_note';
+  $handler->display->display_options['fields']['field_ad_properties_note']['table'] = 'field_data_field_ad_properties_note';
+  $handler->display->display_options['fields']['field_ad_properties_note']['field'] = 'field_ad_properties_note';
+  $handler->display->display_options['fields']['field_ad_properties_note']['label'] = '';
+  $handler->display->display_options['fields']['field_ad_properties_note']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_ad_properties_note']['delta_offset'] = '0';
+  $handler->display->display_options['fields']['field_ad_properties_note']['multi_type'] = 'ul';
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';

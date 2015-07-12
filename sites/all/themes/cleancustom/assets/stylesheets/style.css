@@ -1763,3 +1763,7 @@ ul.quicktabs-tabs li a:hover {
 .ad-info-page .image-link {
   color: #db2a1a;
 }
+/* line 17, ../sass/_ad-info-page.scss */
+.ad-info-page .views-field-field-ad-properties-note p {
+  font-size: 0.875rem;
+}
