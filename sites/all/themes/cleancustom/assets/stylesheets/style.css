@@ -184,6 +184,8 @@ article {
 .fa:before, .view-user-offers tbody .views-field-delete-node a:before, .view-user-offers tbody .views-field-edit-node a:before, .ajax-progress .throbber:before, .node-type-offer .author-name:before,
 .fa:after,
 .more-link:after,
+.sidebar-block .pane-title.active:after,
+.sidebar-block .pane-title:after,
 .node-type-offer .author-name:after,
 .pane-apachesolr-form .form-actions:before,
 .pane-search-form .form-actions:before {
@@ -231,16 +233,26 @@ article {
 }
 
 /* line 50, ../sass/_font-awesome.scss */
+.sidebar-block .pane-title.active:after {
+  content: "\f077";
+}
+
+/* line 54, ../sass/_font-awesome.scss */
+.sidebar-block .pane-title:after {
+  content: "\f078";
+}
+
+/* line 58, ../sass/_font-awesome.scss */
 .view-user-offers tbody .views-field-delete-node a:before {
   content: "\f1f8";
 }
 
-/* line 54, ../sass/_font-awesome.scss */
+/* line 62, ../sass/_font-awesome.scss */
 .view-user-offers tbody .views-field-edit-node a:before {
   content: "\f044";
 }
 
-/* line 58, ../sass/_font-awesome.scss */
+/* line 66, ../sass/_font-awesome.scss */
 .ajax-progress .throbber:before {
   content: "\f021";
 }
@@ -883,7 +895,7 @@ h6 {
 /* line 120, ../sass/_header.scss */
 .motto {
   margin-top: 10px;
-  padding: 7px 0;
+  padding: 7px 10px;
   text-align: center;
   background-image: url("../images/lenta.png");
   background-position: center;
@@ -898,53 +910,66 @@ h6 {
 
 @media (max-width: 767px) {
   /* line 135, ../sass/_header.scss */
+  .logged-in .help-menu {
+    margin-top: 10px;
+  }
+  /* line 138, ../sass/_header.scss */
   .page-user .help-menu {
     float: left;
   }
-  /* line 138, ../sass/_header.scss */
+  /* line 141, ../sass/_header.scss */
   .help-menu a {
     color: #494b4d;
     font-weight: bold;
   }
 
-  /* line 144, ../sass/_header.scss */
-  .main-header .logo {
-    position: absolute;
-    top: 45px;
-    right: 20px;
-  }
   /* line 148, ../sass/_header.scss */
+  .logged-in .main-header .logo {
+    display: block;
+    width: 100%;
+  }
+  /* line 152, ../sass/_header.scss */
+  .not-logged-in .main-header .logo {
+    position: absolute;
+    top: 10px;
+    left: 95px;
+  }
+  /* line 157, ../sass/_header.scss */
   .main-header .logo img {
     max-width: 150px;
   }
 
-  /* line 154, ../sass/_header.scss */
+  /* line 162, ../sass/_header.scss */
+  .help-menu {
+    float: none;
+    clear: both;
+  }
+
+  /* line 166, ../sass/_header.scss */
+  .add-offer-link {
+    float: none;
+    display: inline-block;
+  }
+  /* line 169, ../sass/_header.scss */
+  .logged-in .add-offer-link {
+    margin-top: 20px;
+  }
+
+  /* line 174, ../sass/_header.scss */
   .page-user .add-offer-link {
     float: left;
   }
-  /* line 157, ../sass/_header.scss */
+  /* line 177, ../sass/_header.scss */
   .page-user .fa-facebook {
     float: left;
   }
 }
 @media (max-width: 480px) {
-  /* line 163, ../sass/_header.scss */
-  .help-menu {
-    float: none;
-    clear: left;
-  }
-  /* line 166, ../sass/_header.scss */
+  /* line 183, ../sass/_header.scss */
   .help-menu li {
     float: none;
     margin-bottom: 10px;
     border-right: 0 none;
-  }
-
-  /* line 173, ../sass/_header.scss */
-  .main-header .logo {
-    top: 10px;
-    right: auto;
-    left: 95px;
   }
 }
 /* line 1, ../sass/_main-footer.scss */
@@ -1336,22 +1361,26 @@ textarea {
   color: #fff;
   background: #87d7dd;
 }
-/* line 13, ../sass/_sidebar_block.scss */
+/* line 12, ../sass/_sidebar_block.scss */
+.sidebar-block .pane-title:after {
+  display: none;
+}
+/* line 20, ../sass/_sidebar_block.scss */
 .sidebar-block a {
   display: inline-block;
   color: #888b8e;
 }
 @media (max-width: 1024px) {
-  /* line 13, ../sass/_sidebar_block.scss */
+  /* line 20, ../sass/_sidebar_block.scss */
   .sidebar-block a {
     padding: 5px 0;
   }
 }
-/* line 22, ../sass/_sidebar_block.scss */
+/* line 29, ../sass/_sidebar_block.scss */
 .sidebar-block .pane-content ul li {
   line-height: 1.2;
 }
-/* line 25, ../sass/_sidebar_block.scss */
+/* line 32, ../sass/_sidebar_block.scss */
 .sidebar-block .pane-content ul li.active:before {
   position: absolute;
   content: '';
@@ -1362,17 +1391,17 @@ textarea {
   border-color: transparent;
   border-left-color: #87d7dd;
 }
-/* line 39, ../sass/_sidebar_block.scss */
+/* line 46, ../sass/_sidebar_block.scss */
 .sidebar-block .pane-content > ul > .first > a {
   /* The heading of each section. */
   text-transform: uppercase;
 }
-/* line 42, ../sass/_sidebar_block.scss */
+/* line 49, ../sass/_sidebar_block.scss */
 .sidebar-block .pane-content > ul > li {
   /* The items. */
   margin-bottom: 20px;
 }
-/* line 44, ../sass/_sidebar_block.scss */
+/* line 51, ../sass/_sidebar_block.scss */
 .sidebar-block .pane-content > ul > li > a {
   display: block;
   width: 100%;
@@ -1383,11 +1412,19 @@ textarea {
 }
 
 @media (max-width: 1024px) {
-  /* line 59, ../sass/_sidebar_block.scss */
+  /* line 66, ../sass/_sidebar_block.scss */
   .sidebar-left .pane-title {
+    padding-left: 10px;
+    text-align: left;
     cursor: pointer;
   }
-  /* line 62, ../sass/_sidebar_block.scss */
+  /* line 70, ../sass/_sidebar_block.scss */
+  .sidebar-left .pane-title:after {
+    display: block;
+    float: right;
+    margin-right: 10px;
+  }
+  /* line 76, ../sass/_sidebar_block.scss */
   .sidebar-left .pane-content {
     display: none;
   }

@@ -9,6 +9,13 @@
     font-size: $text-18;
     color: $white;
     background: darken($sky-blue, 25%);
+    &:after {
+      display: none;
+      @extend %fa-chevron-down;
+    }
+    &.active:after {
+      @extend %fa-chevron-up;
+    }
   }
   a {
     display: inline-block;
@@ -57,7 +64,14 @@
 @include breakpoint(medium-x) {
   .sidebar-left {
     .pane-title {
+      padding-left: $space-10;
+      text-align: left;
       cursor: pointer;
+      &:after {
+        display: block;
+        float: right;
+        margin-right: $space-10;
+      }
     }
     .pane-content {
       display: none;

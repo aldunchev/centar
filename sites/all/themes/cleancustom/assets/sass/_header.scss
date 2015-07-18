@@ -119,7 +119,7 @@
 }
 .motto {
   margin-top: $space-10;
-  padding: 7px 0;
+  padding: 7px $space-10;
   text-align: center;
   background-image: url('../images/lenta.png');
   background-position: center;
@@ -132,6 +132,9 @@
 }
 @include breakpoint(small) {
   .help-menu {
+    .logged-in & {
+      margin-top: $space-10;
+    }
     .page-user & {
       float: left;
     }
@@ -142,12 +145,29 @@
   }
   .main-header {
     .logo {
-      position: absolute;
-      top: 45px;
-      right: 20px;
+      .logged-in & {
+        display: block;
+        width: 100%;
+      }
+      .not-logged-in & {
+        position: absolute;
+        top: 10px;
+        left: 95px;
+      }
       img {
         max-width: 150px;
       }
+    }
+  }
+  .help-menu {
+    float: none;
+    clear: both;
+  }
+  .add-offer-link {
+    float: none;
+    display: inline-block;
+    .logged-in & {
+      margin-top: $space-20;
     }
   }
   .page-user {
@@ -160,20 +180,9 @@
   }
 }
 @include breakpoint(smaller) {
-  .help-menu {
+  .help-menu li {
     float: none;
-    clear: left;
-    li {
-      float: none;
-      margin-bottom: $space-10;
-      border-right: 0 none;
-    }
-  }
-  .main-header {
-    .logo {
-      top: 10px;
-      right: auto;
-      left: 95px;
-    }
+    margin-bottom: $space-10;
+    border-right: 0 none;
   }
 }
