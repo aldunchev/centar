@@ -39,7 +39,7 @@ function offer_listing_feature_views_default_views() {
   $handler->display->display_options['pager']['options']['tags']['next'] = 'следваща › ';
   $handler->display->display_options['pager']['options']['tags']['last'] = 'последна » ';
   $handler->display->display_options['style_plugin'] = 'list';
-  $handler->display->display_options['style_options']['row_class'] = 'col-4 fl-left';
+  $handler->display->display_options['style_options']['row_class'] = 'col-4 fl-left col-6-sm col-12-smr';
   $handler->display->display_options['style_options']['wrapper_class'] = 'item-list row';
   $handler->display->display_options['row_plugin'] = 'fields';
   /* No results behavior: Global: Text area */

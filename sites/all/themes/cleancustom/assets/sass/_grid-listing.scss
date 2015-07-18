@@ -13,6 +13,9 @@
     @include transition(all, 200ms, ease);
     &:hover {
       @include transform(scale(1.1));
+      @include breakpoint(medium-x) {
+        @include transform(scale(1));
+      }
     }
   }
   .grid-images {
@@ -21,7 +24,7 @@
     border: solid lighten($gray, 10%);
     border-width: 1px 1px 0 1px;
     img {
-      max-width: 208px;
+      padding: 0 5px;
       @include border-radius(3px);
     }
   }

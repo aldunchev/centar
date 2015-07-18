@@ -87,39 +87,20 @@ div {
   outline: none;
 }
 
-/* line 18, ../sass/_reset.scss */
+/* line 17, ../sass/_reset.scss */
 header,
 footer,
 article {
   display: block;
 }
 
-/* Base 16px */
-/* 22px*/
-/* line 1, ../sass/_extends.scss */
-input[type="submit"],
-input[type="text"],
-input[type="password"],
-input[type="checkbox"],
-textarea,
-select,
-div, .col-12,
-.col-11,
-.col-10,
-.col-9,
-.col-8,
-.col-7,
-.col-6,
-.col-5,
-.col-4,
-.col-3,
-.col-2,
-.col-1 {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
+/* line 22, ../sass/_reset.scss */
+* {
   box-sizing: border-box;
 }
 
+/* Base 16px */
+/* 22px*/
 /* line 18, ../sass/_extends.scss */
 .block-user, .block-user .form-item, .block-user .form-actions, .menu li, .main-footer .block-menu li, .form-item-apachesolr-panels-search-form,
 .form-item-search-block-form, .node-forum .user-picture {
@@ -279,7 +260,7 @@ div, .col-12,
 @media (min-width: 768px) and (max-width: 959px) {
   /* line 1, ../sass/_layout.scss */
   .container {
-    width: 767px;
+    width: 747px;
   }
 }
 @media (min-width: 960px) {
@@ -316,72 +297,204 @@ div, .col-12,
   padding: 0 10px;
 }
 
-/* line 37, ../sass/_layout.scss */
+/* line 36, ../sass/_layout.scss */
 .col-12 {
   width: 100%;
 }
 
-/* line 40, ../sass/_layout.scss */
+/* line 39, ../sass/_layout.scss */
 .col-11 {
   width: 91.66%;
 }
 
-/* line 43, ../sass/_layout.scss */
+/* line 42, ../sass/_layout.scss */
 .col-10 {
   width: 83.33%;
 }
 
-/* line 46, ../sass/_layout.scss */
+/* line 45, ../sass/_layout.scss */
 .col-9 {
   width: 75%;
 }
 
-/* line 49, ../sass/_layout.scss */
+/* line 48, ../sass/_layout.scss */
 .col-8 {
   width: 66.66%;
 }
 
-/* line 52, ../sass/_layout.scss */
+/* line 51, ../sass/_layout.scss */
 .col-7 {
   width: 58.33%;
 }
 
-/* line 55, ../sass/_layout.scss */
+/* line 54, ../sass/_layout.scss */
 .col-6 {
   width: 50%;
 }
 
-/* line 58, ../sass/_layout.scss */
+/* line 57, ../sass/_layout.scss */
 .col-5 {
   width: 41.66%;
 }
 
-/* line 61, ../sass/_layout.scss */
+/* line 60, ../sass/_layout.scss */
 .col-4 {
   width: 33.33%;
 }
 
-/* line 64, ../sass/_layout.scss */
+/* line 63, ../sass/_layout.scss */
 .col-3 {
   width: 25%;
 }
 
-/* line 67, ../sass/_layout.scss */
+/* line 66, ../sass/_layout.scss */
 .col-2 {
   width: 16.66%;
 }
 
-/* line 70, ../sass/_layout.scss */
+/* line 69, ../sass/_layout.scss */
 .col-1 {
   width: 8.33%;
 }
 
-/* line 83, ../sass/_layout.scss */
+/* line 82, ../sass/_layout.scss */
 .col-full {
   padding-top: 40px;
   clear: both;
 }
 
+/* GRID STYLES UNDER 1024px */
+@media (max-width: 1024px) {
+  /* line 89, ../sass/_layout.scss */
+  .col-12-no-fl {
+    width: 100%;
+    float: none;
+  }
+}
+/* GRID STYLES UNDER 767px */
+@media (max-width: 767px) {
+  /* line 97, ../sass/_layout.scss */
+  .col-12-sm {
+    width: 100%;
+  }
+
+  /* line 100, ../sass/_layout.scss */
+  .col-11-sm {
+    width: 91.66%;
+  }
+
+  /* line 103, ../sass/_layout.scss */
+  .col-10-sm {
+    width: 83.33%;
+  }
+
+  /* line 106, ../sass/_layout.scss */
+  .col-9-sm {
+    width: 75%;
+  }
+
+  /* line 109, ../sass/_layout.scss */
+  .col-8-sm {
+    width: 66.66%;
+  }
+
+  /* line 112, ../sass/_layout.scss */
+  .col-7-sm {
+    width: 58.33%;
+  }
+
+  /* line 115, ../sass/_layout.scss */
+  .col-6-sm {
+    width: 50%;
+  }
+
+  /* line 118, ../sass/_layout.scss */
+  .col-5-sm {
+    width: 41.66%;
+  }
+
+  /* line 121, ../sass/_layout.scss */
+  .col-4-sm {
+    width: 33.33%;
+  }
+
+  /* line 124, ../sass/_layout.scss */
+  .col-3-sm {
+    width: 25%;
+  }
+
+  /* line 127, ../sass/_layout.scss */
+  .col-2-sm {
+    width: 16.66%;
+  }
+
+  /* line 130, ../sass/_layout.scss */
+  .col-1-sm {
+    width: 8.33%;
+  }
+}
+/* GRID STYLES UNDER 480px (smr) */
+@media (max-width: 480px) {
+  /* line 137, ../sass/_layout.scss */
+  .col-12-smr {
+    width: 100%;
+  }
+
+  /* line 140, ../sass/_layout.scss */
+  .col-11-smr {
+    width: 91.66%;
+  }
+
+  /* line 143, ../sass/_layout.scss */
+  .col-10-smr {
+    width: 83.33%;
+  }
+
+  /* line 146, ../sass/_layout.scss */
+  .col-9-smr {
+    width: 75%;
+  }
+
+  /* line 149, ../sass/_layout.scss */
+  .col-8-smr {
+    width: 66.66%;
+  }
+
+  /* line 152, ../sass/_layout.scss */
+  .col-7-smr {
+    width: 58.33%;
+  }
+
+  /* line 155, ../sass/_layout.scss */
+  .col-6-smr {
+    width: 50%;
+  }
+
+  /* line 158, ../sass/_layout.scss */
+  .col-5-smr {
+    width: 41.66%;
+  }
+
+  /* line 161, ../sass/_layout.scss */
+  .col-4-smr {
+    width: 33.33%;
+  }
+
+  /* line 164, ../sass/_layout.scss */
+  .col-3-smr {
+    width: 25%;
+  }
+
+  /* line 167, ../sass/_layout.scss */
+  .col-2-smr {
+    width: 16.66%;
+  }
+
+  /* line 170, ../sass/_layout.scss */
+  .col-1-smr {
+    width: 8.33%;
+  }
+}
 /* line 1, ../sass/_common.scss */
 .fl-left {
   float: left;
@@ -1155,29 +1268,37 @@ textarea {
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
-/* line 18, ../sass/_grid-listing.scss */
+@media (max-width: 1024px) {
+  /* line 14, ../sass/_grid-listing.scss */
+  .grid-listing-container .views-row:hover {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+}
+/* line 21, ../sass/_grid-listing.scss */
 .grid-listing-container .grid-images {
   padding-top: 5px;
   text-align: center;
   border: solid #c9cbcc;
   border-width: 1px 1px 0 1px;
 }
-/* line 23, ../sass/_grid-listing.scss */
+/* line 26, ../sass/_grid-listing.scss */
 .grid-listing-container .grid-images img {
-  max-width: 208px;
+  padding: 0 5px;
   border-radius: 3px;
 }
-/* line 28, ../sass/_grid-listing.scss */
+/* line 31, ../sass/_grid-listing.scss */
 .grid-listing-container .views-field-title,
 .grid-listing-container .views-field-name {
   padding: 5px;
   border: solid #c9cbcc;
 }
-/* line 33, ../sass/_grid-listing.scss */
+/* line 36, ../sass/_grid-listing.scss */
 .grid-listing-container .views-field-title {
   border-width: 0 1px 0 1px;
 }
-/* line 36, ../sass/_grid-listing.scss */
+/* line 39, ../sass/_grid-listing.scss */
 .grid-listing-container .views-field-name {
   padding-top: 0;
   border-width: 0 1px 1px 1px;
@@ -1217,13 +1338,20 @@ textarea {
 }
 /* line 13, ../sass/_sidebar_block.scss */
 .sidebar-block a {
+  display: inline-block;
   color: #888b8e;
 }
-/* line 19, ../sass/_sidebar_block.scss */
+@media (max-width: 1024px) {
+  /* line 13, ../sass/_sidebar_block.scss */
+  .sidebar-block a {
+    padding: 5px 0;
+  }
+}
+/* line 22, ../sass/_sidebar_block.scss */
 .sidebar-block .pane-content ul li {
   line-height: 1.2;
 }
-/* line 22, ../sass/_sidebar_block.scss */
+/* line 25, ../sass/_sidebar_block.scss */
 .sidebar-block .pane-content ul li.active:before {
   position: absolute;
   content: '';
@@ -1234,17 +1362,17 @@ textarea {
   border-color: transparent;
   border-left-color: #87d7dd;
 }
-/* line 36, ../sass/_sidebar_block.scss */
+/* line 39, ../sass/_sidebar_block.scss */
 .sidebar-block .pane-content > ul > .first > a {
   /* The heading of each section. */
   text-transform: uppercase;
 }
-/* line 39, ../sass/_sidebar_block.scss */
+/* line 42, ../sass/_sidebar_block.scss */
 .sidebar-block .pane-content > ul > li {
   /* The items. */
   margin-bottom: 20px;
 }
-/* line 41, ../sass/_sidebar_block.scss */
+/* line 44, ../sass/_sidebar_block.scss */
 .sidebar-block .pane-content > ul > li > a {
   display: block;
   width: 100%;
@@ -1254,6 +1382,16 @@ textarea {
   border-bottom: 2px solid #888b8e;
 }
 
+@media (max-width: 1024px) {
+  /* line 59, ../sass/_sidebar_block.scss */
+  .sidebar-left .pane-title {
+    cursor: pointer;
+  }
+  /* line 62, ../sass/_sidebar_block.scss */
+  .sidebar-left .pane-content {
+    display: none;
+  }
+}
 /* line 1, ../sass/_pager.scss */
 .pager {
   margin-top: 20px;
@@ -1584,6 +1722,24 @@ textarea {
 #forum .posts,
 #forum .topics {
   text-align: center;
+}
+@media (max-width: 1024px) {
+  /* line 37, ../sass/_forum.scss */
+  #forum .forum {
+    max-width: 200px;
+  }
+  /* line 40, ../sass/_forum.scss */
+  #forum .last-reply,
+  #forum thead th:last-child {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  /* line 46, ../sass/_forum.scss */
+  #forum .posts,
+  #forum thead th:nth-child(3) {
+    display: none;
+  }
 }
 
 /* line 1, ../sass/_user.scss */

@@ -32,4 +32,20 @@
   .topics {
     text-align: center;
   }
+
+  @include breakpoint(medium-x) {
+    .forum {
+      max-width: 200px;
+    }
+    .last-reply,
+    thead th:last-child {
+      display: none;
+    }
+  }
+  @include breakpoint(smaller) {
+    .posts,
+    thead th:nth-child(3) {
+      display: none;
+    }
+  }
 }

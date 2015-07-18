@@ -27,13 +27,13 @@
     </aside>
  
   <div class="row">
-    <div class="col-3 fl-left sidebar-left">
+    <div class="col-3 fl-left col-12-no-fl sidebar-left">
       <aside>
         <?php print $content['sidebar_left']; ?>
       </aside>
     </div> 
 
-    <div class="col-9 fl-left">
+    <div class="col-9 fl-left col-12-no-fl">
       <div class="row clearfix">
         <div class="ad-wrapper ad-medium fl-left">
           <aside>

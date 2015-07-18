@@ -31,7 +31,6 @@
 .col-3,
 .col-2,
 .col-1 {
-  @extend %border-box;
   padding: 0 10px;
 }
 .col-12 {
@@ -83,4 +82,92 @@
 .col-full {
   padding-top: 40px;
   clear: both;
+}
+
+/* GRID STYLES UNDER 1024px */
+@include breakpoint(medium-x) {
+  .col-12-no-fl {
+    width: 100%;
+    float: none;
+  }
+}
+
+/* GRID STYLES UNDER 767px */
+@include breakpoint(small) {
+  .col-12-sm {
+    width: 100%;
+  }
+  .col-11-sm {
+    width: 91.66%;
+  }
+  .col-10-sm {
+    width: 83.33%;
+  }
+  .col-9-sm {
+    width: 75%;
+  }
+  .col-8-sm {
+    width: 66.66%;
+  }
+  .col-7-sm {
+    width: 58.33%;
+  }
+  .col-6-sm {
+    width: 50%;
+  }
+  .col-5-sm {
+    width: 41.66%;
+  }
+  .col-4-sm {
+    width: 33.33%;
+  }
+  .col-3-sm {
+    width: 25%;
+  }
+  .col-2-sm {
+    width: 16.66%;
+  }
+  .col-1-sm {
+    width: 8.33%;
+  }
+}
+
+/* GRID STYLES UNDER 480px (smr) */
+@include breakpoint(smaller) {
+  .col-12-smr {
+    width: 100%;
+  }
+  .col-11-smr {
+    width: 91.66%;
+  }
+  .col-10-smr {
+    width: 83.33%;
+  }
+  .col-9-smr {
+    width: 75%;
+  }
+  .col-8-smr {
+    width: 66.66%;
+  }
+  .col-7-smr {
+    width: 58.33%;
+  }
+  .col-6-smr {
+    width: 50%;
+  }
+  .col-5-smr {
+    width: 41.66%;
+  }
+  .col-4-smr {
+    width: 33.33%;
+  }
+  .col-3-smr {
+    width: 25%;
+  }
+  .col-2-smr {
+    width: 16.66%;
+  }
+  .col-1-smr {
+    width: 8.33%;
+  }
 }

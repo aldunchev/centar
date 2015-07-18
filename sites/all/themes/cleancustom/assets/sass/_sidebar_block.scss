@@ -11,8 +11,11 @@
     background: darken($sky-blue, 25%);
   }
   a {
+    display: inline-block;
     color: darken($gray, 15%);
-    
+    @include breakpoint(medium-x) {
+      padding: 5px 0;
+    }
   }
   .pane-content {
     ul {
@@ -49,4 +52,15 @@
       }
     }
   } 
+}
+
+@include breakpoint(medium-x) {
+  .sidebar-left {
+    .pane-title {
+      cursor: pointer;
+    }
+    .pane-content {
+      display: none;
+    }
+  }
 }
