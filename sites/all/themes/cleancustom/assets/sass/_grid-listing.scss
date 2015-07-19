@@ -7,6 +7,9 @@
   }
   .view-content {
     @extend %clearfix-ext;
+    @include breakpoint(smaller) {
+      margin-top: $space-20;
+    }
   }
   .views-row {
     margin-bottom: 30px;

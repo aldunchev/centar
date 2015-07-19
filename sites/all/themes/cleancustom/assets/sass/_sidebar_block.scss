@@ -65,6 +65,7 @@
   .sidebar-left {
     .pane-title {
       padding-left: $space-10;
+      margin-bottom: 0;
       text-align: left;
       cursor: pointer;
       &:after {

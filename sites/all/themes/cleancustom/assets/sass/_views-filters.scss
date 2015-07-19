@@ -7,6 +7,9 @@
   .views-exposed-widget {
     .form-submit {
       margin-top: $space-20;
+      @include breakpoint(smaller) {
+        margin-top: 0;
+      }
     }
   }
 }

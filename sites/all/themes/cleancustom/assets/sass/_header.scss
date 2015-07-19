@@ -6,6 +6,11 @@
   background-position: center;
   background-size: cover;
   @include box-shadow(0 4px 4px #ccc);
+  @include breakpoint(medium-x) {
+    .logged-in & {
+      height: 250px;
+    }
+  }
 }
 .block-user {
   @extend %fl-left-ext;
@@ -132,12 +137,7 @@
 }
 @include breakpoint(small) {
   .help-menu {
-    .logged-in & {
-      margin-top: $space-10;
-    }
-    .page-user & {
-      float: left;
-    }
+    margin: $space-20 0;
     a {
       color: darken($gray, 40%);
       font-weight: bold;
@@ -168,14 +168,6 @@
     display: inline-block;
     .logged-in & {
       margin-top: $space-20;
-    }
-  }
-  .page-user {
-    .add-offer-link {
-      float: left;
-    }
-    .fa-facebook {
-      float: left;
     }
   }
 }

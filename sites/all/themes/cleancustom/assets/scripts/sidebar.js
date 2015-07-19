@@ -28,7 +28,7 @@
     attach: function (context, settings) {
       var sidebarContent = $('.sidebar-left .pane-content'),
           paneTitles = $('.sidebar-left .pane-title');
-      $('.sidebar-left .pane-title').click(function (event) {
+      $('.sidebar-left .pane-title').once('sidebar-el-toggle').click(function (event) {
         var $this = $(this),
             el = $this.next();
         sidebarToggleFunc(el, sidebarContent, $this, paneTitles);
