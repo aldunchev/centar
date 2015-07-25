@@ -11,9 +11,7 @@
 
   Drupal.behaviors.adImageInfo = {
     attach: function (context, settings) {
-      $('.image-link', context).once('adImageInfo', function () {
-        magnificPopup({type:'image'});
-      });
+      $('.image-link').once('adImageInfo').magnificPopup({type:'image'});
     }
   };
 
