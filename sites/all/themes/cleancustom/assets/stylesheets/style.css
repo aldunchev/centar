@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
@@ -185,7 +186,9 @@ article {
 .fa:after,
 .more-link:after,
 .sidebar-block .pane-title.active:after,
+#edit-pass-change-pass-title h5.active:after,
 .sidebar-block .pane-title:after,
+#edit-pass-change-pass-title h5:after,
 .node-type-offer .author-name:after,
 .pane-apachesolr-form .form-actions:before,
 .pane-search-form .form-actions:before {
@@ -233,12 +236,12 @@ article {
 }
 
 /* line 50, ../sass/_font-awesome.scss */
-.sidebar-block .pane-title.active:after {
+.sidebar-block .pane-title.active:after, #edit-pass-change-pass-title h5.active:after {
   content: "\f077";
 }
 
 /* line 54, ../sass/_font-awesome.scss */
-.sidebar-block .pane-title:after {
+.sidebar-block .pane-title:after, #edit-pass-change-pass-title h5:after {
   content: "\f078";
 }
 
@@ -382,127 +385,132 @@ article {
     width: 100%;
     float: none;
   }
+
+  /* line 93, ../sass/_layout.scss */
+  .col-8-m {
+    width: 66.66%;
+  }
 }
 /* GRID STYLES UNDER 767px */
 @media (max-width: 767px) {
-  /* line 97, ../sass/_layout.scss */
+  /* line 100, ../sass/_layout.scss */
   .col-12-sm {
     width: 100%;
   }
 
-  /* line 100, ../sass/_layout.scss */
+  /* line 103, ../sass/_layout.scss */
   .col-11-sm {
     width: 91.66%;
   }
 
-  /* line 103, ../sass/_layout.scss */
+  /* line 106, ../sass/_layout.scss */
   .col-10-sm {
     width: 83.33%;
   }
 
-  /* line 106, ../sass/_layout.scss */
+  /* line 109, ../sass/_layout.scss */
   .col-9-sm {
     width: 75%;
   }
 
-  /* line 109, ../sass/_layout.scss */
+  /* line 112, ../sass/_layout.scss */
   .col-8-sm {
     width: 66.66%;
   }
 
-  /* line 112, ../sass/_layout.scss */
+  /* line 115, ../sass/_layout.scss */
   .col-7-sm {
     width: 58.33%;
   }
 
-  /* line 115, ../sass/_layout.scss */
+  /* line 118, ../sass/_layout.scss */
   .col-6-sm {
     width: 50%;
   }
 
-  /* line 118, ../sass/_layout.scss */
+  /* line 121, ../sass/_layout.scss */
   .col-5-sm {
     width: 41.66%;
   }
 
-  /* line 121, ../sass/_layout.scss */
+  /* line 124, ../sass/_layout.scss */
   .col-4-sm {
     width: 33.33%;
   }
 
-  /* line 124, ../sass/_layout.scss */
+  /* line 127, ../sass/_layout.scss */
   .col-3-sm {
     width: 25%;
   }
 
-  /* line 127, ../sass/_layout.scss */
+  /* line 130, ../sass/_layout.scss */
   .col-2-sm {
     width: 16.66%;
   }
 
-  /* line 130, ../sass/_layout.scss */
+  /* line 133, ../sass/_layout.scss */
   .col-1-sm {
     width: 8.33%;
   }
 }
 /* GRID STYLES UNDER 480px (smr) */
 @media (max-width: 480px) {
-  /* line 137, ../sass/_layout.scss */
+  /* line 140, ../sass/_layout.scss */
   .col-12-smr {
     width: 100%;
   }
 
-  /* line 140, ../sass/_layout.scss */
+  /* line 143, ../sass/_layout.scss */
   .col-11-smr {
     width: 91.66%;
   }
 
-  /* line 143, ../sass/_layout.scss */
+  /* line 146, ../sass/_layout.scss */
   .col-10-smr {
     width: 83.33%;
   }
 
-  /* line 146, ../sass/_layout.scss */
+  /* line 149, ../sass/_layout.scss */
   .col-9-smr {
     width: 75%;
   }
 
-  /* line 149, ../sass/_layout.scss */
+  /* line 152, ../sass/_layout.scss */
   .col-8-smr {
     width: 66.66%;
   }
 
-  /* line 152, ../sass/_layout.scss */
+  /* line 155, ../sass/_layout.scss */
   .col-7-smr {
     width: 58.33%;
   }
 
-  /* line 155, ../sass/_layout.scss */
+  /* line 158, ../sass/_layout.scss */
   .col-6-smr {
     width: 50%;
   }
 
-  /* line 158, ../sass/_layout.scss */
+  /* line 161, ../sass/_layout.scss */
   .col-5-smr {
     width: 41.66%;
   }
 
-  /* line 161, ../sass/_layout.scss */
+  /* line 164, ../sass/_layout.scss */
   .col-4-smr {
     width: 33.33%;
   }
 
-  /* line 164, ../sass/_layout.scss */
+  /* line 167, ../sass/_layout.scss */
   .col-3-smr {
     width: 25%;
   }
 
-  /* line 167, ../sass/_layout.scss */
+  /* line 170, ../sass/_layout.scss */
   .col-2-smr {
     width: 16.66%;
   }
 
-  /* line 170, ../sass/_layout.scss */
+  /* line 173, ../sass/_layout.scss */
   .col-1-smr {
     width: 8.33%;
   }
@@ -573,119 +581,125 @@ body #admin-menu {
   margin-bottom: 60px;
   background: #fff;
 }
+@media (max-width: 1024px) {
+  /* line 42, ../sass/_common.scss */
+  .main {
+    margin-bottom: 10px;
+  }
+}
 
-/* line 52, ../sass/_common.scss */
+/* line 55, ../sass/_common.scss */
 #messages {
   margin-top: 50px;
 }
 
-/* line 55, ../sass/_common.scss */
+/* line 58, ../sass/_common.scss */
 h1 {
   margin-bottom: 20px;
   color: #626467;
 }
 
-/* line 59, ../sass/_common.scss */
+/* line 62, ../sass/_common.scss */
 h2.pane-title,
 h2 {
   margin-bottom: 10px;
   padding: 5px 0;
 }
 
-/* line 64, ../sass/_common.scss */
+/* line 67, ../sass/_common.scss */
 h2 {
   color: #626467;
 }
 
-/* line 67, ../sass/_common.scss */
+/* line 70, ../sass/_common.scss */
 h3 {
   margin: 10px 0;
 }
 
-/* line 70, ../sass/_common.scss */
+/* line 73, ../sass/_common.scss */
 h4 {
   padding-bottom: 5px;
   margin-bottom: 20px;
   border-bottom: 1px solid #e1e1e1;
 }
 
-/* line 75, ../sass/_common.scss */
+/* line 78, ../sass/_common.scss */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 79, ../sass/_common.scss */
+/* line 82, ../sass/_common.scss */
 strong {
   color: #050800;
   font-weight: bold;
 }
 
-/* line 83, ../sass/_common.scss */
+/* line 86, ../sass/_common.scss */
 .heading-wrapper {
   margin-bottom: 40px;
   border-bottom: 1px solid #e1e1e1;
 }
-/* line 86, ../sass/_common.scss */
+/* line 89, ../sass/_common.scss */
 .heading-wrapper h1 {
   display: inline-block;
 }
 
-/* line 91, ../sass/_common.scss */
+/* line 94, ../sass/_common.scss */
 table {
   width: 100%;
 }
-/* line 93, ../sass/_common.scss */
+/* line 96, ../sass/_common.scss */
 table thead {
   background: #c9cbcc;
   border-bottom: 1px solid #afb1b3;
 }
-/* line 96, ../sass/_common.scss */
+/* line 99, ../sass/_common.scss */
 table thead th {
   padding: 10px 0;
   font-weight: bold;
   color: #fff;
 }
-/* line 100, ../sass/_common.scss */
+/* line 103, ../sass/_common.scss */
 table thead th:first-child {
   padding-left: 5px;
 }
-/* line 106, ../sass/_common.scss */
+/* line 109, ../sass/_common.scss */
 table tbody tr {
   border-bottom: 1px solid #ededed;
 }
-/* line 108, ../sass/_common.scss */
+/* line 111, ../sass/_common.scss */
 table tbody tr:nth-child(even) {
   background: #fafafa;
 }
-/* line 112, ../sass/_common.scss */
+/* line 115, ../sass/_common.scss */
 table tbody td {
   padding: 20px 0;
 }
 
-/* line 117, ../sass/_common.scss */
+/* line 120, ../sass/_common.scss */
 em {
   font-style: italic;
 }
 
-/* line 121, ../sass/_common.scss */
+/* line 124, ../sass/_common.scss */
 p {
   margin: 20px 0;
   font-size: 1rem;
 }
 
-/* line 126, ../sass/_common.scss */
+/* line 129, ../sass/_common.scss */
 .more-link {
   display: inline-block;
   width: 100%;
   font-size: 0.75rem;
   text-align: right;
 }
-/* line 132, ../sass/_common.scss */
+/* line 135, ../sass/_common.scss */
 .more-link:hover {
   text-decoration: none;
 }
-/* line 134, ../sass/_common.scss */
+/* line 137, ../sass/_common.scss */
 .more-link:hover:after {
   color: #87d7dd;
 }
@@ -1133,49 +1147,55 @@ select {
   width: 50%;
   margin-bottom: 10px;
 }
-/* line 49, ../sass/_forms.scss */
+@media (max-width: 480px) {
+  /* line 45, ../sass/_forms.scss */
+  .form-item {
+    width: 100%;
+  }
+}
+/* line 52, ../sass/_forms.scss */
 .form-item input[type="text"],
 .form-item select,
 .form-item input[type="password"] {
   height: 30px;
   margin-bottom: 10px;
 }
-/* line 55, ../sass/_forms.scss */
+/* line 58, ../sass/_forms.scss */
 .form-item input[type="text"],
 .form-item input[type="password"] {
   display: block;
   max-width: 100%;
 }
-/* line 60, ../sass/_forms.scss */
+/* line 63, ../sass/_forms.scss */
 .form-item .form-item {
   width: 100%;
 }
 
-/* line 64, ../sass/_forms.scss */
+/* line 67, ../sass/_forms.scss */
 .hierarchical-select-wrapper .hierarchical-select .selects {
   float: none;
 }
-/* line 66, ../sass/_forms.scss */
+/* line 69, ../sass/_forms.scss */
 .hierarchical-select-wrapper .hierarchical-select .selects select {
   margin: 0;
 }
-/* line 68, ../sass/_forms.scss */
+/* line 71, ../sass/_forms.scss */
 .hierarchical-select-wrapper .hierarchical-select .selects select:first-child {
   margin-right: 2%;
 }
 
-/* line 73, ../sass/_forms.scss */
+/* line 76, ../sass/_forms.scss */
 select {
   width: 49%;
   cursor: pointer;
 }
 
-/* line 78, ../sass/_forms.scss */
+/* line 81, ../sass/_forms.scss */
 .form-type-select label {
   display: block;
 }
 
-/* line 82, ../sass/_forms.scss */
+/* line 85, ../sass/_forms.scss */
 textarea {
   width: 100%;
   padding-top: 5px;
@@ -1184,16 +1204,22 @@ textarea {
   font-family: Arial, sans-serif;
 }
 
-/* line 90, ../sass/_forms.scss */
+/* line 93, ../sass/_forms.scss */
 .bootstrap-filestyle {
   margin-top: 20px;
 }
-/* line 92, ../sass/_forms.scss */
+/* line 95, ../sass/_forms.scss */
 .bootstrap-filestyle input[type="text"] {
   display: inline-block;
 }
+@media (max-width: 480px) {
+  /* line 98, ../sass/_forms.scss */
+  .bootstrap-filestyle .group-span-filestyle {
+    display: block;
+  }
+}
 
-/* line 98, ../sass/_forms.scss */
+/* line 106, ../sass/_forms.scss */
 .form-item-remember-me label {
   padding-left: 0;
 }
@@ -1207,22 +1233,28 @@ textarea {
 .node-offer-form {
   padding-bottom: 40px;
 }
-/* line 8, ../sass/_add-offer-form.scss */
+@media (max-width: 1024px) {
+  /* line 6, ../sass/_add-offer-form.scss */
+  .node-offer-form {
+    padding-bottom: 10px;
+  }
+}
+/* line 11, ../sass/_add-offer-form.scss */
 .node-offer-form .form-item {
   width: 100%;
 }
-/* line 14, ../sass/_add-offer-form.scss */
+/* line 17, ../sass/_add-offer-form.scss */
 .node-offer-form .field-name-field-offer-images {
   margin: 20px 0;
   padding: 10px 0;
   border-top: 1px solid #ededed;
 }
-/* line 19, ../sass/_add-offer-form.scss */
+/* line 22, ../sass/_add-offer-form.scss */
 .node-offer-form .field-name-field-offer-images .image-preview img {
   max-width: 70%;
   height: auto;
 }
-/* line 28, ../sass/_add-offer-form.scss */
+/* line 31, ../sass/_add-offer-form.scss */
 .node-offer-form .field-name-field-offer-images table .image-widget-data {
   max-width: 160px;
   margin-top: 10px;
@@ -1231,34 +1263,34 @@ textarea {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-/* line 38, ../sass/_add-offer-form.scss */
+/* line 41, ../sass/_add-offer-form.scss */
 .node-offer-form .field-name-field-address {
   margin-top: 20px;
   padding-top: 20px;
   border-top: 1px solid #ededed;
 }
-/* line 43, ../sass/_add-offer-form.scss */
+/* line 46, ../sass/_add-offer-form.scss */
 .node-offer-form .field-name-field-telephone-number {
   margin-bottom: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #ededed;
 }
-/* line 47, ../sass/_add-offer-form.scss */
+/* line 50, ../sass/_add-offer-form.scss */
 .node-offer-form .field-name-field-telephone-number .compact-form-wrapper {
   margin-bottom: 0;
 }
-/* line 51, ../sass/_add-offer-form.scss */
+/* line 54, ../sass/_add-offer-form.scss */
 .node-offer-form .field-name-field-offer-category {
   border-bottom: 1px solid #ededed;
   padding-bottom: 20px;
 }
-/* line 55, ../sass/_add-offer-form.scss */
+/* line 58, ../sass/_add-offer-form.scss */
 .node-offer-form .tabledrag-toggle-weight-wrapper,
 .node-offer-form .sticky-table thead,
 .node-offer-form .sticky-table .image-widget-data {
   display: none;
 }
-/* line 60, ../sass/_add-offer-form.scss */
+/* line 63, ../sass/_add-offer-form.scss */
 .node-offer-form .field-name-field-offer-price {
   width: 50%;
 }
@@ -1853,22 +1885,47 @@ textarea {
 }
 
 /* line 34, ../sass/_user.scss */
+#edit-pass-change-pass-title {
+  margin-top: 20px;
+  padding: 5px;
+  color: #fff;
+  background: #87d7dd;
+  cursor: pointer;
+}
+/* line 40, ../sass/_user.scss */
+#edit-pass-change-pass-title h5 {
+  font-weight: bold;
+}
+/* line 42, ../sass/_user.scss */
+#edit-pass-change-pass-title h5:after {
+  display: block;
+  float: right;
+  margin-right: 10px;
+}
+
+/* line 53, ../sass/_user.scss */
 .password-strength {
   width: 50%;
 }
-/* line 37, ../sass/_user.scss */
+@media (max-width: 480px) {
+  /* line 53, ../sass/_user.scss */
+  .password-strength {
+    float: none;
+  }
+}
+/* line 59, ../sass/_user.scss */
 .password-strength .password-indicator {
   height: 5px;
   background: #afb1b3;
 }
-/* line 41, ../sass/_user.scss */
+/* line 63, ../sass/_user.scss */
 .password-strength .indicator {
   width: 0%;
   height: 100%;
   background: #61C668;
 }
 
-/* line 47, ../sass/_user.scss */
+/* line 69, ../sass/_user.scss */
 .password-strength-text,
 .password-strength-title,
 .password-confirm {
@@ -1876,10 +1933,16 @@ textarea {
   line-height: 2;
 }
 
-/* line 53, ../sass/_user.scss */
+/* line 75, ../sass/_user.scss */
 .password-strength-title {
   display: inline;
   color: #434343;
+}
+
+/* line 83, ../sass/_user.scss */
+.password-parent,
+.confirm-parent {
+  display: none;
 }
 
 /* line 1, ../sass/_quicktabs.scss */
@@ -1987,4 +2050,70 @@ ul.quicktabs-tabs li a:hover {
 /* line 17, ../sass/_ad-info-page.scss */
 .ad-info-page .views-field-field-ad-properties-note p {
   font-size: 0.875rem;
+}
+
+/* line 2, ../sass/_basic-page.scss */
+.node-page p {
+  text-indent: 20px;
+  line-height: 1.4;
+}
+/* line 6, ../sass/_basic-page.scss */
+.node-page ul,
+.node-page ol {
+  margin-left: 20px;
+}
+/* line 9, ../sass/_basic-page.scss */
+.node-page ul ul,
+.node-page ul ol,
+.node-page ol ul,
+.node-page ol ol {
+  margin-left: 20px;
+}
+/* line 13, ../sass/_basic-page.scss */
+.node-page ul li,
+.node-page ol li {
+  margin-bottom: 5px;
+}
+/* line 17, ../sass/_basic-page.scss */
+.node-page ul {
+  list-style: square;
+}
+/* line 20, ../sass/_basic-page.scss */
+.node-page ol {
+  list-style: decimal;
+}
+/* line 23, ../sass/_basic-page.scss */
+.node-page blockquote {
+  margin: 20px 0;
+  padding: 0.5rem 10px;
+  border-left: 10px solid #afb1b3;
+  quotes: "“" "”" "‘" "’";
+  background: #eaf8f9;
+}
+/* line 31, ../sass/_basic-page.scss */
+.node-page blockquote:before, .node-page blockquote:after {
+  vertical-align: -0.4rem;
+  font-size: 2rem;
+  color: #afb1b3;
+}
+/* line 37, ../sass/_basic-page.scss */
+.node-page blockquote:before {
+  content: open-quote;
+  margin-right: 0.25rem;
+}
+/* line 41, ../sass/_basic-page.scss */
+.node-page blockquote:after {
+  content: close-quote;
+  margin-left: 0.25rem;
+}
+/* line 46, ../sass/_basic-page.scss */
+.node-page blockquote p {
+  display: inline;
+  font-style: italic;
+  color: #434343;
+}
+/* line 51, ../sass/_basic-page.scss */
+.node-page cite {
+  font-style: normal;
+  font-weight: bold;
 }

@@ -17,11 +17,12 @@
       scrollToEL(elScroll);
     }
     else {
+      var prevActiveHeight = $('.pane-content.active').height() ? $('.pane-content.active').height() : 0;
       elements.removeClass('active').slideUp();
       triggers.removeClass('active');
       el.addClass('active').slideDown();
       trigger.addClass('active');
-      scrollToEL(elScroll);
+      scrollToEL(elScroll - prevActiveHeight);
     }
   }
   Drupal.behaviors.sidebarToggle = {

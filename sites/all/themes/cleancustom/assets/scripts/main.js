@@ -11,7 +11,17 @@
 
   Drupal.behaviors.adImageInfo = {
     attach: function (context, settings) {
-      $('.image-link').magnificPopup({type:'image'});
+      $('.image-link', context).once('adImageInfo', function () {
+        magnificPopup({type:'image'});
+      });
+    }
+  };
+
+  Drupal.behaviors.toggleChangePass = {
+    attach: function (context, settings) {
+      $('#edit-pass-change-pass-title').once('pass-toggle').click(function(event) {
+        $('.password-parent, .confirm-parent').slideToggle();
+      });
     }
   };
 })(jQuery);

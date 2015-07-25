@@ -31,9 +31,31 @@
   font-size: $text-12;
   color: $text-gray;
 }
+#edit-pass-change-pass-title {
+  margin-top: $space-20;
+  padding: 5px;
+  color: $white;
+  background: darken($sky-blue, 25%);
+  cursor: pointer;
+  h5 {
+    font-weight: bold;
+    &:after {
+      display: block;
+      float: right;
+      margin-right: $space-10;
+      @extend %fa-chevron-down;
+    }
+    &.active:after {
+      @extend %fa-chevron-up;
+    }
+  }
+}
 .password-strength {
   @extend %fl-right-ext;
   width: 50%;
+  @include breakpoint(smaller) {
+    float: none;
+  }
   .password-indicator {
     height: 5px;
     background: $gray;
@@ -58,6 +80,7 @@
 .password-strength-text {
   @extend %fl-right-ext;
 }
-
-#user-profile-form {
+.password-parent,
+.confirm-parent {
+  display: none;
 }

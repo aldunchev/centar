@@ -48,6 +48,9 @@ function centar_forms_form_alter(&$form, $form_state, $form_id) {
       $form['field_offer_images']['und']['#file_upload_title'] = '';
       $form['actions']['submit']['#value']= t('Публикувай');
       $form['actions']['delete']['#value']= t('Изтрий');
+      $form['title']['#size'] = 100;
+      $form['field_telephone_number']['und'][0]['value']['#size'] = 100;
+      $form['field_address']['und'][0]['value']['#size'] = 100;
       break;
       
     case 'contact_personal_form':

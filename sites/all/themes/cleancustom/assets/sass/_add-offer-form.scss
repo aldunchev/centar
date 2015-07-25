@@ -4,7 +4,10 @@
   }
 }
 .node-offer-form {
-  padding-bottom: 40px;
+  padding-bottom: $space-20 * 2;
+  @include breakpoint(medium-x) {
+    padding-bottom: $space-10;
+  }
   .form-item {
     width: 100%;
   }
@@ -12,8 +15,8 @@
     @extend %clearfix-ext;
   }
   .field-name-field-offer-images {
-    margin: 20px 0;
-    padding: 10px 0;
+    margin: $space-20 0;
+    padding: $space-10 0;
     border-top: 1px solid darken($light-gray, 5%);
     .image-preview {
       img {
@@ -41,8 +44,8 @@
     border-top: 1px solid darken($light-gray, 5%);
   }
   .field-name-field-telephone-number {
-    margin-bottom: 20px;
-    padding-bottom: 20px;
+    margin-bottom: $space-20;
+    padding-bottom: $space-20;
     border-bottom: 1px solid darken($light-gray, 5%);
     .compact-form-wrapper {
       margin-bottom: 0;
@@ -50,7 +53,7 @@
   }
   .field-name-field-offer-category {
     border-bottom: 1px solid darken($light-gray, 5%);
-    padding-bottom: 20px;
+    padding-bottom: $space-20;
   }
   .tabledrag-toggle-weight-wrapper,
   .sticky-table thead,

@@ -64,7 +64,7 @@
  * @ingroup themeable
  */
 ?>
-<li class="<?php print $classes; ?> views-row col-4 fl-left"<?php print $attributes; ?>>
+<li class="<?php print $classes; ?> views-row col-4 fl-left col-6-sm col-12-smr"<?php print $attributes; ?>>
   <div class="grid-images">
     <?php print render($node_image); ?>
   </div>

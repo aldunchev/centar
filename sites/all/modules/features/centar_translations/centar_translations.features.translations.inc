@@ -9,6 +9,18 @@
  */
 function centar_translations_translations_defaults() {
   $translations = array();
+  $translations['bg:default']['044e83585c20af96dfa737a2a1f63bd7'] = array(
+    'source' => '<ul>
+<li>Check if your spelling is correct.</li>
+<li>Remove quotes around phrases to search for each word individually. <em>bike shed</em> will often show more results than <em>&quot;bike shed&quot;</em>.</li>
+<li>Consider loosening your query with <em>OR</em>. <em>bike OR shed</em> will often show more results than <em>bike shed</em>.</li>
+</ul>',
+    'context' => '',
+    'location' => '/search/node/%D0%B0%D0%B4%D1%81',
+    'translation' => '<p>Моля, опитайте отново.</p>',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['bg:default']['073db4da78cd3f3d9d3ff272f2ac260f'] = array(
     'source' => 'Allow other users to contact you via a <a href="@url">personal contact form</a> which keeps your e-mail address hidden. Note that some privileged users such as site administrators are still able to contact you even if you choose to disable this feature.',
     'context' => '',
@@ -230,6 +242,14 @@ function centar_translations_translations_defaults() {
     'context' => '',
     'location' => '/user/password',
     'translation' => 'Инструкции за смяна на парола ще бъдат изпратени на: %email. Трябва да излезете от системата за да използвате линка за новата парола.',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['bg:default']['437dad9fa36e22a2409a7d66f4acad75'] = array(
+    'source' => 'Your search yielded no results',
+    'context' => '',
+    'location' => '/search/node/%D0%B0%D0%B4%D1%81',
+    'translation' => 'Съжаляваме, няма намерени резултати.',
     'plid' => 0,
     'plural' => 0,
   );

@@ -1,0 +1,55 @@
+.node-page {
+  p {
+    text-indent: $space-20;
+    line-height: 1.4;
+  }
+  ul,
+  ol {
+    margin-left: $space-20;
+    ul,
+    ol {
+      margin-left: $space-20;
+    }
+    li {
+      margin-bottom: 5px;
+    }
+  }
+  ul {
+    list-style: square;
+  }
+  ol {
+    list-style: decimal;
+  }
+  blockquote {
+    margin: $space-20 0;
+    padding: 0.5rem $space-10;
+    border-left: $space-10 solid $gray;
+    quotes: "\201C""\201D""\2018""\2019";
+    background: $sky-blue;
+  }
+  blockquote {
+    &:before,
+    &:after {
+      vertical-align: -0.4rem;
+      font-size: 2rem;
+      color: $gray;
+    }
+    &:before {
+      content: open-quote;
+      margin-right: 0.25rem;
+    }
+    &:after {
+      content: close-quote;
+      margin-left: 0.25rem;
+    }
+  }
+  blockquote p {
+    display: inline;
+    font-style: italic;
+    color: $text-gray;
+  }
+  cite {
+    font-style: normal;
+    font-weight: bold;
+  }
+}
