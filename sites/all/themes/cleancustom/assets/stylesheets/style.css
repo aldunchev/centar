@@ -396,121 +396,122 @@ article {
   /* line 100, ../sass/_layout.scss */
   .col-12-sm {
     width: 100%;
+    float: none;
   }
 
-  /* line 103, ../sass/_layout.scss */
+  /* line 104, ../sass/_layout.scss */
   .col-11-sm {
     width: 91.66%;
   }
 
-  /* line 106, ../sass/_layout.scss */
+  /* line 107, ../sass/_layout.scss */
   .col-10-sm {
     width: 83.33%;
   }
 
-  /* line 109, ../sass/_layout.scss */
+  /* line 110, ../sass/_layout.scss */
   .col-9-sm {
     width: 75%;
   }
 
-  /* line 112, ../sass/_layout.scss */
+  /* line 113, ../sass/_layout.scss */
   .col-8-sm {
     width: 66.66%;
   }
 
-  /* line 115, ../sass/_layout.scss */
+  /* line 116, ../sass/_layout.scss */
   .col-7-sm {
     width: 58.33%;
   }
 
-  /* line 118, ../sass/_layout.scss */
+  /* line 119, ../sass/_layout.scss */
   .col-6-sm {
     width: 50%;
   }
 
-  /* line 121, ../sass/_layout.scss */
+  /* line 122, ../sass/_layout.scss */
   .col-5-sm {
     width: 41.66%;
   }
 
-  /* line 124, ../sass/_layout.scss */
+  /* line 125, ../sass/_layout.scss */
   .col-4-sm {
     width: 33.33%;
   }
 
-  /* line 127, ../sass/_layout.scss */
+  /* line 128, ../sass/_layout.scss */
   .col-3-sm {
     width: 25%;
   }
 
-  /* line 130, ../sass/_layout.scss */
+  /* line 131, ../sass/_layout.scss */
   .col-2-sm {
     width: 16.66%;
   }
 
-  /* line 133, ../sass/_layout.scss */
+  /* line 134, ../sass/_layout.scss */
   .col-1-sm {
     width: 8.33%;
   }
 }
 /* GRID STYLES UNDER 480px (smr) */
 @media (max-width: 480px) {
-  /* line 140, ../sass/_layout.scss */
+  /* line 141, ../sass/_layout.scss */
   .col-12-smr {
     width: 100%;
   }
 
-  /* line 143, ../sass/_layout.scss */
+  /* line 144, ../sass/_layout.scss */
   .col-11-smr {
     width: 91.66%;
   }
 
-  /* line 146, ../sass/_layout.scss */
+  /* line 147, ../sass/_layout.scss */
   .col-10-smr {
     width: 83.33%;
   }
 
-  /* line 149, ../sass/_layout.scss */
+  /* line 150, ../sass/_layout.scss */
   .col-9-smr {
     width: 75%;
   }
 
-  /* line 152, ../sass/_layout.scss */
+  /* line 153, ../sass/_layout.scss */
   .col-8-smr {
     width: 66.66%;
   }
 
-  /* line 155, ../sass/_layout.scss */
+  /* line 156, ../sass/_layout.scss */
   .col-7-smr {
     width: 58.33%;
   }
 
-  /* line 158, ../sass/_layout.scss */
+  /* line 159, ../sass/_layout.scss */
   .col-6-smr {
     width: 50%;
   }
 
-  /* line 161, ../sass/_layout.scss */
+  /* line 162, ../sass/_layout.scss */
   .col-5-smr {
     width: 41.66%;
   }
 
-  /* line 164, ../sass/_layout.scss */
+  /* line 165, ../sass/_layout.scss */
   .col-4-smr {
     width: 33.33%;
   }
 
-  /* line 167, ../sass/_layout.scss */
+  /* line 168, ../sass/_layout.scss */
   .col-3-smr {
     width: 25%;
   }
 
-  /* line 170, ../sass/_layout.scss */
+  /* line 171, ../sass/_layout.scss */
   .col-2-smr {
     width: 16.66%;
   }
 
-  /* line 173, ../sass/_layout.scss */
+  /* line 174, ../sass/_layout.scss */
   .col-1-smr {
     width: 8.33%;
   }
@@ -1673,6 +1674,12 @@ textarea {
 /* line 20, ../sass/_bx-slider.scss */
 .view-other-user-offers .bx-wrapper .bx-next {
   right: -33px;
+}
+@media (max-width: 1024px) {
+  /* line 23, ../sass/_bx-slider.scss */
+  .view-other-user-offers .bx-wrapper .bx-controls-direction {
+    display: none;
+  }
 }
 
 /* line 1, ../sass/_comments.scss */

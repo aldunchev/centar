@@ -99,6 +99,7 @@
 @include breakpoint(small) {
   .col-12-sm {
     width: 100%;
+    float: none;
   }
   .col-11-sm {
     width: 91.66%;

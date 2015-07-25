@@ -15,11 +15,11 @@
  */
 ?>
 
-<div class="row">
-  <div class="col-7 fl-left offer-left">
+<div class="two-cols-stacked row">
+  <div class="two-cols-stacked-left col-7 col-8-m col-12-sm fl-left">
     <?php print $content['left']; ?>
   </div>
-  <div class="col-4 fl-right">
+  <div class="two-cols-stacked-right col-4 col-12-sm fl-right">
     <?php print $content['right']; ?>
   </div>
 </div>

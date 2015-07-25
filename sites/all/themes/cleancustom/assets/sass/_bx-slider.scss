@@ -20,5 +20,10 @@
     .bx-next {
       right: -33px;
     }
+    .bx-controls-direction {
+      @include breakpoint(medium-x) {
+        display: none;
+      }
+    }
   }
 }
