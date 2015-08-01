@@ -4,7 +4,7 @@
  * Custom module for form alters.
  */
 
-function centar_forms_form_alter(&$form, $form_state, $form_id) {
+function centar_forms_form_alter(&$form, &$form_state, $form_id) {
   switch ($form_id){
 
     case 'user_login_block':
@@ -60,6 +60,12 @@ function centar_forms_form_alter(&$form, $form_state, $form_id) {
     case 'node_delete_confirm':
       $form['actions']['submit']['#value']= t('Изтрий');
       $form['actions']['cancel']['#title']= t('Отмени');
+      break;
+
+    case 'user_profile_form':
+    // print_r($form);
+      $form['account']['current_pass']['#size'] = 100;
+      $form['account']['pass']['#size'] = 100;
       break;
   }
 }

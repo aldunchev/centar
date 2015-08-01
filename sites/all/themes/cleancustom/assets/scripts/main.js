@@ -19,6 +19,7 @@
     attach: function (context, settings) {
       $('#edit-pass-change-pass-title').once('pass-toggle').click(function(event) {
         $('.password-parent, .confirm-parent').slideToggle();
+        $(this).children('h5').toggleClass('active');
       });
     }
   };

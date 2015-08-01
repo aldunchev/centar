@@ -1894,7 +1894,7 @@ textarea {
 /* line 34, ../sass/_user.scss */
 #edit-pass-change-pass-title {
   margin-top: 20px;
-  padding: 5px;
+  padding: 8px 5px;
   color: #fff;
   background: #87d7dd;
   cursor: pointer;
@@ -2008,29 +2008,48 @@ ul.quicktabs-tabs li a:hover {
 .view-user-offers .views-field-edit-node {
   text-align: center;
 }
-/* line 7, ../sass/_view-user-offers.scss */
+@media (max-width: 480px) {
+  /* line 8, ../sass/_view-user-offers.scss */
+  .view-user-offers thead .views-field-delete-node,
+  .view-user-offers thead .views-field-edit-node {
+    font-size: 0;
+  }
+}
+/* line 15, ../sass/_view-user-offers.scss */
 .view-user-offers tbody .views-field-delete-node,
 .view-user-offers tbody .views-field-edit-node {
   font-size: 0;
 }
-/* line 12, ../sass/_view-user-offers.scss */
+/* line 20, ../sass/_view-user-offers.scss */
 .view-user-offers tbody .views-field-delete-node a:hover,
 .view-user-offers tbody .views-field-edit-node a:hover {
   text-decoration: none;
 }
-/* line 14, ../sass/_view-user-offers.scss */
+/* line 22, ../sass/_view-user-offers.scss */
 .view-user-offers tbody .views-field-delete-node a:hover:before,
 .view-user-offers tbody .views-field-edit-node a:hover:before {
   color: #e84e40;
   font-size: 1.375rem;
 }
-/* line 23, ../sass/_view-user-offers.scss */
+/* line 31, ../sass/_view-user-offers.scss */
 .view-user-offers tbody .views-field-delete-node a:before {
   font-size: 1.125rem;
 }
-/* line 30, ../sass/_view-user-offers.scss */
+/* line 38, ../sass/_view-user-offers.scss */
 .view-user-offers tbody .views-field-edit-node a:before {
   font-size: 1.125rem;
+}
+@media (max-width: 767px) {
+  /* line 46, ../sass/_view-user-offers.scss */
+  .view-user-offers tbody .views-field-field-offer-images img {
+    max-width: 60px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 51, ../sass/_view-user-offers.scss */
+  .view-user-offers tbody .views-field-title {
+    width: 40%;
+  }
 }
 
 /* line 2, ../sass/_confirmation.scss */

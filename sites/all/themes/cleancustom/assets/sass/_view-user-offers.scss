@@ -1,8 +1,16 @@
 .view-user-offers {
-    .views-field-delete-node,
-    .views-field-edit-node {
-      text-align: center;
+  .views-field-delete-node,
+  .views-field-edit-node {
+    text-align: center;
+  }
+  thead {
+    @include breakpoint(smaller) {
+      .views-field-delete-node,
+      .views-field-edit-node {
+        font-size: 0;
+      }
     }
+  }
   tbody {
     .views-field-delete-node,
     .views-field-edit-node {
@@ -32,5 +40,19 @@
         font-size: $text-18;
       }
     }
+    
+    .views-field-field-offer-images {
+      @include breakpoint(small) {
+        img {
+          max-width: 60px;
+        }
+      }
+    }
+    .views-field-title {
+      @include breakpoint(small) {
+        width: 40%;
+      }
+    }
+    
   }
 }
