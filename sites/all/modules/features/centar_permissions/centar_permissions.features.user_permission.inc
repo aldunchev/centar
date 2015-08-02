@@ -1065,6 +1065,17 @@ function centar_permissions_user_default_permissions() {
     'module' => 'panels',
   );
 
+  // Exported permission: 'view post access counter'.
+  $permissions['view post access counter'] = array(
+    'name' => 'view post access counter',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'statistics',
+  );
+
   // Exported permission: 'view revisions'.
   $permissions['view revisions'] = array(
     'name' => 'view revisions',

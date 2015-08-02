@@ -5,7 +5,6 @@ package = Features
 version = 7.x-1.0
 project = center_offer_view
 dependencies[] = bxslider
-dependencies[] = google_analytics_counter
 dependencies[] = page_manager
 dependencies[] = views_content
 dependencies[] = views_slideshow
