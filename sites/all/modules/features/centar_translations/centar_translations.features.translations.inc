@@ -181,6 +181,14 @@ function centar_translations_translations_defaults() {
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['bg:default']['349c8d451fa9ca6cddd022d2d6ad48e9'] = array(
+    'source' => 'Further instructions have been sent to your e-mail address.',
+    'context' => '',
+    'location' => '/user/password?name=alex',
+    'translation' => 'Моля, проверете e-mail адреса си за допълнителни инструкции.',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['bg:default']['34ac805c9077c5ca6ae3565dab6ce723'] = array(
     'source' => 'Topics',
     'context' => '',
