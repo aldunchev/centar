@@ -15,6 +15,7 @@ function centar_permissions_user_default_permissions() {
     'name' => 'access ad node',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'simpleads',
   );
@@ -24,6 +25,7 @@ function centar_permissions_user_default_permissions() {
     'name' => 'access ad statistics',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'simpleads',
   );
@@ -33,6 +35,7 @@ function centar_permissions_user_default_permissions() {
     'name' => 'access administration pages',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'system',
   );
@@ -53,6 +56,7 @@ function centar_permissions_user_default_permissions() {
       'administrator' => 'administrator',
       'anonymous user' => 'anonymous user',
       'authenticated user' => 'authenticated user',
+      'editor' => 'editor',
     ),
     'module' => 'comment',
   );
@@ -64,6 +68,7 @@ function centar_permissions_user_default_permissions() {
       'administrator' => 'administrator',
       'anonymous user' => 'anonymous user',
       'authenticated user' => 'authenticated user',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -73,6 +78,7 @@ function centar_permissions_user_default_permissions() {
     'name' => 'access content overview',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -91,6 +97,7 @@ function centar_permissions_user_default_permissions() {
     'name' => 'access dashboard',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'dashboard',
   );
@@ -145,6 +152,7 @@ function centar_permissions_user_default_permissions() {
     'name' => 'access site reports',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'system',
   );
@@ -154,6 +162,7 @@ function centar_permissions_user_default_permissions() {
     'name' => 'access toolbar',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'toolbar',
   );
@@ -164,6 +173,7 @@ function centar_permissions_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'authenticated user' => 'authenticated user',
+      'editor' => 'editor',
     ),
     'module' => 'user',
   );
@@ -209,6 +219,7 @@ function centar_permissions_user_default_permissions() {
     'name' => 'administer comments',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'comment',
   );
@@ -258,15 +269,6 @@ function centar_permissions_user_default_permissions() {
     'module' => 'filter',
   );
 
-  // Exported permission: 'administer google analytics counter'.
-  $permissions['administer google analytics counter'] = array(
-    'name' => 'administer google analytics counter',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'google_analytics_counter',
-  );
-
   // Exported permission: 'administer image styles'.
   $permissions['administer image styles'] = array(
     'name' => 'administer image styles',
@@ -290,6 +292,7 @@ function centar_permissions_user_default_permissions() {
     'name' => 'administer menu',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'menu',
   );
@@ -317,6 +320,7 @@ function centar_permissions_user_default_permissions() {
     'name' => 'administer nodes',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -434,6 +438,7 @@ function centar_permissions_user_default_permissions() {
     'name' => 'administer taxonomy',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'taxonomy',
   );
@@ -506,6 +511,7 @@ function centar_permissions_user_default_permissions() {
     'name' => 'cancel account',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'user',
   );
@@ -525,6 +531,7 @@ function centar_permissions_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'authenticated user' => 'authenticated user',
+      'editor' => 'editor',
     ),
     'module' => 'user',
   );
@@ -536,6 +543,7 @@ function centar_permissions_user_default_permissions() {
       'administrator' => 'administrator',
       'anonymous user' => 'anonymous user',
       'authenticated user' => 'authenticated user',
+      'editor' => 'editor',
     ),
     'module' => 'simpleads',
   );
@@ -547,6 +555,7 @@ function centar_permissions_user_default_permissions() {
       'administrator' => 'administrator',
       'anonymous user' => 'anonymous user',
       'authenticated user' => 'authenticated user',
+      'editor' => 'editor',
     ),
     'module' => 'simpleads',
   );
@@ -565,6 +574,7 @@ function centar_permissions_user_default_permissions() {
     'name' => 'create offer content',
     'roles' => array(
       'authenticated user' => 'authenticated user',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -574,6 +584,7 @@ function centar_permissions_user_default_permissions() {
     'name' => 'create page content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -581,7 +592,9 @@ function centar_permissions_user_default_permissions() {
   // Exported permission: 'create simpleads content'.
   $permissions['create simpleads content'] = array(
     'name' => 'create simpleads content',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'node',
   );
 
@@ -615,7 +628,9 @@ function centar_permissions_user_default_permissions() {
   // Exported permission: 'delete any offer content'.
   $permissions['delete any offer content'] = array(
     'name' => 'delete any offer content',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'node',
   );
 
@@ -624,6 +639,7 @@ function centar_permissions_user_default_permissions() {
     'name' => 'delete any page content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -631,7 +647,9 @@ function centar_permissions_user_default_permissions() {
   // Exported permission: 'delete any simpleads content'.
   $permissions['delete any simpleads content'] = array(
     'name' => 'delete any simpleads content',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'node',
   );
 
@@ -649,6 +667,7 @@ function centar_permissions_user_default_permissions() {
     'name' => 'delete own offer content',
     'roles' => array(
       'authenticated user' => 'authenticated user',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -658,6 +677,7 @@ function centar_permissions_user_default_permissions() {
     'name' => 'delete own page content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -665,7 +685,9 @@ function centar_permissions_user_default_permissions() {
   // Exported permission: 'delete own simpleads content'.
   $permissions['delete own simpleads content'] = array(
     'name' => 'delete own simpleads content',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'node',
   );
 
@@ -674,6 +696,7 @@ function centar_permissions_user_default_permissions() {
     'name' => 'delete revisions',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -681,14 +704,18 @@ function centar_permissions_user_default_permissions() {
   // Exported permission: 'delete terms in ad_groups'.
   $permissions['delete terms in ad_groups'] = array(
     'name' => 'delete terms in ad_groups',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'taxonomy',
   );
 
   // Exported permission: 'delete terms in offer_type'.
   $permissions['delete terms in offer_type'] = array(
     'name' => 'delete terms in offer_type',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'taxonomy',
   );
 
@@ -697,6 +724,7 @@ function centar_permissions_user_default_permissions() {
     'name' => 'delete terms in tags',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'taxonomy',
   );
@@ -713,7 +741,9 @@ function centar_permissions_user_default_permissions() {
   // Exported permission: 'edit any offer content'.
   $permissions['edit any offer content'] = array(
     'name' => 'edit any offer content',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'node',
   );
 
@@ -722,6 +752,7 @@ function centar_permissions_user_default_permissions() {
     'name' => 'edit any page content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -729,7 +760,9 @@ function centar_permissions_user_default_permissions() {
   // Exported permission: 'edit any simpleads content'.
   $permissions['edit any simpleads content'] = array(
     'name' => 'edit any simpleads content',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'node',
   );
 
@@ -747,6 +780,7 @@ function centar_permissions_user_default_permissions() {
     'name' => 'edit own comments',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'comment',
   );
@@ -756,6 +790,7 @@ function centar_permissions_user_default_permissions() {
     'name' => 'edit own offer content',
     'roles' => array(
       'authenticated user' => 'authenticated user',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -765,6 +800,7 @@ function centar_permissions_user_default_permissions() {
     'name' => 'edit own page content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -772,21 +808,27 @@ function centar_permissions_user_default_permissions() {
   // Exported permission: 'edit own simpleads content'.
   $permissions['edit own simpleads content'] = array(
     'name' => 'edit own simpleads content',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: 'edit terms in ad_groups'.
   $permissions['edit terms in ad_groups'] = array(
     'name' => 'edit terms in ad_groups',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'taxonomy',
   );
 
   // Exported permission: 'edit terms in offer_type'.
   $permissions['edit terms in offer_type'] = array(
     'name' => 'edit terms in offer_type',
-    'roles' => array(),
+    'roles' => array(
+      'editor' => 'editor',
+    ),
     'module' => 'taxonomy',
   );
 
@@ -795,6 +837,7 @@ function centar_permissions_user_default_permissions() {
     'name' => 'edit terms in tags',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'taxonomy',
   );
@@ -850,6 +893,7 @@ function centar_permissions_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'authenticated user' => 'authenticated user',
+      'editor' => 'editor',
     ),
     'module' => 'comment',
   );
@@ -868,6 +912,7 @@ function centar_permissions_user_default_permissions() {
     'name' => 'revert revisions',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -879,6 +924,7 @@ function centar_permissions_user_default_permissions() {
       'administrator' => 'administrator',
       'anonymous user' => 'anonymous user',
       'authenticated user' => 'authenticated user',
+      'editor' => 'editor',
     ),
     'module' => 'search',
   );
@@ -925,6 +971,7 @@ function centar_permissions_user_default_permissions() {
     'name' => 'translate admin strings',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'i18n_string',
   );
@@ -934,6 +981,7 @@ function centar_permissions_user_default_permissions() {
     'name' => 'translate content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'translation',
   );
@@ -943,6 +991,7 @@ function centar_permissions_user_default_permissions() {
     'name' => 'translate interface',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'locale',
   );
@@ -952,6 +1001,7 @@ function centar_permissions_user_default_permissions() {
     'name' => 'translate user-defined strings',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'i18n_string',
   );
@@ -1052,6 +1102,7 @@ function centar_permissions_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'authenticated user' => 'authenticated user',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -1072,6 +1123,7 @@ function centar_permissions_user_default_permissions() {
       'administrator' => 'administrator',
       'anonymous user' => 'anonymous user',
       'authenticated user' => 'authenticated user',
+      'editor' => 'editor',
     ),
     'module' => 'statistics',
   );
@@ -1081,6 +1133,7 @@ function centar_permissions_user_default_permissions() {
     'name' => 'view revisions',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -1090,6 +1143,7 @@ function centar_permissions_user_default_permissions() {
     'name' => 'view the administration theme',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'system',
   );
