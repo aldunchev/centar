@@ -51,7 +51,6 @@
   }
 }
 .password-strength {
-  @extend %fl-right-ext;
   width: 50%;
   @include breakpoint(smaller) {
     float: none;

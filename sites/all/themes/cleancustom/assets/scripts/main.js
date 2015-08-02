@@ -1,17 +1,20 @@
-(function ($) {
+  (function ($) {
   Drupal.behaviors.inputFileInit = {
     attach: function (context, settings) {
       $(":file").filestyle({
         icon: false,
         buttonText: Drupal.t('Избери файл'),
-        buttonName: 'btn-small'
+        buttonName: 'btn-small',
       });
     }
   };
 
   Drupal.behaviors.adImageInfo = {
     attach: function (context, settings) {
-      $('.image-link').once('adImageInfo').magnificPopup({type:'image'});
+      var imageLink = $('.image-link');
+      if (imageLink.length != 0) {
+        $('.image-link').once('adImageInfo').magnificPopup({type:'image'});
+      }
     }
   };
 

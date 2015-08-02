@@ -4,39 +4,52 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
-@import "_reset";
-@import "_variables";
-@import "_mixins";
-@import "_extends";
-@import "_animations";
-@import "_font-awesome";
-@import "_layout";
-@import "_common";
-@import "_typography";
-@import "_header";
-@import "_main-nav";
-@import "_main-footer";
-@import "_forms";
-@import "_add-offer-form";
-@import "_grid-listing";
-@import "_offer-listing";
-@import "_panels";
-@import "_sidebar_block";
-@import "_pager";
-@import "_ads";
-@import "_search";
-@import "_offer";
-@import "_login-register";
-@import "_bx-slider";
-@import "_comments";
-@import "_forum";
-@import "_user";
-@import "_quicktabs";
-@import "_views-filters";
-@import "_view-user-offers";
-@import "_confirmation";
-@import "_ad-info-page";
-@import "_basic-page";
+@import "base/reset";
+
+@import "helpers/mixins";
+@import "helpers/variables";
+@import "helpers/extends";
+@import "helpers/animations";
+
+@import "layout/layout";
+
+@import "base/common";
+@import "base/typography";
+
+@import "fonts/font-awesome";
+
+
+@import "pages/offer";
+@import "pages/forum";
+@import "pages/basic-page";
+@import "pages/ad-info-page";
+@import "pages/confirmation";
+@import "pages/search";
+@import "pages/user";
+
+@import "components/ads";
+@import "components/bx-slider";
+@import "components/comments";
+@import "components/header";
+@import "components/main-footer";
+@import "components/main-nav";
+@import "components/pager";
+@import "components/quicktabs";
+@import "components/sidebar_block";
+@import "components/grid-listing";
+
+@import "forms/forms";
+@import "forms/add-offer-form";
+@import "forms/login-register";
+
+@import "views/views-filters";
+@import "views/view-user-offers";
+
+@import "panels/panels";
+
+
+
+
 
 
 
