@@ -966,5 +966,13 @@ function centar_translations_translations_defaults() {
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['bg:default']['fffe614a8c0f7cea01486162d0675de6'] = array(
+    'source' => 'Sorry, unrecognized username or password. <a href="@password">Have you forgotten your password?</a>',
+    'context' => '',
+    'location' => '/node?destination=node',
+    'translation' => 'Съжаляваме, грешно потребителско име или парола. <a href="@password">Забравена парола?</a> ',
+    'plid' => 0,
+    'plural' => 0,
+  );
   return $translations;
 }
