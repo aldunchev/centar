@@ -533,6 +533,14 @@ function centar_translations_translations_defaults() {
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['bg:default']['873f37f216ae7d5c24ed89a305ffa894'] = array(
+    'source' => 'You are logged in as %user. <a href="!user_edit">Change your password.</a>',
+    'context' => '',
+    'location' => '/user/reset/79/1438532351/58MwhKni5s10E1QMg5cJk3_A8YoTkBourjp2aKKLiTM',
+    'translation' => 'Влезли сте като %user. <a href="!user_edit">Сменете паролата си.</a> ',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['bg:default']['878530871f0db73f004f5bd6591eeb76'] = array(
     'source' => 'Remember me',
     'context' => '',
