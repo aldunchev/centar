@@ -245,6 +245,14 @@ function centar_translations_translations_defaults() {
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['bg:default']['3e764d8a79d29ca7a633a06da8f67ce4'] = array(
+    'source' => '@count new',
+    'context' => '',
+    'location' => '/forum',
+    'translation' => '@count нови',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['bg:default']['437dad9fa36e22a2409a7d66f4acad75'] = array(
     'source' => 'Your search yielded no results',
     'context' => '',
@@ -642,6 +650,14 @@ function centar_translations_translations_defaults() {
     'context' => '',
     'location' => '/user/4/edit?destination=admin/people',
     'translation' => 'да',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['bg:default']['a805d4a7e8e1673fd18e101955261572'] = array(
+    'source' => '1 new',
+    'context' => '',
+    'location' => '/forum',
+    'translation' => '1 нов',
     'plid' => 0,
     'plural' => 0,
   );
