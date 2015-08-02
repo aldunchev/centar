@@ -1133,6 +1133,11 @@ h6 {
   display: none;
 }
 
+/* line 86, ../sass/pages/_user.scss */
+#edit-picture-upload {
+  display: none;
+}
+
 /* line 2, ../sass/components/_ads.scss */
 .ad-wrapper .pane-block {
   padding: 0;
