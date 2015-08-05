@@ -159,6 +159,9 @@ function simple_fb_connect_login() {
           'fbconnect' => 1,
           'redirect_uri' => 'http://' . $_SERVER['HTTP_HOST'] . request_uri(),
         );
+        // facebook API uses PHP sessions.
+        // Anonymous users do not have a session, we should tell Drupal that the session started (to avoid PHP notice)
+        drupal_session_started(TRUE);
         $login_url = $facebook->getLoginUrl($login_url_params);
         drupal_goto($login_url);
       }
