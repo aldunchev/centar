@@ -43,8 +43,13 @@
     }
   }
   @include breakpoint(smaller) {
-    .posts,
     thead th:nth-child(3) {
+      font-size: 0;
+    }
+    .posts,
+    .replies,
+    .title div:nth-child(2),
+    .description {
       display: none;
     }
   }

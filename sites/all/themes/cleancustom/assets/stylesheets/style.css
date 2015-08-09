@@ -558,63 +558,64 @@ strong {
 /* line 89, ../sass/base/_common.scss */
 .heading-wrapper h1 {
   display: inline-block;
+  word-break: break-all;
 }
 
-/* line 94, ../sass/base/_common.scss */
+/* line 95, ../sass/base/_common.scss */
 table {
   width: 100%;
 }
-/* line 96, ../sass/base/_common.scss */
+/* line 97, ../sass/base/_common.scss */
 table thead {
   background: #c9cbcc;
   border-bottom: 1px solid #afb1b3;
 }
-/* line 99, ../sass/base/_common.scss */
+/* line 100, ../sass/base/_common.scss */
 table thead th {
   padding: 10px 0;
   font-weight: bold;
   color: #fff;
 }
-/* line 103, ../sass/base/_common.scss */
+/* line 104, ../sass/base/_common.scss */
 table thead th:first-child {
   padding-left: 5px;
 }
-/* line 109, ../sass/base/_common.scss */
+/* line 110, ../sass/base/_common.scss */
 table tbody tr {
   border-bottom: 1px solid #ededed;
 }
-/* line 111, ../sass/base/_common.scss */
+/* line 112, ../sass/base/_common.scss */
 table tbody tr:nth-child(even) {
   background: #fafafa;
 }
-/* line 115, ../sass/base/_common.scss */
+/* line 116, ../sass/base/_common.scss */
 table tbody td {
   padding: 20px 0;
 }
 
-/* line 120, ../sass/base/_common.scss */
+/* line 121, ../sass/base/_common.scss */
 em {
   font-style: italic;
 }
 
-/* line 124, ../sass/base/_common.scss */
+/* line 125, ../sass/base/_common.scss */
 p {
   margin: 20px 0;
   font-size: 1rem;
 }
 
-/* line 129, ../sass/base/_common.scss */
+/* line 130, ../sass/base/_common.scss */
 .more-link {
   display: inline-block;
   width: 100%;
   font-size: 0.75rem;
   text-align: right;
 }
-/* line 135, ../sass/base/_common.scss */
+/* line 136, ../sass/base/_common.scss */
 .more-link:hover {
   text-decoration: none;
 }
-/* line 137, ../sass/base/_common.scss */
+/* line 138, ../sass/base/_common.scss */
 .more-link:hover:after {
   color: #87d7dd;
 }
@@ -878,8 +879,14 @@ h6 {
 }
 @media (max-width: 480px) {
   /* line 46, ../sass/pages/_forum.scss */
-  #forum .posts,
   #forum thead th:nth-child(3) {
+    font-size: 0;
+  }
+  /* line 49, ../sass/pages/_forum.scss */
+  #forum .posts,
+  #forum .replies,
+  #forum .title div:nth-child(2),
+  #forum .description {
     display: none;
   }
 }
