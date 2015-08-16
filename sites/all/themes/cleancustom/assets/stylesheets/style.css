@@ -1061,30 +1061,35 @@ h6 {
 }
 
 /* line 1, ../sass/pages/_search.scss */
+.search-block {
+  margin-bottom: 20px;
+}
+
+/* line 4, ../sass/pages/_search.scss */
 .form-item-apachesolr-panels-search-form,
 .form-item-search-block-form {
   margin-right: 10px;
 }
-/* line 5, ../sass/pages/_search.scss */
+/* line 8, ../sass/pages/_search.scss */
 .form-item-apachesolr-panels-search-form .form-text,
 .form-item-search-block-form .form-text {
   width: 100%;
   margin-top: 5px;
 }
 
-/* line 12, ../sass/pages/_search.scss */
+/* line 15, ../sass/pages/_search.scss */
 .pane-apachesolr-form .form-actions,
 .pane-search-form .form-actions {
   position: relative;
   display: inline-block;
 }
-/* line 15, ../sass/pages/_search.scss */
+/* line 18, ../sass/pages/_search.scss */
 .pane-apachesolr-form .form-actions input[type="submit"],
 .pane-search-form .form-actions input[type="submit"] {
   padding-left: 25px;
   padding-right: 15px;
 }
-/* line 19, ../sass/pages/_search.scss */
+/* line 22, ../sass/pages/_search.scss */
 .pane-apachesolr-form .form-actions:before,
 .pane-search-form .form-actions:before {
   position: absolute;
@@ -1096,7 +1101,7 @@ h6 {
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
-/* line 26, ../sass/pages/_search.scss */
+/* line 29, ../sass/pages/_search.scss */
 .pane-apachesolr-form .form-actions:hover:before,
 .pane-search-form .form-actions:hover:before {
   color: #fff;

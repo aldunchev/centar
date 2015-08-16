@@ -55,29 +55,6 @@ function offer_category_list_default_page_manager_handlers() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-052d2d2b-33ca-4b2d-ae7c-dd58ba12f4ad';
-    $pane->panel = 'block_full';
-    $pane->type = 'block';
-    $pane->subtype = 'search-form';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'override_title' => 0,
-      'override_title_text' => '',
-      'override_title_heading' => 'h2',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $pane->uuid = '052d2d2b-33ca-4b2d-ae7c-dd58ba12f4ad';
-    $display->content['new-052d2d2b-33ca-4b2d-ae7c-dd58ba12f4ad'] = $pane;
-    $display->panels['block_full'][0] = 'new-052d2d2b-33ca-4b2d-ae7c-dd58ba12f4ad';
-    $pane = new stdClass();
     $pane->pid = 'new-7156f568-7154-40d4-994e-0830f7c1aace';
     $pane->panel = 'main';
     $pane->type = 'views_panes';

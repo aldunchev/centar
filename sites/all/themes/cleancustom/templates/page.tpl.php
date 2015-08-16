@@ -73,7 +73,6 @@
  */
 ?>
 <?php print render($header); ?>
-
 <?php if ($messages): ?>
   <div id="messages" class="container">
     <?php print $messages; ?>
@@ -82,6 +81,9 @@
 
 <section id="main-content" role="main">
   <div class="container main clearfix">
+    <aside class="search-block pane-search-form">
+      <?php print render($search_form); ?>
+    </aside>
     <?php if($page['featured']) : ?>
       <?php print render($page['featured']); ?>
     <?php endif; ?>

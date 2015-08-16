@@ -97,7 +97,7 @@ function center_panels_default_page_manager_pages() {
     $pane->panel = 'block_full';
     $pane->type = 'block';
     $pane->subtype = 'search-form';
-    $pane->shown = TRUE;
+    $pane->shown = FALSE;
     $pane->access = array();
     $pane->configuration = array(
       'override_title' => 0,

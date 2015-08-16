@@ -181,14 +181,6 @@ function centar_translations_translations_defaults() {
     'plid' => 0,
     'plural' => 0,
   );
-  $translations['bg:default']['349c8d451fa9ca6cddd022d2d6ad48e9'] = array(
-    'source' => 'Further instructions have been sent to your e-mail address.',
-    'context' => '',
-    'location' => '/user/password?name=alex',
-    'translation' => 'Моля, проверете e-mail адреса си за допълнителни инструкции.',
-    'plid' => 0,
-    'plural' => 0,
-  );
   $translations['bg:default']['34ac805c9077c5ca6ae3565dab6ce723'] = array(
     'source' => 'Topics',
     'context' => '',
@@ -226,14 +218,6 @@ function centar_translations_translations_defaults() {
     'context' => '',
     'location' => '/',
     'translation' => 'Минимум разходи - максимум удобства',
-    'plid' => 0,
-    'plural' => 0,
-  );
-  $translations['bg:default']['3b5b0f1e26d98a827ef82af202c2e85b'] = array(
-    'source' => 'Reset password',
-    'context' => '',
-    'location' => '/user/reset/71/1438526836/wIGLt2wB5VVocTjvZS9R40BomQNHXNLjOIxZw8sc2hU',
-    'translation' => 'Смяна на паролата',
     'plid' => 0,
     'plural' => 0,
   );
@@ -373,6 +357,14 @@ function centar_translations_translations_defaults() {
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['bg:default']['5caa4c101c634c486b50e3508591862a'] = array(
+    'source' => 'The requested page "@path" could not be found.',
+    'context' => '',
+    'location' => '/node/2',
+    'translation' => 'Страницата "centar.bg@path" не съществува. ',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['bg:default']['5cb77b34758182a32bd4f4df6cfadef4'] = array(
     'source' => 'Your message has been sent.',
     'context' => '',
@@ -432,8 +424,8 @@ function centar_translations_translations_defaults() {
   $translations['bg:default']['6316fc458bd7d4bd58f8c067d79ee066'] = array(
     'source' => 'You have just used your one-time login link. It is no longer necessary to use this link to log in. Please change your password.',
     'context' => '',
-    'location' => '/user/reset/71/1438526836/wIGLt2wB5VVocTjvZS9R40BomQNHXNLjOIxZw8sc2hU/login',
-    'translation' => 'Това беше еднократен линк за влизане в сайта. <strong>Моля сменете паролата си.</strong>',
+    'location' => '/user/reset/4/1438527825/TopyqQREgLswXnUj5_7AJJFS9SsMpfL-0zY_MVDLsIE/login',
+    'translation' => 'Вече използвахте линка за еднократно влизане в сайта. Моля сменете паролата си.',
     'plid' => 0,
     'plural' => 0,
   );
@@ -525,27 +517,11 @@ function centar_translations_translations_defaults() {
     'plid' => 0,
     'plural' => 0,
   );
-  $translations['bg:default']['860352f681288a3864706fa000c47c30'] = array(
-    'source' => 'This login can be used only once.',
-    'context' => '',
-    'location' => '/user/reset/71/1438526836/wIGLt2wB5VVocTjvZS9R40BomQNHXNLjOIxZw8sc2hU',
-    'translation' => '&nbsp',
-    'plid' => 0,
-    'plural' => 0,
-  );
   $translations['bg:default']['8725214cdd9f9af24e914b5da135793d'] = array(
     'source' => 'Permalink',
     'context' => '',
     'location' => '/node/3',
     'translation' => 'Препратка',
-    'plid' => 0,
-    'plural' => 0,
-  );
-  $translations['bg:default']['873f37f216ae7d5c24ed89a305ffa894'] = array(
-    'source' => 'You are logged in as %user. <a href="!user_edit">Change your password.</a>',
-    'context' => '',
-    'location' => '/user/reset/79/1438532351/58MwhKni5s10E1QMg5cJk3_A8YoTkBourjp2aKKLiTM',
-    'translation' => 'Влезли сте като %user. <a href="!user_edit">Сменете паролата си.</a> ',
     'plid' => 0,
     'plural' => 0,
   );
@@ -693,14 +669,6 @@ function centar_translations_translations_defaults() {
     'plid' => 0,
     'plural' => 0,
   );
-  $translations['bg:default']['a55669eccdd5a3de512bb368f987ba40'] = array(
-    'source' => '<p>This is a one-time login for %user_name and will expire on %expiration_date.</p><p>Click on this button to log in to the site and change your password.</p>',
-    'context' => '',
-    'location' => '/user/reset/71/1438526836/wIGLt2wB5VVocTjvZS9R40BomQNHXNLjOIxZw8sc2hU',
-    'translation' => '<p>Това е еднократен линк за влизане за %user_name.</p><p>Натиснете "вход" за да влезете в сайта и да смените паролата си.</p>',
-    'plid' => 0,
-    'plural' => 0,
-  );
   $translations['bg:default']['a6105c0a611b41b08f1209506350279e'] = array(
     'source' => 'yes',
     'context' => '',
@@ -837,14 +805,6 @@ function centar_translations_translations_defaults() {
     'plid' => 0,
     'plural' => 0,
   );
-  $translations['bg:default']['c3afaed5ea0093807215801262800dac'] = array(
-    'source' => 'If you don\'t want to receive such e-mails, you can change your settings at !recipient-edit-url.',
-    'context' => '',
-    'location' => '/user/67/contact',
-    'translation' => 'Ако не желаете да получавате email от други потребители, може да смените настройките си в профила. ',
-    'plid' => 0,
-    'plural' => 0,
-  );
   $translations['bg:default']['c43e0fd449c758dab8f891d8e19eb1a9'] = array(
     'source' => 'Strong',
     'context' => '',
@@ -899,6 +859,14 @@ function centar_translations_translations_defaults() {
     'context' => '',
     'location' => '/user/4/edit?destination=admin/people',
     'translation' => 'Въведете паролата си, за да смените %mail или %pass. !request_new. ',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translations['bg:default']['d0fbda9855d118740f1105334305c126'] = array(
+    'source' => 'Page not found',
+    'context' => '',
+    'location' => '/node/2',
+    'translation' => 'Опа, това, което търсите го няма!',
     'plid' => 0,
     'plural' => 0,
   );

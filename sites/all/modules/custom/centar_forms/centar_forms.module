@@ -63,9 +63,26 @@ function centar_forms_form_alter(&$form, &$form_state, $form_id) {
       break;
 
     case 'user_profile_form':
-    // print_r($form);
       $form['account']['current_pass']['#size'] = 100;
       $form['account']['pass']['#size'] = 100;
+      $form['locale']['#access'] = FALSE;
+      $form['timezone']['#access'] = FALSE;
+      $form['picture']['picture_upload']['#description'] = '';
+      $form['picture']['picture_delete']['#description'] = '';
+      $form['account']['mail']['#description'] = '';
+      $form['account']['name']['#description'] = '';
+      $form['account']['pass']['#description'] = '';
+      $form['account']['pass']['change_pass_title'] = array(
+        '#type' => 'item',
+        '#markup' => t('<h5>Смяна на парола</h5>'),
+      );
+      $form['actions']['submit']['#value']= t('Запази промените');
+      break;
+    case 'user_pass':
+      $form['actions']['submit']['#value']= t('Заяви нова парола');
+      break;
+    case 'contact_site_form':
+      $form['actions']['submit']['#value']= t('Изпрати');
       break;
   }
 }

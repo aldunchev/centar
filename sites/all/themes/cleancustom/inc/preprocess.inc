@@ -87,6 +87,10 @@ function cleancustom_preprocess_page(&$variables) {
   if (!empty($args[0]) && $args[0] == 'user') {
     $variables['is_user_page'] = TRUE;
   }
+
+  // Search form.
+  $search_form = drupal_get_form('search_block_form');
+  $variables['search_form'] = $search_form;
 }
 
 /**

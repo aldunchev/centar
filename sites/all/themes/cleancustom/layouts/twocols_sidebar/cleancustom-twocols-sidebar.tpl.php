@@ -22,10 +22,6 @@
 ?>
 
 <div class="panel-sidebar-twocols">
-    <aside class="search-block">
-      <?php print $content['block_full']; ?>
-    </aside>
- 
   <div class="row">
     <div class="col-3 fl-left col-12-no-fl sidebar-left mobile-hidden">
       <aside>
