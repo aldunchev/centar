@@ -2,6 +2,9 @@
   @if $point == large {
     @media (min-width: 960px) { @content; }
   }
+  @if $point == medium-large {
+    @media (min-width: 767px) { @content; }
+  }
   @else if $point == medium-x {
     @media (max-width: 1024px) { @content; }
   }

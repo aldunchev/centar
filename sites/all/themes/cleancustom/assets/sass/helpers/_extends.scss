@@ -41,6 +41,9 @@
     background-color: $light-blue;
     text-decoration: none;
   }
+  @include breakpoint(small) {
+    border-radius: 0;
+  }
 }
 %btn-small-ext {
   @extend %primary-btn-ext;

@@ -40,6 +40,18 @@
       max-width: 70px;
     }
   }
+  .pane-node-field-address {
+    font-size: 0;
+    .pane-title {
+      width: 25%;
+      vertical-align: top;
+      text-align: left;
+    }
+    .pane-content {
+      width: 75%;
+      display: inline-block;
+    }
+  }
   .author-offline,
   .author-online,
   .author-last-seen,
@@ -68,6 +80,11 @@
         vertical-align: top;
         width: 33.333333%;
         padding: 5px; 
+      }
+      .views-field-field-offer-images {
+        a {
+          display: block;
+        }
       }
       .views-field-title {
         font-size: $text-14;

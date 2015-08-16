@@ -12,6 +12,7 @@ scripts[] = assets/scripts/bootstrap-filestyle.js
 scripts[] = assets/scripts/jquery.magnific-popup.js
 scripts[] = assets/scripts/main.js
 scripts[] = assets/scripts/sidebar.js
+scripts[] = assets/scripts/mobileMenu.js
 
 regions[header] = Header
 regions[featured] = Featured

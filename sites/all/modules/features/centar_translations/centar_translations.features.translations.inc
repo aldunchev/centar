@@ -365,6 +365,14 @@ function centar_translations_translations_defaults() {
     'plid' => 0,
     'plural' => 0,
   );
+  $translations['bg:default']['5709cd03dcff1b84cdc05eb291b00b97'] = array(
+    'source' => 'The name %name is already taken.',
+    'context' => '',
+    'location' => '/user/register',
+    'translation' => 'Името %name е заето. ',
+    'plid' => 0,
+    'plural' => 0,
+  );
   $translations['bg:default']['5cb77b34758182a32bd4f4df6cfadef4'] = array(
     'source' => 'Your message has been sent.',
     'context' => '',
@@ -689,7 +697,7 @@ function centar_translations_translations_defaults() {
     'source' => '<p>This is a one-time login for %user_name and will expire on %expiration_date.</p><p>Click on this button to log in to the site and change your password.</p>',
     'context' => '',
     'location' => '/user/reset/71/1438526836/wIGLt2wB5VVocTjvZS9R40BomQNHXNLjOIxZw8sc2hU',
-    'translation' => '<p>Това е еднократен линк за влизане за %user_name и ще изтече на %expiration_date.</p><p>Натиснете "вход" за да влезете в сайта и да смените паролата си.</p>',
+    'translation' => '<p>Това е еднократен линк за влизане за %user_name.</p><p>Натиснете "вход" за да влезете в сайта и да смените паролата си.</p>',
     'plid' => 0,
     'plural' => 0,
   );

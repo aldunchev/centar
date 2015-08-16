@@ -27,7 +27,7 @@
     </aside>
  
   <div class="row">
-    <div class="col-3 fl-left col-12-no-fl sidebar-left">
+    <div class="col-3 fl-left col-12-no-fl sidebar-left mobile-hidden">
       <aside>
         <?php print $content['sidebar_left']; ?>
       </aside>
@@ -46,7 +46,9 @@
           </aside>
         </div>
       </div>
-      
+      <aside class="sidebar-left sidebar-mobile desktop-hidden">
+        <?php print $content['sidebar_left']; ?>
+      </aside>
       <div class="panel-main">
         <?php print $content['main']; ?>
       </div>

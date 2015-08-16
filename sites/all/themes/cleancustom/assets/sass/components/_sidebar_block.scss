@@ -79,3 +79,9 @@
     }
   }
 }
+
+@include breakpoint(small) {
+  .sidebar-mobile {
+    margin-top: $space-20;
+  }
+}

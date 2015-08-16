@@ -10,7 +10,7 @@
     }, 750);
   }
   function sidebarToggleFunc (el, elements, trigger, triggers) {
-    var elScroll = el.parent('.panel-pane').offset().top;
+    var elScroll = el.parent('.panel-pane').offset().top - 50;
     if (el.hasClass('active')) {
       el.removeClass('active').slideUp();
       trigger.removeClass('active');

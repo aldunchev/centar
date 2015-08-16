@@ -67,3 +67,14 @@
   @extend .fa;
   content: "\f021";
 }
+.fa-bars:before {
+  content: "\f0c9";
+  font-size: $text-22;
+}
+%fa-search:before {
+  content: "\f002"
+}
+.fa-search {
+  @extend %fa-search;
+  font-size: $text-22;
+}
