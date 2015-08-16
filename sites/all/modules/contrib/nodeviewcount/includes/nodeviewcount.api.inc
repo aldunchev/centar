@@ -26,8 +26,8 @@ function nodeviewcount_insert_node_view($nid, $uid) {
  *   TRUE if the node content type checked for count views, otherwise FALSE.
  */
 function nodeviewcount_is_node_type_count($node) {
-  $node_types = variable_get('nodeviewcount_node_types');
-  if (in_array($node->type, $node_types)) {
+  $node_types = variable_get('nodeviewcount_node_types', array());
+  if (!empty($node_types[$node->type])) {
     return TRUE;
   }
   return FALSE;
@@ -43,8 +43,8 @@ function nodeviewcount_is_node_type_count($node) {
  *   TRUE if the node content type checked for count views, otherwise FALSE.
  */
 function nodeviewcount_is_node_view_mode_count($view_mode) {
-  $node_view_modes = variable_get('nodeviewcount_node_view_modes');
-  if (in_array($view_mode, $node_view_modes, TRUE)) {
+  $node_view_modes = variable_get('nodeviewcount_node_view_modes', array());
+  if (!empty($node_view_modes[$view_mode])) {
     return TRUE;
   }
   return FALSE;
@@ -52,7 +52,7 @@ function nodeviewcount_is_node_view_mode_count($view_mode) {
 
 function nodeviewcount_get_node_view_modes_count() {
   $node_view_modes_count = array();
-  $node_view_modes = variable_get('nodeviewcount_node_view_modes');
+  $node_view_modes = variable_get('nodeviewcount_node_view_modes', array());
   foreach ($node_view_modes as $node_view_mode) {
     if ($node_view_mode !== 0) {
       $node_view_modes_count[] = $node_view_mode;
@@ -71,7 +71,7 @@ function nodeviewcount_get_node_view_modes_count() {
  *   TRUE if the user role checked for count views, otherwise FALSE.
  */
 function nodeviewcount_is_user_role_count($user) {
-  $nodeviewcount_user_roles = variable_get('nodeviewcount_user_roles');
+  $nodeviewcount_user_roles = variable_get('nodeviewcount_user_roles', array());
   $user_roles_ids = array_keys($user->roles);
   foreach ($user_roles_ids as $role_id) {
     if (!empty($nodeviewcount_user_roles[$role_id])) {

@@ -1275,29 +1275,45 @@ h6 {
   }
 }
 
-/* line 3, ../sass/components/_bx-slider.scss */
+/* line 2, ../sass/components/_bx-slider.scss */
+.pane-node-field-offer-images .bx-wrapper {
+  margin-bottom: 20px !important;
+}
+/* line 4, ../sass/components/_bx-slider.scss */
 .pane-node-field-offer-images .bx-wrapper .bx-pager {
   bottom: -75px;
 }
-/* line 5, ../sass/components/_bx-slider.scss */
+/* line 6, ../sass/components/_bx-slider.scss */
 .pane-node-field-offer-images .bx-wrapper .bx-pager img {
   max-width: 50px;
 }
+/* line 12, ../sass/components/_bx-slider.scss */
+.pane-node-field-offer-images .bx-wrapper:nth-child(2) li img {
+  max-width: 75px;
+}
+/* line 16, ../sass/components/_bx-slider.scss */
+.pane-node-field-offer-images .bx-wrapper:nth-child(2) .bx-prev {
+  left: -20px;
+}
+/* line 19, ../sass/components/_bx-slider.scss */
+.pane-node-field-offer-images .bx-wrapper:nth-child(2) .bx-next {
+  right: -20px;
+}
 
-/* line 14, ../sass/components/_bx-slider.scss */
+/* line 28, ../sass/components/_bx-slider.scss */
 .view-other-user-offers .bx-wrapper .bx-viewport {
   background: transparent;
 }
-/* line 17, ../sass/components/_bx-slider.scss */
+/* line 31, ../sass/components/_bx-slider.scss */
 .view-other-user-offers .bx-wrapper .bx-prev {
   left: -33px;
 }
-/* line 20, ../sass/components/_bx-slider.scss */
+/* line 34, ../sass/components/_bx-slider.scss */
 .view-other-user-offers .bx-wrapper .bx-next {
   right: -33px;
 }
 @media (max-width: 1024px) {
-  /* line 23, ../sass/components/_bx-slider.scss */
+  /* line 37, ../sass/components/_bx-slider.scss */
   .view-other-user-offers .bx-wrapper .bx-controls-direction {
     display: none;
   }

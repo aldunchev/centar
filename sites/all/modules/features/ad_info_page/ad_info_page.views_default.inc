@@ -31,10 +31,6 @@ function ad_info_page_views_default_views() {
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
-  $handler->display->display_options['pager']['options']['tags']['first'] = '« първа';
-  $handler->display->display_options['pager']['options']['tags']['previous'] = '‹ предишна';
-  $handler->display->display_options['pager']['options']['tags']['next'] = 'следваща › ';
-  $handler->display->display_options['pager']['options']['tags']['last'] = 'последна » ';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
   /* Footer: Global: Text area */

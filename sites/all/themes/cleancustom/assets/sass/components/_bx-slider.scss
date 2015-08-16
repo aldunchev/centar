@@ -1,9 +1,23 @@
 .pane-node-field-offer-images {
   .bx-wrapper {
+    margin-bottom: $space-20 !important;
     .bx-pager {
       bottom: -75px;
       img {
         max-width: 50px;
+      }
+    }
+    &:nth-child(2) {
+      li {
+        img {
+          max-width: 75px;
+        }
+      }
+      .bx-prev {
+        left: -20px;
+      }
+      .bx-next {
+        right: -20px;
       }
     }
   }

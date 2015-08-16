@@ -17,7 +17,6 @@ function ad_info_page_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_ad_properties',
-    'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 0,
     'module' => 'tablefield',
@@ -38,14 +37,6 @@ function ad_info_page_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_ad_properties_note',
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
     'indexes' => array(
       'format' => array(
         0 => 'format',

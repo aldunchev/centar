@@ -115,7 +115,7 @@ function center_offer_view_default_page_manager_handlers() {
     $pane->access = array();
     $pane->configuration = array(
       'label' => 'title',
-      'formatter' => 'bxslider',
+      'formatter' => 'bxslider_ths',
       'delta_limit' => '0',
       'delta_offset' => '0',
       'delta_reversed' => 0,
@@ -148,7 +148,7 @@ function center_offer_view_default_page_manager_handlers() {
           'preventDefaultSwipeY' => 0,
         ),
         'pager' => array(
-          'pager' => 1,
+          'pager' => 0,
           'pagerType' => 'full',
           'pagerShortSeparator' => ' / ',
           'pagerSelector' => '',
@@ -182,7 +182,7 @@ function center_offer_view_default_page_manager_handlers() {
           'slideWidth' => '0',
         ),
         'thumbnail_slider' => array(
-          'thumbnail_style' => 'thumbnail',
+          'thumbnail_style' => 'offer_thumb_100x100',
           'general' => array(
             'mode' => 'horizontal',
             'speed' => '500',
@@ -230,6 +230,14 @@ function center_offer_view_default_page_manager_handlers() {
             'maxSlides' => '4',
             'moveSlides' => '1',
           ),
+        ),
+        'colorbox' => array(
+          'enable' => FALSE,
+          'image_style' => 'large',
+          'slideshow' => FALSE,
+          'slideshow_speed' => 2000,
+          'transition' => 'elastic',
+          'transition_speed' => 350,
         ),
       ),
       'context' => 'argument_entity_id:node_1',
