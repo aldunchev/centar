@@ -33,68 +33,6 @@ function center_offer_view_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'slideshow';
-  $handler->display->display_options['style_options']['bxslider_views_slideshow']['general'] = array(
-    'mode' => 'horizontal',
-    'speed' => '500',
-    'slideMargin' => '10',
-    'startSlide' => '0',
-    'randomStart' => 0,
-    'infiniteLoop' => 1,
-    'hideControlOnEnd' => 0,
-    'captions' => 0,
-    'ticker' => 0,
-    'tickerHover' => 0,
-    'adaptiveHeight' => 0,
-    'adaptiveHeightSpeed' => '500',
-    'video' => 0,
-    'touchEnabled' => 1,
-    'preloadImages' => 'all',
-    'disable_standard_css' => 0,
-    'useCSS' => 1,
-    'align_image' => 'left',
-    'align_caption' => 'left',
-    'swipeThreshold' => '50',
-    'oneToOneTouch' => 1,
-    'preventDefaultSwipeX' => 1,
-    'preventDefaultSwipeY' => 0,
-    'color_caption' => '80, 80, 80, 0.75',
-  );
-  $handler->display->display_options['style_options']['bxslider_views_slideshow']['controlsfieldset'] = array(
-    'controls' => 1,
-    'nextText' => '',
-    'prevText' => '',
-    'startText' => '',
-    'stopText' => '',
-    'autoControls' => 0,
-    'autoControlsCombine' => 0,
-  );
-  $handler->display->display_options['style_options']['bxslider_views_slideshow']['pagerfieldset'] = array(
-    'pager' => 0,
-    'pagerType' => 'full',
-    'pagerShortSeparator' => ' / ',
-    'pagerCustom' => '',
-  );
-  $handler->display->display_options['style_options']['bxslider_views_slideshow']['autofieldset'] = array(
-    'pause' => '4000',
-    'autoStart' => 1,
-    'auto' => 0,
-    'autoHover' => '0',
-    'autoDelay' => '0',
-    'autoDirection' => 'next',
-  );
-  $handler->display->display_options['style_options']['bxslider_views_slideshow']['carousel'] = array(
-    'minSlides' => '3',
-    'maxSlides' => '3',
-    'moveSlides' => '1',
-    'slideWidth' => '70',
-  );
-  $handler->display->display_options['style_options']['bxslider_views_slideshow']['callback'] = array(
-    'onSliderLoad' => '',
-    'onSlideBefore' => '',
-    'onSlideAfter' => '',
-    'onSlideNext' => '',
-    'onSlidePrev' => '',
-  );
   $handler->display->display_options['style_options']['slideshow_type'] = 'bxslider_views_slideshow';
   $handler->display->display_options['style_options']['slideshow_skin'] = 'default';
   $handler->display->display_options['style_options']['skin_info'] = array(

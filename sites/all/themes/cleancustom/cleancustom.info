@@ -4,15 +4,18 @@ package = Custom
 version = VERSION
 core = 7.x
 
+stylesheets[all][] = assets/stylesheets/vendor/jquery.bxslider.css
 stylesheets[all][] = assets/stylesheets/style.css
 stylesheets[all][] = assets/stylesheets/magnific-popup.css
 stylesheets[all][] = user.css
 
+scripts[] = assets/scripts/jquery.bxslider.js
 scripts[] = assets/scripts/bootstrap-filestyle.js
 scripts[] = assets/scripts/jquery.magnific-popup.js
 scripts[] = assets/scripts/main.js
 scripts[] = assets/scripts/sidebar.js
 scripts[] = assets/scripts/mobileMenu.js
+scripts[] = assets/scripts/bxSlider.js
 
 regions[header] = Header
 regions[featured] = Featured

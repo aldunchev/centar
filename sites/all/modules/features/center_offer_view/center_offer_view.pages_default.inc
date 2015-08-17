@@ -115,7 +115,7 @@ function center_offer_view_default_page_manager_handlers() {
     $pane->access = array();
     $pane->configuration = array(
       'label' => 'title',
-      'formatter' => 'bxslider_ths',
+      'formatter' => 'image',
       'delta_limit' => '0',
       'delta_offset' => '0',
       'delta_reversed' => 0,
