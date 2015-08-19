@@ -12,6 +12,13 @@
           }
         }
       });
+
+      $('.user-offers-slider').bxSlider({
+        slideWidth: 100,
+        minSlides: 3,
+        maxSlides: 3,
+        slideMargin: 10
+      });
     }
   };
 })(jQuery);

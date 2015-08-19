@@ -719,6 +719,8 @@ h6 {
 .fa:before, .view-user-offers tbody .views-field-delete-node a:before, .view-user-offers tbody .views-field-edit-node a:before, .ajax-progress .throbber:before, .node-type-offer .author-name:before,
 .fa:after,
 .more-link:after,
+.bx-controls-direction .bx-next:after,
+.bx-controls-direction .bx-prev:after,
 #edit-pass-change-pass-title h5.active:after,
 .sidebar-block .pane-title.active:after,
 #edit-pass-change-pass-title h5:after,
@@ -764,49 +766,55 @@ h6 {
 }
 
 /* line 45, ../sass/fonts/_font-awesome.scss */
-.more-link:after {
+.more-link:after, .bx-controls-direction .bx-next:after {
   content: "\f054";
   margin-left: 5px;
 }
 
 /* line 50, ../sass/fonts/_font-awesome.scss */
+.bx-controls-direction .bx-prev:after {
+  content: "\f053";
+  margin-left: 5px;
+}
+
+/* line 55, ../sass/fonts/_font-awesome.scss */
 #edit-pass-change-pass-title h5.active:after, .sidebar-block .pane-title.active:after {
   content: "\f077";
 }
 
-/* line 54, ../sass/fonts/_font-awesome.scss */
+/* line 59, ../sass/fonts/_font-awesome.scss */
 #edit-pass-change-pass-title h5:after, .sidebar-block .pane-title:after {
   content: "\f078";
 }
 
-/* line 58, ../sass/fonts/_font-awesome.scss */
+/* line 63, ../sass/fonts/_font-awesome.scss */
 .view-user-offers tbody .views-field-delete-node a:before {
   content: "\f1f8";
 }
 
-/* line 62, ../sass/fonts/_font-awesome.scss */
+/* line 67, ../sass/fonts/_font-awesome.scss */
 .view-user-offers tbody .views-field-edit-node a:before {
   content: "\f044";
 }
 
-/* line 66, ../sass/fonts/_font-awesome.scss */
+/* line 71, ../sass/fonts/_font-awesome.scss */
 .ajax-progress .throbber:before {
   content: "\f021";
 }
 
-/* line 70, ../sass/fonts/_font-awesome.scss */
+/* line 75, ../sass/fonts/_font-awesome.scss */
 .fa-bars:before {
   content: "\f0c9";
   font-size: 1.375rem;
 }
 
-/* line 74, ../sass/fonts/_font-awesome.scss */
+/* line 79, ../sass/fonts/_font-awesome.scss */
 .fa-search:before, .pane-apachesolr-form .form-actions:before,
 .pane-search-form .form-actions:before {
   content: "";
 }
 
-/* line 77, ../sass/fonts/_font-awesome.scss */
+/* line 82, ../sass/fonts/_font-awesome.scss */
 .fa-search {
   font-size: 1.375rem;
 }
@@ -885,24 +893,25 @@ h6 {
 .node-type-offer .pane-other-user-offers .pane-content {
   display: block;
 }
+/* line 72, ../sass/pages/_offer.scss */
+.node-type-offer .pane-other-user-offers .view-other-user-offers {
+  /*.views-row {
+    display: inline-block;
+    vertical-align: top;
+    width: 33.333333%;
+  }*/
+}
 /* line 73, ../sass/pages/_offer.scss */
 .node-type-offer .pane-other-user-offers .view-other-user-offers .view-content {
   margin-left: -5px;
   margin-right: -5px;
   font-size: 0;
 }
-/* line 78, ../sass/pages/_offer.scss */
-.node-type-offer .pane-other-user-offers .view-other-user-offers .views-row {
-  display: inline-block;
-  vertical-align: top;
-  width: 33.333333%;
-  padding: 5px;
-}
-/* line 85, ../sass/pages/_offer.scss */
+/* line 84, ../sass/pages/_offer.scss */
 .node-type-offer .pane-other-user-offers .view-other-user-offers .views-field-field-offer-images a {
   display: block;
 }
-/* line 89, ../sass/pages/_offer.scss */
+/* line 88, ../sass/pages/_offer.scss */
 .node-type-offer .pane-other-user-offers .view-other-user-offers .views-field-title {
   font-size: 0.875rem;
 }
@@ -1275,48 +1284,63 @@ h6 {
   }
 }
 
-/* line 2, ../sass/components/_bx-slider.scss */
-.pane-node-field-offer-images .bx-wrapper {
-  margin-bottom: 20px !important;
-}
-/* line 4, ../sass/components/_bx-slider.scss */
-.pane-node-field-offer-images .bx-wrapper .bx-pager {
-  bottom: -75px;
-}
-/* line 6, ../sass/components/_bx-slider.scss */
-.pane-node-field-offer-images .bx-wrapper .bx-pager img {
-  max-width: 50px;
-}
-/* line 12, ../sass/components/_bx-slider.scss */
-.pane-node-field-offer-images .bx-wrapper:nth-child(2) li img {
-  max-width: 75px;
-}
-/* line 16, ../sass/components/_bx-slider.scss */
-.pane-node-field-offer-images .bx-wrapper:nth-child(2) .bx-prev {
-  left: -20px;
-}
-/* line 19, ../sass/components/_bx-slider.scss */
-.pane-node-field-offer-images .bx-wrapper:nth-child(2) .bx-next {
-  right: -20px;
-}
-
-/* line 28, ../sass/components/_bx-slider.scss */
-.view-other-user-offers .bx-wrapper .bx-viewport {
-  background: transparent;
-}
-/* line 31, ../sass/components/_bx-slider.scss */
-.view-other-user-offers .bx-wrapper .bx-prev {
-  left: -33px;
-}
-/* line 34, ../sass/components/_bx-slider.scss */
-.view-other-user-offers .bx-wrapper .bx-next {
-  right: -33px;
-}
-@media (max-width: 1024px) {
-  /* line 37, ../sass/components/_bx-slider.scss */
-  .view-other-user-offers .bx-wrapper .bx-controls-direction {
+@media (max-width: 767px) {
+  /* line 1, ../sass/components/_bx-slider.scss */
+  .bx-wrapper {
+    margin-bottom: 0;
+  }
+  /* line 4, ../sass/components/_bx-slider.scss */
+  .bx-wrapper .bx-pager {
     display: none;
   }
+}
+
+/* line 10, ../sass/components/_bx-slider.scss */
+.bx-controls-direction a {
+  text-align: center;
+  font-size: 0;
+}
+/* line 13, ../sass/components/_bx-slider.scss */
+.bx-controls-direction a:after {
+  position: relative;
+  top: 6px;
+  margin-left: 0 !important;
+  font-size: 2rem;
+  color: #fff;
+}
+/* line 20, ../sass/components/_bx-slider.scss */
+.bx-controls-direction a:hover {
+  text-decoration: none;
+}
+/* line 23, ../sass/components/_bx-slider.scss */
+.bx-controls-direction a:hover:after {
+  font-size: 2.1rem;
+}
+
+@media (max-width: 1024px) {
+  /* line 35, ../sass/components/_bx-slider.scss */
+  .bx-custom-pager {
+    display: none;
+  }
+}
+/* line 40, ../sass/components/_bx-slider.scss */
+.bx-custom-pager .bx-pager-item {
+  margin: 0 5px;
+}
+/* line 42, ../sass/components/_bx-slider.scss */
+.bx-custom-pager .bx-pager-item img {
+  max-width: 75px;
+}
+
+/* line 51, ../sass/components/_bx-slider.scss */
+.view-other-user-offers .bx-wrapper .bx-controls-direction a {
+  width: 32px;
+  height: 32px;
+  margin-top: -16px;
+}
+/* line 55, ../sass/components/_bx-slider.scss */
+.view-other-user-offers .bx-wrapper .bx-controls-direction a:after {
+  font-size: 1.375rem;
 }
 
 /* line 1, ../sass/components/_comments.scss */

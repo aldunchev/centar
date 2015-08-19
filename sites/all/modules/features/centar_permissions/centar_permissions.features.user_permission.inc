@@ -1121,8 +1121,6 @@ function centar_permissions_user_default_permissions() {
     'name' => 'view post access counter',
     'roles' => array(
       'administrator' => 'administrator',
-      'anonymous user' => 'anonymous user',
-      'authenticated user' => 'authenticated user',
       'editor' => 'editor',
     ),
     'module' => 'statistics',

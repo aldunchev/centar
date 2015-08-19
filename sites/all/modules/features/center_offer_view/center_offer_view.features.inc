@@ -33,8 +33,8 @@ function center_offer_view_image_default_styles() {
       10 => array(
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => 540,
-          'height' => 440,
+          'width' => 740,
+          'height' => 640,
         ),
         'weight' => 1,
       ),

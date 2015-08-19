@@ -47,6 +47,11 @@
   content: "\f054";
   margin-left: 5px;
 }
+%fa-chevron-left:after {
+  @extend .fa;
+  content: "\f053";
+  margin-left: 5px;
+}
 %fa-chevron-up {
   @extend .fa;
   content: "\f077";
