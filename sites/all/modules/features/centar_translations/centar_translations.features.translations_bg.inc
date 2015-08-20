@@ -1126,6 +1126,15 @@ function centar_translations_translations_bg_defaults() {
     'plural' => 0,
   );
   $translatables[] = t('Username', array(), array('context' => ''));
+  $translations['bg:default']['fd5d9dacf9a6ed38bc289df5d9a02ce5'] = array(
+    'source' => 'Please enter some keywords.',
+    'context' => '',
+    'location' => '/user/register',
+    'translation' => 'Моля, въведете ключови думи.',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translatables[] = t('Please enter some keywords.', array(), array('context' => ''));
   $translations['bg:default']['fffe614a8c0f7cea01486162d0675de6'] = array(
     'source' => 'Sorry, unrecognized username or password. <a href="@password">Have you forgotten your password?</a>',
     'context' => '',
