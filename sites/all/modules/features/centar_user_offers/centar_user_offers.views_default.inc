@@ -30,10 +30,6 @@ function centar_user_offers_views_default_views() {
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '6';
-  $handler->display->display_options['pager']['options']['tags']['first'] = '« първа';
-  $handler->display->display_options['pager']['options']['tags']['previous'] = '‹ предишна';
-  $handler->display->display_options['pager']['options']['tags']['next'] = 'следваща › ';
-  $handler->display->display_options['pager']['options']['tags']['last'] = 'последна » ';
   $handler->display->display_options['style_plugin'] = 'table';
   $handler->display->display_options['style_options']['columns'] = array(
     'field_offer_images' => 'field_offer_images',
@@ -71,7 +67,7 @@ function centar_user_offers_views_default_views() {
   $handler->display->display_options['empty']['area']['table'] = 'views';
   $handler->display->display_options['empty']['area']['field'] = 'area';
   $handler->display->display_options['empty']['area']['empty'] = TRUE;
-  $handler->display->display_options['empty']['area']['content'] = 'Все още нямате обяви. <a href="/node/add/offer" title="Добави обява" class="add-offer-link primary-btn">Добави обява</a>';
+  $handler->display->display_options['empty']['area']['content'] = 'Все още нямате обяви. <div><a href="/node/add/offer" title="Добави обява" class="add-offer-link primary-btn">Добави обява</a></div>';
   $handler->display->display_options['empty']['area']['format'] = 'filtered_html';
   /* Relationship: Content: Author */
   $handler->display->display_options['relationships']['uid']['id'] = 'uid';
@@ -102,14 +98,12 @@ function centar_user_offers_views_default_views() {
   $handler->display->display_options['fields']['delete_node']['id'] = 'delete_node';
   $handler->display->display_options['fields']['delete_node']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['delete_node']['field'] = 'delete_node';
-  $handler->display->display_options['fields']['delete_node']['label'] = 'Изтрии';
   $handler->display->display_options['fields']['delete_node']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['delete_node']['hide_alter_empty'] = FALSE;
   /* Field: Content: Edit link */
   $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
   $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['edit_node']['field'] = 'edit_node';
-  $handler->display->display_options['fields']['edit_node']['label'] = 'Редактирай';
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';

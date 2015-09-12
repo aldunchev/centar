@@ -21,5 +21,6 @@
   </div>
   <div class="two-cols-stacked-right col-4 col-12-sm fl-right">
     <?php print $content['right']; ?>
+    <?php print $content['right_block']; ?>
   </div>
 </div>

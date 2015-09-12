@@ -68,6 +68,7 @@ function center_offer_view_default_page_manager_handlers() {
       'default' => NULL,
       'left' => NULL,
       'right' => NULL,
+      'right_block' => NULL,
     ),
     'right' => array(
       'style' => 'naked',
@@ -531,6 +532,29 @@ function center_offer_view_default_page_manager_handlers() {
     $pane->uuid = '93f71343-661a-418b-8006-376624af6ae0';
     $display->content['new-93f71343-661a-418b-8006-376624af6ae0'] = $pane;
     $display->panels['right'][5] = 'new-93f71343-661a-418b-8006-376624af6ae0';
+    $pane = new stdClass();
+    $pane->pid = 'new-d5325e98-0aad-4845-aa25-55017908e030';
+    $pane->panel = 'right_block';
+    $pane->type = 'block';
+    $pane->subtype = 'simpleads-ad_groups_39';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 1,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = 'd5325e98-0aad-4845-aa25-55017908e030';
+    $display->content['new-d5325e98-0aad-4845-aa25-55017908e030'] = $pane;
+    $display->panels['right_block'][0] = 'new-d5325e98-0aad-4845-aa25-55017908e030';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;

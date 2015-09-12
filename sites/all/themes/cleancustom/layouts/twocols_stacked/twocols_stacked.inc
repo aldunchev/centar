@@ -13,5 +13,6 @@ $plugin = array(
   'regions' => array(
     'left' => t('Left Column'),
     'right' => t('Right Column'),
+    'right_block' => t('Right Complimentary Block')
   ),
 );
