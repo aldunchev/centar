@@ -1240,13 +1240,19 @@ h6 {
   padding: 0;
   background: none;
 }
+@media (max-width: 767px) {
+  /* line 1, ../sass/components/_ads.scss */
+  .ad-wrapper {
+    display: none;
+  }
+}
 
-/* line 7, ../sass/components/_ads.scss */
+/* line 10, ../sass/components/_ads.scss */
 .ad-small {
   margin-left: 20px;
 }
 @media (max-width: 767px) {
-  /* line 7, ../sass/components/_ads.scss */
+  /* line 10, ../sass/components/_ads.scss */
   .ad-small {
     margin: 0 auto;
     float: none;
@@ -1254,17 +1260,17 @@ h6 {
   }
 }
 
-/* line 16, ../sass/components/_ads.scss */
+/* line 19, ../sass/components/_ads.scss */
 .simplead-container img {
   height: 200px;
 }
 
-/* line 20, ../sass/components/_ads.scss */
+/* line 23, ../sass/components/_ads.scss */
 .ad-medium {
   margin-left: 10px;
 }
 @media (max-width: 767px) {
-  /* line 20, ../sass/components/_ads.scss */
+  /* line 23, ../sass/components/_ads.scss */
   .ad-medium {
     max-width: 460px;
     margin: 0 auto 20px;
@@ -1272,13 +1278,13 @@ h6 {
   }
 }
 
-/* line 28, ../sass/components/_ads.scss */
+/* line 31, ../sass/components/_ads.scss */
 .ad-bottom.ad-small {
   margin-left: 10px;
   margin-right: 10px;
 }
 @media (max-width: 767px) {
-  /* line 28, ../sass/components/_ads.scss */
+  /* line 31, ../sass/components/_ads.scss */
   .ad-bottom.ad-small {
     margin: 0 auto 20px;
   }

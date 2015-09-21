@@ -3,6 +3,9 @@
     padding: 0;
     background: none;
   }
+  @include breakpoint(small) {
+    display: none;
+  }
 }
 .ad-small {
   margin-left: $space-20;

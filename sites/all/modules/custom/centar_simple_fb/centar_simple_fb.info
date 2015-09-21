@@ -1,0 +1,4 @@
+name = Centar Simple Facebook Extend
+description = Extend functionality of simple facebook connect module. .
+package = Custom
+core = 7.x
