@@ -1235,6 +1235,16 @@ h6 {
   display: none;
 }
 
+/* line 1, ../sass/pages/_maintenance.scss */
+.maintenance-page {
+  padding: 40px;
+  text-align: center;
+}
+/* line 5, ../sass/pages/_maintenance.scss */
+.maintenance-page #logo img {
+  max-width: 200px;
+}
+
 /* line 2, ../sass/components/_ads.scss */
 .ad-wrapper .pane-block {
   padding: 0;
