@@ -1,0 +1,15 @@
+.block-user {
+  @extend %fl-left-ext;
+}
+.fa-facebook {
+  padding: 4px 4px 4px 5px;
+  font-size: 11px;
+  color: $white;
+  background: #5b74a8;
+  border: 1px solid $gray;
+  border-color: #2f477a #29447e #1a356e;
+  &:hover {
+    color: $white;
+    background: lighten(#5b74a8, 5%);
+  }
+}

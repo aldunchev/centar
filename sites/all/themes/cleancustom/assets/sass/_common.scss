@@ -1,0 +1,38 @@
+.fl-left {
+  float: left;
+}
+.fl-right {
+  float: right;
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.element-invisible {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  height: 1px;
+}
+.center-margin {
+  margin: 0 auto;
+}
+a {
+  color: $dark-blue;
+  &:hover {
+    color: $light-blue;
+  }
+  @extend %transition;
+}
+.logo {
+  margin-top: 24px;
+}
+#main-content {
+  padding-top: 72px;
+}
+body {
+  #admin-menu {
+    font-size: $text-14;
+  }
+}
