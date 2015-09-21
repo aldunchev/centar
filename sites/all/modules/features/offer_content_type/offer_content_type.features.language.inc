@@ -29,7 +29,7 @@ function offer_content_type_locale_default_languages() {
     'name' => 'English',
     'native' => 'English',
     'direction' => 0,
-    'enabled' => 0,
+    'enabled' => 1,
     'plurals' => 0,
     'formula' => '',
     'domain' => '',

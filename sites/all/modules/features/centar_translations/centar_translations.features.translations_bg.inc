@@ -1027,6 +1027,24 @@ function centar_translations_translations_bg_defaults() {
     'plural' => 0,
   );
   $translatables[] = t('edit', array(), array('context' => ''));
+  $translations['bg:default']['df79f2a82653b00358a4b4046f741b38'] = array(
+    'source' => 'Site under maintenance',
+    'context' => '',
+    'location' => '/',
+    'translation' => 'В момента се извършва техническа поддръжка.',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translatables[] = t('Site under maintenance', array(), array('context' => ''));
+  $translations['bg:default']['df8842de0a61a8e2f5e9be85d32f3139'] = array(
+    'source' => '@site is currently under maintenance. We should be back shortly. Thank you for your patience.',
+    'context' => '',
+    'location' => '/index.php',
+    'translation' => 'Скоро @site отново ще бъде достъпен. Благодарим Ви за търпението.',
+    'plid' => 0,
+    'plural' => 0,
+  );
+  $translatables[] = t('@site is currently under maintenance. We should be back shortly. Thank you for your patience.', array(), array('context' => ''));
   $translations['bg:default']['e1bd06d422598c306c013e9c334e54a3'] = array(
     'source' => 'Request new password',
     'context' => '',
