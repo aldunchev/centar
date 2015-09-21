@@ -1,0 +1,21 @@
+.main-nav {
+  .second-level {
+    @extend %display-none;
+  }
+  li {
+    float: left;
+  }
+  a {
+    display: block;
+    height: 71px;
+    line-height: 71px;
+    padding: 0 $space-14;
+    font-size: $text-16;
+    text-transform: uppercase;
+    @extend %transition;
+    &:hover {
+      color: $white;
+      background: $dark-blue;
+    }
+  }
+}
