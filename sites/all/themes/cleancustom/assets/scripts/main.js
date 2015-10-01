@@ -13,7 +13,7 @@
     attach: function (context, settings) {
       var imageLink = $('.image-link');
       if (imageLink.length != 0) {
-        $('.image-link').once('adImageInfo').magnificPopup({type:'image'});
+        imageLink.once('adImageInfo').magnificPopup({type:'image'});
       }
     }
   };
