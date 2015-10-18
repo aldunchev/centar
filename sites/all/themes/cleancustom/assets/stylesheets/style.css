@@ -2068,9 +2068,10 @@ ul.quicktabs-tabs li a:hover {
 }
 /* line 29, ../sass/components/_sidebar_block.scss */
 .sidebar-block .pane-content ul li {
+  margin-bottom: 5px;
   line-height: 1.2;
 }
-/* line 32, ../sass/components/_sidebar_block.scss */
+/* line 33, ../sass/components/_sidebar_block.scss */
 .sidebar-block .pane-content ul li.active:before {
   position: absolute;
   content: '';
@@ -2081,17 +2082,17 @@ ul.quicktabs-tabs li a:hover {
   border-color: transparent;
   border-left-color: #87d7dd;
 }
-/* line 46, ../sass/components/_sidebar_block.scss */
+/* line 47, ../sass/components/_sidebar_block.scss */
 .sidebar-block .pane-content > ul > .first > a {
   /* The heading of each section. */
   text-transform: uppercase;
 }
-/* line 49, ../sass/components/_sidebar_block.scss */
+/* line 50, ../sass/components/_sidebar_block.scss */
 .sidebar-block .pane-content > ul > li {
   /* The items. */
   margin-bottom: 20px;
 }
-/* line 51, ../sass/components/_sidebar_block.scss */
+/* line 52, ../sass/components/_sidebar_block.scss */
 .sidebar-block .pane-content > ul > li > a {
   display: block;
   width: 100%;
@@ -2102,26 +2103,26 @@ ul.quicktabs-tabs li a:hover {
 }
 
 @media (max-width: 1024px) {
-  /* line 66, ../sass/components/_sidebar_block.scss */
+  /* line 67, ../sass/components/_sidebar_block.scss */
   .sidebar-left .pane-title {
     padding-left: 10px;
     margin-bottom: 0;
     text-align: left;
     cursor: pointer;
   }
-  /* line 71, ../sass/components/_sidebar_block.scss */
+  /* line 72, ../sass/components/_sidebar_block.scss */
   .sidebar-left .pane-title:after {
     display: block;
     float: right;
     margin-right: 10px;
   }
-  /* line 77, ../sass/components/_sidebar_block.scss */
+  /* line 78, ../sass/components/_sidebar_block.scss */
   .sidebar-left .pane-content {
     display: none;
   }
 }
 @media (max-width: 767px) {
-  /* line 84, ../sass/components/_sidebar_block.scss */
+  /* line 85, ../sass/components/_sidebar_block.scss */
   .sidebar-mobile {
     margin-top: 20px;
   }
