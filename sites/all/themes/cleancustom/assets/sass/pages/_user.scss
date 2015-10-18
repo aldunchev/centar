@@ -1,10 +1,12 @@
 .user-menu {
   display: inline-block;
   vertical-align: top;
+
   a {
-    @include menu-link();
+    @include menu-link;
   }
 }
+
 .user-name {
   display: inline-block;
   font-weight: bold;
@@ -14,12 +16,15 @@
   display: inline-block;
   vertical-align: top;
   margin-right: 5px;
+
   img {
     display: block;
     max-width: 30px;
+
     @include box-shadow(2px 3px 3px #afb1b3);
   }
 }
+
 .user-picture {
   img {
     @include box-shadow(2px 3px 3px #afb1b3);
@@ -31,58 +36,70 @@
   font-size: $text-12;
   color: $text-gray;
 }
+
 #edit-pass-change-pass-title {
   margin-top: $space-20;
   padding: 8px 5px;
   color: $white;
   background: darken($sky-blue, 25%);
   cursor: pointer;
+
   h5 {
     font-weight: bold;
+
     &:after {
       display: block;
       float: right;
       margin-right: $space-10;
+
       @extend %fa-chevron-down;
     }
+
     &.active:after {
       @extend %fa-chevron-up;
     }
   }
 }
+
 .password-strength {
   width: 50%;
+
   @include breakpoint(smaller) {
     float: none;
   }
+
+
   .password-indicator {
     height: 5px;
     background: $gray;
   }
+
   .indicator {
     width: 0%;
     height: 100%;
     background: $green;
   }
 }
+
 .password-strength-text,
 .password-strength-title,
 .password-confirm {
   font-size: $text-14;
   line-height: 2;
 }
+
 .password-strength-title {
   display: inline;
   color: $text-gray;
-
 }
+
 .password-strength-text {
   @extend %fl-right-ext;
 }
+
 .password-parent,
-.confirm-parent {
-  display: none;
-}
+.confirm-parent,
+#edit-locale,
 #edit-picture-upload {
   display: none;
 }

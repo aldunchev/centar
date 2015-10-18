@@ -517,7 +517,7 @@ body #admin-menu {
 /* line 58, ../sass/base/_common.scss */
 h1 {
   margin-bottom: 20px;
-  color: #626467;
+  color: #626567;
 }
 
 /* line 62, ../sass/base/_common.scss */
@@ -529,7 +529,7 @@ h2 {
 
 /* line 67, ../sass/base/_common.scss */
 h2 {
-  color: #626467;
+  color: #626567;
 }
 
 /* line 70, ../sass/base/_common.scss */
@@ -1123,7 +1123,7 @@ h6 {
   display: inline-block;
   vertical-align: top;
 }
-/* line 4, ../sass/pages/_user.scss */
+/* line 5, ../sass/pages/_user.scss */
 .user-menu a {
   margin-right: 5px;
   font-size: 0.875rem;
@@ -1138,38 +1138,38 @@ h6 {
   color: #6e7174;
 }
 
-/* line 8, ../sass/pages/_user.scss */
+/* line 10, ../sass/pages/_user.scss */
 .user-name {
   display: inline-block;
   font-weight: bold;
 }
 
-/* line 13, ../sass/pages/_user.scss */
+/* line 15, ../sass/pages/_user.scss */
 .header-user-picture {
   display: inline-block;
   vertical-align: top;
   margin-right: 5px;
 }
-/* line 17, ../sass/pages/_user.scss */
+/* line 20, ../sass/pages/_user.scss */
 .header-user-picture img {
   display: block;
   max-width: 30px;
   box-shadow: 2px 3px 3px #afb1b3;
 }
 
-/* line 24, ../sass/pages/_user.scss */
+/* line 29, ../sass/pages/_user.scss */
 .user-picture img {
   box-shadow: 2px 3px 3px #afb1b3;
 }
 
 /* USER EDIT FORM */
-/* line 30, ../sass/pages/_user.scss */
+/* line 35, ../sass/pages/_user.scss */
 .description {
   font-size: 0.75rem;
   color: #434343;
 }
 
-/* line 34, ../sass/pages/_user.scss */
+/* line 40, ../sass/pages/_user.scss */
 #edit-pass-change-pass-title {
   margin-top: 20px;
   padding: 8px 5px;
@@ -1177,40 +1177,40 @@ h6 {
   background: #87d7dd;
   cursor: pointer;
 }
-/* line 40, ../sass/pages/_user.scss */
+/* line 47, ../sass/pages/_user.scss */
 #edit-pass-change-pass-title h5 {
   font-weight: bold;
 }
-/* line 42, ../sass/pages/_user.scss */
+/* line 50, ../sass/pages/_user.scss */
 #edit-pass-change-pass-title h5:after {
   display: block;
   float: right;
   margin-right: 10px;
 }
 
-/* line 53, ../sass/pages/_user.scss */
+/* line 64, ../sass/pages/_user.scss */
 .password-strength {
   width: 50%;
 }
 @media (max-width: 480px) {
-  /* line 53, ../sass/pages/_user.scss */
+  /* line 64, ../sass/pages/_user.scss */
   .password-strength {
     float: none;
   }
 }
-/* line 58, ../sass/pages/_user.scss */
+/* line 72, ../sass/pages/_user.scss */
 .password-strength .password-indicator {
   height: 5px;
   background: #afb1b3;
 }
-/* line 62, ../sass/pages/_user.scss */
+/* line 77, ../sass/pages/_user.scss */
 .password-strength .indicator {
   width: 0%;
   height: 100%;
   background: #61C668;
 }
 
-/* line 68, ../sass/pages/_user.scss */
+/* line 84, ../sass/pages/_user.scss */
 .password-strength-text,
 .password-strength-title,
 .password-confirm {
@@ -1218,19 +1218,16 @@ h6 {
   line-height: 2;
 }
 
-/* line 74, ../sass/pages/_user.scss */
+/* line 91, ../sass/pages/_user.scss */
 .password-strength-title {
   display: inline;
   color: #434343;
 }
 
-/* line 82, ../sass/pages/_user.scss */
+/* line 100, ../sass/pages/_user.scss */
 .password-parent,
-.confirm-parent {
-  display: none;
-}
-
-/* line 86, ../sass/pages/_user.scss */
+.confirm-parent,
+#edit-locale,
 #edit-picture-upload {
   display: none;
 }
