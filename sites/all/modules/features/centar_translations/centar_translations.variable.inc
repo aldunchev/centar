@@ -10,7 +10,7 @@
 function centar_translations_variable_realm_default_variables() {
 $realm_variables = array();
   $realm_variables['language']['bg'] = array(
-  'site_name' => 'center.bg',
+  'site_name' => 'centar.bg',
   'site_slogan' => '',
   'user_mail_register_no_approval_required_body' => '[user:name],
 
