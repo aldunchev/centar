@@ -20,6 +20,7 @@ function simple_fb_connect_requirements($phase) {
   }
 
   if (!function_exists('json_decode')) {
+
     $requirements['json']['title'] = $t('JSON extension');
     $requirements['json']['value'] = $t('Not installed');
     $requirements['json']['severity'] = REQUIREMENT_ERROR;
@@ -27,26 +28,24 @@ function simple_fb_connect_requirements($phase) {
   }
 
   if ($phase == 'runtime') {
-    drupal_load('module', 'simple_fb_connect');
-    simple_fb_connect_facebook_client_load_include();
+    $sdk = libraries_detect('facebook-php-sdk-v4');
 
-    $requirements['facebook-php-sdk']['title'] = $t('Facebook PHP sdk');
-    if (!class_exists('Facebook')) {
-      $requirements['facebook-php-sdk']['value'] = $t('Not installed');
-      $requirements['facebook-php-sdk']['severity'] = REQUIREMENT_ERROR;
-      $requirements['facebook-php-sdk']['description'] = $t('Fbconnect : Facebook PHP library not found. See README.txt');
+    $requirements['facebook-php-sdk-v4']['title'] = $t('Facebook PHP SDK v4');
+    if (!is_array($sdk) || !$sdk['installed']) {
+      $requirements['facebook-php-sdk-v4']['value'] = $t('Not installed');
+      $requirements['facebook-php-sdk-v4']['severity'] = REQUIREMENT_ERROR;
+      $requirements['facebook-php-sdk-v4']['description'] = $t('Facebook PHP SDK v4 library not found. See README.txt');
     }
-    elseif (!constant('Facebook::VERSION')) {
-      $requirements['facebook-php-sdk']['value'] = $t('Outdated version');
-      $requirements['facebook-php-sdk']['severity'] = REQUIREMENT_ERROR;
-      $requirements['facebook-php-sdk']['description'] = $t('Fbconnect : Installed Facebook PHP library is outdated. See README.txt');
+    elseif (($sdk['version'] < '4.0') || ($sdk['version'] >= '4.1')) {
+      $requirements['facebook-php-sdk-v4']['value'] = $t('Unsupported version detected');
+      $requirements['facebook-php-sdk-v4']['severity'] = REQUIREMENT_ERROR;
+      $requirements['facebook-php-sdk-v4']['description'] = $t('Version @version detected. See README.txt', array('@version' => $sdk['version']));
     }
     else {
-      $requirements['facebook-php-sdk']['value'] = l(constant('Facebook::VERSION'), 'https://github.com/facebook/facebook-php-sdk', array('external' => TRUE));
-      $requirements['facebook-php-sdk']['severity'] = REQUIREMENT_OK;
+      $requirements['facebook-php-sdk-v4']['value'] = t('Version @version detected.', array('@version' => $sdk['version']));
+      $requirements['facebook-php-sdk-v4']['severity'] = REQUIREMENT_OK;
     }
   }
-
   return $requirements;
 }
 
@@ -56,6 +55,9 @@ function simple_fb_connect_requirements($phase) {
 function simple_fb_connect_uninstall() {
   variable_del('simple_fb_connect_appid');
   variable_del('simple_fb_connect_skey');
-  variable_del('simple_fb_connect_login_only');
+  variable_del('simple_fb_connect_connect_url');
   variable_del('simple_fb_connect_post_login_url');
+  variable_del('simple_fb_connect_login_only');
+  variable_del('simple_fb_connect_disable_admin_login');
+  variable_del('simple_fb_connect_disabled_roles');
 }

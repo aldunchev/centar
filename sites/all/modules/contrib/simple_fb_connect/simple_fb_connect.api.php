@@ -4,15 +4,13 @@
  * @file
  * Hooks provided by the Simple FB Connect module.
  */
-
 /**
  * @addtogroup hooks
  * @{
  */
 
 /**
- * Allow modules to play with the information received from the FB profile like
- * mapping it to fields in user profile.
+ * This hook allows other modules to change $fields array before new user is created.
  *
  * @param $fields
  *   The fields array to be stored with user profile in user_save.
@@ -20,28 +18,31 @@
  *   User Profile with values from FB while creating new user.
  *
  * @param $fb_user_profile
- *   The user array received from Facebook. Contains information about your user
- *   received from facebook
+ *   Facebook GraphObject representing the user (response to "/me" API request)
+ *   See: https://developers.facebook.com/docs/php/GraphObject/4.0.0
  *
  */
 function hook_simple_fb_connect_register_alter(&$fields, $fb_user_profile) {
-  //Do stuff with $fields
+  // Implement this hook in your own module to modify $fields array
 }
 
-
 /**
- * Allows to change the permissions requested by the module
+ * This hook allows other modules to add permissions to $scope array
+ *
+ * $scope[] = 'email' is added automatically by simple_fb_connect
+ * Please note that if your app requires some additional permissions, you may
+ * have to submit your Facebook App to Facebook Review process
+ *
+ * Read more about FB review process:
+ * https://developers.facebook.com/docs/apps/review/login
  *
  * @param $scope
- *   The scope array listing various permissions requested by the module.
+ *   The scope array listing the permissions requested by the app
  *
  * @return
  *   The updated scope array
  */
-function hook_simple_fb_scope_info($scope) {
-  //Modify the scope array
-  //by default the module requests only "email"
-  //Simple_FB_Publish module adds "publish_stream" to the scope
-  //You can add more here
+function hook_simple_fb_connect_scope_info($scope) {
+  // Implement this hook in your own module to add items to $scope array
   return $scope;
 }
