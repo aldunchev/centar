@@ -1,5 +1,7 @@
+# Ignore configuration files that may contain sensitive information.
 sites/*/settings*.php
+
+# Ignore paths that contain user-generated content.
 sites/*/files
-.sass-cache/*
-.sass-cache
-sites/all/themes/cleancustom/assets/.sass-cache/*
+sites/*/private
+sites/all/themes/cleancustom/assets/.sass-cache
