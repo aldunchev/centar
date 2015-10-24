@@ -1267,17 +1267,12 @@ h6 {
   }
 }
 
-/* line 19, ../sass/components/_ads.scss */
-.simplead-container img {
-  height: 200px;
-}
-
-/* line 23, ../sass/components/_ads.scss */
+/* line 18, ../sass/components/_ads.scss */
 .ad-medium {
   margin-left: 10px;
 }
 @media (max-width: 767px) {
-  /* line 23, ../sass/components/_ads.scss */
+  /* line 18, ../sass/components/_ads.scss */
   .ad-medium {
     max-width: 460px;
     margin: 0 auto 20px;
@@ -1285,13 +1280,13 @@ h6 {
   }
 }
 
-/* line 31, ../sass/components/_ads.scss */
+/* line 26, ../sass/components/_ads.scss */
 .ad-bottom.ad-small {
   margin-left: 10px;
   margin-right: 10px;
 }
 @media (max-width: 767px) {
-  /* line 31, ../sass/components/_ads.scss */
+  /* line 26, ../sass/components/_ads.scss */
   .ad-bottom.ad-small {
     margin: 0 auto 20px;
   }
